@@ -1,4 +1,4 @@
 "use strict"
 
-nome = "Wallace"
+var nome = "Wallace"
 console.log("Nome: " + nome)
