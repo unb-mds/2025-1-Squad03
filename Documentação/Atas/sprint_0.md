@@ -76,7 +76,7 @@
 | Arthur | Banco de Dados e Persistência         | **Supabase (PostgreSQL):** [Supabase](https://supabase.com)                                                                                 |
 | Fernandes | Deploy de Frontend                    | **Vercel (Hosteamento gratuito de sites):** [Vercel](https://vercel.com)                                                                    |
 | Vini | Deploy de Backend e Infraestrutura    | **Digital Ocean (Hosteamento de backend, App Platform):** [Digital Ocean](https://www.digitalocean.com) (pesquisar mais sobre App Platform) |
-| Erik | Requisitos de Software e Planejamento | Levantamento e análise dos requisitos necessários para o desenvolvimento do projeto.                                                        |
+| Erick | Requisitos de Software e Planejamento | Levantamento e análise dos requisitos necessários para o desenvolvimento do projeto.                                                        |
 |                      |                                       |                                                                                                                                             |
 
 ---
