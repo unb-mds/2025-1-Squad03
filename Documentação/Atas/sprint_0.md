@@ -70,12 +70,16 @@
 
 | Responsável          | Área de Estudo                        | Ferramentas para Desenvolvimento do Projeto                                                                                                 |
 | -------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gustavo | Controle de Versão e Colaboração      | **Git e GitHub:** [GitHub](https://github.com)                                                                                              |
-| Vitor/Gusmão | Desenvolvimento de Frontend           | **Flutter:** [Instalação Flutter](https://docs.flutter.dev/get-started/install)                                                             |
+| Vitor | Controle de Versão e Colaboração      | **Git e GitHub:** [GitHub](https://github.com)    
+
+| Gustavo | Metodologia ágil de gestão de projetos    | **Scrum** [Guia do Scrum].(https://www.scrum.org/resources/scrum-guide).                      |  
+
+| Gusmão | Desenvolvimento de Frontend           | **Flutter:** [Instalação Flutter](https://docs.flutter.dev/get-started/install)                                                             |
 | Felipe | Desenvolvimento de Backend            | **TypeScript + Express.js:** [Guia Express com TypeScript](https://blog.logrocket.com/express-typescript-node/)                             |
 | Arthur | Banco de Dados e Persistência         | **Supabase (PostgreSQL):** [Supabase](https://supabase.com)                                                                                 |
 | Fernandes | Deploy de Frontend                    | **Vercel (Hosteamento gratuito de sites):** [Vercel](https://vercel.com)                                                                    |
 | Vini | Deploy de Backend e Infraestrutura    | **Digital Ocean (Hosteamento de backend, App Platform):** [Digital Ocean](https://www.digitalocean.com) (pesquisar mais sobre App Platform) |
+
 | Erick | Requisitos de Software e Planejamento | Levantamento e análise dos requisitos necessários para o desenvolvimento do projeto.                                                        |
 |                      |                                       |                                                                                                                                             |
 
