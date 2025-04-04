@@ -6,6 +6,20 @@ Ela oferece **deploy automático** a partir de repositórios do GitHub, GitHub, 
 
 ## Conceitos Essenciais
 
+### Integração com Git
+- A Vercel sincroniza com seu repositório (GitHub/GitLab/Bitbucket).
+
+- Cada push na branch principal (ex.: `main`) dispara um deploy automático.
+
+- Você pode configurar preview deployments (versões de teste para cada PR/pull request).
+
+### Build e Output
+- A Vercel detecta automaticamente a tecnologia do projeto (Next.js, React, Angular, etc.).
+
+- Durante o deploy, ela executa o comando de build padrão (ex.: `next build` para Next.js).
+
+- O resultado é otimizado e distribuído na **CDN global**(Content Delivery Network, ou "Rede de Distribuição de Conteúdo") da Vercel.
+
 ### Deploy
 Processo de enviar e disponibilizar um site/aplicação em um servidor para que outras pessoas possam acessá-lo.
 
@@ -47,7 +61,12 @@ Automação do processo de biuld, teste e deploy do código a cada atualização
   - Executa um novo biuld.
   - Roda testes (se configurados).
   - Faz deploy em produção (ou preview).
- 
+
+###  Cache e Otimizações
+- **Static Files**: Arquivos estáticos (HTML, CSS, JS) são servidos via CDN super-rápida.
+
+- **ISR (Incremental Static Regeneration)**: Atualiza páginas estáticas em tempo real sem rebuild completo (Next.js).
+
 ### Preview Deployment
 Um link temporário para testar mudanças antes de ir para produção.
 
