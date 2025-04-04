@@ -10,17 +10,34 @@ Ela oferece **deploy automático** a partir de repositórios do GitHub, GitHub, 
 Processo de enviar e disponibilizar um site/aplicação em um servidor para que outras pessoas possam acessá-lo.
 
 **Como fazer um deploy na Vercel?**
+- Crie uma conta no GitHub, ou acesse uma existente.
+  
+-  Baixar o git
+  
+-   Criar o repositório no GitHub e criar o repositório localmente.
+   - **Comandos**
+      - Configurar email no Git
+         - `git config --global user.email "seu@email.com"`
+     
+      - Configurar nome de usuário no Git
+         - `git config --global user.name "Seu nome"`
+            - (Substitua "Seu Nome" pelo seu nome ou username do GitHub.)
 
-1. Instale a CLI da Vercel
-   - Comando:  `npm install -g vercel`
+      - Inicializar o repositório localmente
+         - `git init`
+            - Cria uma pasta .git para versionamento no diretório atual.
 
-2. Faça login:
-   - Comando: `vercel login`
-
-3. Dentro do diretório do seu projeto, execute:
-   - Comando `vercel`
-
-4. 
+      - Adicionar todos os arquivos ao staging
+         - `git add .`
+           
+      - Criar commit (versionamento local)
+         - `git commit -m "Mensagem"`
+           
+      - Renomear branch principal para main
+         - `git branch -M main`
+           
+      - Vincular repositório local ao GitHub
+         - `git remote add origin https://github.com/seu-user/nome-repo.git`
 
 
 ### CI/CD (Continuous Integration/Continuous Deployment)
@@ -49,6 +66,6 @@ Versão final do site (acessível pelo domínio principal).
 - Ou promova manualmente um preview para produção no painel da Vercel.
 
 
+## Imagem Explicativa
 
-
-
+![deployVercel](https://github.com/user-attachments/assets/f80eb937-2032-4ddc-8a61-a1a25f317ad5)
