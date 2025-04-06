@@ -89,36 +89,34 @@
 
 
 
-📝 ATA DE REUNIÃO - SPRINT 0
+# 📝 ATA DE REUNIÃO - SPRINT 0 
 
-📅 Data: 07/04/2024
-⏰ Horário: 19:00 - 20:30
-📍 Plataforma: Discord 🎧
-👥 Equipe Presente:
+## 📅 Data: 03/04/2025
 
-Arthur Nogueira Ramalho
+## ⏰ Horário:
+-19:00 - 20:30  
 
-Guilherme Gusmão Nepomuceno
+## 📍 Local: Discord 🎧
 
-Vitor Marconi Trancoso Albuquerque
+### 👥 Participantes
 
-Gustavo Choueiri
+- Arthur Nogueira Ramalho  
+- Guilherme Gusmão Nepomuceno  
+- Vitor Marconi Trancoso Albuquerque  
+- Gustavo Choueiri  
+- Felipe Lopes Pedroza  
+- Vinícius Pereira Ribeiro  
+- Arthur Fernandes Alencar  
+- Erick Alves dos Santos  
 
-Felipe Lopes Pedroza
 
-Vinícius Pereira Ribeiro
+## 1. 🎯 Objetivos da Reunião
+- ✅ Brainstorm para refinamento do NoFluxoUnB
+- ✅ Definição do fluxo básico no Figma
+- ✅ Workshop de GitHub ministrado por Vitor Marconi
+- ✅ Distribuição inicial de tarefas técnicas
 
-Arthur Fernandes Alencar
-
-Erick Alves dos Santos
-
-🎯 Objetivos Alcançados
-✅ Brainstorm para refinamento do NoFluxoUnB
-✅ Definição do fluxo básico no Figma
-✅ Workshop de GitHub ministrado por Vitor Marconi
-✅ Distribuição inicial de tarefas técnicas
-
-📌 Tópicos Discutidos
+## 📌 Tópicos Discutidos
 a) Evolução do NoFluxoUnB
 b) Prototipagem no Figma
 c) Workshop GitHub
@@ -131,4 +129,4 @@ Conteúdo ministrado por Vitor:
 🔄 Fluxo de Pull Requests e revisão de código
 
 
-🔚 Encerramento: 20:30
+## 🔚 Encerramento: 20:30
