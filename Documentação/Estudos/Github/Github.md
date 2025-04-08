@@ -1,4 +1,21 @@
-# Aula sobre Git e GitHub
+<h1 style="
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+">
+    <span style="color: #ff4500; text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 40px #ff4500, 0 0 80px #ff4500;">
+        GIT
+    </span>
+    <span style="color:rgb(255, 196, 0); text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 40px #ff4500, 0 0 80px #ff4500;">
+      &
+    </span>
+    <span style="color: #00bfff; text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 40px #00bfff, 0 0 80px #00bfff;">
+        GITHUB
+    </span>
+</h1>
 
 ## O que é o Git?
 O Git é um sistema de controle de versão distribuído usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que desenvolvedores colaborem em projetos de maneira eficiente, mantendo um histórico claro e organizado de todas as alterações feitas no código.
@@ -14,7 +31,9 @@ O GitHub é uma plataforma online que hospeda repositórios Git, facilitando a c
 - Ferramentas para discutir e revisar código.
 - Controle de permissões e gerenciamento de projetos colaborativos.
 
-![Exemplo de Repositório GitHub](./image.png)
+<p align="center">
+  <img src="./Assets/ex_repositorio.png" alt="Branch Merge" width="600px"/>
+</p>
 
 ## Termos Importantes e Conceitos
 
@@ -107,15 +126,19 @@ Um fork é uma cópia independente de um repositório. É muito usado para:
 
 ## Imagens Explicativas
 ### Fluxograma do Ciclo de Desenvolvimento com Git e GitHub
-![Fluxograma Git e GitHub](./Assets/fluxograma.png)
+<p align="center">
+  <img src="./Assets/fluxograma.png" alt="Fluxograma Git e GitHub" width="400px"/>
+</p>
 
 ### Gráfico de Branching e Merging
-![Branching e Merging](./Assets/branch.png)
+<p align="center">
+  <img src="./Assets/branch.png" alt="Branch Merge" width="400px"/>
+</p>
 
-### Exemplo de Commit `[FEATURE]`
-![Commit FEATURE]()
+## Link para material complementar
 
-### Exemplo de Commit `[FIX]`
-![Commit FIX]()
-
-
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGj99Jwags/EHMrFiGBZYWrGPGu9-K0Pg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
