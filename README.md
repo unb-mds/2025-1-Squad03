@@ -99,7 +99,7 @@ Em caso de dúvidas, sugestões ou colaboração, entre em contato com o time ou
       <a href="#">Felipe Lopes Pedroza</a>
     </td>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Vinícius Pereira Ribeiro"/><br />
+      <img src="https://github.com/Vinicius-Ribeiro04.png" width="100px;" style="border-radius: 10px;" alt="Vinícius Pereira Ribeiro"/><br />
       <a href="#">Vinícius Pereira Ribeiro</a>
     </td>
     <td align="center">
