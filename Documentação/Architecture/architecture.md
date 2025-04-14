@@ -1,0 +1,34 @@
+# Arquitetura de Software 
+
+## O que é Arquitetura de Software?
+A arquitetura de um sistema define seus componentes computacionais, os relacionamentos entre eles, os padrões que orientam sua composição e as restrições a serem seguidas. Envolve ainda decisões sobre a estrutura do sistema, controle, protocolos de comunicação, sincronização e acesso a dados, distribuição física dos elementos, atribuição de funcionalidades, além de aspectos como desempenho, escalabilidade e outros atributos de qualidade.
+
+## Principais etapas do processo de arquitetura de software
+**1. Definição do problema que o software deve resolver:**
+
+**2. Identificação dos componentes do sistema:**
+
+**3. Descrição dos componentes e conectores em tempo de execução:**
+
+## Tipos de arquiteturas de software
+O tipo ou padrão de arquitetura define as classes de elementos que podem aparecer em uma arquitetura e as regras que regem a interconexão entre estes elementos.
+
+## Principais tipos de arquiteturas de software
+### Layers (camadas)
+- Cada uma das camadas tem funcionalidades específicas no software, o que traz mais flexibilidade para a aplicação. 
+- Oferece maior facilidade de desenvolvimento e execução de testes, mas pode ter a escalabilidade comprometida principalmente a partir do momento em que o projeto começa a acumular uma quantidade elevada de camadas.
+- Organiza o sistema em camadas hierárquicas, onde cada camada possui uma responsabilidade distinta.
+- (ex: apresentação, lógica de negócio, acesso a dados). É comum em sistemas corporativos.
+
+### Client-server (cliente-servidor)
+- O processamento da informação se divide em módulos e processos distintos, combinando dados do cliente (solicita serviços) e do servidor (processa e fornece respostas).
+- Um dos módulos é responsável pela manutenção da informação e o outro pela obtenção de dados.
+- Amplamente usada em aplicações web e sistemas distribuídos.
+
+### Microservices (micros serviços)
+- Estrutura o sistema como um conjunto de serviços pequenos, independentes e focados em funcionalidades específicas.
+- Se baseia em múltiplos serviços e componentes para desenvolver uma estrutura modular.
+- Modelo preferido dos desenvolvedores e arquitetos de software, por permitir escalabilidade e independência dos módulos, que podem usar diferentes linguagens.
+- Facilita a escalabilidade e o desenvolvimento independente de partes do sistema.
+
+###
