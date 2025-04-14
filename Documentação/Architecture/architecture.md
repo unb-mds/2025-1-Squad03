@@ -4,11 +4,11 @@
 A arquitetura de um sistema define seus componentes computacionais, os relacionamentos entre eles, os padrões que orientam sua composição e as restrições a serem seguidas. Envolve ainda decisões sobre a estrutura do sistema, controle, protocolos de comunicação, sincronização e acesso a dados, distribuição física dos elementos, atribuição de funcionalidades, além de aspectos como desempenho, escalabilidade e outros atributos de qualidade.
 
 ## Principais etapas do processo de arquitetura de software
-**1. Definição do problema que o software deve resolver:**
+**1. Definição do problema que o software deve resolver:** O arquiteto precisa compreender o contexto no qual o sistema será aplicado, a partir de uma perspectiva externa. Isso facilita a proposta da solução e a identificação das interfaces necessárias.
 
-**2. Identificação dos componentes do sistema:**
+**2. Identificação dos componentes do sistema:** Com base no problema definido, são identificados os componentes que irão compor a arquitetura, estabelecendo a estrutura funcional do software.
 
-**3. Descrição dos componentes e conectores em tempo de execução:**
+**3. Descrição dos componentes e conectores em tempo de execução:** Os componentes e conectores devem ser descritos em uma configuração de execução, evidenciando como se comunicam e interagem durante a operação do sistema.
 
 ## Tipos de arquiteturas de software
 O tipo ou padrão de arquitetura define as classes de elementos que podem aparecer em uma arquitetura e as regras que regem a interconexão entre estes elementos.
@@ -31,4 +31,25 @@ O tipo ou padrão de arquitetura define as classes de elementos que podem aparec
 - Modelo preferido dos desenvolvedores e arquitetos de software, por permitir escalabilidade e independência dos módulos, que podem usar diferentes linguagens.
 - Facilita a escalabilidade e o desenvolvimento independente de partes do sistema.
 
-###
+## Qual a relação com o desenvolvimento low-code
+Os tipos de arquiteturas de software tem como principal objetivo maximizar a produtividade no desenvolvimento de softwares que entregam soluções e resolvem os mais diversos problemas.
+O que está bastante alinhado ao que o low-code consegue oferecer no que diz respeito a desenvolvimento de sistemas, estabelecendo uma relação bastante favorável para iniciar um projeto partindo dos tipos de arquiteturas de software aliado ao desenvolvimento low-code.
+Os avanços tecnológicos e digitais exigem cada vez mais velocidade, flexibilidade, performance e desempenho, por isso o low-code é essencial em uma arquitetura de software.
+
+## Qual o tipo de arquitetura ideal para o projeto?
+### A arquitetura Cliente-Servidor é adequada para este projeto pelos seguintes motivos. 
+
+**1. Separação de responsabilidades**: Permite uma distinção clara entre a interface do usuário (cliente) e o processamento de dados e lógica de negócio (servidor), facilitando a organização e manutenção do sistema.
+  
+**2. Reutilização e integração**: Possibilita que diferentes interfaces, como aplicações web ou mobile, se conectem ao mesmo servidor, promovendo a reutilização do backend e mantendo a consistência nas funcionalidades.
+
+**3. Centralização de dados**: Todos os dados ficam armazenados no servidor, o que facilita o controle de acesso, a segurança das informações e a integridade dos dados.
+
+**4. Uso de APIs padronizadas**: A comunicação entre cliente e servidor pode ser feita por meio de APIs RESTful, que seguem padrões amplamente utilizados, o que simplifica o desenvolvimento e favorece a interoperabilidade.
+
+**5. Escalabilidade e flexibilidade**: Essa arquitetura permite escalar o servidor conforme a demanda do sistema aumenta, além de possibilitar adaptações futuras com maior facilidade.
+
+
+
+
+
