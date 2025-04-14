@@ -37,7 +37,7 @@ O que está bastante alinhado ao que o low-code consegue oferecer no que diz res
 Os avanços tecnológicos e digitais exigem cada vez mais velocidade, flexibilidade, performance e desempenho, por isso o low-code é essencial em uma arquitetura de software.
 
 ## Qual o tipo de arquitetura ideal para o projeto?
-### A arquitetura Cliente-Servidor é adequada para este projeto pelos seguintes motivos. 
+### A arquitetura Client-server é adequada para este projeto pelos seguintes motivos. 
 
 **1. Separação de responsabilidades**: Permite uma distinção clara entre a interface do usuário (cliente) e o processamento de dados e lógica de negócio (servidor), facilitando a organização e manutenção do sistema.
   
