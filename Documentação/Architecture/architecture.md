@@ -49,6 +49,12 @@ Os avanços tecnológicos e digitais exigem cada vez mais velocidade, flexibilid
 
 **5. Escalabilidade e flexibilidade**: Essa arquitetura permite escalar o servidor conforme a demanda do sistema aumenta, além de possibilitar adaptações futuras com maior facilidade.
 
+![image](https://github.com/user-attachments/assets/62ccc88c-479c-47e0-a6d1-04535601036c)
+- Link de referência da imagem: `https://www.simplilearn.com/what-is-client-server-architecture-article`
+- Link sobre arquitetura de software: `https://www.inf.ufpr.br/andrey/ci163/IntroduzArquiteturaAl.pdf`
+
+
+
 
 
 
