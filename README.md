@@ -82,25 +82,25 @@ Link para o nosso [story map](https://mdsunb.storiesonboard.com/storymap/no-flux
 <table>
   <tr>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Arthur Nogueira Ramalho"/><br />
+      <img src="https://github.com/ArthurNRamalho" width="100px;" style="border-radius: 10px;" alt="Arthur Nogueira Ramalho"/><br />
       <a href="#">Arthur Nogueira Ramalho</a>
     </td>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Guilherme Gusmão Nepomuceno"/><br />
+      <img src="https://github.com/gusmoles" width="100px;" style="border-radius: 10px;" alt="Guilherme Gusmão Nepomuceno"/><br />
       <a href="#">Guilherme Gusmão Nepomuceno</a>
     </td>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
+      <img src="https://github.com/Vitor-Trancoso" width="100px;" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
       <a href="#">Vitor Marconi T. Albuquerque</a>
     </td>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Gustavo Choueiri"/><br />
+      <img src="https://github.com/staann" width="100px;" style="border-radius: 10px;" alt="Gustavo Choueiri"/><br />
       <a href="#">Gustavo Choueiri</a>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Felipe Lopes Pedroza"/><br />
+      <img src="https://github.com/darkymeubem" width="100px;" style="border-radius: 10px;" alt="Felipe Lopes Pedroza"/><br />
       <a href="#">Felipe Lopes Pedroza</a>
     </td>
     <td align="center">
@@ -108,7 +108,7 @@ Link para o nosso [story map](https://mdsunb.storiesonboard.com/storymap/no-flux
       <a href="#">Vinícius Pereira Ribeiro</a>
     </td>
     <td align="center">
-      <img src="LINK_DA_FOTO" width="100px;" style="border-radius: 10px;" alt="Arthur Fernandes Alencar"/><br />
+      <img src="https://github.com/hisarxt" width="100px;" style="border-radius: 10px;" alt="Arthur Fernandes Alencar"/><br />
       <a href="#">Arthur Fernandes Alencar</a>
     </td>
     <td align="center">
