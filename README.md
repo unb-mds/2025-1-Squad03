@@ -90,7 +90,7 @@ Link para o nosso [story map](https://mdsunb.storiesonboard.com/storymap/no-flux
       <a href="#">Guilherme Gusmão Nepomuceno</a>
     </td>
     <td align="center">
-      <img src="https://github.com/Vitor-Trancoso.png" width="100px;" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
+      <img src="assets\Logo_eu_3.jpg" width="100px;" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
       <a href="#">Vitor Marconi T. Albuquerque</a>
     </td>
     <td align="center">
