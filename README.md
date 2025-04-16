@@ -43,9 +43,9 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 
 | Sprint     | Data       | Principais Tópicos                                                                 |
 |------------|------------|-------------------------------------------------------------------------------------|
-| Sprint 0   | 07/04/2024 | Brainstorm da ideia, prototipação inicial no Figma, workshop de GitHub              |
-| Sprint 1   | 08/04/2024 | Levantamento de requisitos, criação do story map, organização de tarefas técnicas   |
-| Sprint 2   | 15/04/2024 | Polimento visual, reorganização da branch `docs`, definição de backlog e reuniões  |
+| Sprint 0   | 08/04/2024 | Brainstorm da ideia, prototipação inicial no Figma, workshop de GitHub              |
+| Sprint 1   | 15/04/2024 | Levantamento de requisitos, criação do story map, organização de tarefas técnicas   |
+| Sprint 2   | 22/04/2024 | Polimento visual, reorganização da branch `docs`, definição de backlog e reuniões  |
 
 ---
 
