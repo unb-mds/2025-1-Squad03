@@ -1,6 +1,6 @@
 # 🎓 NoFluxoUnB
 
-Uma aplicação web desenvolvida para facilitar a visualização, planejamento e organização da grade horária dos estudantes da Universidade de Brasília (UnB), com foco nos cursos da FCTE – Faculdade de Ciências e Tecnologia (Gama).
+Uma aplicação web desenvolvida para facilitar a visualização, planejamento e organização do fluxograma dos estudantes da Universidade de Brasília (UnB), com foco nos cursos da FCTE – Faculdade de Ciências e Tecnologia (Gama).
 
 ---
 
