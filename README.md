@@ -73,7 +73,7 @@ Em caso de dúvidas, sugestões ou colaboração, entre em contato com o time ou
 ---
 
 ## 📖 Story map do projeto
-Link para o nosso [story map](https://mdsunb.storiesonboard.com/storymap/no-fluxo-unb1)
+Link para o nosso [story map](https://miro.com/app/board/uXjVIC_JkAY=/)
 
 ---
 
