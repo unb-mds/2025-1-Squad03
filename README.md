@@ -1,9 +1,14 @@
 # 📚 Documentação Oficial – NoFluxoUnB
 
+Bem-vindo à documentação do **NoFluxoUnB**, um projeto desenvolvido pela equipe do Squad 03 na disciplina de Métodos de Desenvolvimento de Software (MDS - 2025/1 - FGA/UnB).
+
 ---
 
 ## 1. 📌 Visão Geral
 
+O projeto **NoFluxoUNB** tem como objetivo facilitar o planejamento acadêmico dos estudantes da UnB ao oferecer um fluxograma interativo, intuitivo e de fácil uso. Nossa aplicação busca resolver a dificuldade frequente dos alunos em identificar matérias equivalentes e organizar suas disciplinas futuras de maneira eficiente.
+
+Com uma experiência de usuário (UX) aprimorada, o produto permite:
 
 - 🎯 **Visualizar de forma simples e interativa as matérias equivalentes** no fluxograma oficial do curso.
 - 🎓 **Selecionar disciplinas futuras** para montar um planejamento personalizado.
@@ -15,6 +20,7 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 
 ---
 
+## 2. 📁 Estrutura da Documentação
 
 A documentação está organizada da seguinte forma:
 
@@ -62,7 +68,7 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 ---
 
 ## 4. 🧠 Como Contribuir com a Documentação
-.
+
 1. Faça checkout da branch `docs`
    ```bash
    git checkout docs
