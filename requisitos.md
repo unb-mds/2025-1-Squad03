@@ -61,9 +61,3 @@
 
 ### Performance do parser de PDF
 - A leitura deve ser concluída em até 5 segundos para arquivos com até 10 páginas.
-
-### Acessibilidade
-- O sistema deve seguir práticas básicas de acessibilidade:
-  - Contraste adequado  
-  - Navegação por teclado  
-  - Textos alternativos
