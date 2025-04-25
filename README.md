@@ -6,7 +6,17 @@ Bem-vindo à documentação do **NoFluxoUnB**, um projeto desenvolvido pela equi
 
 ## 1. 📌 Visão Geral
 
-O **NoFluxoUnB** é uma aplicação web pensada para auxiliar estudantes universitários na organização de suas disciplinas, permitindo visualizar fluxos de pré-requisitos, montar grades horárias e gerar simulações personalizadas do percurso acadêmico.
+O projeto **NoFluxoUNB** tem como objetivo facilitar o planejamento acadêmico dos estudantes da UnB ao oferecer um fluxograma interativo, intuitivo e de fácil uso. Nossa aplicação busca resolver a dificuldade frequente dos alunos em identificar matérias equivalentes e organizar suas disciplinas futuras de maneira eficiente.
+
+Com uma experiência de usuário (UX) aprimorada, o produto permite:
+
+- 🎯 **Visualizar de forma simples e interativa as matérias equivalentes** no fluxograma oficial do curso.
+- 🎓 **Selecionar disciplinas futuras** para montar um planejamento personalizado.
+- 🤖 Usar **inteligência artificial** para recomendar disciplinas alinhadas aos interesses pessoais, como desenvolvimento de games ou outras áreas específicas, com base nas ementas e informações dos cursos da UnB.
+
+Inicialmente, o projeto será disponibilizado somente para os cursos da **Faculdade UnB Gama (FGA)** pertencentes à **Faculdade de Ciências e Tecnologia (FCTE)**, com perspectiva futura de expansão.
+
+Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e personalizado**, simplificando seu percurso até a conclusão do curso.
 
 ---
 
@@ -28,14 +38,14 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 
 | Nome                          |
 |-------------------------------|
-| Arthur Nogueira Ramalho       |
-| Guilherme Gusmão Nepomuceno   |
-| Vitor Marconi Trancoso        | 
-| Gustavo Choueiri              | 
-| Felipe Lopes Pedroza          |
-| Vinícius Pereira Ribeiro      |
 | Arthur Fernandes Alencar      | 
+| Arthur Nogueira Ramalho       |
 | Erick Alves dos Santos        | 
+| Felipe Lopes Pedroza          |
+| Guilherme Gusmão Nepomuceno   |
+| Gustavo Choueiri              | 
+| Vinícius Pereira Ribeiro      |
+| Vitor Marconi Trancoso        | 
 
 ---
 
@@ -53,8 +63,7 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 
 - 🔗 [Protótipo no Figma](https://figma.com/...)  
 - 🗺️ [Story Map Público](https://miro.com/...)  
-- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-Squad03/projects/1)  
-- 📄 [Planilha de Horários](https://docs.google.com/spreadsheets/...)  
+- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-Squad03/projects/1)
 
 ---
 
