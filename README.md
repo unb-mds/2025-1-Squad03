@@ -6,14 +6,7 @@ Uma aplicação web desenvolvida para facilitar a visualização, planejamento e
 
 ## 🚀 Objetivo
 
-O **NoFluxoUnB** tem como principal objetivo ajudar estudantes a:
-
-- Planejar sua trajetória acadêmica de forma visual e intuitiva  
-- Visualizar a grade curricular completa do seu curso  
-- Acompanhar o progresso em porcentagem de disciplinas concluídas  
-- Identificar disciplinas equivalentes e suas dependências  
-- Evitar conflitos de horário durante a montagem de grade  
-- Organizar o semestre com mais autonomia e clareza  
+O **NoFluxoUnB** tem como principal objetivo ajudar estudantes a planejar a sua jornada academica de forma visual e automatizada:
 
 ---
 
@@ -25,13 +18,20 @@ Sabemos que montar a grade horária ideal na UnB pode ser um desafio. O sistema 
 
 ## 🛠️ Funcionalidades
 
-- 📊 **Dashboard de Progresso**: percentual do curso já cumprido  
-- 🧩 **Mapa de Disciplinas**: grade curricular visual e interativa  
-- 🔁 **Equivalências**: identificação de matérias equivalentes  
-- 🕒 **Montagem de Horário**: simulação de grade sem conflitos  
-- 📚 **Visualização de Pré-requisitos e Co-requisitos**  
-- 💡 **Sugestões de disciplinas com base no histórico**  
-- 🔍 **Busca por código ou nome de disciplina**  
+- Facilitar o planejamento da sua trajetória acadêmica de forma visual e intuitiva, gerando visualmente o fluxograma completa de todos os cursos da UnB
+- Acompanhar o progresso em porcentagem de disciplinas concluídas
+- Calcular as métricas, como ira, mp e horas
+- Identificar disciplinas equivalentes e suas dependências e gerar um novo fluxo com as equivalentes e seu pre-requisitos
+- Facilitar o processo de mudança de cursos
+- Facilitar a dupla diplomação
+- Adicionar manualmente novas matérias e seus pre-requisitos no fluxo
+- Chatbot de sugestões de matéria para optativas e complementares, com base no input do usuário
+- Modo Anonimo, apenas visualizacao do fluxograma
+    - o anônimo poderá escolher um curso para visualizar o fluxograma
+    - ele poderá alterar as matérias como concluído e não concluído
+    - o site vai mostrar as matérias que o anônimo poderá fazer
+    - O anônimo não poderá usar as calculadoras
+    - visualizar outros cursos, sem fazer o upload do histórico  
 
 ---
 
