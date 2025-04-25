@@ -27,8 +27,7 @@ A documentação está organizada da seguinte forma:
 - [2.1 Atas de Reunião](atas/)
 - [2.2 Protótipos no Figma](prototipos/)
 - [2.3 Levantamento de Requisitos](requisitos/)
-- [2.4 Documento de Visão](visao/)
-- [2.5 Backlog do Projeto](backlog/)
+- [2.4 Backlog do Projeto](backlog/)
 
 ---
 
@@ -51,14 +50,16 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 
 ## 3. 🧩 Links Importantes
 
-- 🔗 [Protótipo no Figma](https://figma.com/...)  
-- 🗺️ [Story Map Público](https://miro.com/...)  
-- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-Squad03/projects/1)
+- 🔗 [Protótipo no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
+- 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/)  
+- ✅ [Board do Projeto no GitHub]()
 
 ---
 
-## 4. 🧠 Como Contribuir com a Documentação
+## 4. 🧠 Como Contribuir com a projeto
 
-1. Faça checkout da branch `docs`
+1. Faça checkout da branch `main`
    ```bash
-   git checkout docs
+   git checkout main
+
+
