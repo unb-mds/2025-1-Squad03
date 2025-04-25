@@ -68,7 +68,7 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 ---
 
 ## 4. 🧠 Como Contribuir com a Documentação
-
+.
 1. Faça checkout da branch `docs`
    ```bash
    git checkout docs
