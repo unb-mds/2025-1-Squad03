@@ -18,14 +18,14 @@ OUTPUT_DIR = "dados_finais_teste_paralelo"
 DEBUG = True  # Ativar para ver logs detalhados
 
 def limpar_texto(texto):
-    """Versão melhorada que preserva pontuação"""
+    
     if isinstance(texto, str):
         texto = re.sub(r'\s+', ' ', texto)  # Remove múltiplos espaços
         return texto.strip()
     return texto
 
 def extrair_equivalencias(cells):
-    """Implementação idêntica à sua versão original"""
+    
     equivalencias = []
     for ac in cells[1].find_all("acronym"):
         codigo = ac.get_text(strip=True)
@@ -34,7 +34,7 @@ def extrair_equivalencias(cells):
     return ", ".join(equivalencias) if equivalencias else "Nenhuma"
 
 def coleta_dados(session, component_id, viewstate, base_url, params):
-    """Versão fiel ao seu código original com todos os campos"""
+    
     try:
         form_data = {
             "javax.faces.ViewState": viewstate,
@@ -54,7 +54,7 @@ def coleta_dados(session, component_id, viewstate, base_url, params):
 
         details_soup = BeautifulSoup(response.text, "html.parser")
         
-        # EXTRAÇÃO COMPLETA COMO NO SEU CÓDIGO ORIGINAL
+        
         details = {}
         ementa = ""
         tables = details_soup.find_all("table")
@@ -149,7 +149,7 @@ def processar_departamento(id_atual):
 
             )
 
-            # VERIFICAÇÃO DE RESULTADOS (IGUAL AO SEU CÓDIGO)
+            # VERIFICAÇÃO DE RESULTADOS
             if "Nenhuma turma encontrada" in search_response.text:
                 if DEBUG:
                     print(f"\n[INFO] Departamento {id_atual} sem turmas")
@@ -183,7 +183,7 @@ def processar_departamento(id_atual):
                                 #params = dict(re.findall(r"'([^']+)'\s*:\s*'([^']+)'", onclick))
                                 viewstate = results_soup.find('input', {'name': 'javax.faces.ViewState'})['value']
 
-                                # COLETA TODOS OS DETALHES (MESMO SEU CÓDIGO)
+                                # COLETA TODOS OS DETALHES
                                 current_component = coleta_dados(
                                     session, component_id, 
                                     viewstate, base_url, params
@@ -238,7 +238,7 @@ def carregar_ids_departamentos():
         return []
 
 def salvar_resultados(turmas, lote_num=None):
-    """Salva com estrutura 100% igual à sua versão original"""
+
     Path(OUTPUT_DIR).mkdir(exist_ok=True)
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     filename = f"turmas_unb_{timestamp}_lote{lote_num}.json" if lote_num else f"turmas_unb_{timestamp}_FULL.json"
