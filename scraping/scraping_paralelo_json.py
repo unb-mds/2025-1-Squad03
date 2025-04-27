@@ -253,21 +253,22 @@ def main():
     print("SCRAPER UNB - VERSÃO COMPLETA (207 DEPARTAMENTOS)")
     print("="*60 + "\n")
 
-    #ids = carregar_ids_departamentos()
-    todos_ids = carregar_ids_departamentos()
-    ids = todos_ids[:3]
+    ids = carregar_ids_departamentos()
+    #todos_ids = carregar_ids_departamentos()
+    #ids = todos_ids[:3]
     if not ids:
         return
 
     todos_dados = []
-    #total_departamentos = len(ids)
+    total_departamentos = len(ids)
     #total_departamentos = 3
-    #lote_size = 20  # Processa em lotes menores para maior segurança
-    '''
+    lote_size = 20  # Processa em lotes menores para maior segurança
+    
     for i in range(0, total_departamentos, lote_size):
         lote = ids[i:i + lote_size]
         lote_num = (i // lote_size) + 1
         print(f"\n▶ Processando lote {lote_num} (Departamentos {i+1}-{min(i+lote_size, total_departamentos)})")
+        dados_lote = []
 
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = [executor.submit(processar_departamento, id) for id in lote]
@@ -275,6 +276,8 @@ def main():
             for future in tqdm(as_completed(futures), total=len(lote), desc="Progresso"):
                 resultado = future.result()
                 if resultado:
+
+                    dados_lote.extend(resultado)
                     todos_dados.extend(resultado)
 
         # Salva a cada lote
@@ -285,8 +288,8 @@ def main():
             wait_time = 15
             print(f"\n⏳ Aguardando {wait_time}s antes do próximo lote...")
             time.sleep(wait_time)
+    
     '''
-
     print(f"Processando os seguintes departamentos: {ids}")
     
     with ThreadPoolExecutor(max_workers=3) as executor:  # Reduz workers para 3
@@ -296,7 +299,7 @@ def main():
             resultado = future.result()
             if resultado:
                 todos_dados.extend(resultado)
-
+    '''
     # Salvamento final
     print("\n" + "="*60)
     print("PROCESSO CONCLUÍDO COM SUCESSO!")
