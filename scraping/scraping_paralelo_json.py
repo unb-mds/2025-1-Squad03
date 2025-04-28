@@ -308,7 +308,6 @@ def main():
     
     salvar_resultados(todos_dados)
     
-    # Opcional: gerar CSV também
     try:
         df = pd.DataFrame(todos_dados)
         csv_path = os.path.join(OUTPUT_DIR, f"turmas_unb_{time.strftime('%Y%m%d')}_FULL.csv")
