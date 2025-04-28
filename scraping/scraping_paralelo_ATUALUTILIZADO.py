@@ -9,6 +9,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 import random
 from pathlib import Path
+"""
+ESTE ARQUIVO CONTÉM O CODIGO DE SCRAPPING PARA TODAS OS DEPTOS
+ESTE ARQUIVO UTILIZA DE FUNÇÕES PARA EXECUTAR O SCRAPPING EM PARALELO
+PORTANTO, É MAIS RÁPIDO. UTILIZE SEMPRE ESSE ARRQUIVO!
+"""
+
 
 # Configurações
 MAX_WORKERS = 3  # Reduzido para evitar bloqueios
