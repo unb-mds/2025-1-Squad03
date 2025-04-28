@@ -1,53 +1,85 @@
-# Documentação de Estilo - Interface Web
-
-## Tipografia
-
-### Fonte Principal (Headings & Títulos)
-- **Sugestão**: Poppins ou Montserrat  
-- **Peso**: 600–700 (bold)
-
-### Fonte Secundária (Corpo de texto e botões)
-- **Sugestão**: Inter ou Roboto  
-- **Peso**: 400–500 (regular/medium)
+# 📝 Documentação de Estilo
 
 ---
 
-## Cores Principais
+## ✔️ Tipografia
 
-| Elemento                        | Cor        | Código |
-|--------------------------------|------------|--------|
-| Fundo do site                  | Branco     | `#FFFFFF` |
-| Botões principais (ex: "Cadastrar", "Voltar") | Azul Escuro | `#005DFF` |
-| Texto principal                | Preto      | `#000000` |
-| Ícones e detalhes (ex: bordas, divisores) | Cinza Claro | `#D3D3D3` |
-| Mensagens de erro ou destaque | Vermelho   | `#FF4B4B` |
+As fontes utilizadas no site são:
 
----
+| Uso                         | Fonte              | Peso         |
+|------------------------------|--------------------|--------------|
+| Títulos principais           | **DM Sans**         | Bold         |
+| Subtítulos                   | **DM Sans**         | SemiBold     |
+| Texto de parágrafo/corpo     | **DM Sans**         | Regular      |
+| Botões                       | **DM Sans**         | Medium / SemiBold |
 
-## Resumo Visual
-
-| Elemento               | Fonte   | Tamanho | Peso   | Cor                            |
-|------------------------|---------|---------|--------|--------------------------------|
-| Título da Página       | Poppins | 32px    | Bold   | `#000000`                      |
-| Texto de input         | Inter   | 16px    | Regular| `#000000`                      |
-| Botão principal        | Inter   | 14px    | Medium | `#FFFFFF` em fundo `#005DFF`   |
-| Texto de botão secundário | Inter | 14px    | Medium | `#005DFF`                      |
-| Erros                  | Inter   | 14px    | Medium | `#FF4B4B`                      |
+**Observações:**
+- Fonte limpa e moderna, focada na legibilidade.
+- Títulos são destacados com peso bold para evidenciar hierarquia.
+- Parágrafos e descrições são mais leves para facilitar a leitura.
 
 ---
 
-## Exemplos de Variações (Sugestões)
+## ✔️ Paleta de Cores
 
-### Dark Mode (opcional futuramente)
-- **Fundo**: `#121212`  
-- **Texto**: `#FFFFFF`  
-- **Botões**: `#1E88E5`  
-- **Inputs**: `#1F1F1F` com borda `#333`
+As cores utilizadas no site foram:
+
+| Elemento                  | Cor                    | Código Hexadecimal |
+|----------------------------|-------------------------|---------------------|
+| Fundo de seções destacadas | Azul Muito Claro         | `#E6F0FF` |
+| Botões (cor de fundo)       | Azul Médio              | `#4F75FF` |
+| Texto principal (padrão)   | Preto                   | `#000000` |
+| Texto em botões            | Branco                  | `#FFFFFF` |
+| Texto secundário (descrições) | Cinza Escuro          | `#5B5B5B` |
+| Ícones/detalhes (bordas, linhas sutis) | Cinza Muito Claro | `#F2F2F2` |
+---
+
+## ✔️ Componentes Visuais
+
+- **Botões**:
+  - Fundo azul médio.
+  - Texto centralizado em branco.
+  - Borda arredondada (leve).
+  - Hover não detectável na prévia, mas recomenda-se escurecimento leve no hover.
+
+- **Seções**:
+  - Estruturadas em "blocos" verticais com espaçamento generoso.
+  - Alternância entre fundo branco e azul muito claro.
+
+- **Imagens**:
+  - Imagens de ilustração e mockups.
+  - Bordas invisíveis.
+  - Posicionamento central ou alinhado à esquerda, dependendo da seção.
+
+- **Ícones**:
+  - Ícones simples e minimalistas.
+  - Uso restrito para reforçar o conteúdo (não decoração excessiva).
 
 ---
 
-Possível identidade visual disponivel no https://www.canva.com/design/DAGle5PqIe8/tpaL1PWYeeqXHfVMLALpDg/edit
+## ✔️ Layout e Estrutura
 
-![Foto de identidade visual](imgid/fotovisual.png)
+- **Estrutura em Seções Verticais**:
+  - Títulos grandes e centralizados.
+  - Parágrafos descritivos com espaçamento confortável.
+  - Chamadas para ação (botões) localizadas logo após textos estratégicos.
 
+- **Responsividade**:
+  - Layout adaptável a dispositivos móveis, reorganizando as seções em coluna única.
+  - Imagens redimensionam proporcionalmente.
 
+---
+
+## 📂 Organização de Assets
+
+- **Fontes**:
+  - `DM Sans` aplicada em todos os textos.
+  
+- **Cores**:
+  - Seguem o padrão descrito acima para garantir consistência visual.
+
+- **Imagens**:
+  - Utilizadas apenas em alta resolução.
+  - Evitar distorções ou esticamentos no redimensionamento.
+
+---
