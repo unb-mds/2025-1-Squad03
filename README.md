@@ -38,34 +38,6 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 
 ---
 
-## 2. 📁 Estrutura da Documentação
-
-A documentação está organizada da seguinte forma:
-
-- [2.1 Atas de Reunião](atas/)
-- [2.2 Protótipos no Figma](prototipos/)
-- [2.3 Levantamento de Requisitos](requisitos/)
-- [2.4 Backlog do Projeto](backlog/)
-
----
-
-## 2.3 👥 Equipe
-
-Squad 03 – MDS 2025/1 – FGA/UnB
-
-| Nome                          |
-|-------------------------------|
-| Arthur Fernandes Alencar      | 
-| Arthur Nogueira Ramalho       |
-| Erick Alves dos Santos        | 
-| Felipe Lopes Pedroza          |
-| Guilherme Gusmão Nepomuceno   |
-| Gustavo Choueiri              | 
-| Vinícius Pereira Ribeiro      |
-| Vitor Marconi Trancoso        | 
-
----
-
 ## 3. 🧩 Links Importantes
 
 - 🔗 [Protótipo no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
@@ -80,5 +52,49 @@ Squad 03 – MDS 2025/1 – FGA/UnB
 1. Faça checkout da branch `main`
    ```bash
    git checkout main
+   
+---
+ ## 5. 👥 Equipe
+
+Squad 03 – MDS 2025/1 – FGA/UnB
+
+<table>
+   <tr>
+     <td align="center">
+       <img src="https://github.com/ArthurNRamalho.png" width="100px;" style="border-radius: 10px;" alt="Arthur Nogueira Ramalho"/><br />
+       <a href="#">Arthur Nogueira Ramalho</a>
+     </td>
+     <td align="center">
+       <img src="https://github.com/gusmoles.png" width="100px;" style="border-radius: 10px;" alt="Guilherme Gusmão Nepomuceno"/><br />
+       <a href="#">Guilherme Gusmão Nepomuceno</a>
+     </td>
+     <td align="center">
+       <img src="assets\Logo_eu_3 editada.JPG" width="100px;" height="100px" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
+       <a href="#">Vitor Marconi T. Albuquerque</a>
+     </td>
+     <td align="center">
+       <img src="https://github.com/staann.png" width="100px;" style="border-radius: 10px;" alt="Gustavo Choueiri"/><br />
+       <a href="#">Gustavo Choueiri</a>
+     </td>
+   </tr>
+   <tr>
+     <td align="center">
+       <img src="https://github.com/darkymeubem.png" width="100px;" style="border-radius: 10px;" alt="Felipe Lopes Pedroza"/><br />
+       <a href="#">Felipe Lopes Pedroza</a>
+     </td>
+     <td align="center">
+       <img src="https://github.com/Vinicius-Ribeiro04.png" width="100px;" style="border-radius: 10px;" alt="Vinícius Pereira Ribeiro"/><br />
+       <a href="#">Vinícius Pereira Ribeiro</a>
+     </td>
+     <td align="center">
+       <img src="https://github.com/hisarxt.png" width="100px;" style="border-radius: 10px;" alt="Arthur Fernandes Alencar"/><br />
+       <a href="#">Arthur Fernandes Alencar</a>
+     </td>
+     <td align="center">
+       <img src="https://github.com/erickaalves.png" width="100px;" style="border-radius: 10px;" alt="Erick Alves dos Santos"/><br />
+       <a href="#">Erick Alves dos Santos</a>
+     </td>
+   </tr>
+ </table>
 
 
