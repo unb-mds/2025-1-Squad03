@@ -19,6 +19,7 @@ Bem-vindo ao **NoFluxoUnB**, um projeto desenvolvido pela equipe do Squad 03 na 
 ![Vercel](https://img.shields.io/badge/vercel-deploy-black)
 ![GitHub](https://img.shields.io/badge/github-repository-blue)
 ![GitHub Actions](https://img.shields.io/badge/github_actions-v2.0.0-2088FF)
+
 ![GitHub Projects](https://img.shields.io/badge/github-projects-90a1b2)
 
 ## 1. 📌 Visão Geral
