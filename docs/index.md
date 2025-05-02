@@ -1,5 +1,5 @@
 # 📚 NoFluxoUnB
-
+## testando deploy automatico
 Bem-vindo ao **NoFluxoUnB**, um projeto desenvolvido pela equipe do Squad 03 na disciplina de Métodos de Desenvolvimento de Software (MDS - 2025/1 - FGA/UnB).
 
 ---

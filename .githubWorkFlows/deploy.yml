@@ -1,19 +1,26 @@
-name: Deploy to GitHub Pages
+name: Deploy MkDocs
+
 on:
-    push:
-      branches:
-        - main
-    pull_request:
-      branches:
-        - main
+  push:
+    branches:
+      - source-code  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: mkdocs build
-      - run: mkdocs gh-deploy --force
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Build e Deploy
+        run: |
+          mkdocs gh-deploy --force
