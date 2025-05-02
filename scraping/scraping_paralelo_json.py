@@ -14,7 +14,7 @@ from pathlib import Path
 MAX_WORKERS = 3  # Reduzido para evitar bloqueios
 REQUEST_DELAY = (2, 5)  # Intervalo maior entre requisições
 MAX_RETRIES = 5  # Mais tentativas por departamento
-OUTPUT_DIR = "dados_finais_teste_paralelo"
+OUTPUT_DIR = "dados_finais_teste_p_depto"
 DEBUG = True  # Ativar para ver logs detalhados
 
 def limpar_texto(texto):
@@ -206,13 +206,18 @@ def processar_departamento(id_atual):
                             turma.update(current_component)
                             turmas_depto.append(turma)
 
-            return turmas_depto
+            #return turmas_depto
+
+            #return para o salvamento de turmas por depto
+            return {"departamento_id": id_atual, "turmas": turmas_depto}
 
         except Exception as e:
             if tentativa == MAX_RETRIES - 1:
                 if DEBUG:
                     print(f"\n[FALHA] Departamento {id_atual} após {MAX_RETRIES} tentativas: {str(e)}")
-                return []
+                #return []
+                #return para o salvamento de turmas por depto
+                return {"departamento_id": id_atual, "turmas": []}
             wait_time = 10 * (tentativa + 1)
             if DEBUG:
                 print(f"\n[RETRY] Tentativa {tentativa+1} para {id_atual} - Aguardando {wait_time}s")
@@ -248,6 +253,48 @@ def salvar_resultados(turmas, lote_num=None):
     
     print(f"\n✓ Arquivo salvo: {filename} (Turmas: {len(turmas)})")
 
+
+def salvar_resultados_individualmente(turmas, lote_num=None):
+    """Salva cada turma em um arquivo JSON individual"""
+    Path(OUTPUT_DIR).mkdir(exist_ok=True)
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    
+    for idx, turma in enumerate(turmas, 1):
+        # Cria um nome de arquivo único para cada turma
+        codigo_turma = turma.get('codigo', 'sem_codigo').replace('/', '_')
+        nome_disciplina = turma.get('disciplina', 'sem_nome').replace(' ', '_')[:50]
+        filename = f"turma_{codigo_turma}_{nome_disciplina}_{timestamp}.json"
+        
+        # Remove caracteres inválidos do nome do arquivo
+        filename = re.sub(r'[<>:"/\\|?*]', '', filename)
+        
+        filepath = os.path.join(OUTPUT_DIR, filename)
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(turma, f, ensure_ascii=False, indent=4, sort_keys=True)
+    
+    print(f"\n✓ {len(turmas)} arquivos individuais salvos no diretório {OUTPUT_DIR}")
+
+
+def salvar_por_departamento(resultados, lote_num=None):
+    """Salva as turmas de cada departamento em arquivos separados"""
+    Path(OUTPUT_DIR).mkdir(exist_ok=True)
+    
+    for resultado in resultados:
+        depto_id = resultado["departamento_id"]
+        turmas = resultado["turmas"]
+        
+        if turmas:  # Só salva se houver turmas
+            filename = f"turmas_depto_{depto_id}.json"
+            filepath = os.path.join(OUTPUT_DIR, filename)
+            
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(turmas, f, ensure_ascii=False, indent=4)
+    
+    print(f"\n✓ {len(resultados)} arquivos de departamentos salvos no diretório {OUTPUT_DIR}")
+
+
+
 def main():
     print("\n" + "="*60)
     print("SCRAPER UNB - VERSÃO COMPLETA (207 DEPARTAMENTOS)")
@@ -259,7 +306,9 @@ def main():
     if not ids:
         return
 
-    todos_dados = []
+    #todos_dados = []
+    #para salvamento por depto
+    todos_dados_por_depto = []
     total_departamentos = len(ids)
     #total_departamentos = 3
     lote_size = 20  # Processa em lotes menores para maior segurança
@@ -273,15 +322,27 @@ def main():
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = [executor.submit(processar_departamento, id) for id in lote]
             
+            resultados_lote = []
             for future in tqdm(as_completed(futures), total=len(lote), desc="Progresso"):
                 resultado = future.result()
-                if resultado:
+                                #resultado["turmas"] para salvamento por depto
+                if resultado and resultado["turmas"]:
 
-                    dados_lote.extend(resultado)
-                    todos_dados.extend(resultado)
+                    #dados_lote.extend(resultado)
+                    #todos_dados.extend(resultado)
+
+                    #para salvamento por depto
+                    resultados_lote.append(resultado)
+                    todos_dados_por_depto.append(resultado)
 
         # Salva a cada lote
-        salvar_resultados(todos_dados, lote_num)
+        #salvar_resultados(todos_dados, lote_num)
+
+        # Salva os dados individuais a cada lote
+        #salvar_resultados_individualmente(dados_lote, lote_num)
+
+        #para salvamento por depto
+        salvar_por_departamento(resultados_lote, lote_num)
         
         # Intervalo anti-ban
         if i + lote_size < total_departamentos:
@@ -304,13 +365,16 @@ def main():
     print("\n" + "="*60)
     print("PROCESSO CONCLUÍDO COM SUCESSO!")
     print(f"Total de departamentos processados: {len(ids)}")
-    print(f"Total de turmas coletadas: {len(todos_dados)}")
+    #print(f"Total de turmas coletadas: {len(todos_dados)}")
     
-    salvar_resultados(todos_dados)
+    #salvar_resultados(todos_dados)
     
+    salvar_por_departamento(todos_dados_por_depto)
+
     # Opcional: gerar CSV também
+    
     try:
-        df = pd.DataFrame(todos_dados)
+        df = pd.DataFrame(todos_dados_por_depto)
         csv_path = os.path.join(OUTPUT_DIR, f"turmas_unb_{time.strftime('%Y%m%d')}_FULL.csv")
         df.to_csv(csv_path, index=False, encoding='utf-8-sig')
         print(f"Arquivo CSV gerado: {csv_path}")
