@@ -1,7 +1,7 @@
 import fs from 'fs';
 import PdfParse from 'pdf-parse';
 
-const pdfFile = fs.readFileSync('pdf-test.pdf');
+const pdfFile = fs.readFileSync('testepdf2.pdf');
 
 PdfParse(pdfFile).then(function (data) {
     const text = data.text;
