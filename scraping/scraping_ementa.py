@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 import os
+import re
 
 
 def get_viewstate(soup):
@@ -12,6 +13,104 @@ def get_viewstate(soup):
 
 def normalize(text):
     return ' '.join(text.strip().lower().split())
+
+
+def extract_dados_por_nivel(relatorio_html):
+    soup = BeautifulSoup(relatorio_html, 'html.parser')
+    niveis = []
+    materias = []
+    optativas = []
+    semestre_atual = 1
+    modo_optativa = False
+
+    tabela = soup.find('table')
+    if not tabela:
+        print("Tabela principal não encontrada!")
+        return niveis
+
+    for tr in tabela.find_all('tr'):
+        td_colspan = tr.find('td', colspan="2")
+        if td_colspan:
+            # Salva matérias acumuladas no local correto
+            if materias and not modo_optativa:
+                niveis.append({
+                    'nivel': f"{semestre_atual}º Semestre",
+                    'materias': materias
+                })
+                materias = []
+                semestre_atual += 1
+            elif materias and modo_optativa:
+                optativas.extend(materias)
+                materias = []
+
+            texto_divisor = td_colspan.get_text(strip=True).lower()
+            if "optativa" in texto_divisor:
+                modo_optativa = True
+            else:
+                modo_optativa = False
+            continue
+
+        if 'componentes' in (tr.get('class') or []):
+            tds = tr.find_all('td')
+            if tds and tds[0].text.strip():
+                texto = tds[0].get_text(strip=True)
+                match = re.match(r'([A-Z0-9]+)\s*-\s*(.*?)\s*-\s*(\d+)h', texto)
+                if match:
+                    codigo, nome, carga = match.groups()
+                    # Natureza: tenta pegar do segundo <td>, senão usa o padrão
+                    natureza = "Optativa" if modo_optativa else "Obrigatória"
+                    if len(tds) > 1 and tds[1].text.strip():
+                        natureza = tds[1].get_text(strip=True)
+                    materia = {
+                        'codigo': codigo,
+                        'nome': nome.strip(),
+                        'carga_horaria': f"{carga}h",
+                        'natureza': natureza
+                    }
+                    materias.append(materia)
+                else:
+                    print("Regex não bateu para:", texto)
+
+    # Salva o último grupo de matérias
+    if materias and not modo_optativa:
+        niveis.append({
+            'nivel': f"{semestre_atual}º Semestre",
+            'materias': materias
+        })
+    elif materias and modo_optativa:
+        optativas.extend(materias)
+
+    # Adiciona optativas como um nível separado, se houver
+    if optativas:
+        niveis.append({
+            'nivel': "Optativas",
+            'materias': optativas
+        })
+
+    print(f"=== FIM DO PARSER: {len(niveis)} níveis extraídos (incluindo optativas) ===")
+    return niveis
+
+
+def acessar_relatorio(session, soup, btn_name, btn_value, estrutura_id, estrutura_url):
+    form = soup.find('form', {'name': 'formCurriculosCurso'})
+    form_data = {}
+    for input_tag in form.find_all('input'):
+        name = input_tag.get('name')
+        value = input_tag.get('value', '')
+        if name:
+            form_data[name] = value
+    form_data[btn_name] = btn_value
+    form_data['id'] = estrutura_id
+
+    post_url = form.get('action')
+    if not post_url.startswith('http'):
+        post_url = requests.compat.urljoin(estrutura_url, post_url)
+
+    print("DEBUG: POST para:", post_url)
+    print("DEBUG: form_data:", form_data)
+
+    resp = session.post(post_url, data=form_data)
+    return resp.text
 
 
 def scrape_estruturas():
@@ -24,8 +123,8 @@ def scrape_estruturas():
     with open(json_path, 'r', encoding='utf-8') as f:
         cursos = json.load(f)
 
-    # Filtrar apenas o curso desejado
-    cursos = [c for c in cursos if normalize(c['nome']) == "ciência da computação"]
+    # Filtrar apenas o curso desejado (ajuste para todos se quiser)
+    #cursos = [c for c in cursos if normalize(c['nome']) == "ciência da computação"]
 
     base_url = "https://sigaa.unb.br/sigaa/public/curso/lista.jsf?nivel=G&aba=p-graduacao"
     headers = {
@@ -76,23 +175,20 @@ def scrape_estruturas():
             continue
         curso_url = f"https://sigaa.unb.br/sigaa/public/curso/{link}"
 
-        # 4. Acessar página do curso
+        # 3. Acessar página do curso
         resp = session.get(curso_url)
         soup = BeautifulSoup(resp.text, 'html.parser')
 
-        # Procurar o sub-menu 'Estruturas Curriculares' dentro da aba 'Ensino'
+        # 4. Procurar o sub-menu 'Estruturas Curriculares' dentro da aba 'Ensino'
         estrutura_link = None
-        # Procurar div do menu
         menu_ensino = soup.find('span', {'class': 'item-menu'}, string=lambda s: s and 'Ensino' in s)
         if menu_ensino:
-            # Procurar o sub-menu logo após o span
             sub_menu = menu_ensino.find_parent('li')
             if sub_menu:
                 for a in sub_menu.find_all('a', href=True):
                     if 'estruturaCurricular.jsf' in a['href'] or 'curriculo.jsf' in a['href']:
                         estrutura_link = a['href']
                         break
-        # Fallback: procurar em toda a página
         if not estrutura_link:
             for a in soup.find_all('a', href=True):
                 if 'estruturaCurricular.jsf' in a['href'] or 'curriculo.jsf' in a['href']:
@@ -101,97 +197,76 @@ def scrape_estruturas():
         if not estrutura_link:
             print(f"Não encontrado link para estrutura curricular em: {curso_url}")
             continue
-        if estrutura_link.startswith('/sigaa'):
+        if estrutura_link.startswith('/'):
             estrutura_url = f"https://sigaa.unb.br{estrutura_link}"
-        elif estrutura_link.startswith('/'):
-            estrutura_url = f"https://sigaa.unb.br/sigaa/public/curso{estrutura_link}"
+        elif estrutura_link.startswith('http'):
+            estrutura_url = estrutura_link
         else:
             estrutura_url = f"https://sigaa.unb.br/sigaa/public/curso/{estrutura_link}"
         print(f"Link de estrutura curricular encontrado: {estrutura_url}")
 
-        # 6. Acessar página de estruturas curriculares
+        # 5. Acessar página de estruturas curriculares
         resp = session.get(estrutura_url)
         soup = BeautifulSoup(resp.text, 'html.parser')
 
-        # 7. Encontrar estrutura curricular mais recente com status 'Ativa'
-        linhas = soup.find_all('tr')
-        estrutura_ativa = None
+        # 6. Encontrar estrutura ativa e link do relatório (ícone do livro)
+        linhas = soup.find_all('tr', class_=['linha_impar', 'linha_par'])
+        relatorio_params = None
         for tr in linhas:
             tds = tr.find_all('td')
             if len(tds) >= 2 and 'Ativa' in tds[1].text:
-                estrutura_ativa = tr
-                break
-        if not estrutura_ativa:
-            print(f"Não encontrada estrutura ativa para: {nome_curso}")
-            continue
+                # Procura o <a> com o título correto
+                for a in tr.find_all('a', title="Relatório da Estrutura Curricular", onclick=True):
+                    onclick = a['onclick']
+                    btn_match = re.search(r"\{'([^']+)':'([^']+)'", onclick)
+                    id_match = re.search(r"'id':'(\d+)'", onclick)
+                    if btn_match and id_match:
+                        btn_name = btn_match.group(1)
+                        btn_value = btn_match.group(2)
+                        estrutura_id = id_match.group(1)
+                        relatorio_params = (btn_name, btn_value, estrutura_id)
+                        break
+                if relatorio_params:
+                    break
 
-        # 8. Encontrar link do relatório (ícone do livro)
-        relatorio_link = None
-        for a in estrutura_ativa.find_all('a', href=True):
-            if 'relatorioEstruturaCurricular.jsf' in a['href']:
-                relatorio_link = a['href']
-                break
-        if not relatorio_link:
-            print(f"Não encontrado link do relatório para: {nome_curso}")
-            continue
-        relatorio_url = f"https://sigaa.unb.br{relatorio_link}"
+        # Simular o clique (POST)
+        if relatorio_params:
+            btn_name, btn_value, estrutura_id = relatorio_params
+            viewstate = soup.find('input', {'name': 'javax.faces.ViewState'})['value']
+            relatorio_html = acessar_relatorio(session, soup, btn_name, btn_value, estrutura_id, estrutura_url)
+            print(f"Relatório encontrado e baixado para: {nome_curso}")
 
-        # 9. Baixar conteúdo do relatório
-        resp = session.get(relatorio_url)
-        relatorio_html = resp.text
-        output_path = os.path.join(output_dir, f"{nome_curso}.html")
+            # DEBUG: Salvar HTML e checar se chegou na página certa
+            with open("debug_relatorio.html", "w", encoding="utf-8") as f:
+                f.write(relatorio_html)
+            print("DEBUG: HTML do relatório salvo em debug_relatorio.html")
+
+            # Checar se encontrou algum elemento único
+            soup_relatorio = BeautifulSoup(relatorio_html, 'html.parser')
+            titulo = soup_relatorio.find('h3', class_='titulotabela')
+            if titulo and "Estrutura Curricular" in titulo.text:
+                print("DEBUG: Página correta do relatório encontrada!")
+            else:
+                print("DEBUG: ATENÇÃO! Não encontrou o título 'Estrutura Curricular' no relatório.")
+        else:
+            print(f"Não encontrado botão do relatório para: {nome_curso}. Extraindo dados direto da página de estrutura curricular.")
+            relatorio_html = resp.text
+
+        # 8. Extrair dados por nível
+        dados_por_nivel = extract_dados_por_nivel(relatorio_html)
+
+        # 9. Salvar dados organizados em JSON
+        output_path = os.path.join(output_dir, f"{nome_curso}.json")
         with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(relatorio_html)
-        print(f"Relatório salvo em: {output_path}")
+            json.dump({
+                'curso': nome_curso,
+                'niveis': dados_por_nivel
+            }, f, ensure_ascii=False, indent=2)
+        print(f"Dados organizados por nível salvos em: {output_path}")
+
         time.sleep(1)
 
-        # Extrair estrutura curricular por nível
-        extrair_estrutura_por_nivel(output_path, nome_curso, os.path.join(output_dir, f"{nome_curso}.json"))
-
     print("Scraping concluído!")
-
-
-def extrair_estrutura_por_nivel(html_path, nome_curso, output_json):
-    with open(html_path, 'r', encoding='utf-8') as f:
-        soup = BeautifulSoup(f, 'html.parser')
-
-    estrutura = {}
-    nivel_atual = None
-
-    for tag in soup.find_all(['b', 'tr']):
-        # Detecta o início de um novo nível
-        if tag.name == 'b' and 'Nível' in tag.text:
-            nivel_atual = tag.text.strip()
-            estrutura[nivel_atual] = []
-        # Detecta optativas
-        elif tag.name == 'b' and 'Optativas' in tag.text:
-            nivel_atual = 'Optativas'
-            estrutura[nivel_atual] = []
-        # Detecta componentes curriculares
-        elif tag.name == 'tr' and nivel_atual:
-            tds = tag.find_all('td')
-            if len(tds) >= 2:
-                # Exemplo: CIC0003 - INTRODUÇÃO AOS SISTEMAS COMPUTACIONAIS - 60h
-                dados = tds[0].text.strip().split(' - ')
-                if len(dados) >= 3:
-                    codigo = dados[0]
-                    nome = ' - '.join(dados[1:-1])
-                    carga = dados[-1]
-                    natureza = tds[1].text.strip()
-                    estrutura[nivel_atual].append({
-                        'codigo': codigo,
-                        'nome': nome,
-                        'carga_horaria': carga,
-                        'natureza': natureza
-                    })
-
-    # Salvar em JSON
-    with open(output_json, 'w', encoding='utf-8') as f:
-        json.dump({
-            'curso': nome_curso,
-            'estrutura': estrutura
-        }, f, ensure_ascii=False, indent=2)
-    print(f"Estrutura curricular salva em: {output_json}")
 
 
 if __name__ == "__main__":

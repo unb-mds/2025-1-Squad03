@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 import re
+import os
 
 def get_discipline_details(session, discipline_id):
     """
@@ -207,7 +208,12 @@ def get_all_disciplines():
             all_disciplines.extend(disciplines)
             
             # Salvamento parcial após cada unidade
-            with open(f'disciplinas_unb_parcial_{unidade_id}.json', 'w', encoding='utf-8') as f:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            json_path = os.path.join(script_dir, '..', 'dados', 'cursos-de-graduacao.json')
+            output_dir = os.path.join(script_dir, '..', 'dados', 'estruturas-curriculares')
+            os.makedirs(output_dir, exist_ok=True)
+            output_path = os.path.join(output_dir, f"{unidade_nome}.json")
+            with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(disciplines, f, ensure_ascii=False, indent=4)
             
             # Pausa entre unidades
@@ -223,11 +229,16 @@ def main():
     disciplines = get_all_disciplines()
     
     # Salvando em um arquivo JSON
-    with open('disciplinas_unb.json', 'w', encoding='utf-8') as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, '..', 'dados', 'cursos-de-graduacao.json')
+    output_dir = os.path.join(script_dir, '..', 'dados', 'estruturas-curriculares')
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"CIÊNCIA DA COMPUTAÇÃO.json")
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(disciplines, f, ensure_ascii=False, indent=4)
     
     print(f"Total de disciplinas encontradas: {len(disciplines)}")
-    print("Dados salvos em 'disciplinas_unb.json'")
+    print(f"Salvando JSON em: {os.path.abspath(output_path)}")
 
 if __name__ == "__main__":
     main()
