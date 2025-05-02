@@ -48,7 +48,7 @@ def coleta_dados(session, component_id, viewstate, base_url, params, debug=False
     form_data.update(params)
 
     print(soup.find('input', {'name': 'javax.faces.ViewState'})['value'])
-    #return 0
+    #return '1'
 
     try:
         # Enviar requisição para obter os detalhes do componente
