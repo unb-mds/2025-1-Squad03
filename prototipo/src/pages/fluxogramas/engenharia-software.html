@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoFluxo UNB - Fluxograma de Engenharia de Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="engenharia-software.css">
+</head>
+<body>
+    <!-- Graffiti Wall Background -->
+    <div class="graffiti-wall"></div>
+    <div class="gradient-overlay"></div>
+    <div class="cracks-overlay"></div>
+
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 w-full px-6 py-4 z-30 bg-black bg-opacity-30 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo with Graffiti Effect -->
+            <div class="logo-container">
+                <a href="../home/index.html" class="logo-text graffiti-font text-white text-2xl sm:text-3xl">NOFLX UNB</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="../home/index.html" class="nav-item graffiti-font text-white text-xl">HOME</a>
+                <a href="index.html" class="nav-item graffiti-font text-white text-xl">FLUXOGRAMAS</a>
+                <a href="../assistente/index.html" class="nav-item graffiti-font text-white text-xl">ASSISTENTE</a>
+                <a href="../sobre-nos/index.html" class="nav-item graffiti-font text-white text-xl">SOBRE NÓS</a>
+            </nav>
+            
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-3/4 max-w-xs bg-black bg-opacity-95 z-40 p-6 pt-20 shadow-lg">
+        <nav class="flex flex-col space-y-6">
+            <a href="../home/index.html" class="nav-item graffiti-font text-white text-2xl">HOME</a>
+            <a href="index.html" class="nav-item graffiti-font text-white text-2xl">FLUXOGRAMAS</a>
+            <a href="../assistente/index.html" class="nav-item graffiti-font text-white text-2xl">ASSISTENTE</a>
+            <a href="../sobre-nos/index.html" class="nav-item graffiti-font text-white text-2xl">SOBRE NÓS</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 relative z-10">
+        <!-- Page Header -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+            <div>
+                <h1 class="main-title text-2xl sm:text-3xl md:text-4xl text-white mb-2">
+                    FLUXOGRAMA: <span class="highlight-text">ENGENHARIA DE SOFTWARE</span>
+                </h1>
+                <p class="text-white text-opacity-70">Visualize e planeje seu percurso acadêmico</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-3 mt-4 md:mt-0">
+                <button id="save-btn" class="bg-gradient-to-r from-green-600 to-green-500 text-white py-2 px-4 rounded-lg font-bold hover:from-green-700 hover:to-green-600 transition-all duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                    </svg>
+                    SALVAR FLUXOGRAMA
+                </button>
+                
+                <button id="add-course-btn" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-4 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                    ADICIONAR MATÉRIA
+                </button>
+            </div>
+        </div>
+        
+        <!-- Legend and Controls -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 bg-black bg-opacity-30 p-4 rounded-lg">
+            <!-- Legend -->
+            <div class="flex flex-wrap gap-y-2">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);"></div>
+                    <span class="text-white text-sm">Concluídas</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);"></div>
+                    <span class="text-white text-sm">Em Curso</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: linear-gradient(135deg, #fb7185 0%, #e11d48 100%);"></div>
+                    <span class="text-white text-sm">Selecionadas</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: rgba(255, 255, 255, 0.1); border: 1px dashed rgba(255, 255, 255, 0.3);"></div>
+                    <span class="text-white text-sm">Futuras</span>
+                </div>
+            </div>
+            
+            <!-- Zoom Controls -->
+            <div class="zoom-controls flex items-center rounded-lg mt-3 sm:mt-0">
+                <button id="zoom-out" class="zoom-button text-white p-2 rounded-l-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                    </svg>
+                </button>
+                <span id="zoom-level" class="text-white px-3">100%</span>
+                <button id="zoom-in" class="zoom-button text-white p-2 rounded-r-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Fluxogram Container -->
+        <div class="fluxogram-container rounded-lg overflow-hidden mb-8">
+            <div class="overflow-x-auto">
+                <div id="fluxogram" class="p-6" style="min-width: 1200px;">
+                    <!-- Fluxogram Grid -->
+                    <div class="grid grid-cols-8 gap-6">
+                        <!-- Semester 1 -->
+                        <div class="col-span-8 semester-header py-2 px-4 rounded-t-lg">
+                            <h3 class="text-white font-bold">1º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 1 Courses -->
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0004">
+                            <h4 class="text-white font-bold text-sm">CIC0004</h4>
+                            <p class="text-white text-xs mt-1">Algoritmos e Programação de Computadores</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">6 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="MAT0025">
+                            <h4 class="text-white font-bold text-sm">MAT0025</h4>
+                            <p class="text-white text-xs mt-1">Cálculo 1</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">6 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0003">
+                            <h4 class="text-white font-bold text-sm">CIC0003</h4>
+                            <p class="text-white text-xs mt-1">Introdução aos Sistemas Computacionais</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0090">
+                            <h4 class="text-white font-bold text-sm">CIC0090</h4>
+                            <p class="text-white text-xs mt-1">Introdução à Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="MAT0031">
+                            <h4 class="text-white font-bold text-sm">MAT0031</h4>
+                            <p class="text-white text-xs mt-1">Introdução à Álgebra Linear</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 1 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 2 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">2º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 2 Courses -->
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0002">
+                            <h4 class="text-white font-bold text-sm">CIC0002</h4>
+                            <p class="text-white text-xs mt-1">Estruturas de Dados</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="MAT0026">
+                            <h4 class="text-white font-bold text-sm">MAT0026</h4>
+                            <p class="text-white text-xs mt-1">Cálculo 2</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">6 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0091">
+                            <h4 class="text-white font-bold text-sm">CIC0091</h4>
+                            <p class="text-white text-xs mt-1">Orientação a Objetos</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="CIC0093">
+                            <h4 class="text-white font-bold text-sm">CIC0093</h4>
+                            <p class="text-white text-xs mt-1">Engenharia de Requisitos</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-completed rounded-lg p-3 shadow-lg relative" data-course-id="EST0023">
+                            <h4 class="text-white font-bold text-sm">EST0023</h4>
+                            <p class="text-white text-xs mt-1">Probabilidade e Estatística</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 2 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 3 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">3º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 3 Courses -->
+                        <div class="course-box course-current rounded-lg p-3 shadow-lg relative" data-course-id="CIC0104">
+                            <h4 class="text-white font-bold text-sm">CIC0104</h4>
+                            <p class="text-white text-xs mt-1">Projeto e Análise de Algoritmos</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-current rounded-lg p-3 shadow-lg relative" data-course-id="CIC0097">
+                            <h4 class="text-white font-bold text-sm">CIC0097</h4>
+                            <p class="text-white text-xs mt-1">Bancos de Dados</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-current rounded-lg p-3 shadow-lg relative" data-course-id="CIC0105">
+                            <h4 class="text-white font-bold text-sm">CIC0105</h4>
+                            <p class="text-white text-xs mt-1">Engenharia de Produto de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-current rounded-lg p-3 shadow-lg relative" data-course-id="CIC0202">
+                            <h4 class="text-white font-bold text-sm">CIC0202</h4>
+                            <p class="text-white text-xs mt-1">Métodos de Desenvolvimento de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-current rounded-lg p-3 shadow-lg relative" data-course-id="CIC0203">
+                            <h4 class="text-white font-bold text-sm">CIC0203</h4>
+                            <p class="text-white text-xs mt-1">Interação Humano Computador</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 3 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 4 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">4º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 4 Courses -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0124">
+                            <h4 class="text-white font-bold text-sm">CIC0124</h4>
+                            <p class="text-white text-xs mt-1">Redes de Computadores</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-selected rounded-lg p-3 shadow-lg relative" data-course-id="CIC0199">
+                            <h4 class="text-white font-bold text-sm">CIC0199</h4>
+                            <p class="text-white text-xs mt-1">Tópicos em IA: Machine Learning</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0182">
+                            <h4 class="text-white font-bold text-sm">CIC0182</h4>
+                            <p class="text-white text-xs mt-1">Arquitetura e Desenho de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0205">
+                            <h4 class="text-white font-bold text-sm">CIC0205</h4>
+                            <p class="text-white text-xs mt-1">Engenharia de Testes de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-selected rounded-lg p-3 shadow-lg relative" data-course-id="CIC0135">
+                            <h4 class="text-white font-bold text-sm">CIC0135</h4>
+                            <p class="text-white text-xs mt-1">Introdução à Ciência de Dados</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 4 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 5 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">5º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 5 Courses -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0192">
+                            <h4 class="text-white font-bold text-sm">CIC0192</h4>
+                            <p class="text-white text-xs mt-1">Técnicas de Programação em Plataformas Emergentes</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0208">
+                            <h4 class="text-white font-bold text-sm">CIC0208</h4>
+                            <p class="text-white text-xs mt-1">Paradigmas de Programação</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0209">
+                            <h4 class="text-white font-bold text-sm">CIC0209</h4>
+                            <p class="text-white text-xs mt-1">Fundamentos de Sistemas Operacionais</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0210">
+                            <h4 class="text-white font-bold text-sm">CIC0210</h4>
+                            <p class="text-white text-xs mt-1">Gestão de Configuração e Evolução de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0211">
+                            <h4 class="text-white font-bold text-sm">CIC0211</h4>
+                            <p class="text-white text-xs mt-1">Requisitos de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 5 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 6 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">6º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 6 Courses -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0212">
+                            <h4 class="text-white font-bold text-sm">CIC0212</h4>
+                            <p class="text-white text-xs mt-1">Qualidade de Software 1</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0213">
+                            <h4 class="text-white font-bold text-sm">CIC0213</h4>
+                            <p class="text-white text-xs mt-1">Gerência de Projetos</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0214">
+                            <h4 class="text-white font-bold text-sm">CIC0214</h4>
+                            <p class="text-white text-xs mt-1">Engenharia de Produto de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0215">
+                            <h4 class="text-white font-bold text-sm">CIC0215</h4>
+                            <p class="text-white text-xs mt-1">Melhoria de Processos de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0216">
+                            <h4 class="text-white font-bold text-sm">CIC0216</h4>
+                            <p class="text-white text-xs mt-1">Programação para Sistemas Paralelos e Distribuídos</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 6 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 7 -->
+                        <div class="col-span-8 semester-header py-2 px-4">
+                            <h3 class="text-white font-bold">7º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 7 Courses -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0217">
+                            <h4 class="text-white font-bold text-sm">CIC0217</h4>
+                            <p class="text-white text-xs mt-1">Projeto Integrador de Engenharia 1</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0218">
+                            <h4 class="text-white font-bold text-sm">CIC0218</h4>
+                            <p class="text-white text-xs mt-1">Empreendimentos em Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0219">
+                            <h4 class="text-white font-bold text-sm">CIC0219</h4>
+                            <p class="text-white text-xs mt-1">Qualidade de Software 2</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Optativas -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="OPT1">
+                            <h4 class="text-white font-bold text-sm">OPTATIVA</h4>
+                            <p class="text-white text-xs mt-1">Optativa de Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="OPT2">
+                            <h4 class="text-white font-bold text-sm">OPTATIVA</h4>
+                            <p class="text-white text-xs mt-1">Optativa de Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 7 -->
+                        <div class="col-span-3"></div>
+                        
+                        <!-- Semester 8 -->
+                        <div class="col-span-8 semester-header py-2 px-4 rounded-b-lg">
+                            <h3 class="text-white font-bold">8º Semestre</h3>
+                        </div>
+                        
+                        <!-- Semester 8 Courses -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0220">
+                            <h4 class="text-white font-bold text-sm">CIC0220</h4>
+                            <p class="text-white text-xs mt-1">Projeto Integrador de Engenharia 2</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">6 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="CIC0221">
+                            <h4 class="text-white font-bold text-sm">CIC0221</h4>
+                            <p class="text-white text-xs mt-1">Estágio Supervisionado</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">8 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Optativas -->
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="OPT3">
+                            <h4 class="text-white font-bold text-sm">OPTATIVA</h4>
+                            <p class="text-white text-xs mt-1">Optativa de Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="OPT4">
+                            <h4 class="text-white font-bold text-sm">OPTATIVA</h4>
+                            <p class="text-white text-xs mt-1">Optativa de Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="course-box course-future rounded-lg p-3 shadow-lg relative" data-course-id="OPT5">
+                            <h4 class="text-white font-bold text-sm">OPTATIVA</h4>
+                            <p class="text-white text-xs mt-1">Optativa de Engenharia de Software</p>
+                            <div class="flex items-center mt-2">
+                                <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">4 créditos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Empty slots for semester 8 -->
+                        <div class="col-span-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Progress Summary -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Credits Progress -->
+            <div class="bg-black bg-opacity-30 rounded-lg p-6">
+                <h3 class="text-white text-xl font-bold mb-4">Progresso de Créditos</h3>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-white text-sm">Obrigatórias</span>
+                        <span class="text-white text-sm">78/160 créditos</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 h-2.5 rounded-full" style="width: 48.75%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-white text-sm">Optativas</span>
+                        <span class="text-white text-sm">8/24 créditos</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2.5 rounded-full" style="width: 33.33%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-white text-sm">Módulo Livre</span>
+                        <span class="text-white text-sm">4/24 créditos</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2.5 rounded-full" style="width: 16.67%"></div>
+                    </div>
+                </div>
+                
+                <div class="mt-6">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-white text-sm font-bold">Total</span>
+                        <span class="text-white text-sm font-bold">90/240 créditos</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-gradient-to-r from-pink-500 to-pink-600 h-3 rounded-full" style="width: 37.5%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Current Semester -->
+            <div class="bg-black bg-opacity-30 rounded-lg p-6">
+                <h3 class="text-white text-xl font-bold mb-4">Semestre Atual: 3º</h3>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="text-white">Total de Matérias</span>
+                        <span class="text-white font-bold">5</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <span class="text-white">Créditos</span>
+                        <span class="text-white font-bold">20</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <span class="text-white">Carga Horária Semanal</span>
+                        <span class="text-white font-bold">20 horas</span>
+                    </div>
+                </div>
+                
+                <div class="mt-6">
+                    <h4 class="text-white font-bold mb-2">Próximo Semestre</h4>
+                    <div class="flex justify-between items-center">
+                        <span class="text-white">Matérias Selecionadas</span>
+                        <span class="text-white font-bold">2</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-white">Créditos Planejados</span>
+                        <span class="text-white font-bold">8</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recommendations -->
+            <div class="bg-black bg-opacity-30 rounded-lg p-6">
+                <h3 class="text-white text-xl font-bold mb-4">Recomendações</h3>
+                
+                <div class="space-y-4">
+                    <div class="bg-black bg-opacity-30 rounded-lg p-3">
+                        <h4 class="text-white font-bold text-sm">Pré-requisitos Pendentes</h4>
+                        <p class="text-white text-xs mt-1">Você precisa cursar "CIC0124 - Redes de Computadores" para desbloquear 2 matérias futuras.</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-30 rounded-lg p-3">
+                        <h4 class="text-white font-bold text-sm">Balanceamento de Carga</h4>
+                        <p class="text-white text-xs mt-1">Considere adicionar mais 2-3 matérias para o próximo semestre para manter um ritmo adequado.</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-30 rounded-lg p-3">
+                        <h4 class="text-white font-bold text-sm">Matérias Sugeridas</h4>
+                        <p class="text-white text-xs mt-1">Com base no seu perfil, recomendamos "CIC0124 - Redes de Computadores" e "CIC0205 - Engenharia de Testes".</p>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg mt-4 font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+                    <a href="../assistente/index.html" class="block w-full">VER ASSISTENTE DE IA</a>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Course Details Modal -->
+    <div id="course-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="modal-content rounded-lg p-6 max-w-2xl w-full mx-4 relative">
+            <!-- Close Button -->
+            <button id="close-course-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- Modal Content -->
+            <div id="course-modal-content">
+                <!-- Content will be dynamically inserted here -->
+                <h2 class="text-white text-2xl font-bold mb-2">CIC0097 - Bancos de Dados</h2>
+                <p class="text-gray-300 mb-4">Departamento de Ciência da Computação</p>
+                
+                <!-- Tabs -->
+                <div class="flex border-b border-gray-700 mb-6">
+                    <button class="tab active py-2 px-4 text-white">Informações</button>
+                    <button class="tab py-2 px-4 text-gray-400">Pré-requisitos</button>
+                    <button class="tab py-2 px-4 text-gray-400">Equivalências</button>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Info Tab -->
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-white font-bold mb-2">Descrição</h3>
+                            <p class="text-gray-300 text-sm">Introdução a banco de dados. Modelos de dados. Linguagens de definição e manipulação de dados. Projeto de banco de dados. Armazenamento e indexação. Processamento de consultas. Transações. Controle de concorrência e recuperação.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="text-white font-bold mb-2">Créditos</h3>
+                                <p class="text-gray-300">4 (60 horas)</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-white font-bold mb-2">Tipo</h3>
+                                <p class="text-gray-300">Obrigatória</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-white font-bold mb-2">Período Ideal</h3>
+                                <p class="text-gray-300">3º Semestre</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-white font-bold mb-2">Status</h3>
+                                <p class="text-gray-300">Em Curso</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-white font-bold mb-2">Professores</h3>
+                            <ul class="text-gray-300 text-sm list-disc list-inside">
+                                <li>Profa. Dra. Maristela Holanda</li>
+                                <li>Prof. Dr. Marcelo Ladeira</li>
+                                <li>Prof. Dr. Eduardo Alchieri</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-white font-bold mb-2">Horários Disponíveis</h3>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-black bg-opacity-30 p-2 rounded">
+                                    <p class="text-white text-sm font-bold">Turma A</p>
+                                    <p class="text-gray-300 text-xs">Terça e Quinta, 10:00 - 11:50</p>
+                                </div>
+                                <div class="bg-black bg-opacity-30 p-2 rounded">
+                                    <p class="text-white text-sm font-bold">Turma B</p>
+                                    <p class="text-gray-300 text-xs">Segunda e Quarta, 14:00 - 15:50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="mt-6 flex justify-end gap-3">
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-all duration-300">
+                        REMOVER DA SELEÇÃO
+                    </button>
+                    <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-4 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+                        ADICIONAR AO PRÓXIMO SEMESTRE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Course Modal -->
+    <div id="add-course-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="modal-content rounded-lg p-6 max-w-4xl w-full mx-4 relative">
+            <!-- Close Button -->
+            <button id="close-add-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- Modal Content -->
+            <h2 class="text-white text-2xl font-bold mb-6">Adicionar Matéria</h2>
+            
+            <!-- Search and Filter -->
+            <div class="flex flex-col md:flex-row gap-4 mb-6">
+                <div class="flex-1">
+                    <div class="relative">
+                        <input type="text" placeholder="Buscar matéria por nome ou código..." class="w-full bg-black bg-opacity-50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="flex gap-2">
+                    <select class="semester-selector rounded-lg py-3 px-4 text-white focus:outline-none">
+                        <option value="">Todos os Semestres</option>
+                        <option value="1">1º Semestre</option>
+                        <option value="2">2º Semestre</option>
+                        <option value="3">3º Semestre</option>
+                        <option value="4" selected>4º Semestre</option>
+                        <option value="5">5º Semestre</option>
+                        <option value="6">6º Semestre</option>
+                        <option value="7">7º Semestre</option>
+                        <option value="8">8º Semestre</option>
+                    </select>
+                    
+                    <select class="semester-selector rounded-lg py-3 px-4 text-white focus:outline-none">
+                        <option value="">Todos os Tipos</option>
+                        <option value="obrigatoria">Obrigatórias</option>
+                        <option value="optativa">Optativas</option>
+                        <option value="modulo">Módulo Livre</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Course List -->
+            <div class="max-h-96 overflow-y-auto mb-6">
+                <table class="w-full">
+                    <thead class="bg-black bg-opacity-50 sticky top-0">
+                        <tr>
+                            <th class="py-3 px-4 text-left text-white">Código</th>
+                            <th class="py-3 px-4 text-left text-white">Nome</th>
+                            <th class="py-3 px-4 text-left text-white">Créditos</th>
+                            <th class="py-3 px-4 text-left text-white">Tipo</th>
+                            <th class="py-3 px-4 text-left text-white">Semestre</th>
+                            <th class="py-3 px-4 text-left text-white">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0124</td>
+                            <td class="py-3 px-4 text-white">Redes de Computadores</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Obrigatória</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0182</td>
+                            <td class="py-3 px-4 text-white">Arquitetura e Desenho de Software</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Obrigatória</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0205</td>
+                            <td class="py-3 px-4 text-white">Engenharia de Testes de Software</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Obrigatória</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800 bg-purple-900 bg-opacity-20">
+                            <td class="py-3 px-4 text-white">CIC0199</td>
+                            <td class="py-3 px-4 text-white">Tópicos em IA: Machine Learning</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Módulo Livre</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
+                                    Remover
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800 bg-purple-900 bg-opacity-20">
+                            <td class="py-3 px-4 text-white">CIC0135</td>
+                            <td class="py-3 px-4 text-white">Introdução à Ciência de Dados</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Optativa</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
+                                    Remover
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0201</td>
+                            <td class="py-3 px-4 text-white">Segurança em Computação</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Optativa</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0202</td>
+                            <td class="py-3 px-4 text-white">Programação Competitiva</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Módulo Livre</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4 text-white">CIC0203</td>
+                            <td class="py-3 px-4 text-white">Computação em Nuvem</td>
+                            <td class="py-3 px-4 text-white">4</td>
+                            <td class="py-3 px-4 text-white">Optativa</td>
+                            <td class="py-3 px-4 text-white">4º</td>
+                            <td class="py-3 px-4">
+                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
+                                    Adicionar
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Selected Courses Summary -->
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-white font-bold">Matérias Selecionadas: 2</h3>
+                    <div class="text-white">
+                        <span class="mr-4">Total de Créditos: 8</span>
+                        <span>Carga Horária: 8 horas/semana</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="mt-6 flex justify-end gap-3">
+                <button id="cancel-add" class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    CANCELAR
+                </button>
+                <button id="confirm-add" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-4 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+                    CONFIRMAR
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="engenharia-software.js"></script>
+</body>
+</html> 
