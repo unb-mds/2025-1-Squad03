@@ -9,15 +9,41 @@ site_dir: site
 
 theme:
   name: material
-  language: "pt"
-  logo: assets/grasshopper.svg
-  favicon: assets/fav.png
+  font: 
+    text: Merriweather Sans
+  language: pt-BR
   palette:
-    scheme: slate
-    primary: rose
-    accent: blue
+    - scheme: default
+      primary: black
+      accent: deep purple
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: red
+      accent: red
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
   features:
     - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - header.autohide
+
 plugins:
   - search
 
@@ -36,7 +62,7 @@ nav:
     - Reunião 5 - 17/04/2025: atas/17-04-25.md
     - Reunião 6 - 22/04/2025: atas/22-04-25.md
     - Reunião 7 - 24/04/2025: atas/24-04-25.md
-
+    
 extra:
   social:
     - icon: fontawesome/brands/github

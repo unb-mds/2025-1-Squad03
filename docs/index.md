@@ -1,9 +1,8 @@
 # 📚 NoFluxoUnB
-## testando deploy automatico
+
 Bem-vindo ao **NoFluxoUnB**, um projeto desenvolvido pela equipe do Squad 03 na disciplina de Métodos de Desenvolvimento de Software (MDS - 2025/1 - FGA/UnB).
 
 ---
-
 
 ## 1. 📌 Visão Geral
 
@@ -21,7 +20,8 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 
 ---
 
- # 5. 👥 Equipe
+
+👥 Equipe
 
 Squad 03 – MDS 2025/1 – FGA/UnB
 
@@ -73,10 +73,5 @@ Squad 03 – MDS 2025/1 – FGA/UnB
  
 ---
 
-## 4. 🧠 Como Contribuir com o projeto
-
-1. Faça checkout da branch `main`
-   ```bash
-   git checkout main
 
 
