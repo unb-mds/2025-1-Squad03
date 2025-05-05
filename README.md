@@ -46,16 +46,8 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 - 🔗 [Requisitos](https://github.com/unb-mds/2025-1-NoFluxoUNB/blob/main/requisitos.md)
 - 🔗 [Arquitetura](https://miro.com/app/board/uXjVI7JE5pI=/)
  
----
 
-## 3. 🧠 Como Contribuir com a projeto
-
-1. Faça checkout da branch `main`
-   ```bash
-   git checkout main
-   
----
- ## 4. 👥 Equipe
+ ## 3. 👥 Equipe
 
 Squad 03 – MDS 2025/1 – FGA/UnB
 
