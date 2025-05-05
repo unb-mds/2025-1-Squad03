@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoFluxoUNB - Upload de Histórico</title>
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fundo Animado com Efeitos de Fumaça -->
+    <div class="animated-bg">
+        <div class="smoke-effect smoke-1 bg-[#6B19C9]" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+        <div class="smoke-effect smoke-2 bg-[#E63783]" style="width: 400px; height: 400px; top: 60%; left: 70%;"></div>
+        <div class="smoke-effect smoke-3 bg-[#F0C419]" style="width: 350px; height: 350px; top: 30%; left: 60%;"></div>
+        <div class="smoke-effect smoke-1 bg-[#6B19C9]" style="width: 250px; height: 250px; top: 70%; left: 20%;"></div>
+        <div class="smoke-effect smoke-2 bg-[#E63783]" style="width: 200px; height: 200px; top: 15%; left: 80%;"></div>
+    </div>
+
+    <!-- Cabeçalho com Efeito de Papel Rasgado -->
+    <header class="header w-full px-6 py-4 torn-paper">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Container do Logo com Efeito Graffiti -->
+            <div class="logo-container">
+                <!-- SVG do Efeito de Respingo -->
+                <svg class="logo-splash" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="splashGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" stop-color="#6B19C9" />
+                            <stop offset="50%" stop-color="#E63783" />
+                            <stop offset="100%" stop-color="#F0C419" />
+                        </radialGradient>
+                    </defs>
+                    <path d="M20,50 Q40,20 60,40 Q80,10 100,50 Q120,30 140,60 Q160,40 180,50 Q160,70 180,90 Q140,80 120,90 Q100,70 80,90 Q60,80 40,90 Q20,70 20,50" fill="url(#splashGradient)" />
+                </svg>
+                <!-- Texto do Logo -->
+                <div class="logo-text graffiti-font text-black text-2xl sm:text-3xl transform -rotate-2">NoFluxoUNB</div>
+            </div>
+            
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="nav-item graffiti-font text-black text-xl transform rotate-1 hover:text-purple-700">HOME</a>
+                <a href="#" class="nav-item graffiti-font text-black text-xl transform -rotate-1 hover:text-pink-700">SOBRE NÓS</a>
+            </nav>
+            
+            <!-- Botão do Menu Mobile -->
+            <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile (Lado Direito) -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-3/4 max-w-xs bg-black bg-opacity-95 z-40 p-6 pt-20 shadow-lg">
+        <nav class="flex flex-col space-y-6">
+            <a href="#" class="nav-item graffiti-font text-white text-2xl transform rotate-1 hover:text-purple-300">HOME</a>
+            <a href="#" class="nav-item graffiti-font text-white text-2xl transform -rotate-1 hover:text-pink-300">SOBRE NÓS</a>
+        </nav>
+    </div>
+
+    <!-- Conteúdo Principal - Área de Upload -->
+    <div class="flex flex-col items-center justify-center min-h-[80vh] px-4 mt-8">
+        <!-- Container de Upload -->
+        <div id="uploadContainer" class="upload-container w-full max-w-xl p-8 sm:p-12 flex flex-col items-center justify-center">
+            <!-- Estado Inicial do Upload -->
+            <div id="uploadInitial" class="flex flex-col items-center justify-center w-full">
+                <!-- Ícone de Upload -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+                
+                <!-- Texto de Upload -->
+                <h2 class="text-xl sm:text-2xl font-semibold text-white text-center mb-4">Arraste seu histórico acadêmico aqui</h2>
+                <p class="text-white text-center mb-6">ou</p>
+                
+                <!-- Botão de Upload -->
+                <label for="fileInput" class="upload-btn px-6 py-3 rounded-lg text-white font-medium cursor-pointer flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0l-4 4m4-4v12" />
+                    </svg>
+                    Selecionar Histórico
+                </label>
+                <input type="file" id="fileInput" class="hidden" accept=".pdf,.doc,.docx,.txt,.html">
+                
+                <!-- Formatos de Arquivo Aceitos -->
+                <p class="text-white text-sm mt-4 text-center">Formatos aceitos: PDF, DOC, DOCX, TXT, HTML</p>
+            </div>
+            
+            <!-- Estado de Upload (Inicialmente Oculto) -->
+            <div id="uploadingState" class="w-full hidden">
+                <h3 class="text-xl font-semibold text-white text-center mb-4">Processando seu histórico...</h3>
+                
+                <!-- Container da Barra de Progresso -->
+                <div class="w-full bg-white bg-opacity-30 rounded-full h-6 mb-4">
+                    <div id="progressBar" class="progress-bar w-0"></div>
+                </div>
+                
+                <!-- Texto de Progresso -->
+                <p id="progressText" class="text-white text-center">0%</p>
+            </div>
+            
+            <!-- Estado de Sucesso (Inicialmente Oculto) -->
+            <div id="successState" class="flex flex-col items-center justify-center w-full hidden">
+                <!-- Ícone de Sucesso -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-green-400 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                
+                <!-- Texto de Sucesso -->
+                <h2 class="text-xl sm:text-2xl font-semibold text-white text-center mb-4">Histórico processado com sucesso!</h2>
+                <p class="text-white text-center mb-6">Seu fluxograma personalizado está sendo gerado.</p>
+                
+                <!-- Botão de Continuar -->
+                <button id="continueBtn" class="upload-btn px-6 py-3 rounded-lg text-white font-medium">
+                    Continuar para o Fluxograma
+                </button>
+            </div>
+        </div>
+        
+        <!-- Botão de Ajuda -->
+        <button id="helpBtn" class="help-btn mt-4 px-4 py-2 bg-white rounded-lg text-black font-medium flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Como obter seu histórico acadêmico?
+        </button>
+        
+        <!-- Lista de Arquivos (Inicialmente Oculto) -->
+        <div id="fileList" class="w-full max-w-xl mt-6 hidden">
+            <h3 class="text-white font-semibold mb-2">Arquivo selecionado:</h3>
+            <div id="fileItem" class="file-item p-3 flex justify-between items-center">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span id="fileName" class="text-gray-800 truncate max-w-xs">documento.pdf</span>
+                </div>
+                <button id="removeFileBtn" class="text-red-500 hover:text-red-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Ajuda -->
+    <div id="helpModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-lg w-full text-left max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start mb-4">
+                <h2 class="text-2xl font-bold text-gray-800">Como obter seu histórico acadêmico</h2>
+                <button id="closeHelpBtn" class="text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="prose max-w-none">
+                <p class="mb-4">Para obter seu histórico acadêmico da UnB, siga os passos abaixo:</p>
+                
+                <ol class="list-decimal pl-5 mb-4 space-y-2">
+                    <li>Acesse o portal do aluno SIGAA (www.sig.unb.br/sigaa)</li>
+                    <li>Faça login com suas credenciais</li>
+                    <li>No menu lateral, clique em "Ensino"</li>
+                    <li>Selecione "Emitir Histórico"</li>
+                    <li>Escolha o formato PDF</li>
+                    <li>Clique em "Emitir"</li>
+                    <li>Salve o arquivo em seu computador</li>
+                    <li>Faça upload do arquivo nesta página</li>
+                </ol>
+                
+                <p class="mb-4">Importante: O histórico deve estar completo e conter todas as disciplinas cursadas para que possamos gerar seu fluxograma personalizado corretamente.</p>
+                
+                <p>Se você encontrar problemas para obter seu histórico, entre em contato com a secretaria do seu curso ou com o suporte do SIGAA.</p>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button id="closeHelpBtnBottom" class="bg-[#1B469B] px-6 py-2 rounded-lg text-white font-medium hover:bg-[#153677]">
+                    Entendi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
