@@ -38,7 +38,7 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 
 ---
 
-## 3. 🧩 Links Importantes
+## 2. 🧩 Links Importantes
 
 - 🔗 [Protótipo e User Flow no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
 - 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/)  
@@ -48,14 +48,14 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
  
 ---
 
-## 4. 🧠 Como Contribuir com a projeto
+## 3. 🧠 Como Contribuir com a projeto
 
 1. Faça checkout da branch `main`
    ```bash
    git checkout main
    
 ---
- ## 5. 👥 Equipe
+ ## 4. 👥 Equipe
 
 Squad 03 – MDS 2025/1 – FGA/UnB
 
