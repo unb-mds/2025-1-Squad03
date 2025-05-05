@@ -37,11 +37,15 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
     - navigation.expand
     - navigation.path
     - navigation.prune
     - navigation.indexes
-    - navigation.top
     - header.autohide
 
 plugins:
@@ -62,7 +66,20 @@ nav:
     - Reunião 5 - 17/04/2025: atas/17-04-25.md
     - Reunião 6 - 22/04/2025: atas/22-04-25.md
     - Reunião 7 - 24/04/2025: atas/24-04-25.md
-    
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+
 extra:
   social:
     - icon: fontawesome/brands/github

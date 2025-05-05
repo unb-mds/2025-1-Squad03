@@ -4,6 +4,26 @@ Bem-vindo ao **NoFluxoUnB**, um projeto desenvolvido pela equipe do Squad 03 na 
 
 ---
 
+![License](https://img.shields.io/github/license/unb-mds/2025-1-NoFluxoUNB)
+![Issues](https://img.shields.io/github/issues/unb-mds/2025-1-NoFluxoUNB)
+![Contributors](https://img.shields.io/github/contributors/unb-mds/2025-1-NoFluxoUNB)
+![Stars](https://img.shields.io/github/stars/unb-mds/2025-1-NoFluxoUNB?style=social)
+![Views](https://komarev.com/ghpvc/?username=unb-mds&label=views&color=green)
+![Forks](https://img.shields.io/github/forks/unb-mds/2025-1-NoFluxoUNB?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/unb-mds/2025-1-NoFluxoUNB)
+
+![Flutter](https://img.shields.io/badge/flutter-3.19.0-blue)
+![Supabase](https://img.shields.io/badge/supabase-1.0.0-brightgreen)
+![TypeScript](https://img.shields.io/badge/typescript-5.3.0-blue)
+![DigitalOcean](https://img.shields.io/badge/digitalocean-cloud-blue)
+![Vercel](https://img.shields.io/badge/vercel-deploy-black)
+![GitHub](https://img.shields.io/badge/github-repository-blue)
+![GitHub Actions](https://img.shields.io/badge/github_actions-v2.0.0-2088FF)
+
+![GitHub Projects](https://img.shields.io/badge/github-projects-90a1b2)
+
+---
+
 ## 1. 📌 Visão Geral
 
 O projeto **NoFluxoUNB** tem como objetivo facilitar o planejamento acadêmico dos estudantes da UnB ao oferecer um fluxograma interativo, intuitivo e de fácil uso. Nossa aplicação busca resolver a dificuldade frequente dos alunos em identificar matérias equivalentes e organizar suas disciplinas futuras de maneira eficiente.
@@ -20,8 +40,18 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 
 ---
 
+## 2. 🧩 Links Importantes
 
-👥 Equipe
+- 🔗 [Protótipo no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
+- 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/)  
+- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-NoFluxoUNB)
+- 🔗 [Requisitos](https://github.com/unb-mds/2025-1-NoFluxoUNB/blob/main/requisitos.md)
+- 🔗 [Arquitetura](https://miro.com/app/board/uXjVI7JE5pI=/)
+ 
+---
+
+
+## 3. 👥 Equipe
 
 Squad 03 – MDS 2025/1 – FGA/UnB
 
@@ -64,14 +94,6 @@ Squad 03 – MDS 2025/1 – FGA/UnB
    </tr>
  </table>
 
-## 3. 🧩 Links Importantes
-
-- 🔗 [Protótipo no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
-- 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/)  
-- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-NoFluxoUNB)
-- 🔗 [Requisitos](https://github.com/unb-mds/2025-1-NoFluxoUNB/blob/main/requisitos.md)
- 
----
 
 
 
