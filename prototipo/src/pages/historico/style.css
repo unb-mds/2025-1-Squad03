@@ -311,8 +311,22 @@ body {
 
 /* Barra de progresso */
 .progress-bar {
-    height: 6px;
-    border-radius: 3px;
-    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    height: 16px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #007BFF, #00C6FF, #7b2ff2);
+    box-shadow: 0 2px 8px 0 rgba(123,47,242,0.10);
     transition: width 0.3s ease;
+    animation: progress-gradient 2s linear infinite;
+}
+
+@keyframes progress-gradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.bg-progress-container {
+    background: #ececec;
+    border-radius: 999px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
+    height: 16px;
 } 

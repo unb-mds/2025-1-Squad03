@@ -39,6 +39,7 @@ fileInput.addEventListener('change', function(e) {
         fileList.classList.remove('hidden');
         fileItem.classList.add('file-item');
         fileItem.classList.remove('file-item--solido');
+        helpBtn.style.display = 'none'; // Esconde o botão de ajuda
         simularUpload();
     }
 });
@@ -50,6 +51,7 @@ removeFileBtn.addEventListener('click', function() {
     resetarEstadoUpload();
     fileItem.classList.remove('file-item--solido');
     fileItem.classList.add('file-item');
+    helpBtn.style.display = '';
 });
 
 // Funcionalidade de arrastar e soltar (Drag and Drop)
@@ -96,6 +98,7 @@ function manipularDrop(e) {
         fileList.classList.remove('hidden');
         fileItem.classList.add('file-item');
         fileItem.classList.remove('file-item--solido');
+        helpBtn.style.display = 'none'; // Esconde o botão de ajuda
         simularUpload();
     }
 }
