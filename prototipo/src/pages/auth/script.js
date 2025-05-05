@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('googleLoginBtn').addEventListener('click', function() {
         showSuccessModal('Login com Google', 'Você foi autenticado com Google com sucesso.');
         setTimeout(() => {
-            window.location.href = '../fluxogramas/index.html';
+            window.location.href = '../historico/index.html';
         }, 1500);
     });
 
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('googleSignUpBtn').addEventListener('click', function() {
         showSuccessModal('Cadastro com Google', 'Conta criada com sucesso!');
         setTimeout(() => {
-            window.location.href = '../fluxogramas/index.html';
+            window.location.href = '../historico/index.html';
         }, 1500);
     });
 
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Login:', { email, password, rememberMe });
         showSuccessModal('Login realizado com sucesso!', 'Bem-vindo de volta!');
         setTimeout(() => {
-            window.location.href = '../fluxogramas/index.html';
+            window.location.href = '../historico/index.html';
         }, 1500);
     });
 
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Cadastro:', { name, email, password, termsAccepted });
         showSuccessModal('Cadastro realizado com sucesso!', 'Bem-vindo ao NoFluxo UNB!');
         setTimeout(() => {
-            window.location.href = '../fluxogramas/index.html';
+            window.location.href = '../historico/index.html';
         }, 1500);
     });
 
