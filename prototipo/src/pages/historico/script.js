@@ -16,6 +16,7 @@ const helpBtn = document.getElementById('helpBtn'); // Botão de ajuda
 const helpModal = document.getElementById('helpModal'); // Modal de ajuda
 const closeHelpBtn = document.getElementById('closeHelpBtn'); // Botão de fechar ajuda (X)
 const closeHelpBtnBottom = document.getElementById('closeHelpBtnBottom'); // Botão de fechar ajuda (Entendi)
+const fileItem = document.getElementById('fileItem'); // Item visual do arquivo selecionado
 
 // Toggle do menu hamburguer - Alterna a visibilidade do menu mobile
 menuBtn.addEventListener('click', function() {
@@ -34,11 +35,10 @@ document.addEventListener('click', function(e) {
 // Manipulador de mudança do input de arquivo
 fileInput.addEventListener('change', function(e) {
     if (this.files && this.files[0]) {
-        // Mostrar arquivo na lista
         fileName.textContent = this.files[0].name;
         fileList.classList.remove('hidden');
-        
-        // Iniciar simulação de upload
+        fileItem.classList.add('file-item');
+        fileItem.classList.remove('file-item--solido');
         simularUpload();
     }
 });
@@ -48,6 +48,8 @@ removeFileBtn.addEventListener('click', function() {
     fileInput.value = '';
     fileList.classList.add('hidden');
     resetarEstadoUpload();
+    fileItem.classList.remove('file-item--solido');
+    fileItem.classList.add('file-item');
 });
 
 // Funcionalidade de arrastar e soltar (Drag and Drop)
@@ -88,39 +90,40 @@ uploadContainer.addEventListener('drop', manipularDrop, false);
 function manipularDrop(e) {
     const dt = e.dataTransfer;
     const files = dt.files;
-    
     if (files && files[0]) {
         fileInput.files = files;
         fileName.textContent = files[0].name;
         fileList.classList.remove('hidden');
-        
-        // Iniciar simulação de upload
+        fileItem.classList.add('file-item');
+        fileItem.classList.remove('file-item--solido');
         simularUpload();
     }
 }
 
 // Simula o upload do arquivo com barra de progresso
 function simularUpload() {
-    // Mostrar estado de upload
     uploadInitial.classList.add('hidden');
     uploadingState.classList.remove('hidden');
-    
     let progresso = 0;
     const intervalo = setInterval(() => {
         progresso += Math.random() * 10;
         if (progresso >= 100) {
             progresso = 100;
             clearInterval(intervalo);
-            
-            // Mostrar estado de sucesso após um pequeno delay
             setTimeout(() => {
                 uploadingState.classList.add('hidden');
                 successState.classList.remove('hidden');
                 successState.classList.add('fade-in-up');
+                fileItem.classList.remove('file-item');
+                fileItem.classList.add('file-item--solido');
+                fileItem.className = fileItem.className.split(' ').filter(c => !c.startsWith('bg-') && !c.startsWith('opacity-')).join(' ');
+                fileItem.style.background = '#fff';
+                fileItem.style.opacity = '1';
+                fileItem.style.zIndex = '1';
+                fileItem.style.position = 'relative';
+                fileItem.style.boxShadow = '0 4px 24px 0 rgba(0,0,0,0.12)';
             }, 500);
         }
-        
-        // Atualizar barra de progresso e texto
         progressBar.style.width = `${progresso}%`;
         progressText.textContent = `${Math.round(progresso)}%`;
     }, 300);
