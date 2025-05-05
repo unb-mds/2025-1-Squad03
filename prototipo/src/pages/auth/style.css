@@ -1,21 +1,20 @@
-/* Estilos específicos da página de cadastro */ 
-
-/* Base styles */
+/* Estilos base */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    position: relative;
     min-height: 100vh;
+    background-color: #1a1a1a;
 }
 
-/* Graffiti style font for navbar */
+/* Fonte estilo graffiti para navbar */
 .graffiti-font {
     font-family: 'Permanent Marker', cursive;
     letter-spacing: 1px;
 }
 
-/* Animated background */
+/* Fundo animado */
 .animated-bg {
     position: fixed;
     top: 0;
@@ -26,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-/* Smoke/cloud effects */
+/* Efeitos de fumaça/nuvem */
 .smoke-effect {
     position: absolute;
     border-radius: 50%;
@@ -68,7 +67,55 @@ body {
     100% { transform: translate(20px, 20px) scale(1.05); }
 }
 
-/* Form container styles */
+/* Logo com efeito graffiti */
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-text {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #4A1D96, #E11D48, #EA580C, #CA8A04);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* Itens de navegação */
+.nav-item {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #4A1D96, #E11D48);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Container de autenticação */
+.auth-container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Estilos do container do formulário */
 .form-container {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(5px);
@@ -77,6 +124,33 @@ body {
     z-index: 10;
     position: relative;
     transition: all 0.5s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0; 
+        transform: translateX(50px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
 }
 
 .input-field {
@@ -99,63 +173,26 @@ body {
     transform: translateY(-2px);
 }
 
-/* Header styles with torn paper effect */
-.header {
-    z-index: 30;
-    position: relative;
-    background: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.torn-paper {
-    position: relative;
-}
-
-.torn-paper::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='white'%3E%3C/path%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' opacity='.5' fill='white'%3E%3C/path%3E%3Cpath d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
-    background-size: cover;
-    background-position: center top;
-}
-
-/* Logo with graffiti effect */
-.logo-container {
-    position: relative;
-    display: inline-block;
-}
-
-.logo-text {
-    position: relative;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.logo-splash {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    z-index: 1;
-    opacity: 0.8;
-}
-
-.nav-item {
+.google-btn {
     transition: all 0.3s ease;
 }
 
-.nav-item:hover {
-    transform: scale(1.05);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.google-btn:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
 }
 
-/* Mobile menu - right side */
+.anonymous-btn {
+    background-color: #333333;
+    transition: all 0.3s ease;
+}
+
+.anonymous-btn:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+}
+
+/* Menu mobile */
 .mobile-menu {
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
@@ -165,7 +202,7 @@ body {
     transform: translateX(0);
 }
 
-/* Hamburger menu */
+/* Menu hamburguer */
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -182,7 +219,7 @@ body {
     height: 2px;
     top: 0;
     left: 0;
-    background: #333;
+    background: #fff;
     transform: rotate(0);
     transition: all 0.5s;
 }
@@ -197,7 +234,6 @@ body {
 
 .open .hamburger-top {
     transform: rotate(45deg) translateY(6px) translateX(6px);
-    background: #fff;
 }
 
 .open .hamburger-middle {
@@ -206,29 +242,9 @@ body {
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    background: #fff;
 }
 
-/* Form transition effects */
-.slide-in {
-    animation: slideIn 0.5s forwards;
-}
-
-.slide-out {
-    animation: slideOut 0.5s forwards;
-}
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideOut {
-    from { opacity: 1; transform: translateY(0); }
-    to { opacity: 0; transform: translateY(-20px); }
-}
-
-/* Responsive adjustments */
+/* Ajustes responsivos */
 @media (max-width: 640px) {
     .form-container {
         width: 90%;
