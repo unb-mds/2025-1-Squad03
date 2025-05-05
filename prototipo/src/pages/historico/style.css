@@ -103,6 +103,11 @@ body {
     position: relative;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #4A1D96, #E11D48, #EA580C, #CA8A04);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 .logo-splash {
@@ -119,11 +124,26 @@ body {
 /* Estilos dos itens de navegação */
 .nav-item {
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-item:hover {
     transform: scale(1.05);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #4A1D96, #E11D48);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 /* Menu mobile - lado direito */
@@ -153,7 +173,7 @@ body {
     height: 2px;
     top: 0;
     left: 0;
-    background: #333;
+    background: #fff;
     transform: rotate(0);
     transition: all 0.5s;
 }
@@ -169,7 +189,6 @@ body {
 /* Estados do menu hamburguer */
 .open .hamburger-top {
     transform: rotate(45deg) translateY(6px) translateX(6px);
-    background: #fff;
 }
 
 .open .hamburger-middle {
@@ -178,7 +197,6 @@ body {
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    background: #fff;
 }
 
 /* Estilos da área de upload */
@@ -208,12 +226,35 @@ body {
 }
 
 .help-btn {
-    transition: all 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.85rem 2rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 24px 0 rgba(123,47,242,0.15), 0 1.5px 6px 0 rgba(243,87,168,0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
 }
 
-.help-btn:hover {
-    background-color: #f8f9fa;
-    transform: translateY(-2px);
+.help-btn:hover, .help-btn:focus {
+    background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
+    box-shadow: 0 6px 32px 0 rgba(123,47,242,0.22), 0 2px 8px 0 rgba(243,87,168,0.15);
+    transform: translateY(-2px) scale(1.04);
+    outline: none;
+}
+
+.help-btn:active {
+    background: #7b2ff2;
+    box-shadow: 0 2px 8px rgba(123,47,242,0.10);
+    transform: scale(0.98);
 }
 
 /* Animações */

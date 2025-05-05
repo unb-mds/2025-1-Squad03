@@ -21,34 +21,22 @@
         <div class="smoke-effect smoke-2 bg-[#E63783]" style="width: 200px; height: 200px; top: 15%; left: 80%;"></div>
     </div>
 
-    <!-- Cabeçalho com Efeito de Papel Rasgado -->
-    <header class="header w-full px-6 py-4 torn-paper">
+    <!-- Cabeçalho/Navbar -->
+    <header class="sticky top-0 w-full px-6 py-4 z-50 bg-black bg-opacity-30 backdrop-blur-sm">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Container do Logo com Efeito Graffiti -->
+            <!-- Logo com Efeito Graffiti -->
             <div class="logo-container">
-                <!-- SVG do Efeito de Respingo -->
-                <svg class="logo-splash" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <radialGradient id="splashGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                            <stop offset="0%" stop-color="#6B19C9" />
-                            <stop offset="50%" stop-color="#E63783" />
-                            <stop offset="100%" stop-color="#F0C419" />
-                        </radialGradient>
-                    </defs>
-                    <path d="M20,50 Q40,20 60,40 Q80,10 100,50 Q120,30 140,60 Q160,40 180,50 Q160,70 180,90 Q140,80 120,90 Q100,70 80,90 Q60,80 40,90 Q20,70 20,50" fill="url(#splashGradient)" />
-                </svg>
-                <!-- Texto do Logo -->
-                <div class="logo-text graffiti-font text-black text-2xl sm:text-3xl transform -rotate-2">NoFluxoUNB</div>
+                <a href="../fluxogramas/index.html" class="logo-text graffiti-font text-white text-2xl sm:text-3xl">NOFLX UNB</a>
             </div>
             
             <!-- Navegação Desktop -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#" class="nav-item graffiti-font text-black text-xl transform rotate-1 hover:text-purple-700">HOME</a>
-                <a href="#" class="nav-item graffiti-font text-black text-xl transform -rotate-1 hover:text-pink-700">SOBRE NÓS</a>
+                <a href="../home/index.html" class="nav-item graffiti-font text-white text-xl">HOME</a>
+                <a href="../home/index.html#sobre" class="nav-item graffiti-font text-white text-xl">SOBRE NÓS</a>
             </nav>
             
-            <!-- Botão do Menu Mobile -->
-            <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+            <!-- Botão Hamburguer -->
+            <button id="menu-btn" class="hamburger md:hidden focus:outline-none relative z-50">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
@@ -56,11 +44,11 @@
         </div>
     </header>
 
-    <!-- Menu Mobile (Lado Direito) -->
+    <!-- Menu Mobile -->
     <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-3/4 max-w-xs bg-black bg-opacity-95 z-40 p-6 pt-20 shadow-lg">
         <nav class="flex flex-col space-y-6">
-            <a href="#" class="nav-item graffiti-font text-white text-2xl transform rotate-1 hover:text-purple-300">HOME</a>
-            <a href="#" class="nav-item graffiti-font text-white text-2xl transform -rotate-1 hover:text-pink-300">SOBRE NÓS</a>
+            <a href="../home/index.html" class="nav-item graffiti-font text-white text-2xl">HOME</a>
+            <a href="../home/index.html#sobre" class="nav-item graffiti-font text-white text-2xl">SOBRE NÓS</a>
         </nav>
     </div>
 
@@ -152,7 +140,7 @@
 
     <!-- Modal de Ajuda -->
     <div id="helpModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-8 max-w-lg w-full text-left max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg p-6 max-w-2xl w-full text-left max-h-[90vh] overflow-y-auto relative">
             <div class="flex justify-between items-start mb-4">
                 <h2 class="text-2xl font-bold text-gray-800">Como obter seu histórico acadêmico</h2>
                 <button id="closeHelpBtn" class="text-gray-500 hover:text-gray-700">
@@ -161,26 +149,26 @@
                     </svg>
                 </button>
             </div>
-            
             <div class="prose max-w-none">
-                <p class="mb-4">Para obter seu histórico acadêmico da UnB, siga os passos abaixo:</p>
-                
-                <ol class="list-decimal pl-5 mb-4 space-y-2">
-                    <li>Acesse o portal do aluno SIGAA (www.sig.unb.br/sigaa)</li>
-                    <li>Faça login com suas credenciais</li>
-                    <li>No menu lateral, clique em "Ensino"</li>
-                    <li>Selecione "Emitir Histórico"</li>
-                    <li>Escolha o formato PDF</li>
-                    <li>Clique em "Emitir"</li>
-                    <li>Salve o arquivo em seu computador</li>
-                    <li>Faça upload do arquivo nesta página</li>
-                </ol>
-                
-                <p class="mb-4">Importante: O histórico deve estar completo e conter todas as disciplinas cursadas para que possamos gerar seu fluxograma personalizado corretamente.</p>
-                
-                <p>Se você encontrar problemas para obter seu histórico, entre em contato com a secretaria do seu curso ou com o suporte do SIGAA.</p>
+                <!-- Passo 1 -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-lg mb-2">1º PASSO - Acesse o SIGAA</h3>
+                    <p class="mb-2">Entre no <a href="https://sig.unb.br/sigaa" target="_blank" class="text-blue-700 underline">SIGAA</a> com seu login e senha institucional.</p>
+                    <img src="../../../assets/help/tela_de_cadastro.png" alt="Tela de login do SIGAA" class="rounded-lg border shadow w-full max-w-md mx-auto">
+                </div>
+                <!-- Passo 2 -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-lg mb-2">2º PASSO - Selecione "Emitir Histórico"</h3>
+                    <p class="mb-2">No menu lateral, clique em <b>Ensino</b> e depois em <b>Emitir Histórico</b>.</p>
+                    <img src="../../../assets/help/emitir_historico.png" alt="Menu Emitir Histórico no SIGAA" class="rounded-lg border shadow w-full max-w-md mx-auto">
+                </div>
+                <!-- Passo 3 -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-lg mb-2">3º PASSO - Faça o upload do PDF para o NoFluxoUNB</h3>
+                    <p class="mb-2">Salve o arquivo PDF gerado em seu computador e faça o upload nesta página.</p>
+                    <img src="../../../assets/help/historico_baixado.png" alt="Exemplo de histórico acadêmico gerado" class="rounded-lg border shadow w-full max-w-md mx-auto">
+                </div>
             </div>
-            
             <div class="mt-6 text-center">
                 <button id="closeHelpBtnBottom" class="bg-[#1B469B] px-6 py-2 rounded-lg text-white font-medium hover:bg-[#153677]">
                     Entendi
