@@ -181,7 +181,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Recurso 1 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-600 to-pink-500 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -192,7 +192,7 @@
                 </div>
                 
                 <!-- Recurso 2 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -203,7 +203,7 @@
                 </div>
                 
                 <!-- Recurso 3 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -232,72 +232,81 @@
         <div class="container mx-auto px-6">
             <h2 class="text-center text-white text-3xl md:text-4xl graffiti-font mb-12">SOBRE NÓS</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Arthur Nogueira -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
-                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
-                        <img src="https://github.com/ArthurNRamalho.png" alt="Arthur Nogueira Ramalho" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl text-white text-center mb-2 graffiti-font">Arthur Nogueira</h3>
-                    <p class="text-gray-300 text-center">Desenvolvedor</p>
+            <div class="w-full mb-8">
+                <div class="bg-white bg-opacity-10 rounded-2xl shadow-lg p-3 sm:p-4 flex flex-col items-center justify-center text-center border border-white border-opacity-20 w-full sobre-nos-card">
+                    <p class="text-white text-base max-w-5xl mx-auto mb-2 text-justify">
+                        O <strong>NoFluxoUnB</strong> é criado na disciplina de <strong>Métodos de Desenvolvimento de Software</strong>,
+                         ministrada pela professora <strong>Carla Rocha</strong>, com a
+                         proposta de desenvolver um software inovador para a comunidade. Nossa proposta foi 
+                         desenvolver um software que facilita o planejamento acadêmico dos estudantes da UnB, oferecendo 
+                         um fluxograma interativo, intuitivo e de fácil uso. Visualize matérias equivalentes, 
+                         selecione disciplinas futuras e receba recomendações personalizadas com inteligência artificial.
+                    </p>
+                    <p class="text-white text-xs italic opacity-80 max-w-5xl mx-auto mb-4 text-justify">
+                        <span class="block">&#x1F4AC; <strong>Observação:</strong> Inicialmente disponível para cursos da FGA/UnB, com perspectiva de expansão!</span>
+                    </p>
+                    <ul class="text-white text-base max-w-5xl mx-auto flex flex-col gap-2 items-start justify-center mt-2 text-left">
+                        <li class="flex items-center gap-2"><span class="inline-block w-5 h-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center"><svg xmlns='http://www.w3.org/2000/svg' class='h-3 w-3 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7' /></svg></span> <span><strong>UX moderna:</strong> Interface visual clara, responsiva e fácil de navegar.</span></li>
+                        <li class="flex items-center gap-2"><span class="inline-block w-5 h-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center"><svg xmlns='http://www.w3.org/2000/svg' class='h-3 w-3 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7' /></svg></span> <span><strong>Inteligência Artificial:</strong> Sugestão de disciplinas alinhadas aos interesses do estudante.</span></li>
+                        <li class="flex items-center gap-2"><span class="inline-block w-5 h-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center"><svg xmlns='http://www.w3.org/2000/svg' class='h-3 w-3 text-white' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7' /></svg></span> <span><strong>Personalização:</strong> Planejamento acadêmico inteligente e eficiente, adaptado ao perfil do aluno.</span></li>
+                    </ul>
                 </div>
+            </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- Guilherme Gusmão -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/gusmoles.png" alt="Guilherme Gusmão Nepomuceno" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Guilherme Gusmão</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
                 <!-- Vitor Marconi -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/Vitor-Trancoso.png" alt="Vitor Marconi T. Albuquerque" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Vitor Marconi</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
                 <!-- Gustavo Choueiri -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/staann.png" alt="Gustavo Choueiri" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Gustavo Choueiri</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
                 <!-- Felipe Lopes -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/darkymeubem.png" alt="Felipe Lopes Pedroza" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Felipe Lopes</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
+            </div>
+            <!-- Segunda linha: 3 membros centralizados -->
+            <div class="flex flex-col lg:flex-row justify-center gap-8">
                 <!-- Vinícius Pereira -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300 w-full lg:w-1/4">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/Vinicius-Ribeiro04.png" alt="Vinícius Pereira Ribeiro" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Vinícius Pereira</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
                 <!-- Arthur Fernandes -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300 w-full lg:w-1/4">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/hisarxt.png" alt="Arthur Fernandes Alencar" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl text-white text-center mb-2 graffiti-font">Arthur Fernandes</h3>
                     <p class="text-gray-300 text-center">Desenvolvedor</p>
                 </div>
-
                 <!-- Erick Alves -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-10 transform hover:scale-105 transition-transform duration-300 w-full lg:w-1/4">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white">
                         <img src="https://github.com/erickaalves.png" alt="Erick Alves dos Santos" class="w-full h-full object-cover">
                     </div>

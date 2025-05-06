@@ -209,4 +209,13 @@ body {
     .mockup-container {
         margin-bottom: 2rem;
     }
+}
+
+.sobre-nos-card {
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.sobre-nos-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px 0 rgba(80,0,120,0.18), 0 1.5px 6px 0 rgba(243,87,168,0.10);
+    z-index: 2;
 } 
