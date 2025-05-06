@@ -491,10 +491,43 @@ body {
     background-color: #5a5a5a;
 }
 
+#progressModal .text-sm span {
+    color: white;
+}
+
+#integralizationModal h5 {
+    color: white;
+}
+
+#integralizationModal .p-4 span {
+    color: white;
+}
+
 /* Prevent body scroll when modal is open */
 body.modal-open {
     overflow: hidden;
     position: fixed;
     width: 100%;
     height: 100%;
+}
+
+/* Ferramentas de Progresso - Modais e Responsividade */
+
+.tool-card {
+    transition: all 0.3s ease;
+}
+.tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Modais */
+#iraModal, #progressModal, #integralizationModal, #courseChangeModal {
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .tool-card {
+        margin-bottom: 1rem;
+    }
 } 

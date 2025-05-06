@@ -720,6 +720,57 @@
                 </button>
             </div>
         </div>
+
+        <!-- Ferramentas de Progresso -->
+        <div class="bg-black bg-opacity-30 rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-white mb-4">Ferramentas de Progresso</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Calculadora de IRA -->
+                <div class="tool-card bg-gradient-to-br from-purple-900 to-indigo-900 rounded-xl p-5 shadow border border-indigo-700">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        <h3 class="font-semibold text-indigo-200">Calculadora de IRA</h3>
+                    </div>
+                    <p class="text-sm text-indigo-100 mb-3">Simule seu IRA com base em notas futuras</p>
+                    <button id="openIraCalc" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg transition duration-200 text-sm">Calcular IRA</button>
+                </div>
+                <!-- Progresso do Curso -->
+                <div class="tool-card bg-gradient-to-br from-blue-900 to-cyan-900 rounded-xl p-5 shadow border border-blue-700">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                        <h3 class="font-semibold text-blue-200">Progresso do Curso</h3>
+                    </div>
+                    <p class="text-sm text-blue-100 mb-3">Visualize seu progresso detalhado</p>
+                    <button id="openProgress" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-200 text-sm">Ver Progresso</button>
+                </div>
+                <!-- Integralização -->
+                <div class="tool-card bg-gradient-to-br from-green-900 to-emerald-900 rounded-xl p-5 shadow border border-green-700">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="font-semibold text-green-200">Integralização</h3>
+                    </div>
+                    <p class="text-sm text-green-100 mb-3">Verifique requisitos para formatura</p>
+                    <button id="openIntegralization" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition duration-200 text-sm">Verificar</button>
+                </div>
+                <!-- Mudança de Curso -->
+                <div class="tool-card bg-gradient-to-br from-amber-900 to-orange-900 rounded-xl p-5 shadow border border-amber-700">
+                    <div class="flex items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                        <h3 class="font-semibold text-amber-200">Mudança de Curso</h3>
+                    </div>
+                    <p class="text-sm text-amber-100 mb-3">Simule aproveitamento em outro curso</p>
+                    <button id="openCourseChange" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition duration-200 text-sm">Simular</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Course Details Modal -->
@@ -814,185 +865,384 @@
         </div>
     </div>
 
-    <!-- Add Course Modal -->
-    <div id="add-course-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
-        <div class="modal-content rounded-lg p-6 max-w-4xl w-full mx-4 relative">
-            <!-- Close Button -->
-            <button id="close-add-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            
-            <!-- Modal Content -->
-            <h2 class="text-white text-2xl font-bold mb-6">Adicionar Matéria</h2>
-            
-            <!-- Search and Filter -->
-            <div class="flex flex-col md:flex-row gap-4 mb-6">
-                <div class="flex-1">
-                    <div class="relative">
-                        <input type="text" placeholder="Buscar matéria por nome ou código..." class="w-full bg-black bg-opacity-50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    <!-- Modais das ferramentas de progresso -->
+    <div id="iraModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-black bg-opacity-90 rounded-xl shadow-xl p-6 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-indigo-200">Calculadora de IRA</h3>
+                <button class="closeModal text-gray-400 hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mb-4">
+                <p class="text-indigo-100 mb-4">Adicione as disciplinas e notas esperadas para simular seu IRA futuro.</p>
+                <div class="space-y-3" id="iraCalculatorForm">
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="Disciplina" class="flex-grow border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                        <input type="number" min="0" max="10" step="0.1" placeholder="Nota" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                        <input type="number" min="1" max="10" placeholder="Créditos" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                    </div>
+                </div>
+                <button id="addDiscipline" class="mt-3 text-indigo-400 hover:text-indigo-200 text-sm flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    Adicionar disciplina
+                </button>
+            </div>
+            <div class="bg-indigo-900 p-4 rounded-lg mb-4">
+                <div class="flex justify-between">
+                    <span class="text-indigo-200 font-medium">IRA Atual:</span>
+                    <span class="text-indigo-100 font-bold">8.7</span>
+                </div>
+                <div class="flex justify-between mt-2">
+                    <span class="text-indigo-200 font-medium">IRA Simulado:</span>
+                    <span class="text-indigo-100 font-bold" id="simulatedIra">8.7</span>
+                </div>
+            </div>
+            <div class="flex justify-end space-x-3">
+                <button class="closeModal px-4 py-2 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-800 transition duration-200">Cancelar</button>
+                <button id="calculateIra" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-200">Calcular</button>
+            </div>
+        </div>
+    </div>
+    <div id="progressModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-black bg-opacity-90 rounded-xl shadow-xl p-6 max-w-2xl w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-blue-200">Progresso do Curso</h3>
+                <button class="closeModal text-gray-400 hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                    <h4 class="font-medium text-gray-200">Progresso Geral</h4>
+                    <span class="text-blue-200 font-medium">40% (96/240 créditos)</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-3">
+                    <div class="bg-blue-600 h-3 rounded-full" style="width: 40%"></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h4 class="font-medium text-gray-200 mb-3">Disciplinas por Área</h4>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Obrigatórias</span>
+                                <span>32/160 créditos</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Optativas</span>
+                                <span>24/40 créditos</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Complementares</span>
+                                <span>40/40 créditos</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-200 mb-3">Desempenho por Área</h4>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Programação</span>
+                                <span>9.1</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Matemática</span>
+                                <span>8.2</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Engenharia</span>
+                                <span>8.9</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-medium text-gray-200 mb-3">Histórico de IRA por Semestre</h4>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <svg viewBox="0 0 400 150" class="w-full h-32">
+                        <!-- Eixos -->
+                        <line x1="40" y1="10" x2="40" y2="120" stroke="#CBD5E0" stroke-width="1" />
+                        <line x1="40" y1="120" x2="380" y2="120" stroke="#CBD5E0" stroke-width="1" />
+                        <!-- Linhas de grade -->
+                        <line x1="40" y1="90" x2="380" y2="90" stroke="#EDF2F7" stroke-width="1" />
+                        <line x1="40" y1="60" x2="380" y2="60" stroke="#EDF2F7" stroke-width="1" />
+                        <line x1="40" y1="30" x2="380" y2="30" stroke="#EDF2F7" stroke-width="1" />
+                        <!-- Rótulos do eixo Y -->
+                        <text x="30" y="120" text-anchor="end" font-size="10" fill="#A0AEC0">0</text>
+                        <text x="30" y="90" text-anchor="end" font-size="10" fill="#A0AEC0">5</text>
+                        <text x="30" y="60" text-anchor="end" font-size="10" fill="#A0AEC0">7.5</text>
+                        <text x="30" y="30" text-anchor="end" font-size="10" fill="#A0AEC0">10</text>
+                        <!-- Rótulos do eixo X -->
+                        <text x="100" y="135" text-anchor="middle" font-size="10" fill="#A0AEC0">1º</text>
+                        <text x="180" y="135" text-anchor="middle" font-size="10" fill="#A0AEC0">2º</text>
+                        <text x="260" y="135" text-anchor="middle" font-size="10" fill="#A0AEC0">3º</text>
+                        <text x="340" y="135" text-anchor="middle" font-size="10" fill="#A0AEC0">4º</text>
+                        <!-- Linha do gráfico -->
+                        <polyline points="100,36 180,42 260,33 340,30" fill="none" stroke="#3B82F6" stroke-width="2" />
+                        <!-- Pontos do gráfico -->
+                        <circle cx="100" cy="36" r="4" fill="#3B82F6" />
+                        <circle cx="180" cy="42" r="4" fill="#3B82F6" />
+                        <circle cx="260" cy="33" r="4" fill="#3B82F6" />
+                        <circle cx="340" cy="30" r="4" fill="#3B82F6" />
+                        <!-- Valores -->
+                        <text x="100" y="26" text-anchor="middle" font-size="10" fill="#fff">8.4</text>
+                        <text x="180" y="32" text-anchor="middle" font-size="10" fill="#fff">7.8</text>
+                        <text x="260" y="23" text-anchor="middle" font-size="10" fill="#fff">8.7</text>
+                        <text x="340" y="20" text-anchor="middle" font-size="10" fill="#fff">9.0</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex justify-end mt-6">
+                <button class="closeModal px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="integralizationModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-black bg-opacity-90 rounded-xl shadow-xl p-6 max-w-2xl w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-green-200">Integralização Curricular</h3>
+                <button class="closeModal text-gray-400 hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mb-6">
+                <div class="bg-green-900 p-4 rounded-lg mb-4">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
+                        <p class="text-green-200">Previsão de formatura: <span class="font-semibold">2º semestre de 2023</span></p>
                     </div>
                 </div>
-                
-                <div class="flex gap-2">
-                    <select class="semester-selector rounded-lg py-3 px-4 text-white focus:outline-none">
-                        <option value="">Todos os Semestres</option>
-                        <option value="1">1º Semestre</option>
-                        <option value="2">2º Semestre</option>
-                        <option value="3">3º Semestre</option>
-                        <option value="4" selected>4º Semestre</option>
-                        <option value="5">5º Semestre</option>
-                        <option value="6">6º Semestre</option>
-                        <option value="7">7º Semestre</option>
-                        <option value="8">8º Semestre</option>
-                    </select>
-                    
-                    <select class="semester-selector rounded-lg py-3 px-4 text-white focus:outline-none">
-                        <option value="">Todos os Tipos</option>
-                        <option value="obrigatoria">Obrigatórias</option>
-                        <option value="optativa">Optativas</option>
-                        <option value="modulo">Módulo Livre</option>
-                    </select>
-                </div>
-            </div>
-            
-            <!-- Course List -->
-            <div class="max-h-96 overflow-y-auto mb-6">
-                <table class="w-full">
-                    <thead class="bg-black bg-opacity-50 sticky top-0">
-                        <tr>
-                            <th class="py-3 px-4 text-left text-white">Código</th>
-                            <th class="py-3 px-4 text-left text-white">Nome</th>
-                            <th class="py-3 px-4 text-left text-white">Créditos</th>
-                            <th class="py-3 px-4 text-left text-white">Tipo</th>
-                            <th class="py-3 px-4 text-left text-white">Semestre</th>
-                            <th class="py-3 px-4 text-left text-white">Ação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0124</td>
-                            <td class="py-3 px-4 text-white">Redes de Computadores</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Obrigatória</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0182</td>
-                            <td class="py-3 px-4 text-white">Arquitetura e Desenho de Software</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Obrigatória</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0205</td>
-                            <td class="py-3 px-4 text-white">Engenharia de Testes de Software</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Obrigatória</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800 bg-purple-900 bg-opacity-20">
-                            <td class="py-3 px-4 text-white">CIC0199</td>
-                            <td class="py-3 px-4 text-white">Tópicos em IA: Machine Learning</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Módulo Livre</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
-                                    Remover
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800 bg-purple-900 bg-opacity-20">
-                            <td class="py-3 px-4 text-white">CIC0135</td>
-                            <td class="py-3 px-4 text-white">Introdução à Ciência de Dados</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Optativa</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
-                                    Remover
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0201</td>
-                            <td class="py-3 px-4 text-white">Segurança em Computação</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Optativa</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0202</td>
-                            <td class="py-3 px-4 text-white">Programação Competitiva</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Módulo Livre</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="py-3 px-4 text-white">CIC0203</td>
-                            <td class="py-3 px-4 text-white">Computação em Nuvem</td>
-                            <td class="py-3 px-4 text-white">4</td>
-                            <td class="py-3 px-4 text-white">Optativa</td>
-                            <td class="py-3 px-4 text-white">4º</td>
-                            <td class="py-3 px-4">
-                                <button class="bg-gradient-to-r from-green-600 to-green-500 text-white py-1 px-3 rounded hover:from-green-700 hover:to-green-600 transition-all duration-300">
-                                    Adicionar
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!-- Selected Courses Summary -->
-            <div class="bg-black bg-opacity-50 p-4 rounded-lg">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-white font-bold">Matérias Selecionadas: 2</h3>
-                    <div class="text-white">
-                        <span class="mr-4">Total de Créditos: 8</span>
-                        <span>Carga Horária: 8 horas/semana</span>
+                <h4 class="font-medium text-gray-200 mb-3">Requisitos para Integralização</h4>
+                <div class="space-y-4">
+                    <div class="border border-gray-700 rounded-lg overflow-hidden">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-gray-700">
+                            <h5 class="font-medium">Créditos Obrigatórios</h5>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between mb-2">
+                                <span>Progresso:</span>
+                                <span class="font-medium">32/160 créditos (20%)</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <p class="text-sm text-gray-300">Faltam 128 créditos em disciplinas obrigatórias.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-700 rounded-lg overflow-hidden">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-gray-700">
+                            <h5 class="font-medium">Créditos Optativos</h5>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between mb-2">
+                                <span>Progresso:</span>
+                                <span class="font-medium">24/40 créditos (60%)</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                            <p class="text-sm text-gray-300">Faltam 16 créditos em disciplinas optativas.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-700 rounded-lg overflow-hidden">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-gray-700">
+                            <h5 class="font-medium">Atividades Complementares</h5>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between mb-2">
+                                <span>Progresso:</span>
+                                <span class="font-medium">40/40 horas (100%)</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <p class="text-sm text-gray-300 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Requisito cumprido!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-700 rounded-lg overflow-hidden">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-gray-700">
+                            <h5 class="font-medium">Trabalho de Conclusão de Curso</h5>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center">
+                                <div class="w-6 h-6 rounded-full bg-gray-700 flex items-center justify-center mr-3">
+                                    <span class="text-gray-300 text-xs">0%</span>
+                                </div>
+                                <span class="text-gray-300">Não iniciado</span>
+                            </div>
+                            <p class="text-sm text-gray-300 mt-2">Disponível a partir do 7º semestre.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Action Buttons -->
-            <div class="mt-6 flex justify-end gap-3">
-                <button id="cancel-add" class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-all duration-300">
-                    CANCELAR
+            <div class="flex justify-end">
+                <button class="closeModal px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-200">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="courseChangeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-black bg-opacity-90 rounded-xl shadow-xl p-6 max-w-2xl w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-amber-200">Simulação de Mudança de Curso</h3>
+                <button class="closeModal text-gray-400 hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
-                <button id="confirm-add" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-4 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
-                    CONFIRMAR
-                </button>
+            </div>
+            <div class="mb-6">
+                <p class="text-amber-100 mb-4">Selecione um curso para simular o aproveitamento de disciplinas e créditos.</p>
+                <div class="mb-4">
+                    <label for="targetCourse" class="block text-sm font-medium text-amber-200 mb-1">Curso de Destino</label>
+                    <select id="targetCourse" class="w-full border border-gray-700 rounded-lg px-3 py-2 bg-black bg-opacity-40 text-white">
+                        <option value="">Selecione um curso</option>
+                        <option value="cc">Ciência da Computação</option>
+                        <option value="si">Sistemas de Informação</option>
+                        <option value="ec">Engenharia da Computação</option>
+                        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    </select>
+                </div>
+                <div id="courseComparisonResults" class="hidden">
+                    <div class="bg-amber-900 p-4 rounded-lg mb-4">
+                        <h4 class="font-medium text-amber-200 mb-2">Resumo do Aproveitamento</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-amber-300">68%</div>
+                                <div class="text-sm text-amber-100">Aproveitamento</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-amber-300">65/96</div>
+                                <div class="text-sm text-amber-100">Créditos aproveitados</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-amber-300">~2</div>
+                                <div class="text-sm text-amber-100">Semestres adicionais</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-amber-700 rounded-lg overflow-hidden mb-4">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-amber-700">
+                            <h5 class="font-medium">Disciplinas Aproveitadas</h5>
+                        </div>
+                        <div class="p-4">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span>Cálculo I</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span>Algoritmos</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span>Estrutura de Dados</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span>Programação OO</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span>+ 8 outras disciplinas</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border border-amber-700 rounded-lg overflow-hidden">
+                        <div class="bg-gray-900 px-4 py-2 border-b border-amber-700">
+                            <h5 class="font-medium">Disciplinas Adicionais Necessárias</h5>
+                        </div>
+                        <div class="p-4">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <span>Teoria da Computação</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <span>Compiladores</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <span>Computação Gráfica</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <span>+ 6 outras disciplinas</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end space-x-3">
+                <button class="closeModal px-4 py-2 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-800 transition duration-200">Cancelar</button>
+                <button id="simulateCourseChange" class="px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition duration-200">Simular</button>
             </div>
         </div>
     </div>

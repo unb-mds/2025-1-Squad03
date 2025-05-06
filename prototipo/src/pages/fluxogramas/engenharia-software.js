@@ -7,6 +7,100 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
 });
 
+// Ferramentas de Progresso - Event Listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Botões das ferramentas
+    const iraCalcBtn = document.getElementById('openIraCalc');
+    const progressBtn = document.getElementById('openProgress');
+    const integralizationBtn = document.getElementById('openIntegralization');
+    const courseChangeBtn = document.getElementById('openCourseChange');
+
+    // Modais
+    const iraModal = document.getElementById('iraModal');
+    const progressModal = document.getElementById('progressModal');
+    const integralizationModal = document.getElementById('integralizationModal');
+    const courseChangeModal = document.getElementById('courseChangeModal');
+
+    // Botões de fechar
+    const closeButtons = document.querySelectorAll('.closeModal');
+
+    // Event Listeners para abrir modais
+    if (iraCalcBtn) {
+        iraCalcBtn.addEventListener('click', () => {
+            if (iraModal) iraModal.classList.remove('hidden');
+        });
+    }
+
+    if (progressBtn) {
+        progressBtn.addEventListener('click', () => {
+            if (progressModal) progressModal.classList.remove('hidden');
+        });
+    }
+
+    if (integralizationBtn) {
+        integralizationBtn.addEventListener('click', () => {
+            if (integralizationModal) integralizationModal.classList.remove('hidden');
+        });
+    }
+
+    if (courseChangeBtn) {
+        courseChangeBtn.addEventListener('click', () => {
+            if (courseChangeModal) courseChangeModal.classList.remove('hidden');
+        });
+    }
+
+    // Event Listeners para fechar modais
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            [iraModal, progressModal, integralizationModal, courseChangeModal].forEach(modal => {
+                if (modal) modal.classList.add('hidden');
+            });
+        });
+    });
+
+    // Calculadora de IRA
+    const addDisciplineBtn = document.getElementById('addDiscipline');
+    const calculateIraBtn = document.getElementById('calculateIra');
+
+    if (addDisciplineBtn) {
+        addDisciplineBtn.addEventListener('click', () => {
+            const form = document.getElementById('iraCalculatorForm');
+            if (form) {
+                const newRow = document.createElement('div');
+                newRow.className = 'flex items-center space-x-2';
+                newRow.innerHTML = `
+                    <input type="text" placeholder="Disciplina" class="flex-grow border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                    <input type="number" min="0" max="10" step="0.1" placeholder="Nota" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                    <input type="number" min="1" max="10" placeholder="Créditos" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+                `;
+                form.appendChild(newRow);
+            }
+        });
+    }
+
+    if (calculateIraBtn) {
+        calculateIraBtn.addEventListener('click', () => {
+            const simulatedIra = document.getElementById('simulatedIra');
+            if (simulatedIra) {
+                const randomIra = (Math.random() * 1.5 + 7.5).toFixed(1);
+                simulatedIra.textContent = randomIra;
+            }
+        });
+    }
+
+    // Simulação de mudança de curso
+    const simulateCourseChangeBtn = document.getElementById('simulateCourseChange');
+    if (simulateCourseChangeBtn) {
+        simulateCourseChangeBtn.addEventListener('click', () => {
+            const courseSelect = document.getElementById('targetCourse');
+            const results = document.getElementById('courseComparisonResults');
+            if (courseSelect && courseSelect.value && results) {
+                results.classList.remove('hidden');
+            }
+        });
+    }
+});
+
 // Course modal functionality
 const courseModal = document.getElementById('course-modal');
 const closeCourseModal = document.getElementById('close-course-modal');
@@ -817,4 +911,82 @@ if (toggleChains) {
         }
     });
 }
-// --- FIM: Filtro de Cadeias de Pré-requisito --- 
+// --- FIM: Filtro de Cadeias de Pré-requisito ---
+
+// Ferramentas de Progresso - JS
+
+// Adicionar eventos para abrir modais das ferramentas de progresso
+const iraCalcBtn = document.getElementById('openIraCalc');
+const progressBtn = document.getElementById('openProgress');
+const integralizationBtn = document.getElementById('openIntegralization');
+const courseChangeBtn = document.getElementById('openCourseChange');
+
+if (iraCalcBtn) {
+    iraCalcBtn.addEventListener('click', () => {
+        document.getElementById('iraModal').classList.remove('hidden');
+    });
+}
+if (progressBtn) {
+    progressBtn.addEventListener('click', () => {
+        document.getElementById('progressModal').classList.remove('hidden');
+    });
+}
+if (integralizationBtn) {
+    integralizationBtn.addEventListener('click', () => {
+        document.getElementById('integralizationModal').classList.remove('hidden');
+    });
+}
+if (courseChangeBtn) {
+    courseChangeBtn.addEventListener('click', () => {
+        document.getElementById('courseChangeModal').classList.remove('hidden');
+    });
+}
+
+// Fechar todos os modais das ferramentas de progresso
+const closeModalButtons = document.querySelectorAll('.closeModal');
+if (closeModalButtons) {
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('#iraModal, #progressModal, #integralizationModal, #courseChangeModal').forEach(modal => {
+                modal.classList.add('hidden');
+            });
+        });
+    });
+}
+
+// Adicionar disciplina na calculadora de IRA
+const addDisciplineBtn = document.getElementById('addDiscipline');
+if (addDisciplineBtn) {
+    addDisciplineBtn.addEventListener('click', () => {
+        const form = document.getElementById('iraCalculatorForm');
+        const newRow = document.createElement('div');
+        newRow.className = 'flex items-center space-x-2';
+        newRow.innerHTML = `
+            <input type="text" placeholder="Disciplina" class="flex-grow border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+            <input type="number" min="0" max="10" step="0.1" placeholder="Nota" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+            <input type="number" min="1" max="10" placeholder="Créditos" class="w-20 border border-gray-700 rounded-lg px-3 py-2 text-sm bg-black bg-opacity-40 text-white">
+        `;
+        form.appendChild(newRow);
+    });
+}
+
+// Calcular IRA simulado
+const calculateIraBtn = document.getElementById('calculateIra');
+if (calculateIraBtn) {
+    calculateIraBtn.addEventListener('click', () => {
+        // Simulação simples - em um caso real, seria calculado com base nos inputs
+        const randomIra = (Math.random() * 1.5 + 7.5).toFixed(1);
+        document.getElementById('simulatedIra').textContent = randomIra;
+    });
+}
+
+// Simular mudança de curso
+const simulateCourseChangeBtn = document.getElementById('simulateCourseChange');
+if (simulateCourseChangeBtn) {
+    simulateCourseChangeBtn.addEventListener('click', () => {
+        const courseSelect = document.getElementById('targetCourse');
+        if (courseSelect.value) {
+            document.getElementById('courseComparisonResults').classList.remove('hidden');
+        }
+    });
+} 

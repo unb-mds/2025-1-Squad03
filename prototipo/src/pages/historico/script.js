@@ -143,9 +143,7 @@ function resetarEstadoUpload() {
 
 // Botão de continuar - Redireciona para a página do fluxograma
 continueBtn.addEventListener('click', function() {
-    // Redirecionar para a página do fluxograma (substituir com URL real)
-    alert('Redirecionando para o fluxograma personalizado...');
-    // window.location.href = 'fluxograma.html';
+    window.location.href = '../fluxogramas/engenharia-software.html';
 });
 
 // Manipulação do modal de ajuda
