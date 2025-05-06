@@ -1,49 +1,42 @@
-# Documentação de Estilo - Interface Web
+# 🎨 Documentação de Estilo - Interface Web
 
-## Tipografia
+## 1. Fundos e Overlays
+| Classe Tailwind          | Código HEX  | Tipo         | Uso típico               |
+|--------------------------|-------------|--------------|--------------------------|
+| `bg-black`               | `#000000`   | Fundo sólido | Corpo principal          |
+| `bg-black bg-opacity-30` | `#0000004D` | Overlay      | Header/Navbar            |
+| `bg-black bg-opacity-95` | `#000000F2` | Overlay      | Menu mobile              |
+| `bg-white bg-opacity-10` | `#FFFFFF1A` | Card         | Seções transparentes     |
 
-### Fonte Principal (Headings & Títulos)
-- **Sugestão**: Poppins ou Montserrat  
-- **Peso**: 600–700 (bold)
+## 2. Tipografia
+| Classe          | Código HEX | Peso visual | Aplicação               |
+|-----------------|------------|-------------|-------------------------|
+| `text-white`    | `#FFFFFF`  | Alto        | Títulos principais      |
+| `text-gray-300` | `#D1D5DB`  | Médio       | Texto secundário        |
+| `text-gray-400` | `#9CA3AF`  | Baixo       | Rodapé/terciário        |
 
-### Fonte Secundária (Corpo de texto e botões)
-- **Sugestão**: Inter ou Roboto  
-- **Peso**: 400–500 (regular/medium)
+## 3. Gradientes
+### 3.1 Botões principais
+- `from-purple-600 to-pink-600`  
+  Código: `#9333EA → #DB2777`  
+  Uso: Todos os CTAs principais
 
----
+### 3.2 Efeitos hover
+- `hover:from-purple-700 hover:to-pink-700`  
+  Código: `#7E22CE → #BE185D`
 
-## Cores Principais
+## 5. Dispositivos (Mockup)
+| Elemento       | Código HEX | Equivalente Tailwind |
+|----------------|------------|----------------------|
+| Base do laptop | `#333333`  | `bg-gray-800`        |
+| Detalhes       | `#555555`  | `bg-gray-700`        |
+| Tela           | `#F5F5F5`  | `bg-gray-50`         |
 
-| Elemento                        | Cor        | Código |
-|--------------------------------|------------|--------|
-| Fundo do site                  | Branco     | `#FFFFFF` |
-| Botões principais (ex: "Cadastrar", "Voltar") | Azul Escuro | `#005DFF` |
-| Texto principal                | Preto      | `#000000` |
-| Ícones e detalhes (ex: bordas, divisores) | Cinza Claro | `#D3D3D3` |
-| Mensagens de erro ou destaque | Vermelho   | `#FF4B4B` |
+## 6. Bordas e Divisores
+| Classe               | Código HEX  | Opacidade |
+|----------------------|-------------|-----------|
+| `border-white border-opacity-10` | `#FFFFFF`   | 10%       |
+| `border-gray-700`    | `#374151`   | 100%      |
 
----
+## Imagens do Protótipo
 
-## Resumo Visual
-
-| Elemento               | Fonte   | Tamanho | Peso   | Cor                            |
-|------------------------|---------|---------|--------|--------------------------------|
-| Título da Página       | Poppins | 32px    | Bold   | `#000000`                      |
-| Texto de input         | Inter   | 16px    | Regular| `#000000`                      |
-| Botão principal        | Inter   | 14px    | Medium | `#FFFFFF` em fundo `#005DFF`   |
-| Texto de botão secundário | Inter | 14px    | Medium | `#005DFF`                      |
-| Erros                  | Inter   | 14px    | Medium | `#FF4B4B`                      |
-
----
-
-## Exemplos de Variações (Sugestões)
-
-### Dark Mode (opcional futuramente)
-- **Fundo**: `#121212`  
-- **Texto**: `#FFFFFF`  
-- **Botões**: `#1E88E5`  
-- **Inputs**: `#1F1F1F` com borda `#333`
-
----
-
-![Foto de identidade visual](imgid/fotovisual.png)
