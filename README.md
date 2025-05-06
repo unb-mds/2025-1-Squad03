@@ -63,7 +63,7 @@ Squad 03 – MDS 2025/1 – FGA/UnB
        <a href="#">Guilherme Gusmão Nepomuceno</a>
      </td>
      <td align="center">
-       <img src="...assets\Logo_eu_3 editada.JPG" width="100px;" height="100px" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
+       <img src="assets\Logo_eu_3 editada.JPG" width="100px;" height="100px" style="border-radius: 10px;" alt="Vitor Marconi T. Albuquerque"/><br />
        <a href="#">Vitor Marconi T. Albuquerque</a>
      </td>
      <td align="center">
