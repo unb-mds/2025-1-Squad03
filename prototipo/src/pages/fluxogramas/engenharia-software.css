@@ -495,11 +495,11 @@ body {
     color: white;
 }
 
-#integralizationModal h5 {
+#integralizationModal h5, span {
     color: white;
 }
 
-#integralizationModal .p-4 span {
+#courseComparisonResults h5, span {
     color: white;
 }
 
