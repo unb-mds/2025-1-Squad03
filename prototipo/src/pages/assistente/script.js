@@ -370,4 +370,9 @@ function addAddButtonListeners() {
 }
 
 // Auto-scroll chat to bottom on load
-window.addEventListener('load', scrollToBottom); 
+window.addEventListener('load', scrollToBottom);
+
+// Adicionar evento ao botão de adicionar fluxograma
+document.getElementById('add-fluxogram-btn').addEventListener('click', function() {
+    document.getElementById('fluxogram-file-input').click();
+}); 

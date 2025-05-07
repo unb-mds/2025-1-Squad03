@@ -89,10 +89,10 @@
                 
                 <!-- Filters -->
                 <div class="filters-container flex gap-2 w-full md:w-auto">
-                    <button class="filter-button active px-4 py-2 rounded-full text-white">TODOS</button>
-                    <button class="filter-button px-4 py-2 rounded-full text-white">EXATAS</button>
-                    <button class="filter-button px-4 py-2 rounded-full text-white">HUMANAS</button>
-                    <button class="filter-button px-4 py-2 rounded-full text-white">SAÚDE</button>
+                    <button class="filter-button active px-4 py-2 rounded-full text-white" data-filter="all">TODOS</button>
+                    <button class="filter-button px-4 py-2 rounded-full text-white" data-filter="exatas">EXATAS</button>
+                    <button class="filter-button px-4 py-2 rounded-full text-white" data-filter="humanas">HUMANAS</button>
+                    <button class="filter-button px-4 py-2 rounded-full text-white" data-filter="saude">SAÚDE</button>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
         <!-- Courses Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Course Card 1 - Ciência da Computação -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #4A1D96; --color-end: #8B5CF6;">
+            <div class="course-card rounded-lg p-6 relative" data-category="exatas" style="--color-start: #4A1D96; --color-end: #8B5CF6;">
                 <h3 class="text-white text-xl font-bold mb-3">Ciência da Computação</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 8 semestres</p>
                 
@@ -147,7 +147,7 @@
             </div>
             
             <!-- Course Card 2 - Engenharia de Software -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #E11D48; --color-end: #FB7185;">
+            <div class="course-card rounded-lg p-6 relative" data-category="exatas" style="--color-start: #E11D48; --color-end: #FB7185;">
                 <h3 class="text-white text-xl font-bold mb-3">Engenharia de Software</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 10 semestres</p>
                 
@@ -194,7 +194,7 @@
             </div>
             
             <!-- Course Card 3 - Engenharia Elétrica -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #EA580C; --color-end: #FB923C;">
+            <div class="course-card rounded-lg p-6 relative" data-category="exatas" style="--color-start: #EA580C; --color-end: #FB923C;">
                 <h3 class="text-white text-xl font-bold mb-3">Engenharia Elétrica</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 10 semestres</p>
                 
@@ -241,7 +241,7 @@
             </div>
             
             <!-- Course Card 4 - Administração -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #CA8A04; --color-end: #FACC15;">
+            <div class="course-card rounded-lg p-6 relative" data-category="humanas" style="--color-start: #CA8A04; --color-end: #FACC15;">
                 <h3 class="text-white text-xl font-bold mb-3">Administração</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 8 semestres</p>
                 
@@ -288,7 +288,7 @@
             </div>
             
             <!-- Course Card 5 - Medicina -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #16A34A; --color-end: #4ADE80;">
+            <div class="course-card rounded-lg p-6 relative" data-category="saude" style="--color-start: #16A34A; --color-end: #4ADE80;">
                 <h3 class="text-white text-xl font-bold mb-3">Medicina</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 12 semestres</p>
                 
@@ -335,7 +335,7 @@
             </div>
             
             <!-- Course Card 6 - Direito -->
-            <div class="course-card rounded-lg p-6 relative" style="--color-start: #0284C7; --color-end: #38BDF8;">
+            <div class="course-card rounded-lg p-6 relative" data-category="humanas" style="--color-start: #0284C7; --color-end: #38BDF8;">
                 <h3 class="text-white text-xl font-bold mb-3">Direito</h3>
                 <p class="text-gray-300 text-sm mb-4">Bacharelado • 10 semestres</p>
                 
@@ -427,10 +427,11 @@
                 </div>
             </div>
             <div class="mt-8 border-t border-gray-700 pt-6 text-center">
-                <p class="text-gray-400 text-sm">© 2023 NoFluxo UNB. Todos os direitos reservados.</p>
+                <p class="text-gray-400 text-sm">© 2025 NoFluxo UNB. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
     
-    </body>
+    <script src="script.js"></script>
+</body>
 </html> 
