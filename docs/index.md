@@ -43,10 +43,11 @@ Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e perso
 ## 2. 🧩 Links Importantes
 
 - 🔗 [Protótipo no Figma](https://www.figma.com/design/uy5ZwJGkuzjRaeREouMSlI/Prototipo-e-IDV-No-FLX-UnB?node-id=0-1&p=f&t=lCtfwPEEhA2zcpYI-0)  
-- 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/)  
-- ✅ [Board do Projeto no GitHub](https://github.com/unb-mds/2025-1-NoFluxoUNB)
+- 🗺️ [Story Map Público](https://miro.com/app/board/uXjVIC_JkAY=/?moveToWidget=3458764599792494680&cot=14)  
+- ✅ [Board do Projeto no GitHub](https://github.com/orgs/unb-mds/projects/29)
 - 🔗 [Requisitos](https://github.com/unb-mds/2025-1-NoFluxoUNB/blob/main/requisitos.md)
-- 🔗 [Arquitetura](https://miro.com/app/board/uXjVI7JE5pI=/)
+- 🔗 [Arquitetura](https://miro.com/app/board/uXjVIC_JkAY=/?moveToWidget=3458764626773503994&cot=14)
+- 🔗 [Backlog](https://miro.com/app/board/uXjVIC_JkAY=/?moveToWidget=3458764626757911762&cot=14)
  
 ---
 
