@@ -506,9 +506,6 @@ body {
 /* Prevent body scroll when modal is open */
 body.modal-open {
     overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;
 }
 
 /* Ferramentas de Progresso - Modais e Responsividade */
@@ -530,4 +527,15 @@ body.modal-open {
     .tool-card {
         margin-bottom: 1rem;
     }
+}
+
+#integralizationModal > div {
+    max-width: 480px;
+    max-height: 70vh;
+    overflow-y: auto;
+    margin: 4vh auto;
+    background: rgba(0,0,0,0.97);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
 } 

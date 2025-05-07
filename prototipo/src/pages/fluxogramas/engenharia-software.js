@@ -1,14 +1,15 @@
 // Mobile menu functionality
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('open');
-    mobileMenu.classList.toggle('active');
-});
-
-// Ferramentas de Progresso - Event Listeners
 document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            mobileMenu.classList.toggle('active');
+        });
+    }
+
     // Botões das ferramentas
     const iraCalcBtn = document.getElementById('openIraCalc');
     const progressBtn = document.getElementById('openProgress');
@@ -25,27 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButtons = document.querySelectorAll('.closeModal');
 
     // Event Listeners para abrir modais
-    if (iraCalcBtn) {
+    if (iraCalcBtn && iraModal) {
         iraCalcBtn.addEventListener('click', () => {
-            if (iraModal) iraModal.classList.remove('hidden');
+            iraModal.classList.remove('hidden');
         });
     }
 
-    if (progressBtn) {
+    if (progressBtn && progressModal) {
         progressBtn.addEventListener('click', () => {
-            if (progressModal) progressModal.classList.remove('hidden');
+            progressModal.classList.remove('hidden');
         });
     }
 
-    if (integralizationBtn) {
+    if (integralizationBtn && integralizationModal) {
         integralizationBtn.addEventListener('click', () => {
-            if (integralizationModal) integralizationModal.classList.remove('hidden');
+            integralizationModal.classList.remove('hidden');
         });
     }
 
-    if (courseChangeBtn) {
+    if (courseChangeBtn && courseChangeModal) {
         courseChangeBtn.addEventListener('click', () => {
-            if (courseChangeModal) courseChangeModal.classList.remove('hidden');
+            courseChangeModal.classList.remove('hidden');
         });
     }
 
@@ -99,6 +100,189 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Zoom functionality
+    const zoomIn = document.getElementById('zoom-in');
+    const zoomOut = document.getElementById('zoom-out');
+    const zoomLevel = document.getElementById('zoom-level');
+    const fluxogram = document.getElementById('fluxogram');
+
+    let currentZoom = 100;
+
+    if (zoomIn && zoomOut && zoomLevel && fluxogram) {
+        zoomIn.addEventListener('click', () => {
+            if (currentZoom < 200) {
+                currentZoom += 10;
+                fluxogram.style.transform = `scale(${currentZoom / 100})`;
+                zoomLevel.textContent = `${currentZoom}%`;
+            }
+        });
+
+        zoomOut.addEventListener('click', () => {
+            if (currentZoom > 50) {
+                currentZoom -= 10;
+                fluxogram.style.transform = `scale(${currentZoom / 100})`;
+                zoomLevel.textContent = `${currentZoom}%`;
+            }
+        });
+    }
+
+    // Save functionality
+    const saveBtn = document.getElementById('save-btn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', function() {
+            const fluxogram = document.getElementById('fluxogram');
+            if (!fluxogram) {
+                alert('Fluxograma não encontrado!');
+                return;
+            }
+
+            // Desabilitar o botão e mostrar loading
+            this.disabled = true;
+            this.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                GERANDO PDF...
+            `;
+
+            // Capturar a imagem
+            html2canvas(fluxogram, {
+                scale: 2,
+                backgroundColor: '#1a1a1a',
+                logging: false,
+                useCORS: true,
+                allowTaint: true
+            }).then(function(canvas) {
+                const imgData = canvas.toDataURL('image/png');
+                // Tamanho da página A4 em mm
+                const pdfWidth = 297;
+                const pdfHeight = 210;
+                // Tamanho da imagem em px
+                const imgWidth = canvas.width;
+                const imgHeight = canvas.height;
+                // Proporção para caber na página
+                const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+                const imgPDFWidth = imgWidth * ratio;
+                const imgPDFHeight = imgHeight * ratio;
+                const marginX = (pdfWidth - imgPDFWidth) / 2;
+                const marginY = (pdfHeight - imgPDFHeight) / 2;
+
+                const pdf = new jsPDF('l', 'mm', 'a4');
+                pdf.addImage(imgData, 'PNG', marginX, marginY, imgPDFWidth, imgPDFHeight);
+                pdf.save('fluxograma-engenharia-software.pdf');
+
+                // Restaurar botão
+                saveBtn.disabled = false;
+                saveBtn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                    </svg>
+                    SALVAR FLUXOGRAMA
+                `;
+            }).catch(function(error) {
+                console.error('Erro ao gerar PDF:', error);
+                alert('Erro ao gerar o PDF. Por favor, tente novamente.');
+                // Restaurar botão em caso de erro
+                saveBtn.disabled = false;
+                saveBtn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                    </svg>
+                    SALVAR FLUXOGRAMA
+                `;
+            });
+        });
+    }
+
+    // Course modal functionality
+    const courseModal = document.getElementById('course-modal');
+    const closeCourseModal = document.getElementById('close-course-modal');
+
+    if (closeCourseModal && courseModal) {
+        closeCourseModal.addEventListener('click', () => {
+            courseModal.classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        });
+    }
+
+    // Fechar modal ao clicar fora dele
+    window.addEventListener('click', (event) => {
+        if (event.target === courseModal) {
+            courseModal.classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+    });
+
+    // Adicionar eventos de clique nas disciplinas
+    function setRequiredBoxClickHandlers() {
+        document.querySelectorAll('.course-box').forEach(box => {
+            if (box.getAttribute('data-course-type') === 'optative') return;
+            
+            box.onclick = (e) => {
+                e.stopPropagation();
+                const code = box.getAttribute('data-course-id');
+                const name = box.querySelector('p')?.innerText || '';
+                const creditsText = box.querySelector('span')?.innerText || '';
+                const credits = parseInt(creditsText) || 4;
+                const course = { code, name, credits, type: 'Obrigatória' };
+                openCourseModal(course);
+            };
+        });
+    }
+
+    // Adicionar eventos de clique nas optativas
+    function setOptativeBoxClickHandlers() {
+        document.querySelectorAll('.course-box[data-course-type="optative"]').forEach(box => {
+            box.onclick = (e) => {
+                e.stopPropagation();
+                document.querySelectorAll('.course-box.optative-editing').forEach(b => 
+                    b.classList.remove('optative-editing', 'optative-selected-for-edit')
+                );
+                box.classList.add('optative-selected-for-edit', 'optative-editing');
+                openOptativeModal();
+            };
+        });
+    }
+
+    // Inicializar handlers
+    setRequiredBoxClickHandlers();
+    setOptativeBoxClickHandlers();
+
+    // Função para popular a tabela de matérias obrigatórias no modal de adicionar matéria
+    function populateCourseTable() {
+        if (!courseTable) return;
+        courseTable.innerHTML = '';
+        // Seleciona todas as matérias obrigatórias do fluxograma
+        document.querySelectorAll('.course-box:not([data-course-type="optative"])').forEach(box => {
+            const code = box.getAttribute('data-course-id');
+            const name = box.querySelector('p')?.innerText || '';
+            const creditsText = box.querySelector('span')?.innerText || '';
+            const credits = parseInt(creditsText) || 4;
+            const isSelected = box.classList.contains('course-selected');
+            const row = document.createElement('tr');
+            row.className = 'border-b border-gray-800';
+            row.innerHTML = `
+                <td class="py-3 px-4 text-white">${code}</td>
+                <td class="py-3 px-4 text-white">${name}</td>
+                <td class="py-3 px-4 text-white">${credits}</td>
+                <td class="py-3 px-4 text-white">-</td>
+                <td class="py-3 px-4">
+                    <button class="${isSelected ? 'bg-red-600 text-white' : 'bg-gradient-to-r from-green-600 to-green-500 text-white'} py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
+                        ${isSelected ? 'Remover' : 'Adicionar'}
+                    </button>
+                </td>
+            `;
+            courseTable.appendChild(row);
+        });
+    }
+
+    // Open add course modal
+    addCourseBtn.addEventListener('click', () => {
+        populateCourseTable();
+        addCourseModal.classList.remove('hidden');
+    });
 });
 
 // Course modal functionality
@@ -142,6 +326,11 @@ function updateCourseBoxAppearance(courseId, isSelected) {
 
 // Function to toggle course selection
 function toggleCourseSelection(courseId, button) {
+    const courseBox = document.querySelector(`.course-box[data-course-id="${courseId}"]`);
+    if (courseBox && courseBox.classList.contains('course-completed')) {
+        alert('Não é possível adicionar uma matéria já cursada!');
+        return;
+    }
     if (selectedCourses.has(courseId)) {
         selectedCourses.delete(courseId);
         button.textContent = 'Adicionar';
@@ -166,8 +355,37 @@ courseTable.addEventListener('click', (e) => {
     toggleCourseSelection(courseId, button);
 });
 
+// Função para popular a tabela de matérias obrigatórias no modal de adicionar matéria
+function populateCourseTable() {
+    if (!courseTable) return;
+    courseTable.innerHTML = '';
+    // Seleciona todas as matérias obrigatórias do fluxograma
+    document.querySelectorAll('.course-box:not([data-course-type="optative"])').forEach(box => {
+        const code = box.getAttribute('data-course-id');
+        const name = box.querySelector('p')?.innerText || '';
+        const creditsText = box.querySelector('span')?.innerText || '';
+        const credits = parseInt(creditsText) || 4;
+        const isSelected = box.classList.contains('course-selected');
+        const row = document.createElement('tr');
+        row.className = 'border-b border-gray-800';
+        row.innerHTML = `
+            <td class="py-3 px-4 text-white">${code}</td>
+            <td class="py-3 px-4 text-white">${name}</td>
+            <td class="py-3 px-4 text-white">${credits}</td>
+            <td class="py-3 px-4 text-white">-</td>
+            <td class="py-3 px-4">
+                <button class="${isSelected ? 'bg-red-600 text-white' : 'bg-gradient-to-r from-green-600 to-green-500 text-white'} py-1 px-3 rounded hover:bg-red-700 transition-all duration-300">
+                    ${isSelected ? 'Remover' : 'Adicionar'}
+                </button>
+            </td>
+        `;
+        courseTable.appendChild(row);
+    });
+}
+
 // Open add course modal
 addCourseBtn.addEventListener('click', () => {
+    populateCourseTable();
     addCourseModal.classList.remove('hidden');
 });
 
@@ -187,71 +405,27 @@ cancelAdd.addEventListener('click', () => {
 
 // Confirm adding courses
 confirmAdd.addEventListener('click', () => {
+    // Verifica se há duplicatas entre as matérias já presentes no fluxograma
+    let hasDuplicate = false;
+    selectedCourses.forEach(courseId => {
+        // Verifica se já existe uma course-box com esse courseId marcada como selecionada
+        const alreadySelected = document.querySelectorAll(`.course-box.course-selected[data-course-id="${courseId}"]`).length > 0;
+        if (alreadySelected) {
+            hasDuplicate = true;
+        }
+    });
+    if (hasDuplicate) {
+        alert('Não é possível adicionar duas matérias iguais no fluxograma!');
+        return;
+    }
     // Apply changes to all selected courses
     selectedCourses.forEach(courseId => {
         updateCourseBoxAppearance(courseId, true);
     });
-    
-    // Reset courses that were previously selected but are now deselected
-    document.querySelectorAll('.course-box').forEach(box => {
-        const courseId = box.dataset.courseId;
-        if (!selectedCourses.has(courseId) && box.classList.contains('course-selected')) {
-            updateCourseBoxAppearance(courseId, false);
-        }
-    });
-    
     alert('Alterações salvas com sucesso!');
     addCourseModal.classList.add('hidden');
     selectedCourses.clear();
     updateSelectedCoursesCount();
-});
-
-// Zoom functionality
-const zoomIn = document.getElementById('zoom-in');
-const zoomOut = document.getElementById('zoom-out');
-const zoomLevel = document.getElementById('zoom-level');
-const fluxogram = document.getElementById('fluxogram');
-
-let currentZoom = 100;
-
-zoomIn.addEventListener('click', () => {
-    if (currentZoom < 200) {
-        currentZoom += 10;
-        fluxogram.style.transform = `scale(${currentZoom / 100})`;
-        zoomLevel.textContent = `${currentZoom}%`;
-    }
-});
-
-zoomOut.addEventListener('click', () => {
-    if (currentZoom > 50) {
-        currentZoom -= 10;
-        fluxogram.style.transform = `scale(${currentZoom / 100})`;
-        zoomLevel.textContent = `${currentZoom}%`;
-    }
-});
-
-// Save functionality
-const saveBtn = document.getElementById('save-btn');
-
-saveBtn.addEventListener('click', async () => {
-    const fluxogram = document.getElementById('fluxogram');
-    if (!fluxogram) {
-        alert('Fluxograma não encontrado!');
-        return;
-    }
-    // Captura a imagem do fluxograma
-    const canvas = await html2canvas(fluxogram, {backgroundColor: '#1a1a1a'});
-    const imgData = canvas.toDataURL('image/png');
-
-    // Cria o PDF (A4, paisagem, tamanho do canvas)
-    const pdf = new window.jspdf.jsPDF({
-        orientation: 'landscape',
-        unit: 'px',
-        format: [canvas.width, canvas.height]
-    });
-
-    pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
-    pdf.save('fluxograma-engenharia-software.pdf');
 });
 
 // Lista de optativas
@@ -295,19 +469,26 @@ let selectedOptative = null;
 
 // Função para abrir o modal de optativas
 function openOptativeModal() {
-    optativeModal.classList.remove('hidden');
-    populateOptativeTable();
+    if (optativeModal) {
+        optativeModal.classList.remove('hidden');
+        populateOptativeTable();
+    }
 }
 
 // Função para fechar o modal de optativas
 function closeOptativeModalFunc() {
-    optativeModal.classList.add('hidden');
-    selectedOptative = null;
-    updateSelectedOptativeSummary();
+    if (optativeModal) {
+        optativeModal.classList.add('hidden');
+        selectedOptative = null;
+        updateSelectedOptativeSummary();
+        removeOptativeEditingHighlight();
+    }
 }
 
 // Função para popular a tabela de optativas
 function populateOptativeTable() {
+    if (!optativeTableBody) return;
+    
     optativeTableBody.innerHTML = '';
     optatives.forEach(optative => {
         const row = document.createElement('tr');
@@ -325,9 +506,11 @@ function populateOptativeTable() {
         `;
         
         const selectBtn = row.querySelector('.select-optative');
-        selectBtn.addEventListener('click', () => {
-            selectOptative(optative, row);
-        });
+        if (selectBtn) {
+            selectBtn.addEventListener('click', () => {
+                selectOptative(optative, row);
+            });
+        }
         
         optativeTableBody.appendChild(row);
     });
@@ -346,22 +529,24 @@ function selectOptative(optative, row) {
     selectedOptative = optative;
     row.classList.add('bg-purple-900', 'bg-opacity-20');
     const selectBtn = row.querySelector('.select-optative');
-    selectBtn.textContent = 'Selecionado';
-    selectBtn.className = 'select-optative bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300';
+    if (selectBtn) {
+        selectBtn.textContent = 'Selecionado';
+        selectBtn.className = 'select-optative bg-red-600 text-white py-1 px-3 rounded hover:bg-red-700 transition-all duration-300';
+    }
     
     updateSelectedOptativeSummary();
 }
 
 // Função para atualizar o resumo da optativa selecionada
 function updateSelectedOptativeSummary() {
-    if (selectedOptative) {
-        selectedOptativeCount.textContent = '1';
-        selectedOptativeCredits.textContent = selectedOptative.credits;
-        selectedOptativeHours.textContent = selectedOptative.credits;
-    } else {
-        selectedOptativeCount.textContent = '0';
-        selectedOptativeCredits.textContent = '0';
-        selectedOptativeHours.textContent = '0';
+    if (selectedOptativeCount) {
+        selectedOptativeCount.textContent = selectedOptative ? '1' : '0';
+    }
+    if (selectedOptativeCredits) {
+        selectedOptativeCredits.textContent = selectedOptative ? selectedOptative.credits : '0';
+    }
+    if (selectedOptativeHours) {
+        selectedOptativeHours.textContent = selectedOptative ? selectedOptative.credits : '0';
     }
 }
 
@@ -371,7 +556,9 @@ function setOptativeBoxClickHandlers() {
         box.onclick = (e) => {
             e.stopPropagation();
             // Remove destaque de todos os quadrados
-            document.querySelectorAll('.course-box.optative-editing').forEach(b => b.classList.remove('optative-editing', 'optative-selected-for-edit'));
+            document.querySelectorAll('.course-box.optative-editing').forEach(b => 
+                b.classList.remove('optative-editing', 'optative-selected-for-edit')
+            );
             // Sempre abre o modal de adicionar optativa, mesmo se já estiver preenchido
             box.classList.add('optative-selected-for-edit', 'optative-editing');
             openOptativeModal();
@@ -381,35 +568,27 @@ function setOptativeBoxClickHandlers() {
 
 // Ao fechar qualquer modal, remover destaque de edição
 function removeOptativeEditingHighlight() {
-    document.querySelectorAll('.course-box.optative-editing').forEach(b => b.classList.remove('optative-editing', 'optative-selected-for-edit'));
+    document.querySelectorAll('.course-box.optative-editing').forEach(b => 
+        b.classList.remove('optative-editing', 'optative-selected-for-edit')
+    );
 }
 
-// Fechar modal de optativa
-function closeOptativeModalFunc() {
-    optativeModal.classList.add('hidden');
-    selectedOptative = null;
-    updateSelectedOptativeSummary();
-    removeOptativeEditingHighlight();
+// Event Listeners para o modal de optativas
+if (addOptativeBtn) {
+    addOptativeBtn.addEventListener('click', openOptativeModal);
 }
 
-// Fechar modal de detalhes do curso
-closeCourseModal.addEventListener('click', () => {
-    courseModal.classList.add('hidden');
-    removeOptativeEditingHighlight();
-});
+if (closeOptativeModal) {
+    closeOptativeModal.addEventListener('click', closeOptativeModalFunc);
+}
 
-// Event Listeners
-addOptativeBtn.addEventListener('click', openOptativeModal);
-closeOptativeModal.addEventListener('click', closeOptativeModalFunc);
-cancelOptativeBtn.addEventListener('click', closeOptativeModalFunc);
-confirmOptativeBtn.addEventListener('click', addOptativeToFlowchart);
+if (cancelOptativeBtn) {
+    cancelOptativeBtn.addEventListener('click', closeOptativeModalFunc);
+}
 
-// Fechar modal ao clicar fora dele
-window.addEventListener('click', (event) => {
-    if (event.target === optativeModal) {
-        closeOptativeModalFunc();
-    }
-});
+if (confirmOptativeBtn) {
+    confirmOptativeBtn.addEventListener('click', addOptativeToFlowchart);
+}
 
 // Função para adicionar a optativa ao fluxograma
 function addOptativeToFlowchart() {
@@ -417,29 +596,30 @@ function addOptativeToFlowchart() {
         alert('Por favor, selecione uma optativa.');
         return;
     }
-
-    const semester = parseInt(optativeSemesterSelect.value);
+    // Verifica se já existe uma optativa com o mesmo código no fluxograma
+    const alreadyExists = document.querySelector(`.course-box[data-course-id="${selectedOptative.code}"]`);
+    if (alreadyExists) {
+        alert('Não é possível adicionar duas matérias optativas iguais no fluxograma!');
+        return;
+    }
+    const semester = parseInt(optativeSemesterSelect?.value);
     if (!semester) {
         alert('Por favor, selecione um semestre.');
         return;
     }
-
     const semesterElement = document.querySelector(`.semester-col:nth-child(${semester})`);
     if (!semesterElement) {
         alert('Semestre não encontrado.');
         return;
     }
-
     // Verifica se há um quadrado marcado para edição
     let optativeBox = semesterElement.querySelector('.course-box.optative-selected-for-edit');
-
     // Se não, procura por um quadrado de optativa vazio
     if (!optativeBox) {
         optativeBox = Array.from(semesterElement.querySelectorAll('.course-box[data-course-type="optative"]')).find(box => {
             return box.innerText.includes('Clique para adicionar');
         });
     }
-
     // Se ainda não houver, cria um novo quadrado
     if (!optativeBox) {
         optativeBox = document.createElement('div');
@@ -447,7 +627,6 @@ function addOptativeToFlowchart() {
         optativeBox.setAttribute('data-course-type', 'optative');
         semesterElement.appendChild(optativeBox);
     }
-
     // Substituir o conteúdo do quadrado de optativa
     optativeBox.innerHTML = `
         <h4 class="text-white font-bold text-sm">${selectedOptative.code}</h4>
@@ -461,16 +640,13 @@ function addOptativeToFlowchart() {
     optativeBox.classList.add('course-future');
     optativeBox.classList.remove('course-optative');
     optativeBox.classList.remove('optative-selected-for-edit', 'optative-editing');
-
     // Garante que o quadrado continue abrindo o modal de optativa ao ser clicado
     optativeBox.onclick = (e) => {
         e.stopPropagation();
         optativeBox.classList.add('optative-selected-for-edit', 'optative-editing');
         openOptativeModal();
     };
-
     setOptativeBoxClickHandlers(); // Garante que todos os quadrados mantenham o comportamento
-
     console.log(`Optativa ${selectedOptative.code} adicionada ao semestre ${semester}`);
     closeOptativeModalFunc();
 }
@@ -791,6 +967,60 @@ function openCourseModal(course) {
     });
     
     modal.classList.remove('hidden');
+
+    // Adicionar funcionalidade ao botão 'ADICIONAR AO PRÓXIMO SEMESTRE'
+    const addNextBtn = content.querySelector('button.bg-gradient-to-r');
+    if (addNextBtn) {
+        addNextBtn.addEventListener('click', function() {
+            // Descobrir o semestre atual da matéria
+            const allSemesters = Array.from(document.querySelectorAll('.semester-col'));
+            let currentSemesterIdx = -1;
+            let currentBox = null;
+            allSemesters.forEach((semester, idx) => {
+                const box = semester.querySelector(`.course-box[data-course-id="${course.code}"]`);
+                if (box) {
+                    currentSemesterIdx = idx;
+                    currentBox = box;
+                }
+            });
+            if (currentSemesterIdx === -1) {
+                alert('Não foi possível localizar a matéria no fluxograma.');
+                return;
+            }
+            // Procurar próximo semestre disponível
+            const nextSemesterIdx = currentSemesterIdx + 1;
+            if (nextSemesterIdx >= allSemesters.length) {
+                alert('Não há próximo semestre disponível para adicionar esta matéria.');
+                return;
+            }
+            const nextSemester = allSemesters[nextSemesterIdx];
+            // Verificar se já existe a matéria no próximo semestre
+            if (nextSemester.querySelector(`.course-box[data-course-id="${course.code}"]`)) {
+                alert('Esta matéria já está no próximo semestre!');
+                return;
+            }
+            // Criar novo quadrado da matéria no próximo semestre
+            const newBox = document.createElement('div');
+            newBox.className = 'course-box course-selected rounded-lg p-3 shadow-lg mb-4 w-48';
+            newBox.setAttribute('data-course-id', course.code);
+            newBox.innerHTML = `
+                <h4 class="text-white font-bold text-sm">${course.code}</h4>
+                <p class="text-white text-xs mt-1">${course.name}</p>
+                <div class="flex items-center mt-2">
+                    <span class="text-xs bg-black bg-opacity-20 px-2 py-0.5 rounded">${course.credits} créditos</span>
+                </div>
+            `;
+            nextSemester.appendChild(newBox);
+            // Remover do semestre atual
+            if (currentBox) {
+                currentBox.remove();
+            }
+            setRequiredBoxClickHandlers();
+            alert('Matéria movida para o próximo semestre!');
+            modal.classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        });
+    }
 }
 
 // Adicionar evento para fechar o modal
@@ -803,9 +1033,8 @@ document.getElementById('close-course-modal').addEventListener('click', () => {
 
 // Fechar modal ao clicar fora dele
 window.addEventListener('click', (event) => {
-    const modal = document.getElementById('course-modal');
-    if (event.target === modal) {
-        modal.classList.add('hidden');
+    if (event.target === courseModal) {
+        courseModal.classList.add('hidden');
         // Remover classe para liberar o scroll do body
         document.body.classList.remove('modal-open');
     }
@@ -988,5 +1217,18 @@ if (simulateCourseChangeBtn) {
         if (courseSelect.value) {
             document.getElementById('courseComparisonResults').classList.remove('hidden');
         }
+    }); 
+}
+
+function clearPrereqChainsColors() {
+    const allBoxes = Array.from(document.querySelectorAll('.course-box'));
+    allBoxes.forEach((box) => {
+        // Remove o background color customizado
+        box.style.background = '';
+        box.style.color = '';
+        // Restaura as classes padrão de status
+        if (box.dataset.originalClass) {
+            box.className = box.dataset.originalClass;
+        }
     });
-} 
+}

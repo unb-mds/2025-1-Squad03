@@ -1247,8 +1247,51 @@
         </div>
     </div>
 
+    <!-- Modal de Adicionar Matéria -->
+    <div id="add-course-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="modal-content rounded-lg p-6 max-w-4xl w-full mx-4 relative">
+            <!-- Botão de Fechar -->
+            <button id="close-add-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h2 class="text-white text-2xl font-bold mb-6">Adicionar/Remover Matérias</h2>
+            <div class="max-h-96 overflow-y-auto mb-6">
+                <table class="w-full">
+                    <thead class="bg-black bg-opacity-50 sticky top-0">
+                        <tr>
+                            <th class="py-3 px-4 text-left text-white">Código</th>
+                            <th class="py-3 px-4 text-left text-white">Nome</th>
+                            <th class="py-3 px-4 text-left text-white">Créditos</th>
+                            <th class="py-3 px-4 text-left text-white">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- O JS irá popular as linhas -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                <h3 class="text-white font-bold">Matérias Selecionadas: 0</h3>
+                <div class="text-white">
+                    <span class="mr-4">Total de Créditos: 0</span>
+                    <span>Carga Horária: 0 horas/semana</span>
+                </div>
+            </div>
+            <div class="mt-6 flex justify-end gap-3">
+                <button id="cancel-add" class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    CANCELAR
+                </button>
+                <button id="confirm-add" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 px-4 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+                    CONFIRMAR
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script src="engenharia-software.js"></script>
 </body>
 </html> 
