@@ -1,7 +1,7 @@
 import fs from 'fs';
 import PdfParse from 'pdf-parse';
 
-const pdfFile = fs.readFileSync('seu_historico_aqui');
+const pdfFile = fs.readFileSync('historico_222037559.pdf');
 
 
 PdfParse(pdfFile).then(function (data) {
@@ -28,7 +28,7 @@ PdfParse(pdfFile).then(function (data) {
 
 
     
-    const regex = /([A-ZÀ-Ú\s\d]+)\s+Dr(?:a)?\. .*?\(\d+h\)[\s\S]*?(\d{2}(?:APR|REP)[A-Z]+[\d]+),0([A-Z#\-]+)/g;
+    const regex = /([A-ZÀ-Ú\s\d]+)\s+Dr(?:a)?\. .*?\(\d+h\)[\s\S]*?(\d{2}(?:APR|REP|TRANC|REPMF|REPF|REP|CANC|DIS)[A-Z]+[\d]+),0([A-Z#\-]+)/g;
 
     const materias: { nome: string; status: string; mencao: string }[] = [];
 
@@ -36,7 +36,33 @@ PdfParse(pdfFile).then(function (data) {
 
     while ((match = regex.exec(text)) !== null) {
         const nome = match[1].trim().replace(/\s+/g, ' ');
-        const status = match[2].includes('APR') ? 'APR' : 'REP';
+        let statusRaw = match[2];
+
+        let status;
+        if (statusRaw.includes('APR')) {
+        status = 'APR'; // Aprovado(a) por média
+        } else if (statusRaw.includes('REP')) {
+        if (statusRaw.includes('REPMF')) {
+            status = 'REPMF'; // Reprovado(a) por média e falta
+        } else if (statusRaw.includes('REPF')) {
+            status = 'REPF'; // Reprovado(a) por falta
+        } else {
+            status = 'REP'; // Reprovado(a) por média
+        }
+        } else if (statusRaw.includes('CANC')) {
+        status = 'CANC'; // Cancelado
+        } else if (statusRaw.includes('DISP')) {
+        status = 'DISP'; // Dispensado(a)
+        } else if (statusRaw.includes('MATR')) {
+        status = 'MATR'; // Matriculado(a)
+        } else if (statusRaw.includes('TRANC')) {
+        status = 'TRANC'; // Trancado
+        } else if (statusRaw.includes('CUMP')) {
+        status = 'CUMP'; // Cumpriu (ganhou o componente por aproveitamento)
+        } else {
+        status = 'DESCONHECIDO'; // Caso nenhuma das siglas seja encontrada
+        }
+
         const mencao = match[3].replace(/[^A-Z]/g, '');
 
 
