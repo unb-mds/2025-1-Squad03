@@ -1,7 +1,7 @@
 import PyPDF2
 
 # 1. Extrair todo o texto do PDF
-nome_pdf = "historico_222037559"
+nome_pdf = "historico_232014010 (2)"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
@@ -81,7 +81,7 @@ for i, linha in enumerate(linhas):
                 else:
                     texto_aux += nome_disciplina[i]
 
-            disciplinas.append({"nome_disciplina": nome_disciplina, "status": status, "mencao": mencao, "creditos":creditos, "codigo":codigo})
+            disciplinas.append({"nome_disciplina": nome_disciplina, "status": status, "mencao": mencao, "creditos":creditos, "codigo":codigo, "ch":match_horas_formatadas})
 
     else:
         creditos_cump = 0
@@ -100,12 +100,12 @@ for i, linha in enumerate(linhas):
             if match_cump:
                 nome_materia_cump = match_cump.group(1).strip()  # Remove espaços extras
                 print(nome_materia_cump)  # Saída: "INGLÊS INSTRUMENTAL 1"
-                carga_horaria = match_padrao_horas_cump.group(1)
+                carga_horaria = int(match_padrao_horas_cump.group(1))
                 print("Carga horária:", carga_horaria)
-                creditos_cump = int(int(carga_horaria)/15)
+                creditos_cump = int((carga_horaria)/15)
                 codigo = match_codigo.group()
                 print("Código da matéria:", codigo)
-                disciplinas.append({"nome_disciplina": nome_materia_cump, "status": 'CUMP', "mencao": '-', "creditos": creditos_cump, "codigo":codigo})
+                disciplinas.append({"nome_disciplina": nome_materia_cump, "status": 'CUMP', "mencao": '-', "creditos": creditos_cump, "codigo":codigo, "ch":carga_horaria})
             else:
                 print("Nome da matéria não encontrado.")
 
