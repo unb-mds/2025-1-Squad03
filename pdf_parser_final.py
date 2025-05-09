@@ -32,9 +32,15 @@ padrao_status = re.compile(r"\b(APR|REP|MATR|TRANC|CUMP)\b")
 padrao_mencao = re.compile(r"\b(SS|MS|MM|MI|II|SR)\b")
 padrao_cump = re.compile(r"--\s+CUMP\b")
 padrao_materia_cump = re.compile(r"\d{4}\.\d\s+(.+?)\s+--")
+#Dra. GLAUCENY CIRNE DE MEDEIROS (60h)03 REP FGA0133 60 89,0 MI
+padrao_horas = re.compile(r"\((.+?)\)")
+padrao_horas_cump = re.compile(r"[A-Za-z]+\d+\s+(\d+)\s+\d+,\d")
+
+padrao_codigo = re.compile(r"\b[A-Z]{2,}\d{3,}\b")
 
 # Processa as linhas e extrai informações
 for i, linha in enumerate(linhas):
+    creditos = 0
     #print(i)
     linha = linha.strip()
     #print(linha)
@@ -51,12 +57,20 @@ for i, linha in enumerate(linhas):
         match_mencao = padrao_mencao.findall(linha)
         #print(match_mencao) #['MI']
         #print('------------------------------------------------')
+        match_codigo = padrao_codigo.search(linha)
+
         
         if match_status:
             status = match_status.group(1)
             mencao = match_mencao[-1] if match_mencao else "-"
             nome_disciplina = linhas[i - 1].strip()  # A disciplina está na linha anterior
             texto_aux = ''
+            match_horas = padrao_horas.findall(linha)
+            match_horas_formatadas = int(match_horas[0].strip('h'))
+            creditos = int(match_horas_formatadas/15)
+
+            codigo = match_codigo.group()
+            print("Código da matéria:", codigo)
 
             for i in range(len(nome_disciplina)):
                 #print(texto[i])
@@ -67,18 +81,31 @@ for i, linha in enumerate(linhas):
                 else:
                     texto_aux += nome_disciplina[i]
 
-            disciplinas.append({"nome_disciplina": nome_disciplina, "status": status, "mencao": mencao})
+            disciplinas.append({"nome_disciplina": nome_disciplina, "status": status, "mencao": mencao, "creditos":creditos, "codigo":codigo})
 
     else:
+        creditos_cump = 0
         if padrao_cump.search(linha):
             print(linha)
+            match_mencao = padrao_mencao.findall(linha)
             print('ACHOU CUMP!!!!!!!')
             print('--------------------------------------------')
             match_cump = padrao_materia_cump.search(linha)
+
+            match_padrao_horas_cump = padrao_horas_cump.search(linha)
+
+            match_codigo = padrao_codigo.search(linha)
+
+            print(match_padrao_horas_cump)
             if match_cump:
                 nome_materia_cump = match_cump.group(1).strip()  # Remove espaços extras
                 print(nome_materia_cump)  # Saída: "INGLÊS INSTRUMENTAL 1"
-                disciplinas.append({"nome_disciplina": nome_materia_cump, "status": 'CUMP', "mencao": '-'})
+                carga_horaria = match_padrao_horas_cump.group(1)
+                print("Carga horária:", carga_horaria)
+                creditos_cump = int(int(carga_horaria)/15)
+                codigo = match_codigo.group()
+                print("Código da matéria:", codigo)
+                disciplinas.append({"nome_disciplina": nome_materia_cump, "status": 'CUMP', "mencao": '-', "creditos": creditos_cump, "codigo":codigo})
             else:
                 print("Nome da matéria não encontrado.")
 
