@@ -1,0 +1,94 @@
+import PyPDF2
+
+# 1. Extrair todo o texto do PDF
+nome_pdf = "historico_222037559"
+with open(nome_pdf+'.pdf', "rb") as file:
+    leitor = PyPDF2.PdfReader(file)
+    texto_total = ""
+    for pagina in leitor.pages:
+        texto_total += pagina.extract_text() + "\n"  # Concatena o texto de todas as páginas
+
+# 2. Salvar todo o conteúdo em um arquivo .txt
+matricula = str(nome_pdf.split('_')[1])
+
+with open("historico_completo"+matricula+".txt", "w", encoding="utf-8") as output_file:
+    output_file.write(texto_total)  # Escreve o texto exatamente como foi extraído
+
+print("Arquivo 'historico_completo.txt' criado com sucesso!")
+
+
+
+
+import re
+import json
+
+# Abre o arquivo de texto e lê as linhas
+with open("historico_completo"+matricula+".txt", "r", encoding="utf-8") as f:
+    linhas = f.readlines()
+
+# Expressões regulares para encontrar status e menção
+disciplinas = []
+padrao_status = re.compile(r"\b(APR|REP|MATR|TRANC|CUMP)\b")
+padrao_mencao = re.compile(r"\b(SS|MS|MM|MI|II|SR)\b")
+padrao_cump = re.compile(r"--\s+CUMP\b")
+padrao_materia_cump = re.compile(r"\d{4}\.\d\s+(.+?)\s+--")
+
+# Processa as linhas e extrai informações
+for i, linha in enumerate(linhas):
+    #print(i)
+    linha = linha.strip()
+    #print(linha)
+    #2024.2 INGLÊS INSTRUMENTAL 1 -- CUMP LET0331 60 100,0 - #
+    #2024.2 ATIVIDADE COMPLEMENTAR -- CUMP DEG0202 45 100,0 - *
+
+    #Dra. LUIZA YOKO TANEGUTI (60h)13 APR MAT0031 60 100,0 MM
+
+    # Verifica se a linha tem prefixo de professor
+    if linha.startswith("Dr.") or linha.startswith("MSc.") or linha.startswith("Dra."):
+        print(linha)
+        match_status = padrao_status.search(linha)
+        #print(match_status) #<re.Match object; span=(41, 44), match='REP'>
+        match_mencao = padrao_mencao.findall(linha)
+        #print(match_mencao) #['MI']
+        #print('------------------------------------------------')
+        
+        if match_status:
+            status = match_status.group(1)
+            mencao = match_mencao[-1] if match_mencao else "-"
+            nome_disciplina = linhas[i - 1].strip()  # A disciplina está na linha anterior
+            texto_aux = ''
+
+            for i in range(len(nome_disciplina)):
+                #print(texto[i])
+                if nome_disciplina[i].isalpha():
+                    nome_disciplina = nome_disciplina.strip(texto_aux)
+                    break
+
+                else:
+                    texto_aux += nome_disciplina[i]
+
+            disciplinas.append({"nome_disciplina": nome_disciplina, "status": status, "mencao": mencao})
+
+    else:
+        if padrao_cump.search(linha):
+            print(linha)
+            print('ACHOU CUMP!!!!!!!')
+            print('--------------------------------------------')
+            match_cump = padrao_materia_cump.search(linha)
+            if match_cump:
+                nome_materia_cump = match_cump.group(1).strip()  # Remove espaços extras
+                print(nome_materia_cump)  # Saída: "INGLÊS INSTRUMENTAL 1"
+                disciplinas.append({"nome_disciplina": nome_materia_cump, "status": 'CUMP', "mencao": '-'})
+            else:
+                print("Nome da matéria não encontrado.")
+
+
+
+# Salva os resultados em um arquivo JSON
+with open("disciplinas" + "_" + matricula + ".json", "w", encoding="utf-8") as json_file:
+    json.dump(disciplinas, json_file, ensure_ascii=False, indent=4)
+
+# Exibe os resultados
+for disciplina in disciplinas:
+    ...
+    #print(f"{disciplina['nome_disciplina']} | Status: {disciplina['status']} | Menção: {disciplina['mencao']}")
