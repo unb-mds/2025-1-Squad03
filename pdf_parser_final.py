@@ -1,18 +1,18 @@
 import PyPDF2
 
-# 1. Extrair todo o texto do PDF
+
 nome_pdf = "historico_232014010 (2)"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
     for pagina in leitor.pages:
-        texto_total += pagina.extract_text() + "\n"  # Concatena o texto de todas as páginas
+        texto_total += pagina.extract_text() + "\n" 
 
-# 2. Salvar todo o conteúdo em um arquivo .txt
+
 matricula = str(nome_pdf.split('_')[1])
 
 with open("historico_completo"+matricula+".txt", "w", encoding="utf-8") as output_file:
-    output_file.write(texto_total)  # Escreve o texto exatamente como foi extraído
+    output_file.write(texto_total)  
 
 print("Arquivo 'historico_completo.txt' criado com sucesso!")
 
@@ -22,11 +22,11 @@ print("Arquivo 'historico_completo.txt' criado com sucesso!")
 import re
 import json
 
-# Abre o arquivo de texto e lê as linhas
+
 with open("historico_completo"+matricula+".txt", "r", encoding="utf-8") as f:
     linhas = f.readlines()
 
-# Expressões regulares para encontrar status e menção
+
 disciplinas = []
 padrao_status = re.compile(r"\b(APR|REP|MATR|TRANC|CUMP)\b")
 padrao_mencao = re.compile(r"\b(SS|MS|MM|MI|II|SR)\b")
@@ -38,7 +38,7 @@ padrao_horas_cump = re.compile(r"[A-Za-z]+\d+\s+(\d+)\s+\d+,\d")
 
 padrao_codigo = re.compile(r"\b[A-Z]{2,}\d{3,}\b")
 
-# Processa as linhas e extrai informações
+# extrai informações
 for i, linha in enumerate(linhas):
     creditos = 0
     #print(i)
