@@ -75,7 +75,8 @@ for i, linha in enumerate(linhas):
             for i in range(len(nome_disciplina)):
                 #print(texto[i])
                 if nome_disciplina[i].isalpha():
-                    nome_disciplina = nome_disciplina.strip(texto_aux)
+                    #nome_disciplina = nome_disciplina.strip(texto_aux)
+                    nome_disciplina = (nome_disciplina.split(texto_aux))[1]
                     break
 
                 else:
