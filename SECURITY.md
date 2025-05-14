@@ -19,7 +19,7 @@ A segurança da nossa comunidade e dos nossos usuários é de extrema importânc
         * Se possível, sugestões de como corrigir a vulnerabilidade.
     * **Importante:** Mantenha este Pull Request como um **rascunho** ou utilize as configurações de privacidade do GitHub para restringir a visibilidade apenas aos mantenedores do projeto. Isso evita a divulgação pública da vulnerabilidade antes que ela seja corrigida.
 
-2.  **Notifique os mantenedores:** Após criar o PR privado (ou rascunho), notifique os mantenedores do projeto diretamente. Você pode fazer isso mencionando-os no PR ou, se preferir um canal mais direto, entre em contato através de \[OUTRO_MEIO_DE_CONTATO_SE_HOUVER, ex: um canal privado em alguma plataforma de comunicação].
+2.  **Notifique os mantenedores:** Após criar o PR privado (ou rascunho), notifique os mantenedores do projeto diretamente. Você pode fazer isso mencionando-os no PR ou, se preferir um canal mais direto, entre em contato através do Git Hub
 
 **O que esperar depois de reportar:**
 
