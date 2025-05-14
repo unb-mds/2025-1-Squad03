@@ -32,8 +32,6 @@ Com uma experiência de usuário (UX) aprimorada, o produto permite:
 - 🎓 **Selecionar disciplinas futuras** para montar um planejamento personalizado.
 - 🤖 Usar **inteligência artificial** para recomendar disciplinas alinhadas aos interesses pessoais, como desenvolvimento de games ou outras áreas específicas, com base nas ementas e informações dos cursos da UnB.
 
-Inicialmente, o projeto será disponibilizado somente para os cursos da **Faculdade UnB Gama (FGA)** pertencentes à **Faculdade de Ciências e Tecnologia (FCTE)**, com perspectiva futura de expansão.
-
 Dessa forma, o estudante consegue um planejamento acadêmico **assertivo e personalizado**, simplificando seu percurso até a conclusão do curso.
 
 ---
