@@ -321,18 +321,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ADM0019",
-          "nome": "TÓPICOS EM PRODUÇÃO E OPERAÇÕES",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ADM0020",
-          "nome": "TÓPICOS EM GESTÃO DA TECNOLOGIA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ADM0025",
           "nome": "ORGANIZACAO E SISTEMAS",
           "carga_horaria": "60h",
@@ -516,12 +504,6 @@
           "codigo": "ADM0313",
           "nome": "TÓPICOS CONTEMPORÂNEOS EM PRODUÇÃO, LOGÍSTICA E GESTÃO DA INFORMAÇÃO",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ADM0314",
-          "nome": "ADMINISTRAÇÃO DE RECURSOS MATERIAIS E PATRIMONIAIS",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -993,12 +975,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "EST0060",
-          "nome": "MATEMATICA FINANCEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "EST0061",
           "nome": "INTRODUCAO A ESTATISTICA ECONOMICA",
           "carga_horaria": "60h",
@@ -1053,20 +1029,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIL0064",
-          "nome": "ÉTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FIL0069",
           "nome": "INTRODUÇÃO À FILOSOFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0105",
-          "nome": "INICIAÇÃO À PRÁTICA FILOSÓFICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1167,6 +1131,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "LET0076",
+          "nome": "FRANCES INSTRUMENTAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "LET0101",
           "nome": "LÍNGUA ALEMÃ 1",
           "carga_horaria": "60h",
@@ -1205,12 +1175,6 @@
         {
           "codigo": "LET0378",
           "nome": "LINGUA CHINESA 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0431",
-          "nome": "FRANCÊS 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1317,6 +1281,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PST0050",
+          "nome": "PSICOLOGIA DAS ORGANIZAÇÕES",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PST0051",
           "nome": "PSICOLOGIA DAS ORGANIZAÇÕES",
           "carga_horaria": "60h",
@@ -1335,7 +1305,7 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PST0078",
+          "codigo": "PST0077",
           "nome": "DIVERSIDADE NAS ORGANIZAÇÕES",
           "carga_horaria": "60h",
           "natureza": "Optativa"

@@ -123,9 +123,6 @@ def scrape_estruturas():
     with open(json_path, 'r', encoding='utf-8') as f:
         cursos = json.load(f)
 
-    # Filtrar apenas o curso desejado (ajuste para todos se quiser)
-    #cursos = [c for c in cursos if normalize(c['nome']) == "ciência da computação"]
-
     base_url = "https://sigaa.unb.br/sigaa/public/curso/lista.jsf?nivel=G&aba=p-graduacao"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -139,41 +136,31 @@ def scrape_estruturas():
     soup = BeautifulSoup(resp.text, 'html.parser')
     viewstate = get_viewstate(soup)
 
-    for curso in cursos:
-        nome_curso = curso['nome']
-        print(f"Processando: {nome_curso}")
+    # 2. Iterar sobre os cursos na página inicial
+    tabela = soup.find('table', {'class': 'listagem'})
+    if not tabela:
+        print("Erro: Tabela de cursos não encontrada.")
+        return
 
-        # 2. Submeter formulário de busca
-        form_data = {
-            'form': 'form',
-            'form:inputNome': nome_curso,
-            'form:inputModalidade': 'Presencial',
-            'form:j_id_jsp_1370969402_11': 'Buscar',
-            'javax.faces.ViewState': viewstate
-        }
-        resp = session.post(base_url, data=form_data)
-        soup = BeautifulSoup(resp.text, 'html.parser')
-        viewstate = get_viewstate(soup)
+    tbody = tabela.find('tbody')
+    if not tbody:
+        print("Erro: <tbody> não encontrado na tabela.")
+        return
 
-        # Procurar na tabela de resultados pelo nome do curso
-        tabela = soup.find('table', {'class': 'listagem'})
-        if not tabela:
-            print(f"Tabela de resultados não encontrada para: {nome_curso}")
+    for tr in tbody.find_all('tr', class_=['linhaImpar', 'linhaPar']):
+        cols = tr.find_all('td')
+        if len(cols) == 0:
             continue
-        link = None
-        for row in tabela.find_all('tr'):
-            cols = row.find_all('td')
-            if len(cols) > 0:
-                nome_tabela = normalize(cols[0].text)
-                if normalize(nome_curso) in nome_tabela:
-                    a = row.find('a', href=True)
-                    if a and 'portal.jsf' in a['href']:
-                        link = a['href']
-                        break
-        if not link:
-            print(f"Não encontrado link da página do curso para: {nome_curso}")
+
+        nome_curso = cols[0].get_text(strip=True)
+        link_tag = tr.find('a', href=True, title="Visualizar Página do Curso")
+        if not link_tag:
+            print(f"Erro: Link não encontrado para o curso {nome_curso}.")
             continue
-        curso_url = f"https://sigaa.unb.br/sigaa/public/curso/{link}"
+
+        curso_url = requests.compat.urljoin(base_url, link_tag['href'])
+        print(f"Processando curso: {nome_curso}")
+        print(f"DEBUG: Link do curso: {curso_url}")
 
         # 3. Acessar página do curso
         resp = session.get(curso_url)
@@ -181,29 +168,17 @@ def scrape_estruturas():
 
         # 4. Procurar o sub-menu 'Estruturas Curriculares' dentro da aba 'Ensino'
         estrutura_link = None
-        menu_ensino = soup.find('span', {'class': 'item-menu'}, string=lambda s: s and 'Ensino' in s)
-        if menu_ensino:
-            sub_menu = menu_ensino.find_parent('li')
-            if sub_menu:
-                for a in sub_menu.find_all('a', href=True):
-                    if 'estruturaCurricular.jsf' in a['href'] or 'curriculo.jsf' in a['href']:
-                        estrutura_link = a['href']
-                        break
+        for a in soup.find_all('a', href=True):
+            if 'estruturaCurricular.jsf' in a['href'] or 'curriculo.jsf' in a['href']:
+                estrutura_link = a['href']
+                break
+
         if not estrutura_link:
-            for a in soup.find_all('a', href=True):
-                if 'estruturaCurricular.jsf' in a['href'] or 'curriculo.jsf' in a['href']:
-                    estrutura_link = a['href']
-                    break
-        if not estrutura_link:
-            print(f"Não encontrado link para estrutura curricular em: {curso_url}")
+            print(f"Erro: Não encontrado link para estrutura curricular em {curso_url}.")
             continue
-        if estrutura_link.startswith('/'):
-            estrutura_url = f"https://sigaa.unb.br{estrutura_link}"
-        elif estrutura_link.startswith('http'):
-            estrutura_url = estrutura_link
-        else:
-            estrutura_url = f"https://sigaa.unb.br/sigaa/public/curso/{estrutura_link}"
-        print(f"Link de estrutura curricular encontrado: {estrutura_url}")
+
+        estrutura_url = requests.compat.urljoin(curso_url, estrutura_link)
+        print(f"DEBUG: Link de estrutura curricular encontrado: {estrutura_url}")
 
         # 5. Acessar página de estruturas curriculares
         resp = session.get(estrutura_url)
@@ -232,39 +207,22 @@ def scrape_estruturas():
         # Simular o clique (POST)
         if relatorio_params:
             btn_name, btn_value, estrutura_id = relatorio_params
-            viewstate = soup.find('input', {'name': 'javax.faces.ViewState'})['value']
             relatorio_html = acessar_relatorio(session, soup, btn_name, btn_value, estrutura_id, estrutura_url)
             print(f"Relatório encontrado e baixado para: {nome_curso}")
 
-            # DEBUG: Salvar HTML e checar se chegou na página certa
-            with open("debug_relatorio.html", "w", encoding="utf-8") as f:
-                f.write(relatorio_html)
-            print("DEBUG: HTML do relatório salvo em debug_relatorio.html")
+            # 7. Extrair dados por nível
+            dados_por_nivel = extract_dados_por_nivel(relatorio_html)
 
-            # Checar se encontrou algum elemento único
-            soup_relatorio = BeautifulSoup(relatorio_html, 'html.parser')
-            titulo = soup_relatorio.find('h3', class_='titulotabela')
-            if titulo and "Estrutura Curricular" in titulo.text:
-                print("DEBUG: Página correta do relatório encontrada!")
-            else:
-                print("DEBUG: ATENÇÃO! Não encontrou o título 'Estrutura Curricular' no relatório.")
-        else:
-            print(f"Não encontrado botão do relatório para: {nome_curso}. Extraindo dados direto da página de estrutura curricular.")
-            relatorio_html = resp.text
+            # 8. Salvar dados organizados em JSON
+            output_path = os.path.join(output_dir, f"{normalize(nome_curso)}.json")
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'curso': nome_curso,
+                    'niveis': dados_por_nivel
+                }, f, ensure_ascii=False, indent=2)
+            print(f"Dados organizados por nível salvos em: {output_path}")
 
-        # 8. Extrair dados por nível
-        dados_por_nivel = extract_dados_por_nivel(relatorio_html)
-
-        # 9. Salvar dados organizados em JSON
-        output_path = os.path.join(output_dir, f"{nome_curso}.json")
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump({
-                'curso': nome_curso,
-                'niveis': dados_por_nivel
-            }, f, ensure_ascii=False, indent=2)
-        print(f"Dados organizados por nível salvos em: {output_path}")
-
-        time.sleep(1)
+        time.sleep(2)  # Pausa de 2 segundos antes de processar o próximo curso
 
     print("Scraping concluído!")
 
