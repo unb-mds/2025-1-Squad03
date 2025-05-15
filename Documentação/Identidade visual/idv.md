@@ -1,85 +1,98 @@
 # 📝 Documentação de Estilo
 
 ---
+# 📘 Identidade Visual do Site
 
-## ✔️ Tipografia
+## 🖋️ Tipografia
 
-As fontes utilizadas no site são:
+### 1. **Permanent Marker**
+- Estilo: Graffiti / Handwriting  
+- Uso: Títulos de seções, logos ou chamadas de atenção principais  
+- Aparência: Expressiva, informal, marcante
 
-| Uso                         | Fonte              | Peso         |
-|------------------------------|--------------------|--------------|
-| Títulos principais           | **DM Sans**         | Bold         |
-| Subtítulos                   | **DM Sans**         | SemiBold     |
-| Texto de parágrafo/corpo     | **DM Sans**         | Regular      |
-| Botões                       | **DM Sans**         | Medium / SemiBold |
-
-**Observações:**
-- Fonte limpa e moderna, focada na legibilidade.
-- Títulos são destacados com peso bold para evidenciar hierarquia.
-- Parágrafos e descrições são mais leves para facilitar a leitura.
-
----
-
-## ✔️ Paleta de Cores
-
-As cores utilizadas no site foram:
-
-| Elemento                  | Cor                    | Código Hexadecimal |
-|----------------------------|-------------------------|---------------------|
-| Fundo de seções destacadas | Azul Muito Claro         | `#E6F0FF` |
-| Botões (cor de fundo)       | Azul Médio              | `#4F75FF` |
-| Texto principal (padrão)   | Preto                   | `#000000` |
-| Texto em botões            | Branco                  | `#FFFFFF` |
-| Texto secundário (descrições) | Cinza Escuro          | `#5B5B5B` |
-| Ícones/detalhes (bordas, linhas sutis) | Cinza Muito Claro | `#F2F2F2` |
----
-
-## ✔️ Componentes Visuais
-
-- **Botões**:
-  - Fundo azul médio.
-  - Texto centralizado em branco.
-  - Borda arredondada (leve).
-  - Hover não detectável na prévia, mas recomenda-se escurecimento leve no hover.
-
-- **Seções**:
-  - Estruturadas em "blocos" verticais com espaçamento generoso.
-  - Alternância entre fundo branco e azul muito claro.
-
-- **Imagens**:
-  - Imagens de ilustração e mockups.
-  - Bordas invisíveis.
-  - Posicionamento central ou alinhado à esquerda, dependendo da seção.
-
-- **Ícones**:
-  - Ícones simples e minimalistas.
-  - Uso restrito para reforçar o conteúdo (não decoração excessiva).
+### 2. **Poppins**
+- Estilo: Sans-serif moderna  
+- Pesos utilizados:
+  - `300` (Light) — para textos auxiliares ou detalhes finos
+  - `400` (Regular) — corpo de texto
+  - `600` (Semibold) — subtítulos, botões, destaques sutis
+  - `700` (Bold) — títulos e ênfases principais
 
 ---
 
-## ✔️ Layout e Estrutura
+## 🎨 Paleta de Cores
 
-- **Estrutura em Seções Verticais**:
-  - Títulos grandes e centralizados.
-  - Parágrafos descritivos com espaçamento confortável.
-  - Chamadas para ação (botões) localizadas logo após textos estratégicos.
+| Cor                     | Hex       | Uso Principal                                  |
+|--------------------------|-----------|------------------------------------------------|
+| Azul Royal              | `#3A57E8` | Botões, links ativos, destaques                |
+| Azul Claro Suave        | `#E3E8FE` | Fundo de botões, hover, caixas de destaque     |
+| Branco                  | `#FFFFFF` | Fundo principal, textos sobre cores escuras    |
+| Cinza Neutro            | `#A0A0A0` | Textos secundários, ícones                     |
+| Preto / Grafite Escuro  | `#1E1E1E` | Texto principal, títulos, contraste             |
 
-- **Responsividade**:
-  - Layout adaptável a dispositivos móveis, reorganizando as seções em coluna única.
-  - Imagens redimensionam proporcionalmente.
+---
+
+## 📐 Layout e Estrutura
+
+### Grade
+- Largura máxima do conteúdo: **1200px**
+- Espaçamento interno (padding): **16px - 24px**
+- Margens externas: **32px a 64px**, consistentes
+
+### Seções
+- **Header** fixo com logo à esquerda e navegação à direita  
+- **Hero Section** com título (Permanent Marker) e botões de destaque  
+- **Cards** com bordas suaves (radius ~12px), sombra leve  
+- **Rodapé** com alinhamento centralizado e tons neutros  
 
 ---
 
-## 📂 Organização de Assets
+## 🧩 Componentes
 
-- **Fontes**:
-  - `DM Sans` aplicada em todos os textos.
-  
-- **Cores**:
-  - Seguem o padrão descrito acima para garantir consistência visual.
+### Botões
+- **Primário**: Fundo `#3A57E8`, texto `#FFFFFF`
+- **Hover**: Fundo `#2D46C6`, transição de 0.3s
+- **Desabilitado**: Fundo `#E3E8FE`, texto cinza
 
-- **Imagens**:
-  - Utilizadas apenas em alta resolução.
-  - Evitar distorções ou esticamentos no redimensionamento.
+### Inputs e Formulários
+- Bordas arredondadas (~8px)
+- Fundo branco ou azul claro
+- Labels com Poppins `400`
+- Textos auxiliares com Poppins `300`
+
+### Cartões (Cards)
+- Fundo: Branco
+- Sombra leve (box-shadow sutil)
+- Títulos com Poppins `700`
+- Corpo com Poppins `400` ou `600`
 
 ---
+
+## 🧱 Estilo Visual
+
+- **Minimalista**, com uso moderado de cor  
+- **Toque jovem** com fonte expressiva (Permanent Marker)  
+- **Contraste claro**, boa leitura, espaçamentos generosos  
+- **Elementos gráficos suaves**, com curvas e sombras discretas
+
+---
+
+## 📎 Ícones e Estética Gráfica
+
+- Estilo: Simples, flat ou outlined  
+- Cores: Neutros com azul para destaque  
+- Tamanho médio: 20–24px  
+- Uso: Navegação, feedback visual, ações
+
+---
+
+## 🔤 Hierarquia de Texto
+
+| Elemento       | Fonte            | Peso | Tamanho Aproximado |
+|----------------|------------------|------|---------------------|
+| Título H1      | Permanent Marker | 400  | 48px                |
+| Título H2      | Poppins          | 700  | 32px                |
+| Subtítulo      | Poppins          | 600  | 24px                |
+| Texto padrão   | Poppins          | 400  | 16px                |
+| Texto auxiliar | Poppins          | 300  | 14px                |
+
