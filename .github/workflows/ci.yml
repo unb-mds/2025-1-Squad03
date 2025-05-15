@@ -2,7 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - automation-gh-pages
+      - main
 permissions:
   contents: write
 jobs:
