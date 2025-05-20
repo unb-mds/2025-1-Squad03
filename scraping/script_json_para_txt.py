@@ -2,7 +2,7 @@ import json
 import os
 
 # Caminho onde estão seus arquivos .json
-entrada = "dados_finais_teste_p_depto"
+entrada = "turmas_depto"
 saida = "chunks_formatados_3"
 
 os.makedirs(saida, exist_ok=True)
