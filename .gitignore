@@ -21,3 +21,6 @@ pnpm-debug.log*
 .env
 .env.test
 .env.production
+
+
+venv
