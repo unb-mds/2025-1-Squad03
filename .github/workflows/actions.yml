@@ -1,6 +1,9 @@
 name: Run web scraper
 
-on: [workflow_dispatch]
+on:
+  push:
+    branches: [scraping]
+  workflow_dispatch:
 
 jobs:
      build:
