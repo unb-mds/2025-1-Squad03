@@ -1,7 +1,7 @@
 import PyPDF2
 
 #coloque aqui o nome do arquivo pdf que quer extrair.
-nome_pdf = "historico_232038077"
+nome_pdf = "historico_232006805 (1)"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
@@ -226,21 +226,28 @@ for i, linha in enumerate(linhas):
 
                         linha = linha.replace(".", '')
                         print(linha)
+                        print(f'mencao = {status}')
                         nome_disciplina = ''
+
+                        linha = linha.split(status)
+                        linha = linha[0]
+
+                        remover = linha[-3:]
+
+                        linha = linha.split(remover)[0]
                         #print(y)
                                                                     #passar enquanto isnumeric, pegar quando for isalpha  (enquanto for isalpha interruptos, contagem que estava =0, vira 1),
                                                                     #ao chegar em outro isnumeric, contagem vira 2, acaba o programa
 
                         for p in range(len(linha)):
                             if (linha[p].isnumeric()):
-                                continue
+                                texto_aux += linha[p]
+                                
                             
                             else:
-                                nome_disciplina += linha[p]
-                                #print(nome_disciplina)
-                                
-                                if (linha[p+1].isnumeric() or linha[p+2].isnumeric()):
-                                    break
+                                break
+
+                        nome_disciplina = linha.split(texto_aux)[1]
 
                         ###########################################################
 
