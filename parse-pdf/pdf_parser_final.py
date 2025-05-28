@@ -1,7 +1,7 @@
 import PyPDF2
 
 #coloque aqui o nome do arquivo pdf que quer extrair.
-nome_pdf = "historico_232006805 (1)"
+nome_pdf = "historico_222037559"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
@@ -26,6 +26,10 @@ import json
 with open("historico_completo"+matricula+".txt", "r", encoding="utf-8") as f:
     linhas = f.readlines()
 
+valor_do_ira = None
+
+#padrão de caracteres em que se encontra os INDICES ACADEMICOS
+padrao_ira = re.compile(r"\bIRA:\s*(\d+\.\d+)")
 
 disciplinas = []
 
@@ -59,6 +63,16 @@ for i, linha in enumerate(linhas):
     creditos = 0
     #print(i)
     linha = linha.strip()
+
+    match_ira = padrao_ira.findall(linha)
+
+    #encontra o IRA
+    if match_ira:
+            print(linha)
+            ira = match_ira
+            print("ACHOU O IRA!!")
+            print("--------------------------")
+            disciplinas.append({"IRA": ira})
 
     # Verifica se a linha tem prefixo de professor
     if linha.startswith("Dr.") or linha.startswith("MSc.") or linha.startswith("Dra."):
