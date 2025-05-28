@@ -1,7 +1,7 @@
 import PyPDF2
 
 #coloque aqui o nome do arquivo pdf que quer extrair.
-nome_pdf = "seu_historico"
+nome_pdf = "historico_222037559"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
@@ -27,14 +27,17 @@ with open("historico_completo"+matricula+".txt", "r", encoding="utf-8") as f:
     linhas = f.readlines()
 
 valor_do_ira = None
-
+valor_pend = None
 #padrão de caracteres em que se encontra os INDICES ACADEMICOS
 padrao_ira = re.compile(r"\bIRA:\s*(\d+\.\d+)")
+
+#encontra as pendencias
+padrao_pend = re.compile(r"\b(APR|CANC|DISP|MATR|REP|REPF|REPMF|TRANC|CUMP)\b")
 
 disciplinas = []
 
 #padrão de caracteres em que se encontra o STATUS DA MATERIA
-padrao_status = re.compile(r"\b(APR|REP|MATR|TRANC|CUMP)\b")
+padrao_status = re.compile(r"\b(APR|CANC|DISP|MATR|REP|REPF|REPMF|TRANC|CUMP)\b")
 
 #padrão de caracteres em que se encontra a MENCAO DA MATERIA
 padrao_mencao = re.compile(r"\b(SS|MS|MM|MI|II|SR)\b")
@@ -74,6 +77,18 @@ for i, linha in enumerate(linhas):
             print("--------------------------")
             disciplinas.append({"IRA": ira})
 
+
+    match_pend = padrao_pend.findall(linha)
+    
+    #encontra as variaveis pendentes
+    if match_pend:
+            print(linha)
+            pend = match_pend
+            print("ACHOU PENDENCIAS")
+            print("----------------------")
+            disciplinas.append({"PENDENCIAS": pend})
+
+
     # Verifica se a linha tem prefixo de professor
     if linha.startswith("Dr.") or linha.startswith("MSc.") or linha.startswith("Dra."):
         print(linha)
@@ -86,7 +101,6 @@ for i, linha in enumerate(linhas):
         #print('------------------------------------------------')
         match_codigo = padrao_codigo.search(linha)
 
-        
         if match_status:
 
             #encontra o STATUS (aprovado,reprovado)
