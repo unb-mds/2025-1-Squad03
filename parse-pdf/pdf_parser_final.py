@@ -1,7 +1,7 @@
 import PyPDF2
 
 #coloque aqui o nome do arquivo pdf que quer extrair.
-nome_pdf = "historico_222037559"
+nome_pdf = "seu_historico"
 with open(nome_pdf+'.pdf', "rb") as file:
     leitor = PyPDF2.PdfReader(file)
     texto_total = ""
