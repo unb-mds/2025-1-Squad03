@@ -5,9 +5,9 @@
       "nivel": "1º Semestre",
       "materias": [
         {
-          "codigo": "ECL0017",
-          "nome": "METODOS EM BIOLOGIA 1",
-          "carga_horaria": "30h",
+          "codigo": "CEL0089",
+          "nome": "CITOLOGIA",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
@@ -17,14 +17,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "ICB0244",
-          "nome": "FILOSOFIA E HISTÓRIA DAS CIÊNCIAS",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "ICB0245",
-          "nome": "SEMINÁRIOS EM BIOLOGIA",
+          "codigo": "ICB0041",
+          "nome": "ELEMENTOS DA PRÁTICA EDUCACIONAL",
           "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
@@ -35,10 +29,10 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0025",
-          "nome": "CÁLCULO 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
+          "codigo": "TEF0011",
+          "nome": "PSICOLOGIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -52,26 +46,20 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CEL0089",
-          "nome": "CITOLOGIA",
+          "codigo": "GEM0062",
+          "nome": "BIOLOGIA ESTRUTURAL DOS TECIDOS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CFS0021",
-          "nome": "ANATOMIA ANIMAL",
-          "carga_horaria": "60h",
+          "codigo": "ICB0244",
+          "nome": "FILOSOFIA E HISTÓRIA DAS CIÊNCIAS",
+          "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0340",
-          "nome": "FUNDAMENTOS DE FÍSICA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IGD0167",
-          "nome": "FUNDAMENTOS DA HISTÓRIA DA TERRA",
+          "codigo": "MAT0022",
+          "nome": "MATEMATICA 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -87,28 +75,22 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CEL0054",
-          "nome": "BIOQUIMICA FUNDAMENTAL",
-          "carga_horaria": "90h",
+          "codigo": "CFS0021",
+          "nome": "ANATOMIA ANIMAL",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "ECL0051",
-          "nome": "DELINEAMENTO EXPERIMENTAL E ANÁLISE DE DADOS",
-          "carga_horaria": "30h",
+          "codigo": "ICB0042",
+          "nome": "DIDÁTICA DAS CIÊNCIAS NATURAIS",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "ECL0042",
-          "nome": "MEIO AMBIENTE FÍSICO E ECOSSISTEMAS",
+          "codigo": "IFD0340",
+          "nome": "FUNDAMENTOS DE FÍSICA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0062",
-          "nome": "BIOLOGIA ESTRUTURAL DOS TECIDOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -116,28 +98,28 @@
       "nivel": "4º Semestre",
       "materias": [
         {
-          "codigo": "CEL0023",
-          "nome": "BIOFISICA",
+          "codigo": "CEL0082",
+          "nome": "BIOQUIMICA E BIOFISICA",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ECL0042",
+          "nome": "MEIO AMBIENTE FÍSICO E ECOSSISTEMAS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CEL0095",
-          "nome": "BIOLOGIA MOLECULAR",
-          "carga_horaria": "60h",
+          "codigo": "GEM0011",
+          "nome": "EMBRIOLOGIA GERAL",
+          "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CEL0111",
-          "nome": "MICROBIOLOGIA",
+          "codigo": "ICB0043",
+          "nome": "DIDÁTICA DA BIOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "GEM0043",
-          "nome": "EMBRIOLOGIA ANIMAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -145,9 +127,9 @@
       "nivel": "5º Semestre",
       "materias": [
         {
-          "codigo": "CEL0110",
-          "nome": "IMUNOLOGIA",
-          "carga_horaria": "30h",
+          "codigo": "BOT0004",
+          "nome": "INTRODUCAO A ANATOMIA VEGETAL",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
@@ -157,8 +139,20 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "GEM0055",
-          "nome": "GENÉTICA",
+          "codigo": "ICB0300",
+          "nome": "FUNDAMENTOS EM BIOLOGIA MOLECULAR",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0301",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS E BIOLOGIA 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IGD0167",
+          "nome": "FUNDAMENTOS DA HISTÓRIA DA TERRA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -167,12 +161,6 @@
           "nome": "ZOOLOGIA INVERTEBRADOS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "BOT0004",
-          "nome": "INTRODUCAO A ANATOMIA VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -180,14 +168,26 @@
       "nivel": "6º Semestre",
       "materias": [
         {
-          "codigo": "BOT0008",
-          "nome": "FISIOLOGIA VEGETAL",
+          "codigo": "BOT0009",
+          "nome": "CRESCIMENTO E DESENVOLVIMENTO VEGETAL",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "GEM0024",
+          "nome": "FUNDAMENTOS DE GENETICA E EVOLUCAO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0302",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS E BIOLOGIA 2",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "CFS0048",
-          "nome": "FISIOLOGIA ANIMAL 1",
+          "codigo": "ICB0306",
+          "nome": "PRÁTICAS DE ENSINO E PESQUISA NA EDUCAÇÃO BÁSICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -203,21 +203,39 @@
       "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "CFS0049",
-          "nome": "FISIOLOGIA ANIMAL 2",
-          "carga_horaria": "60h",
+          "codigo": "ICB0297",
+          "nome": "FUNDAMENTOS DE FISIOLOGIA ANIMAL",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "GEM0018",
-          "nome": "EVOLUÇÃO",
+          "codigo": "ICB0298",
+          "nome": "FUNDAMENTOS DE MICROBIOLOGIA",
           "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "ICB0214",
-          "nome": "ESTÁGIO SUPERVISIONADO EM BIOLOGIA 1 - BACHAREL",
-          "carga_horaria": "60h",
+          "codigo": "ICB0299",
+          "nome": "FUNDAMENTOS DE PARASITOLOGIA",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0303",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS E BIOLOGIA 3",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0305",
+          "nome": "PRÁTICAS DE EDUCAÇÃO PARA A DIVERSIDADE NO ENSINO DE BIOLOGIA",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0307",
+          "nome": "PRÁTICAS EM NOVAS TECNOLOGIAS DE ENSINO",
+          "carga_horaria": "30h",
           "natureza": "Obrigatória"
         }
       ]
@@ -226,9 +244,27 @@
       "nivel": "8º Semestre",
       "materias": [
         {
-          "codigo": "ICB0219",
-          "nome": "ESTÁGIO SUPERVISIONADO EM BIOLOGIA 2 - BACHAREL",
-          "carga_horaria": "90h",
+          "codigo": "CEL0110",
+          "nome": "IMUNOLOGIA",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0296",
+          "nome": "ENSINO INCLUSIVO",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0304",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS E BIOLOGIA 4",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ICB0308",
+          "nome": "PROJETO DE PESQUISA EM EDUCAÇÃO CIENTÍFICA 1",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
       ]
@@ -237,14 +273,14 @@
       "nivel": "9º Semestre",
       "materias": [
         {
-          "codigo": "MAT0025",
-          "nome": "CÁLCULO 1",
+          "codigo": "ICB0309",
+          "nome": "PROJETO DE PESQUISA EM EDUCAÇÃO CIENTÍFICA 2",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0022",
-          "nome": "MATEMATICA 1",
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -254,50 +290,14 @@
       "nivel": "Optativas",
       "materias": [
         {
-          "codigo": "BOT0001",
-          "nome": "SISTEMATICA DOS VEGETAIS SUPERIORES",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0003",
-          "nome": "SISTEMATICA DE BRIOFITAS E PTERIDOFITAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "BOT0005",
           "nome": "MICROTECNICA VEGETAL",
           "carga_horaria": "45h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "BOT0006",
-          "nome": "ANATOMIA DAS MADEIRAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0009",
-          "nome": "CRESCIMENTO E DESENVOLVIMENTO VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0010",
-          "nome": "PALINOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "BOT0013",
           "nome": "ESTAGIO EM BOTANICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0014",
-          "nome": "BOTANICA ECONOMICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -308,38 +308,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "BOT0016",
-          "nome": "CITOGENETICA VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0017",
-          "nome": "CULTURA DE TECIDOS DE PLANTAS",
-          "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "BOT0019",
           "nome": "ALGAS CONTINENTAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0021",
-          "nome": "MORFOLOGIA E TAXONOMIA DAS FANEROGAMAS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0023",
-          "nome": "ANATOMIA VEGETAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0024",
-          "nome": "ANATOMIA VEGETAL 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -359,18 +329,6 @@
           "codigo": "BOT0030",
           "nome": "ESTAGIO EM TECNICAS MICROSCOPICAS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0032",
-          "nome": "PESQUISA EM FISIOLOGIA VEGETAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0033",
-          "nome": "PESQUISA EM MORFOLOGIA E ANATOMIA DOS SISTEMAS SUBTERRANEOS DO CERRADO",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -398,50 +356,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "BOT0042",
-          "nome": "ANATOMIA VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0045",
-          "nome": "FISIOLOGIA DE ESTRESSES AMBIENTAIS EM PLANTAS",
-          "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0046",
-          "nome": "VEGETACAO DO CERRADO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0047",
-          "nome": "FISIOLOGIA DA FLORACAO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0048",
-          "nome": "FISIOLOGIA DA GERMINACAO DAS SEMENTES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0049",
-          "nome": "MORFOLOGIA VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "BOT0050",
           "nome": "BIOLOGIA REPRODUTIVA E POLINIZAÇÃO DE ANGIOSPERMAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0055",
-          "nome": "SISTEMÁTICA VEGETAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -464,24 +380,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "BOT0060",
-          "nome": "SISTEMÁTICA DE FANERÓGAMAS",
-          "carga_horaria": "0h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0061",
-          "nome": "MERISTEMAS E DESENVOLVIMENTO VEGETAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0062",
-          "nome": "COLETA E INVENTÁRIO DE FITODIVERSIDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "BOT0063",
           "nome": "BIOTECNOLOGIA DE PLANTAS",
           "carga_horaria": "60h",
@@ -490,12 +388,6 @@
         {
           "codigo": "BOT0064",
           "nome": "ADAPATAÇÕES DAS PLANTAS AO MEIO AMBIENTE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0065",
-          "nome": "SISTEMÁTICA DE PTERIDÓFITAS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -515,12 +407,6 @@
           "codigo": "BOT0068",
           "nome": "METABOLISMO VEGETAL",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0071",
-          "nome": "METABOLISMO E DESENVOLVIMENTO VEGETAL",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -548,140 +434,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CDS0007",
-          "nome": "INTRODUÇÃO AO DESENVOLVIMENTO SUSTENTÁVEL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CDS0010",
-          "nome": "TRABALHO INTERDISCIPLINAR INTEGRADO 1",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0001",
           "nome": "ENGENHARIA GENÉTICA",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0002",
-          "nome": "TECNOLOGIA ENZIMÁTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0003",
-          "nome": "MICROBIOLOGIA APLICADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0004",
-          "nome": "EMPREENDEDORISMO E ANÁLISE DE MERCADO EM BIOTECNOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0005",
-          "nome": "BIOSSEGURANÇA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0006",
-          "nome": "BOAS PRÁTICAS DE LABORATÓRIO E DE FABRICAÇÃO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0008",
-          "nome": "IMUNOLOGIA APLICADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0009",
-          "nome": "REDAÇÃO CIENTÍFICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0011",
-          "nome": "TECNOLOGIA DE BIOPROCESSOS E FERMENTAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0012",
-          "nome": "LEGISLAÇÃO, PATENTES E PROPRIEDADE INTELECTUAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0014",
-          "nome": "ENGENHARIA METABÓLICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0015",
           "nome": "TÓPICOS EM BIOFÍSICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0018",
-          "nome": "MODELAGEM MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0019",
-          "nome": "BIOQUIMICA E BIOFISICA",
-          "carga_horaria": "135h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0021",
-          "nome": "BIOQUIMICA E BIOFISICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0022",
-          "nome": "REGULACAO METABOLICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0025",
-          "nome": "IMUNOLOGIA GERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0026",
-          "nome": "BIOLOGIA MOLECULAR 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0027",
-          "nome": "BIOLOGIA MOLECULAR 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0028",
-          "nome": "METODOS EM BIOPOLIMEROS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0030",
-          "nome": "RADIOBIOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -692,44 +452,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0035",
-          "nome": "BIOLOGIA CELULAR",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0040",
-          "nome": "INTRODUÇÃO A BIOQUÍMICA EXPERIMENTAL",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0042",
           "nome": "TOPICOS EM BIOQUIMICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0043",
-          "nome": "REGULACAO METABOLICA DE MAMIFEROS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0044",
-          "nome": "BIOQUIMICA DE PLANTAS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0045",
-          "nome": "BIOQUIMICA EXPERIMENTAL",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0046",
-          "nome": "MICROBIOLOGIA MEDICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -740,20 +464,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0050",
-          "nome": "MICROBIOLOGIA BASICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0052",
           "nome": "METODOS EM BIOLOGIA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0056",
-          "nome": "TOPICOS EM BIOQUIMICA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -761,48 +473,6 @@
           "codigo": "CEL0057",
           "nome": "TOPICOS EM BIOLOGIA CELULAR",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0060",
-          "nome": "TOPICOS EM BIOLOGIA MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0062",
-          "nome": "METABOLISMO CELULAR",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0063",
-          "nome": "BIOQUÍMICA E BIOFÍSICA 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0064",
-          "nome": "BIOPOLIMEROS-ESTRUTURA E FUNCAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0065",
-          "nome": "METABOLISMO INTERMEDIARIO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0066",
-          "nome": "ORIENTACAO PARA O ESTUDO DA BIOLOGIA QUANTITATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0067",
-          "nome": "BIOQUÍMICA",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -836,54 +506,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0078",
-          "nome": "INTRODUÇÃO À BIOENERGÉTICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0079",
-          "nome": "FUNDAMENTOS DE MICROBIOLOGIA MÉDICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0081",
-          "nome": "VIROLOGIA GERAL COMPARADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0082",
-          "nome": "BIOQUIMICA E BIOFISICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0083",
-          "nome": "BIOQUIMICA E BIOFISICA EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0086",
-          "nome": "FUNDAMENTOS DE ENGENHARIA GENETICA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0087",
-          "nome": "ENOVELAMENTO DE PROTEINAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0088",
-          "nome": "BIOLOGIA GERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0091",
           "nome": "INTRODUÇÃO A BIOTECNOLOGIA",
           "carga_horaria": "30h",
@@ -896,14 +518,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0094",
-          "nome": "FUNDAMENTOS DE BIOQUIMICA E BIOFISICA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0096",
-          "nome": "PARASITOLOGIA",
+          "codigo": "CEL0095",
+          "nome": "BIOLOGIA MOLECULAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -914,27 +530,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0099",
-          "nome": "INTRODUCAO A IMUNOLOGIA EXPERIMENTAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0100",
-          "nome": "IMUNOLOGIA MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0101",
           "nome": "TECNICAS EM BIOLOGIA ESTRUTURAL",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0102",
-          "nome": "BIOLOGIA DO DESENVOLVIMENTO",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -956,62 +554,20 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0113",
-          "nome": "COMPUTAÇÃO GRÁFICA APLICADA A ILUSTRAÇÃO CIENTÍFICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0114",
-          "nome": "COMPUTAÇÃO GRÁFICA APLICADA A ILUSTRAÇÃO CIENTÍFICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0115",
-          "nome": "HIGIENE E SAÚDE PARA ENSINO FUNDAMENTAL E MÉDIO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0116",
-          "nome": "PRÁTICAS DE BIOLOGIA CELULAR APLICADA AO ENSINO FUNDAMENTAL E MÉDIO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEL0117",
           "nome": "TÓPICOS EM MICROBIOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEL0120",
-          "nome": "BIOINFORMÁTICA",
+          "codigo": "CEM0097",
+          "nome": "DIREITOS HUMANOS E CIDADANIA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0121",
-          "nome": "INSTRUMENTAÇÃO CIENTÍFICA EM BIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEL0122",
-          "nome": "METABOLISMO E REGULAÇÃO METABÓLICA",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
           "codigo": "CEM0110",
           "nome": "AGRICULTURA ALTERNATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0002",
-          "nome": "PESQUISA EM REPRODUÇÃO ANIMAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1022,63 +578,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CFS0007",
-          "nome": "FISIOLOGIA GERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0010",
-          "nome": "FISIOLOGIA DOS SISTEMAS 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0011",
-          "nome": "FISIOLOGIA DOS SISTEMAS 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0012",
-          "nome": "NEUROBIOLOGIA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0013",
-          "nome": "VENENOS ANIMAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0016",
-          "nome": "ESTAGIO EM TERMOBIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0017",
-          "nome": "PESQUISAS EM TERMOBIOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0018",
-          "nome": "PESQUISAS EM TERMOBIOLOGIA ( ESTAGIO DE BACHARELADO EM BIOLOGIA )",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CFS0022",
           "nome": "PRINCIPIOS FARMACOLOGICOS EM BIOLOGIA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0026",
-          "nome": "TOPICOS ESPECIAIS EM FISIOLOGIA ANIMAL COMPARATIVA",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -1088,56 +590,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CFS0031",
-          "nome": "NEUROFISIOLOGIA MEDICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0032",
-          "nome": "PRINCIPIOS DE INSTRUMENTACAO ELETROFISIOLOGICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0033",
-          "nome": "INTRODUCAO AO PROCESSAMENTO DE SINAIS BIOLOGICOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0034",
-          "nome": "BIOLOGIA DE ANFIBIOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CFS0035",
           "nome": "NEUROPSICOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0037",
-          "nome": "ELEMENTOS DE FISIOLOGIA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0041",
-          "nome": "FUNDAMENTOS DE FISIOLOGIA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0044",
-          "nome": "SISTEMAS SENSORIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0045",
-          "nome": "EXPERIMENTACAO EM FISIOLOGIA ANIMAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1148,38 +602,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CFS0050",
-          "nome": "NEUROETOLOGIA DO ESTRESSE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CFS0052",
           "nome": "BASES BIOLÓGICAS DA REPRODUÇÃO EM MAMÍFEROS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0054",
-          "nome": "PRINCÍPIOS DE ELETROFISIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0055",
-          "nome": "FISIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0056",
-          "nome": "ANATOMIA ANIMAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CFS0059",
-          "nome": "CIÊNCIA E EXPERIMENTAÇÃO DE ANIMAIS DE LABORATÓRIO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1202,12 +626,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CIC0069",
-          "nome": "INTRODUCAO AO PROCESSAMENTO DE DADOS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CIC0088",
           "nome": "COMPUTACAO BASICA",
           "carga_horaria": "90h",
@@ -1217,120 +635,6 @@
           "codigo": "DAN0022",
           "nome": "INTRODUÇÃO À ANTROPOLOGIA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0200",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "15h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0201",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0202",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0203",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0205",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0206",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0207",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "150h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0208",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "180h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0209",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "210h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0210",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "240h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0211",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "270h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0212",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "300h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0213",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "330h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0214",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "360h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0215",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "390h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0216",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "420h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0217",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "450h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0218",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "480h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEG0219",
-          "nome": "ATIVIDADE COMPLEMENTAR",
-          "carga_horaria": "510h",
           "natureza": "Optativa"
         },
         {
@@ -1376,87 +680,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "DEX0203",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "180h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0204",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "240h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0205",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "240h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0206",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "270h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0207",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "300h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0208",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "330h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0209",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "360h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0210",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "390h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0211",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "420h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0212",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "450h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0213",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "480h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX0214",
-          "nome": "ATIVIDADE DE EXTENSÃO",
-          "carga_horaria": "510h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ECL0001",
           "nome": "PRÁTICAS EM CIÊNCIAS AMBIENTAIS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0002",
-          "nome": "ECOLOGIA GERAL",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -1472,51 +698,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0010",
-          "nome": "CONSERVAÇÃO DE RECURSOS NATURAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0013",
-          "nome": "LIMNOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ECL0014",
           "nome": "CIENCIAS DO AMBIENTE",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0015",
-          "nome": "MEIO AMBIENTE FISICO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0021",
-          "nome": "ECOLOGIA ANIMAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0023",
-          "nome": "RADIOBIOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0024",
-          "nome": "ETOLOGIA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0033",
-          "nome": "ECOLOGIA 1",
-          "carga_horaria": "60h",
+          "codigo": "ECL0017",
+          "nome": "METODOS EM BIOLOGIA 1",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -1532,38 +722,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0037",
-          "nome": "ECOLOGIA TROPICAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0039",
-          "nome": "ECOLOGIA BÁSICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ECL0040",
           "nome": "TÓPICOS EM ECOSSISTEMAS DO CERRADO",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0044",
-          "nome": "MÉTODOS EM ECOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ECL0045",
           "nome": "ECOLOGIA DO FOGO NO CERRADO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0046",
-          "nome": "SOLOS E VEGETAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1586,6 +752,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "ECL0051",
+          "nome": "DELINEAMENTO EXPERIMENTAL E ANÁLISE DE DADOS",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "ECL0052",
           "nome": "BIODIVERSIDADE",
           "carga_horaria": "60h",
@@ -1604,56 +776,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0057",
-          "nome": "MENEJO DE ECOSISTEMAS",
+          "codigo": "ECL0058",
+          "nome": "MANEJO DE ECOSSISTEMAS",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0115",
-          "nome": "ECOLOGIA DE INSETOS",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
           "codigo": "ECO0019",
           "nome": "INTRODUÇÃO À ECONOMIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECO0126",
-          "nome": "MICROECONOMIA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECO0187",
-          "nome": "ECONOMIA QUANTITATIVA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECO0218",
-          "nome": "EVOLUCAO DAS IDEIAS ECONOMICAS SOCIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECO0261",
-          "nome": "PLANEJAMENTO PÚBLICO E MEIO AMBIENTE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECO0272",
-          "nome": "MICROECONOMIA AMBIENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EFL0004",
-          "nome": "ECOLOGIA FLORESTAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1664,75 +794,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "EFL0025",
-          "nome": "MANEJO DE FAUNA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EFL0040",
-          "nome": "DENDROLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EFL0072",
-          "nome": "TOPICOS EM BIODIVERSIDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "EFL0076",
           "nome": "BIOLOGIA DA CONSERVACAO",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "EFL0083",
-          "nome": "INTRODUÇÃO À CIÊNCIA DO SOLO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENC0035",
-          "nome": "INTRODUÇÃO À MECÂNICA DOS SÓLIDOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENC0132",
-          "nome": "MECANICA DOS SOLIDOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENM0068",
-          "nome": "TERMODINAMICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENM0080",
-          "nome": "FENOMENOS DE TRANSPORTE",
-          "carga_horaria": "75h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENM0120",
-          "nome": "MECANICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "EST0022",
           "nome": "PROBABILIDADE E ESTATÍSTICA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EST0023",
-          "nome": "PROBABILIDADE E ESTATÍSTICA",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1748,45 +818,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FAR0031",
-          "nome": "FARMACOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAR0032",
-          "nome": "FUNDAMENTOS EM FARMACOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAR0120",
-          "nome": "ESTÁGIO EM TOXICOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FAR0122",
           "nome": "ESTAGIO EM FISIOLOGIA MOLECULAR",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "FAR0124",
-          "nome": "GENÉTICA BÁSICA E MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FAR0129",
           "nome": "ESTÁGIO EM METABOLISMO MOLECULAR",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAR0146",
-          "nome": "FARMACOLOGIA MOLECULAR EXPERIMENTAL",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -1802,117 +842,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FAV0017",
-          "nome": "PRODUÇÃO E MANEJO DE ANIMAIS SILVESTRES E EXÓTICOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0050",
-          "nome": "AGROTOXICOS",
-          "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0052",
-          "nome": "FISIOLOGIA VETERINARIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0066",
-          "nome": "ANATOMIA DOS ANIMAIS DOMESTICOS 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0068",
-          "nome": "FERTILIDADE DO SOLO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FAV0100",
           "nome": "MELHORAMENTO DE PLANTAS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0113",
-          "nome": "ANATOMIA E FISIOLOGIA DOS ANIMAIS DE PRODUÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0123",
-          "nome": "MECANICA DOS MOTORES E MAQUINAS AGRICOLAS 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0148",
-          "nome": "EDAFOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0152",
-          "nome": "MECANICA DOS MOTORES E MAQUINAS AGRICOLAS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0163",
-          "nome": "MICROBIOLOGIA BIOTECNOLOGIA AGRICOLA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0178",
-          "nome": "FISIOLOGIA VETERINARIA 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0180",
-          "nome": "NUTRICAO ANIMAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0236",
-          "nome": "ANATOMIA DOS ANIMAIS DOMESTICOS 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0274",
-          "nome": "FUNDAMENTOS DE CIÊNCIA DO SOLO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0276",
-          "nome": "ZOOTECNIA GERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FAV0284",
-          "nome": "MÁQUINAS E MECANIZAÇÃO AGRÍCOLA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FCE0192",
-          "nome": "DO ÁTOMO À CÉLULA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FCE0204",
-          "nome": "DO GENE À VIDA",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -1922,14 +854,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FED0183",
-          "nome": "EDUCAÇÃO DAS RELAÇÕES ÉTNICO-RACIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0070",
-          "nome": "NEUROANATOMIA FUNCIONAL",
+          "codigo": "FED0133",
+          "nome": "SEMINÁRIO INTERDISCIPLINAR EM EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1937,24 +863,6 @@
           "codigo": "FEF0105",
           "nome": "PRÁTICA DESPORTIVA",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0143",
-          "nome": "FISIOLOGIA DO EXERCICIO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0409",
-          "nome": "ANATOMIA APLICADA À EDUCAÇÃO FÍSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FGA0154",
-          "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1988,38 +896,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIL0069",
-          "nome": "INTRODUÇÃO À FILOSOFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FIL0077",
           "nome": "INICIAÇÃO À METODOLOGIA CIENTÍFICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0105",
-          "nome": "INICIAÇÃO À PRÁTICA FILOSÓFICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0166",
-          "nome": "INTRODUÇÃO A PRÁTICA FILOSÓFICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIT0002",
-          "nome": "INTRODUCAO A VIROLOGIA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIT0003",
-          "nome": "INTRODUÇÃO A PATOLOGIA VEGETAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2027,12 +905,6 @@
           "codigo": "FIT0004",
           "nome": "INTRODUCAO A BACTERIOLOGIA VEGETAL",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIT0005",
-          "nome": "FITOPATOLOGIA 1",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -2048,27 +920,27 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIT0008",
-          "nome": "FITOPATOLOGIA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FIT0009",
           "nome": "INTRODUCAO A NEMATOLOGIA VEGETAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIT0015",
-          "nome": "ESTAGIO SUPERVISIONADO EM FITOPATOLOGIA",
-          "carga_horaria": "75h",
+          "codigo": "FIT0010",
+          "nome": "BACTERIOLOGIA VEGETAL APLICADA",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIT0017",
-          "nome": "INTRODUCAO A VIROLOGIA VEGETAL",
+          "codigo": "FIT0011",
+          "nome": "NEMATOLOGIA VEGETAL APLICADA",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIT0016",
+          "nome": "ESTAGIO SUPERVISIONADO EM FITOPATOLOGIA",
+          "carga_horaria": "75h",
           "natureza": "Optativa"
         },
         {
@@ -2102,51 +974,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FIT0035",
-          "nome": "DIVERSIDADE MICROBIANA 1",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIT0036",
-          "nome": "DIVERSIDADE MICROBIANA 2",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIT0037",
-          "nome": "DIAGNOSE DE DOENÇAS DE PLANTAS (DPP)",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FMD0001",
           "nome": "ESTÁGIO EM PARASITOLOGIA MÉDICA",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "FMD0013",
-          "nome": "MORFOFUNCIONAL 1",
-          "carga_horaria": "150h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FMD0071",
           "nome": "PARASITOLOGIA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0074",
-          "nome": "FUNDAMENTOS EM PSICOFARMACOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0075",
-          "nome": "PESQUISA EM PSICOFARMACOLOGIA",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -2186,141 +1022,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FMD0281",
-          "nome": "FISIOLOGIA HUMANA 1 - TEORIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0496",
-          "nome": "ANATOMIA MEDICA",
-          "carga_horaria": "180h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0497",
-          "nome": "FISIOLOGIA HUMANA 1",
-          "carga_horaria": "180h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0509",
-          "nome": "FISIOLOGIA MEDICA 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0510",
-          "nome": "ELEMENTOS DE ANATOMIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FMD0512",
-          "nome": "HISTOLOGIA MEDICA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0200",
-          "nome": "FUNDAMENTOS EM ECOLOGIA DE POPULAÇÕES E COMUNIDADES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0265",
-          "nome": "BIOLOGIA GERAL APLICADA A GESTÃO AMBIENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0302",
-          "nome": "SISTEMAS ECOLÓGICOS",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0313",
-          "nome": "QUÍMICA E TECNOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0316",
-          "nome": "UNIVERSO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0318",
-          "nome": "SERES VIVOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0326",
-          "nome": "TERRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0328",
-          "nome": "SERES VIVOS 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0329",
-          "nome": "COMPOSTOS ORGÂNICOS E VIDA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0355",
-          "nome": "CÉLULA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0523",
-          "nome": "ECOSSISTEMAS TERRESTRES AQUATICOS E INTERFACES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0528",
-          "nome": "ZOOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0010",
-          "nome": "GEOGRAFIA FISICA 1: GEOMORFOLOGIA INTERTROPICAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEA0011",
           "nome": "GEOGRAFIA FISICA 2: METEOROLOGIA E CLIMATOLOGIA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0017",
-          "nome": "GEOGRAFIA DO BRASIL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0019",
-          "nome": "GEOGRAFIA BIOLOGICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0030",
-          "nome": "FOTOINTERPRETACAO",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -2330,33 +1034,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEA0038",
-          "nome": "GEOMORFOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0042",
-          "nome": "CARTOGRAFIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEA0044",
           "nome": "GEOGRAFIA DO MEIO AMBIENTE",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEA0060",
-          "nome": "CLIMATOLOGIA GERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0001",
-          "nome": "NANOBIOTECNOLOGIA",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -2366,26 +1046,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEM0003",
-          "nome": "BIOLOGIA DO CÂNCER",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEM0004",
           "nome": "INVASÕES BIOLÓGICAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0005",
-          "nome": "GENÉTICA E BIOLOGIA MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0006",
-          "nome": "BIOLOGIA GERAL E EVOLUÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2402,12 +1064,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEM0011",
-          "nome": "EMBRIOLOGIA GERAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEM0014",
           "nome": "GENETICA BASICA",
           "carga_horaria": "60h",
@@ -2416,48 +1072,6 @@
         {
           "codigo": "GEM0015",
           "nome": "GENETICA HUMANA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0019",
-          "nome": "BIOLOGIA PARA O ENSINO DO 2 GRAU",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0021",
-          "nome": "TERATOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0022",
-          "nome": "FUNDAMENTOS DE HISTOLOGIA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0023",
-          "nome": "FUNDAMENTOS DE CITOLOGIA E HISTOLOGIA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0024",
-          "nome": "FUNDAMENTOS DE GENETICA E EVOLUCAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0025",
-          "nome": "EMBRIOLOGIA DOS SISTEMAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0026",
-          "nome": "CITOGENETICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2477,30 +1091,6 @@
           "codigo": "GEM0035",
           "nome": "EVOLUÇÃO HUMANA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0039",
-          "nome": "ESTAGIO EM OCEANOGRAFIA BIOLOGICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0040",
-          "nome": "FUNDAMENTOS DE EMBRIOLOGIA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0041",
-          "nome": "HISTOLOGIA BASICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0042",
-          "nome": "HISTOLOGIA VETERINARIA",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -2528,50 +1118,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEM0053",
-          "nome": "PRATICAS DE EMBRIOLOGIA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0054",
-          "nome": "HISTOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEM0056",
           "nome": "TÓPICOS EM GENÉTICA E BIOLOGIA EVOLUTIVA",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEM0058",
-          "nome": "BIOLOGIA REPRODUTIVA DE PEIXES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0059",
-          "nome": "BIOLOGIA ESTRUTURAL DOS SISTEMAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEM0060",
           "nome": "PRÁTICAS DE GENÉTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0061",
-          "nome": "METODOLOGIA DE ENSINO EXPERIMENTAL EM GENÉTICA E EVOLUÇÃO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0063",
-          "nome": "EMBRIOLOGIA HUMANA FUNDAMENTAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2588,45 +1142,21 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "GEM0066",
+          "nome": "BIOLOGIA E GENÉTICA DA CONSERVAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "GEM0068",
           "nome": "INTRODUÇÃO À HERANÇA EPIGENÉTICA",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0018",
-          "nome": "MATERIAIS EM ILUSTRAÇÃO CIENTÍFICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0019",
+          "codigo": "ICB0020",
           "nome": "BIOLOGIA QUANTITATIVA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0040",
-          "nome": "LABORATÓRIO DE ENSINO DE CIÊNCIAS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0041",
-          "nome": "ELEMENTOS DA PRÁTICA EDUCACIONAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0042",
-          "nome": "DIDÁTICA DAS CIÊNCIAS NATURAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0043",
-          "nome": "DIDÁTICA DA BIOLOGIA",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -2654,21 +1184,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0053",
-          "nome": "PROJETO DE PESQUISA EM EDUCAÇÃO CIENTÍFICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ICB0064",
           "nome": "ILUSTRAÇÃO CIENTIFICA NO PROCESSO DE ENSINO E APRENDIZAGEM",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0074",
-          "nome": "ESTÁGIO EM BIOLOGIA - BACHARELADO",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -2681,12 +1199,6 @@
           "codigo": "ICB0076",
           "nome": "ILUSTRAÇÃO CIENTÍFICA APLICADA À PRÁTICA DE CAMPO",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0077",
-          "nome": "EDUCAÇÃO  AMBIENTAL SUSTENTÁVEL",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -2726,63 +1238,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0098",
-          "nome": "MORFOLOGIA E TAXONOMIA VEGETAL",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0143",
-          "nome": "HISTOLOGIA ANIMAL 1",
-          "carga_horaria": "75h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0173",
-          "nome": "ESTÁGIO SUPERVISIONADO EM CIÊNCIAS BIOLÓGICAS - LICENCIATURA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ICB0177",
           "nome": "ESTAGIO SUPERVISIONADO EM BIOLOGIA ANIMAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0201",
-          "nome": "METODOLOGIA DE ENSINO DE CIENCIAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0202",
-          "nome": "METODOLOGIA DE ENSINO DE BIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0203",
-          "nome": "ESTAGIO SUPERVISIONADO EM CIENCIAS FISICAS E BIOLOGICAS",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0204",
-          "nome": "ESTAGIO SUPERVISIONADO EM BIOLOGIA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ICB0205",
           "nome": "ILUSTRAÇÃO CIENTÍFICA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0208",
-          "nome": "ESTÁGIO SUPERVISIONADO NO ENSINO DE CIÊNCIAS",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -2804,7 +1268,7 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0222",
+          "codigo": "ICB0223",
           "nome": "ESTÁGIO EM ILUSTRAÇÃO CIENTÍFICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
@@ -2822,15 +1286,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ICB0250",
-          "nome": "DESENVOLVIMENTO EMBRIONÁRIO E EVOLUÇÃO EM ANIMAIS E VEGETAIS 1",
-          "carga_horaria": "75h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0251",
-          "nome": "DESENVOLVIMENTO EMBRIONÁRIO E EVOLUÇÃO EM ANIMAIS E VEGETAIS 2",
-          "carga_horaria": "75h",
+          "codigo": "ICB0245",
+          "nome": "SEMINÁRIOS EM BIOLOGIA",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -2846,110 +1304,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0005",
-          "nome": "FÍSICA TEÓRICA PARA CIÊNCIAS AGRÁRIAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0006",
-          "nome": "FÍSICA EXPERIMENTAL PARA CIÊNCIAS AGRÁRIAS",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0067",
-          "nome": "INTRODUCAO A FISICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "IFD0072",
           "nome": "ELETRICIDADE MAGNETISMO",
           "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0171",
-          "nome": "FISICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "IFD0173",
           "nome": "FISICA 1 EXPERIMENTAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0175",
-          "nome": "FISICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0177",
-          "nome": "FISICA 2 EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0179",
-          "nome": "FISICA 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0181",
-          "nome": "FISICA 3 EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0192",
-          "nome": "FISICA PARA CIENCIAS AGRARIAS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0210",
-          "nome": "FISICA GERAL 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0217",
-          "nome": "FISICA GERAL 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0230",
-          "nome": "FISICA 1 PARA BIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0238",
-          "nome": "FISICA 2 PARA QUIMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0240",
-          "nome": "FISICA 2 EXPERIMENTAL PARA QUIMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0299",
-          "nome": "FISICA 1 PARA QUIMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0302",
-          "nome": "FISICA 1 EXPERIMENTAL PARA QUIMICA",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
@@ -2966,219 +1328,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IGD0021",
-          "nome": "GEOLOGIA GERAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0049",
-          "nome": "PALEONTOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0098",
-          "nome": "MICROPALEONTOLOGIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0143",
-          "nome": "DESENHO TECNICO GEOLOGICO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0160",
-          "nome": "INTRODUÇÃO AO SISTEMA DE INFORMAÇÕES GEOGRÁFICAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0173",
-          "nome": "GEOLOGIA BÁSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "IGD0174",
           "nome": "PALEOBIOLOGIA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0183",
-          "nome": "TOPOGRAFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IGD0198",
-          "nome": "CARTOGRAFIA E GEODÉSIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0021",
-          "nome": "QUÍMICA ANALÍTICA EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0022",
-          "nome": "PRINCÍPIOS DE QUÍMICA ANALÍTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0024",
-          "nome": "LABORATÓRIO DE QUÍMICA ANALÍTICA 1",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0029",
-          "nome": "ESPECTROSCOPIA ATÔMICA E MOLECULAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0051",
-          "nome": "QUÍMICA GERAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0056",
-          "nome": "QUIMICA INORGANICA 1 EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0058",
-          "nome": "FUNDAMENTOS DE QUÍMICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0061",
-          "nome": "LABORATÓRIO DE QUÍMICA FUNDAMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0063",
-          "nome": "QUIMICA ANALITICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0065",
-          "nome": "QUÍMICA ANALITICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0066",
-          "nome": "ANALISE INSTRUMENTAL 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0067",
-          "nome": "ANALISE INSTRUMENTAL 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0072",
-          "nome": "INTRODUCAO A QUIMICA ORGANICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0074",
-          "nome": "QUÍMICA ORGÂNICA 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0077",
-          "nome": "QUÍMICA ORGÂNICA EXPERIMENTAL",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0078",
-          "nome": "FISICO-QUIMICA 1 EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0079",
-          "nome": "FISICO-QUIMICA 2 EXPERIMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0080",
-          "nome": "FISICO-QUIMICA 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0092",
-          "nome": "QUÍMICA INORGÂNICA BÁSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0094",
-          "nome": "QUIMICA INDUSTRIAL BASICA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0095",
-          "nome": "QUIMICA ORGANICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0096",
-          "nome": "QUÍMICA ORGÂNICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0098",
-          "nome": "QUÍMICA ORGÂNICA AVANÇADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0099",
-          "nome": "ANALISE ORGANICA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0101",
-          "nome": "TERMODINÂMICA QUÍMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0103",
-          "nome": "EQUILÍBRIO E CINÉTICA QUÍMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0105",
-          "nome": "QUÍMICA QUÂNTICA",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -3188,158 +1340,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0118",
-          "nome": "QUIMICA ANALITICA QUALITATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0120",
-          "nome": "FUNDAMENTOS DE QUIMICA INORGANICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0124",
-          "nome": "QUIMICA DOS ELEMENTOS REPRESENTATIVOS",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0125",
-          "nome": "QUIMICA GERAL TEORICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0126",
-          "nome": "QUIMICA GERAL EXPERIMENTAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0130",
-          "nome": "ANALISE QUIMICA QUANTITATIVA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0131",
-          "nome": "QUIMICA ORGANICA PARA CIENCIAS BIOLOGICAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0133",
-          "nome": "FUNDAMENTOS DE QUIMICA ORGANICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0137",
-          "nome": "REAÇÕES ORGÂNICAS E SEUS MECANISMOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0139",
-          "nome": "QUÍMICA DOS ELEMENTOS DE TRANSIÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0145",
-          "nome": "TERMODINAMICA BASICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0153",
-          "nome": "QUÍMICA GERAL E INORGÂNICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0191",
-          "nome": "INTRODUÇÃO A QUIMICA MODERNA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0192",
-          "nome": "LABORATORIO DE FISICO-QUIMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0209",
-          "nome": "QUÍMICA GERAL E ORGÂNICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0213",
-          "nome": "QUÍMICA BIOLÓGICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0243",
-          "nome": "QUÍMICA ANALÍTICA QUANTITATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0252",
-          "nome": "QUÍMICA GERAL E ORGÂNICA TEÓRICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0259",
-          "nome": "PRINCÍPIOS DE EQUILÍBRIOS QUÍMICOS",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0260",
-          "nome": "CÁLCULOS BÁSICOS DE QUÍMICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0262",
-          "nome": "ESTRUTURA ATÔMICA E LIGAÇÕES QUÍMICAS",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0263",
-          "nome": "PRINCÍPIOS DA TERMODINÂMICA E CINÉTICA QUÍMICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0296",
-          "nome": "FUNDAMENTOS DE FÍSICO-QUÍMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0077",
           "nome": "LINGUA FRANCESA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0084",
-          "nome": "LÍNGUA INGLESA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0085",
-          "nome": "LÍNGUA INGLESA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3380,20 +1382,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0252",
-          "nome": "INGLÊS: COMPREENSÃO DE TEXTOS ESCRITOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0262",
           "nome": "INGLES: EXPRESSAO ESCRITA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0312",
-          "nome": "INTRODUÇÃO À MORFOSSINTAXE DO INGLÊS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3428,12 +1418,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0431",
-          "nome": "FRANCÊS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0061",
           "nome": "LATIM 1",
           "carga_horaria": "60h",
@@ -3452,63 +1436,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
+          "codigo": "MTC0021",
+          "nome": "CURRÍCULO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "MAT0022",
-          "nome": "MATEMATICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0023",
-          "nome": "MATEMATICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0026",
-          "nome": "CÁLCULO 2",
+          "codigo": "MTC0022",
+          "nome": "CURRICULOS E PROGRAMAS 2",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0027",
-          "nome": "CÁLCULO 3",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0031",
-          "nome": "INTRODUCAO A ALGEBRA LINEAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0039",
-          "nome": "ALGEBRA LINEAR",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0048",
-          "nome": "EQUACOES DIFERENCIAIS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0053",
-          "nome": "CALCULO NUMERICO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0012",
-          "nome": "DIDÁTICA FUNDAMENTAL",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -3518,8 +1454,38 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ODT0020",
-          "nome": "MICROBIOLOGIA ORAL",
+          "codigo": "MTC0028",
+          "nome": "RADIO E TELEVISAO EM EDUCACAO 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MTC0035",
+          "nome": "AVALIAÇÃO ESCOLAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PAD0011",
+          "nome": "PRINCIPIOS E METODOS DE ADMINISTRACAO ESCOLAR",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PAD0017",
+          "nome": "LEGISLACAO DO ENSINO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PAD0018",
+          "nome": "LEGISLACAO DO ENSINO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PAD0019",
+          "nome": "HIGIENE ESCOLAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3530,21 +1496,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PAD0028",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0058",
-          "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
+          "codigo": "PED0035",
+          "nome": "DESENVOLVIMENTO E NECESSIDADES ESPECIAIS",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0060",
-          "nome": "DESENVOLVIMENTO PSICOLÓGICO E ENSINO",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -3554,27 +1508,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0017",
-          "nome": "PSICOLOGIA DA APRENDIZAGEM 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PPB0018",
           "nome": "PSICOLOGIA GERAL E EXPERIMENTAL",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PPB0034",
-          "nome": "FUNDAMENTOS DE NEUROCIÊNCIAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PPB0067",
-          "nome": "APRENDIZAGEM NO ENSINO",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -3596,8 +1532,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0011",
-          "nome": "PSICOLOGIA DA EDUCAÇÃO",
+          "codigo": "TEF0013",
+          "nome": "SOCIOLOGIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEF0014",
+          "nome": "SOCIOLOGIA DA EDUCACAO 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3608,8 +1550,26 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "TEF0016",
+          "nome": "HISTORIA DA EDUCACAO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "TEF0017",
           "nome": "EVOLUCAO DA EDUCACAO NO BRASIL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEF0020",
+          "nome": "FILOSOFIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEF0022",
+          "nome": "FILOSOFIA DA EDUCACAO 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3620,14 +1580,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "TEF0027",
+          "nome": "ORIENTAÇÃO EDUCACIONAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "TEF0038",
           "nome": "INTRODUCAO A EDUCACAO ESPECIAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0065",
-          "nome": "DINÂMICA PSICOSSOCIAL DA EDUCAÇÃO",
+          "codigo": "TEF0069",
+          "nome": "ORIENTACAO VOCACIONAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3650,8 +1616,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0118",
-          "nome": "PERSPECTIVAS DO DESENVOLVIMENTO HUMANO",
+          "codigo": "TEF0147",
+          "nome": "EDUCAÇÃO DAS RELAÇÕES ÉTNICO-RACIAIS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3674,44 +1640,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ZOO0004",
-          "nome": "MÉTODOS E PRÁTICAS EM COMPORTAMENTO ANIMAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ZOO0005",
           "nome": "BIODIVERSIDADE URBANA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ZOO0007",
-          "nome": "SISTEMATICA BASICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0008",
-          "nome": "BIOLOGIA DOS MAMÍFEROS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ZOO0018",
           "nome": "ENTOMOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0020",
-          "nome": "ENTOMOLOGIA ECONOMICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0021",
-          "nome": "ECOLOGIA DE CAMPO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3752,12 +1688,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ZOO0032",
-          "nome": "BIOLOGIA DOS REPTEIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ZOO0033",
           "nome": "INTRODUCAO A BIOLOGIA MARINHA",
           "carga_horaria": "75h",
@@ -3766,18 +1696,6 @@
         {
           "codigo": "ZOO0036",
           "nome": "PESQUISA EM ZOOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0037",
-          "nome": "BIOLOGIA DOS ARACNIDEOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0038",
-          "nome": "BIOLOGIA DOS PARASITAS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3806,18 +1724,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ZOO0045",
-          "nome": "ENTOMOLOGIA FLORESTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ZOO0046",
-          "nome": "SELEÇÃO SEXUAL E REPRODUÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ZOO0047",
           "nome": "ENTOMOLOGIA FORENSE",
           "carga_horaria": "60h",
@@ -3839,36 +1745,6 @@
           "codigo": "ZOO0054",
           "nome": "BIOLOGIA QUANTITATIVA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0025",
-          "nome": "CÁLCULO 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0042",
-          "nome": "MEIO AMBIENTE FÍSICO E ECOSSISTEMAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0062",
-          "nome": "BIOLOGIA ESTRUTURAL DOS TECIDOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0043",
-          "nome": "EMBRIOLOGIA ANIMAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "BOT0004",
-          "nome": "INTRODUCAO A ANATOMIA VEGETAL",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         }
       ]

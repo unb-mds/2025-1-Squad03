@@ -116,6 +116,12 @@
           "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PPB0067",
+          "nome": "APRENDIZAGEM NO ENSINO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -153,9 +159,9 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PPB0067",
-          "nome": "APRENDIZAGEM NO ENSINO",
-          "carga_horaria": "60h",
+          "codigo": "MAT0163",
+          "nome": "DIDÁTICA DA MATEMÁTICA",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         }
       ]
@@ -182,8 +188,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0163",
-          "nome": "DIDÁTICA DA MATEMÁTICA",
+          "codigo": "MAT0111",
+          "nome": "GEOMETRIA 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MAT0164",
+          "nome": "CURRÍCULO E AVALIAÇÃO EM MATEMÁTICA",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         }
@@ -199,8 +211,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0111",
-          "nome": "GEOMETRIA 1",
+          "codigo": "MAT0114",
+          "nome": "GEOMETRIA 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -211,8 +223,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0164",
-          "nome": "CURRÍCULO E AVALIAÇÃO EM MATEMÁTICA",
+          "codigo": "MAT0166",
+          "nome": "ESTRATÉGIAS PARA O ENSINO DE GEOMETRIA",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
@@ -228,8 +240,8 @@
       "nivel": "6º Semestre",
       "materias": [
         {
-          "codigo": "MAT0114",
-          "nome": "GEOMETRIA 2",
+          "codigo": "MAT0045",
+          "nome": "ANALISE 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -237,23 +249,6 @@
           "codigo": "MAT0147",
           "nome": "PRÁTICAS DE EXTENSÃO 3",
           "carga_horaria": "75h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "MAT0166",
-          "nome": "ESTRATÉGIAS PARA O ENSINO DE GEOMETRIA",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "7º Semestre",
-      "materias": [
-        {
-          "codigo": "MAT0045",
-          "nome": "ANALISE 1",
-          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
@@ -265,18 +260,12 @@
       ]
     },
     {
-      "nivel": "8º Semestre",
+      "nivel": "7º Semestre",
       "materias": [
         {
           "codigo": "MAT0075",
           "nome": "CALCULO DE PROBABILIDADE 1",
           "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "MAT0148",
-          "nome": "PRÁTICAS DE EXTENSÃO 4",
-          "carga_horaria": "75h",
           "natureza": "Obrigatória"
         },
         {
@@ -288,7 +277,7 @@
       ]
     },
     {
-      "nivel": "9º Semestre",
+      "nivel": "8º Semestre",
       "materias": [
         {
           "codigo": "MAT0028",
@@ -297,8 +286,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0169",
-          "nome": "PRÁTICAS DE EXTENSÃO 5",
+          "codigo": "MAT0148",
+          "nome": "PRÁTICAS DE EXTENSÃO 4",
           "carga_horaria": "75h",
           "natureza": "Obrigatória"
         },
@@ -311,12 +300,18 @@
       ]
     },
     {
-      "nivel": "10º Semestre",
+      "nivel": "9º Semestre",
       "materias": [
         {
           "codigo": "LIP0174",
           "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MAT0169",
+          "nome": "PRÁTICAS DE EXTENSÃO 5",
+          "carga_horaria": "75h",
           "natureza": "Obrigatória"
         },
         {

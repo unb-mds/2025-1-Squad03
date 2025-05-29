@@ -11,15 +11,15 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0417",
-          "nome": "FRONTEIRAS DA FÍSICA",
-          "carga_horaria": "30h",
+          "codigo": "IFD0011",
+          "nome": "FUNDAMENTOS MATEMÁTICOS DA FÍSICA A",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0418",
-          "nome": "MECÂNICA 1",
-          "carga_horaria": "60h",
+          "codigo": "IFD0069",
+          "nome": "MECÂNICA",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
@@ -34,21 +34,27 @@
       "nivel": "2º Semestre",
       "materias": [
         {
+          "codigo": "IFD0012",
+          "nome": "FUNDAMENTOS MATEMÁTICOS DA FÍSICA B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0013",
+          "nome": "ONDAS, ÓPTICA E TERMODINÂMICA",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "IFD0014",
           "nome": "LABORATÓRIO DE INSTRUMENTAÇÃO CIENTÍFICA A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0419",
-          "nome": "MECÂNICA 2",
+          "codigo": "IFD0353",
+          "nome": "PROGRAMAÇÃO PARA SISTEMAS FÍSICOS",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IFD0430",
-          "nome": "INTRODUÇÃO AO ENSINO E DIVULGAÇÃO DA FÍSICA",
-          "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
         {
@@ -56,12 +62,6 @@
           "nome": "CÁLCULO 2",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "LIP0153",
-          "nome": "PORTUGUÊS INSTRUMENTAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -69,20 +69,20 @@
       "nivel": "3º Semestre",
       "materias": [
         {
-          "codigo": "IFD0247",
-          "nome": "METODOLOGIA DO ENSINO DE FÍSICA",
+          "codigo": "IFD0015",
+          "nome": "MECÂNICA CLÁSSICA A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0420",
-          "nome": "TERMODINÂMICA",
+          "codigo": "IFD0016",
+          "nome": "LABORATÓRIO DE MECÂNICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0424",
-          "nome": "LABORATÓRIO DE FÍSICA CLÁSSICA 1",
+          "codigo": "IFD0055",
+          "nome": "ELETROMAGNETISMO",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
@@ -91,6 +91,12 @@
           "nome": "CÁLCULO 3",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MAT0039",
+          "nome": "ALGEBRA LINEAR",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -98,34 +104,40 @@
       "nivel": "4º Semestre",
       "materias": [
         {
-          "codigo": "IFD0338",
-          "nome": "PROJETOS E PROGRAMAS PARA O ENSINO DE FÍSICA",
+          "codigo": "IFD0017",
+          "nome": "FÍSICA MATEMÁTICA A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0423",
-          "nome": "ONDAS E ÓPTICA",
+          "codigo": "IFD0018",
+          "nome": "RELATIVIDADE E FÍSICA QUÂNTICA",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0019",
+          "nome": "MECÂNICA CLÁSSICA B",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MAT0031",
-          "nome": "INTRODUCAO A ALGEBRA LINEAR",
+          "codigo": "IFD0020",
+          "nome": "MÉTODOS COMPUTACIONAIS A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PED0060",
-          "nome": "DESENVOLVIMENTO PSICOLÓGICO E ENSINO",
+          "codigo": "IFD0021",
+          "nome": "LABORATÓRIO DE FÍSICA MODERNA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IQD0125",
-          "nome": "QUIMICA GERAL TEORICA",
+          "codigo": "IFD0022",
+          "nome": "LABORATÓRIO DE OSCILAÇÕES, ONDAS E FLUIDOS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -133,34 +145,40 @@
       "nivel": "5º Semestre",
       "materias": [
         {
-          "codigo": "IFD0296",
-          "nome": "METODOS MATEMATICOS DA FISICA TEORICA",
+          "codigo": "IFD0023",
+          "nome": "FÍSICA MATEMÁTICA B",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0334",
-          "nome": "MATERIAIS DIDÁTICOS PARA O ENSINO DE FÍSICA",
+          "codigo": "IFD0024",
+          "nome": "MECÂNICA QUÂNTICA A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0421",
-          "nome": "ELETROMAGNETISMO 1",
+          "codigo": "IFD0025",
+          "nome": "TEORIA ELETROMAGNÉTICA A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0432",
-          "nome": "ESTÁGIO CURRICULAR SUPERVISIONADO EM FÍSICA 1",
+          "codigo": "IFD0026",
+          "nome": "LABORATÓRIO DE ELETROMAGNETISMO A",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PAD0028",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
+          "codigo": "IFD0027",
+          "nome": "LABORATÓRIO DE TERMODINÂMCIA E FÍSICA ESTATÍSTICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0028",
+          "nome": "TERMOESTATÍSTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -168,28 +186,34 @@
       "nivel": "6º Semestre",
       "materias": [
         {
-          "codigo": "IFD0422",
-          "nome": "ELETROMAGNETISMO 2",
+          "codigo": "IFD0029",
+          "nome": "TEORIA ELETROMAGNÉTICA B",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0425",
-          "nome": "LABORATÓRIO DE FÍSICA CLÁSSICA 2",
+          "codigo": "IFD0030",
+          "nome": "MECÂNICA QUÂNTICA B",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0426",
-          "nome": "HISTÓRIA DA FÍSICA CLÁSSICA",
+          "codigo": "IFD0031",
+          "nome": "TERMODINÂMICA E FÍSICA ESTATÍSTICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0433",
-          "nome": "ESTÁGIO CURRICULAR SUPERVISIONADO EM FÍSICA 2",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
+          "codigo": "IFD0032",
+          "nome": "LABORATÓRIO DE ÓPTICA E FOTÔNICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0033",
+          "nome": "LABORATÓRIO DE ESPECTROSCOPIA A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -197,32 +221,128 @@
       "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "IFD0256",
-          "nome": "FISICA MODERNA 1",
+          "codigo": "IFD0057",
+          "nome": "PROJETO DE TRABALHO DE CONCLUSÃO DE CURSO",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0034",
+          "nome": "HISTÓRIA E FILOSOFIA DA FÍSICA",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
+          "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0428",
-          "nome": "LABORATÓRIO DE FÍSICA MODERNA E CONTEMPORÂNEA",
+          "codigo": "IFD0035",
+          "nome": "LABORATÓRIO DE ESPECTROSCOPIA B",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
+          "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0431",
-          "nome": "EPISTEMOLOGIA E ENSINO DE FÍSICA",
+          "codigo": "IFD0036",
+          "nome": "LABORATÓRIO DE ELETROMAGNETISMO B",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
+          "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0434",
-          "nome": "ESTÁGIO CURRICULAR SUPERVISIONADO EM FÍSICA 3",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
+          "codigo": "IFD0037",
+          "nome": "LABORATÓRIO DE INSTRUMENTAÇÃO CIENTÍFICA B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0250",
-          "nome": "MECÂNICA CLÁSSICA",
+          "codigo": "IFD0038",
+          "nome": "PARTÍCULAS E CAMPOS A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0040",
+          "nome": "TEORIA CLÁSSICA DE CAMPOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0043",
+          "nome": "ASTROFÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0046",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0048",
+          "nome": "FÍSICA DO ESTADO SÓLIDO A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0049",
+          "nome": "HISTÓRIA DA FÍSICA A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0052",
+          "nome": "TEORIA CLÁSSICA DOS FLUIDOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0054",
+          "nome": "MÉTODOS COMPUTACIONAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0056",
+          "nome": "RELATIVIDADE GERAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0112",
+          "nome": "ÓPTICA CLÁSSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0122",
+          "nome": "FISICA NUCLEAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0132",
+          "nome": "TEORIA DOS GRUPOS APLICADA A FISICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0319",
+          "nome": "COMPUTACAO VETORIAL E PARALELA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0326",
+          "nome": "COMPUTAÇÃO ALGÉBRICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0342",
+          "nome": "FUNDAMENTOS DE ASTRONOMIA E ASTROFÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0445",
+          "nome": "FÍSICA DOS PLASMAS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
@@ -232,26 +352,98 @@
       "nivel": "8º Semestre",
       "materias": [
         {
-          "codigo": "IFD0427",
-          "nome": "FÍSICA MODERNA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IFD0429",
-          "nome": "HISTÓRIA DA FÍSICA MODERNA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IFD0435",
-          "nome": "ESTÁGIO CURRICULAR SUPERVISIONADO EM FÍSICA 4",
+          "codigo": "IFD0058",
+          "nome": "TRABALHO DE CONCLUSÃO DE CURSO",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0254",
-          "nome": "TEORIA ELETROMAGNETICA",
+          "codigo": "IFD0039",
+          "nome": "PARTÍCULAS E CAMPOS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0041",
+          "nome": "HISTÓRIA DA FÍSICA B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0042",
+          "nome": "FÍSICA DO ESTADO SÓLIDO B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0044",
+          "nome": "SISTEMAS DINÂMICOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0045",
+          "nome": "COSMOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0047",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0050",
+          "nome": "FÍSICA BIOLÓGICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0051",
+          "nome": "FILOSOFIA DA FÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0053",
+          "nome": "FÍSICA ESTATÍSTICA FORA DO EQUILIBRIO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0059",
+          "nome": "TÓPICOS ESPECIAIS A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0060",
+          "nome": "TÓPICOS ESPECIAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0061",
+          "nome": "TÓPICOS ESPECIAIS C",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0062",
+          "nome": "TÓPICOS ESPECIAIS D",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0135",
+          "nome": "ÓPTICA QUÂNTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0328",
+          "nome": "SIMULACÃO DE PROCESSOS FISICOS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
@@ -261,55 +453,206 @@
       "nivel": "9º Semestre",
       "materias": [
         {
-          "codigo": "FED0183",
-          "nome": "EDUCAÇÃO DAS RELAÇÕES ÉTNICO-RACIAIS",
+          "codigo": "IFD0043",
+          "nome": "ASTROFÍSICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0436",
-          "nome": "ESTÁGIO CURRICULAR SUPERVISIONADO EM FÍSICA 5",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
+          "codigo": "IFD0326",
+          "nome": "COMPUTAÇÃO ALGÉBRICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0293",
-          "nome": "FISICA TERMICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0442",
-          "nome": "METODOLOGIA DA PESQUISA EM ENSINO DE CIÊNCIAS",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        }
-      ]
-    },
-    {
-      "nivel": "10º Semestre",
-      "materias": [
-        {
-          "codigo": "IFD0293",
-          "nome": "FISICA TERMICA",
+          "codigo": "IFD0319",
+          "nome": "COMPUTACAO VETORIAL E PARALELA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0250",
-          "nome": "MECÂNICA CLÁSSICA",
+          "codigo": "IFD0045",
+          "nome": "COSMOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "IFD0254",
-          "nome": "TEORIA ELETROMAGNETICA",
+          "codigo": "IFD0051",
+          "nome": "FILOSOFIA DA FÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0046",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR A",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0047",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0050",
+          "nome": "FÍSICA BIOLÓGICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0048",
+          "nome": "FÍSICA DO ESTADO SÓLIDO A",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0042",
+          "nome": "FÍSICA DO ESTADO SÓLIDO B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0445",
+          "nome": "FÍSICA DOS PLASMAS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0053",
+          "nome": "FÍSICA ESTATÍSTICA FORA DO EQUILIBRIO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0122",
+          "nome": "FISICA NUCLEAR",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0342",
+          "nome": "FUNDAMENTOS DE ASTRONOMIA E ASTROFÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0049",
+          "nome": "HISTÓRIA DA FÍSICA A",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0041",
+          "nome": "HISTÓRIA DA FÍSICA B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0036",
+          "nome": "LABORATÓRIO DE ELETROMAGNETISMO B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0035",
+          "nome": "LABORATÓRIO DE ESPECTROSCOPIA B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0037",
+          "nome": "LABORATÓRIO DE INSTRUMENTAÇÃO CIENTÍFICA B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0054",
+          "nome": "MÉTODOS COMPUTACIONAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0112",
+          "nome": "ÓPTICA CLÁSSICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0135",
+          "nome": "ÓPTICA QUÂNTICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0038",
+          "nome": "PARTÍCULAS E CAMPOS A",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0039",
+          "nome": "PARTÍCULAS E CAMPOS B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0056",
+          "nome": "RELATIVIDADE GERAL",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0328",
+          "nome": "SIMULACÃO DE PROCESSOS FISICOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0044",
+          "nome": "SISTEMAS DINÂMICOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0040",
+          "nome": "TEORIA CLÁSSICA DE CAMPOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0052",
+          "nome": "TEORIA CLÁSSICA DOS FLUIDOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0132",
+          "nome": "TEORIA DOS GRUPOS APLICADA A FISICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0059",
+          "nome": "TÓPICOS ESPECIAIS A",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0060",
+          "nome": "TÓPICOS ESPECIAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0061",
+          "nome": "TÓPICOS ESPECIAIS C",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0062",
+          "nome": "TÓPICOS ESPECIAIS D",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -322,6 +665,12 @@
           "codigo": "CEL0023",
           "nome": "BIOFISICA",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEL0028",
+          "nome": "METODOS EM BIOPOLIMEROS",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -343,9 +692,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0031",
-          "nome": "OFICINA BASICA DE ARTES CENICAS 1",
-          "carga_horaria": "90h",
+          "codigo": "CEL0088",
+          "nome": "BIOLOGIA GERAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEL0094",
+          "nome": "FUNDAMENTOS DE BIOQUIMICA E BIOFISICA",
+          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -355,8 +710,38 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CIC0152",
-          "nome": "INTRODUCAO A MICROINFORMATICA",
+          "codigo": "CIC0088",
+          "nome": "COMPUTACAO BASICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CIC0090",
+          "nome": "ESTRUTURAS DE DADOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CIC0174",
+          "nome": "INTRODUCAO A PROGRAMACAO CIENTIFICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CIC0175",
+          "nome": "PROGRAMACAO AVANCADA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CIC0176",
+          "nome": "INTRODUCAO AO PROCESSAMENTO DE IMAGENS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CIC0177",
+          "nome": "ARQUITETURA DE PROCESSADORES DIGITAIS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -415,21 +800,57 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "DEG0210",
+          "nome": "ATIVIDADE COMPLEMENTAR",
+          "carga_horaria": "240h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0196",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "15h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0197",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0198",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "45h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0199",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0200",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0201",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "120h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "DPG1066",
           "nome": "TÓPICOS DE FÍSICA 1",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECL0002",
-          "nome": "ECOLOGIA GERAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ECL0014",
-          "nome": "CIENCIAS DO AMBIENTE",
-          "carga_horaria": "30h",
+          "codigo": "ECL0030",
+          "nome": "FUNDAMENTOS DE ECOLOGIA E EVOLUÇÃO",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -439,20 +860,32 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ECO0019",
-          "nome": "INTRODUÇÃO À ECONOMIA",
+          "codigo": "ENC0035",
+          "nome": "INTRODUÇÃO À MECÂNICA DOS SÓLIDOS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EFL0010",
-          "nome": "INICIACAO A ENGENHARIA FLORESTAL",
-          "carga_horaria": "15h",
           "natureza": "Optativa"
         },
         {
           "codigo": "ENC0053",
           "nome": "DESENHO TECNICO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENC0132",
+          "nome": "MECANICA DOS SOLIDOS 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0066",
+          "nome": "INTRODUÇÃO AOS CIRCUITOS ELÉTRICOS",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0067",
+          "nome": "SINAIS E SISTEMAS EM TEMPO CONTÍNUO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -463,14 +896,32 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "ENE0174",
+          "nome": "CIRCUITOS ELETRICOS 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "ENE0177",
           "nome": "ELETROMAGNETISMO 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
+          "codigo": "ENE0179",
+          "nome": "ELETROMAGNETISMO 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "ENE0181",
           "nome": "ELETRONICA 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0183",
+          "nome": "ELETRONICA 2",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
@@ -481,8 +932,122 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "ENE0185",
+          "nome": "CONVERSAO DE ENERGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0191",
+          "nome": "TEORIA DE COMUNICACOES",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0195",
+          "nome": "PROPAGACAO DE ONDAS ELETROMAGNETICAS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0212",
+          "nome": "DISPOSITIVOS ELETRONICOS",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "ENE0275",
           "nome": "ELETROMAGNETISMO GERAL",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0302",
+          "nome": "ELETRONICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0304",
+          "nome": "CIRCUITOS ELÉTRICOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0313",
+          "nome": "CIRCUITOS ELETRICOS APLICADOS",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0334",
+          "nome": "COMPUTACAO PARA ENGENHARIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENE0340",
+          "nome": "DISPOSITIVOS E CIRCUITOS ELETRÔNICOS",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0068",
+          "nome": "TERMODINAMICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0070",
+          "nome": "MAQUINAS TERMICAS",
+          "carga_horaria": "75h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0071",
+          "nome": "TRANSFERENCIA DE CALOR",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0080",
+          "nome": "FENOMENOS DE TRANSPORTE",
+          "carga_horaria": "75h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0082",
+          "nome": "MECANICA DOS FLUIDOS 2",
+          "carga_horaria": "75h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0120",
+          "nome": "MECANICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0128",
+          "nome": "TRANSPORTE DE CALOR E MASSA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0140",
+          "nome": "MECANICA DOS FLUIDOS 1",
+          "carga_horaria": "75h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENM0163",
+          "nome": "MECANICA GERAL",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "EST0022",
+          "nome": "PROBABILIDADE E ESTATÍSTICA",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
@@ -493,15 +1058,33 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FED0133",
-          "nome": "SEMINÁRIO INTERDISCIPLINAR EM EDUCAÇÃO",
+          "codigo": "FEF0105",
+          "nome": "PRÁTICA DESPORTIVA",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FEF0107",
+          "nome": "PRATICA DESPORTIVA 2",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FGA0143",
+          "nome": "FUNDAMENTOS DA TEORIA ELETROMAGNÉTICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FGA0154",
+          "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "FEF0105",
-          "nome": "PRÁTICA DESPORTIVA",
-          "carga_horaria": "30h",
+          "codigo": "FGA0204",
+          "nome": "DINÂMICA DOS FLUÍDOS",
+          "carga_horaria": "75h",
           "natureza": "Optativa"
         },
         {
@@ -523,8 +1106,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FIL0059",
+          "nome": "TEORIA DA CIÊNCIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FIL0069",
           "nome": "INTRODUÇÃO À FILOSOFIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIL0077",
+          "nome": "INICIAÇÃO À METODOLOGIA CIENTÍFICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -544,30 +1139,6 @@
           "codigo": "FIL0166",
           "nome": "INTRODUÇÃO A PRÁTICA FILOSÓFICA",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0077",
-          "nome": "EDUCAÇÃO  AMBIENTAL SUSTENTÁVEL",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0201",
-          "nome": "METODOLOGIA DE ENSINO DE CIENCIAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0202",
-          "nome": "METODOLOGIA DE ENSINO DE BIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ICB0244",
-          "nome": "FILOSOFIA E HISTÓRIA DAS CIÊNCIAS",
-          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -595,129 +1166,21 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0011",
-          "nome": "FUNDAMENTOS MATEMÁTICOS DA FÍSICA A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0012",
-          "nome": "FUNDAMENTOS MATEMÁTICOS DA FÍSICA B",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0013",
-          "nome": "ONDAS, ÓPTICA E TERMODINÂMICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0015",
-          "nome": "MECÂNICA CLÁSSICA A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0017",
-          "nome": "FÍSICA MATEMÁTICA A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0018",
-          "nome": "RELATIVIDADE E FÍSICA QUÂNTICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0019",
-          "nome": "MECÂNICA CLÁSSICA B",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0020",
-          "nome": "MÉTODOS COMPUTACIONAIS A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0023",
-          "nome": "FÍSICA MATEMÁTICA B",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0024",
-          "nome": "MECÂNICA QUÂNTICA A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0025",
-          "nome": "TEORIA ELETROMAGNÉTICA A",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0027",
-          "nome": "LABORATÓRIO DE TERMODINÂMCIA E FÍSICA ESTATÍSTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0029",
-          "nome": "TEORIA ELETROMAGNÉTICA B",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0030",
-          "nome": "MECÂNICA QUÂNTICA B",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0031",
-          "nome": "TERMODINÂMICA E FÍSICA ESTATÍSTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0044",
-          "nome": "SISTEMAS DINÂMICOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0055",
-          "nome": "ELETROMAGNETISMO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0057",
-          "nome": "PROJETO DE TRABALHO DE CONCLUSÃO DE CURSO",
+          "codigo": "IFD0007",
+          "nome": "PRÁTICA DE APOIO A FÍSICA 2 - 1",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0058",
-          "nome": "TRABALHO DE CONCLUSÃO DE CURSO",
-          "carga_horaria": "90h",
+          "codigo": "IFD0008",
+          "nome": "PRÁTICA DE APOIO A FÍSICA 2 - 2",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0062",
-          "nome": "TÓPICOS ESPECIAIS D",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0069",
-          "nome": "MECÂNICA",
-          "carga_horaria": "90h",
+          "codigo": "IFD0009",
+          "nome": "PRÁTICA DE APOIO A FÍSICA 2 - 3",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -757,9 +1220,21 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0086",
+          "nome": "TECNICAS EXPERIMENTAIS 1",
+          "carga_horaria": "120h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0088",
           "nome": "MECANICA CLASSICA 2",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0091",
+          "nome": "INTRODUCAO A CINEMATICA RELATIVISTICA",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -811,12 +1286,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0112",
-          "nome": "ÓPTICA CLÁSSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "IFD0115",
           "nome": "ESTADO SOLIDO",
           "carga_horaria": "90h",
@@ -825,12 +1294,6 @@
         {
           "codigo": "IFD0119",
           "nome": "TEORIA DE SOLIDOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0122",
-          "nome": "FISICA NUCLEAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -844,12 +1307,6 @@
           "codigo": "IFD0128",
           "nome": "INTRODUCAO A RELATIVIDADE GERAL",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0135",
-          "nome": "ÓPTICA QUÂNTICA",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -871,15 +1328,21 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0145",
-          "nome": "ESTAGIO SUPERVISIONADO EM FISICA 1",
+          "codigo": "IFD0148",
+          "nome": "SEMINARIO DE GRADUACAO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0154",
-          "nome": "ESTAGIO SUPERVISIONADO EM FISICA 2",
-          "carga_horaria": "60h",
+          "codigo": "IFD0150",
+          "nome": "INTRODUCAO A METODOS DA FISICA TEORICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0159",
+          "nome": "TEORIA QUÂNTICA DE CAMPOS",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -949,9 +1412,45 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0194",
+          "nome": "INTRODUCAO A RELATIVIDADE",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0196",
+          "nome": "INTRODUCAO A ESPECTROSCOPIA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0198",
           "nome": "FISICA MATEMATICA",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0200",
+          "nome": "METODOS COMPUTACIONAIS EM FISICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0202",
+          "nome": "FISICA ATOMICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0204",
+          "nome": "FISICA MOLECULAR 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0206",
+          "nome": "FISICA MOLECULAR 2",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -991,8 +1490,26 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0230",
+          "nome": "FISICA 1 PARA BIOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0236",
           "nome": "FISICA GERAL 4 EXPERIMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0238",
+          "nome": "FISICA 2 PARA QUIMICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0240",
+          "nome": "FISICA 2 EXPERIMENTAL PARA QUIMICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1003,27 +1520,57 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0246",
+          "nome": "METODOLOGIA DO ENSINO DE FISICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0247",
+          "nome": "METODOLOGIA DO ENSINO DE FÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0250",
+          "nome": "MECÂNICA CLÁSSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0252",
           "nome": "FISICA MATEMATICA - NOTURNO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0264",
-          "nome": "FISICA MODERNA 2",
+          "codigo": "IFD0254",
+          "nome": "TEORIA ELETROMAGNETICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0266",
-          "nome": "TOPICOS DE FISICA E TECNOLOGIA",
+          "codigo": "IFD0256",
+          "nome": "FISICA MODERNA 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0268",
-          "nome": "LABORATORIO DE FISICA AVANCADA",
-          "carga_horaria": "90h",
+          "codigo": "IFD0258",
+          "nome": "EVOLUCAO HISTORICA DOS CONCEITOS DA FISICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0260",
+          "nome": "TEORIA QUANTICA 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0262",
+          "nome": "MECANICA QUANTICA RELATIVISTICA",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1033,14 +1580,50 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0272",
-          "nome": "ESTRUTURA DA MATERIA 2 - FISICA NUCLEAR",
+          "codigo": "IFD0275",
+          "nome": "ESTRUTURA DA MATERIA 4 - FISICA MOLECULAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0275",
-          "nome": "ESTRUTURA DA MATERIA 4 - FISICA MOLECULAR",
+          "codigo": "IFD0282",
+          "nome": "PRATICA E ENSINO DE FISICA PARA O 2 GRAU 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0284",
+          "nome": "ELABORACAO E UTILIZACAO DE MATERIAL DIDATICO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0286",
+          "nome": "ELABORACAO E UTILIZACAO DE MATERIAL DIDATICO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0288",
+          "nome": "PROGRAMA DE ENSINO DE FISICA PARA O 2 GRAU 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0290",
+          "nome": "PROGRAMA DE ENSINO DE FISICA PARA O 2 GRAU 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0293",
+          "nome": "FISICA TERMICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0296",
+          "nome": "METODOS MATEMATICOS DA FISICA TEORICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1063,6 +1646,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0308",
+          "nome": "ESPECTROSCOPIA ELETRONICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0310",
           "nome": "INSTRUMENTACAO 1",
           "carga_horaria": "60h",
@@ -1075,6 +1664,36 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IFD0314",
+          "nome": "PROJETO FINAL EM FISICA COMPUTACIONAL 1",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0316",
+          "nome": "PROJETO FINAL EM FISICA COMPUTACIONAL 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0321",
+          "nome": "METODOS COMPUTACIONAIS 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0323",
+          "nome": "METODOS COMPUTACIONAIS 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0330",
+          "nome": "TOPICOS EM FISICA COMPUTACIONAL",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IFD0339",
           "nome": "INICIACAO A PESQUISA",
           "carga_horaria": "60h",
@@ -1083,12 +1702,6 @@
         {
           "codigo": "IFD0340",
           "nome": "FUNDAMENTOS DE FÍSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0342",
-          "nome": "FUNDAMENTOS DE ASTRONOMIA E ASTROFÍSICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1123,8 +1736,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0353",
-          "nome": "PROGRAMAÇÃO PARA SISTEMAS FÍSICOS",
+          "codigo": "IFD0354",
+          "nome": "MECÂNICA QUÂNTICA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1135,38 +1748,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0437",
-          "nome": "TEORIAS DA APRENDIZAGEM E ENSINO DE FÍSICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0438",
-          "nome": "TECNOLOGIAS DE INFORMAÇÃO E COMUNICAÇÃO NO ENSINO DE FÍSICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0439",
-          "nome": "EDUCAÇÃO CIENTÍFICA E CIÊNCIA-TECNOLOGIA-SOCIEDADE",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0440",
-          "nome": "AVALIAÇÃO NO ENSINO DE FÍSICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0441",
-          "nome": "CIÊNCIAS NA EDUCAÇÃO INFANTIL E NO ENSINO FUNDAMENTAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IFD0443",
-          "nome": "INICIAÇÃO À DOCÊNCIA DAS CIÊNCIAS DA NATUREZA",
+          "codigo": "IFD0430",
+          "nome": "INTRODUÇÃO AO ENSINO E DIVULGAÇÃO DA FÍSICA",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
@@ -1195,9 +1778,63 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IGD0021",
+          "nome": "GEOLOGIA GERAL",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IGD0024",
+          "nome": "CRISTALOGRAFIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IGD0110",
+          "nome": "GEOFÍSICA BÁSICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0003",
+          "nome": "INTRODUÇÃO À COMPUTAÇÃO APLICADA AOS PROCESSOS QUÍMICOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0005",
+          "nome": "TRANSFERÊNCIA DE QUANTIDADE DE MOVIMENTO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0021",
+          "nome": "QUÍMICA ANALÍTICA EXPERIMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0022",
+          "nome": "PRINCÍPIOS DE QUÍMICA ANALÍTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0029",
+          "nome": "ESPECTROSCOPIA ATÔMICA E MOLECULAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IQD0051",
           "nome": "QUÍMICA GERAL",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0056",
+          "nome": "QUIMICA INORGANICA 1 EXPERIMENTAL",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1215,6 +1852,18 @@
         {
           "codigo": "IQD0072",
           "nome": "INTRODUCAO A QUIMICA ORGANICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0078",
+          "nome": "FISICO-QUIMICA 1 EXPERIMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0079",
+          "nome": "FISICO-QUIMICA 2 EXPERIMENTAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1237,8 +1886,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0118",
-          "nome": "QUIMICA ANALITICA QUALITATIVA",
+          "codigo": "IQD0103",
+          "nome": "EQUILÍBRIO E CINÉTICA QUÍMICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0105",
+          "nome": "QUÍMICA QUÂNTICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1255,32 +1910,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IQD0125",
+          "nome": "QUIMICA GERAL TEORICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IQD0126",
           "nome": "QUIMICA GERAL EXPERIMENTAL",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0127",
-          "nome": "FUNDAMENTOS DE QUIMICA ANALITICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0130",
-          "nome": "ANALISE QUIMICA QUANTITATIVA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "IQD0131",
           "nome": "QUIMICA ORGANICA PARA CIENCIAS BIOLOGICAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IQD0132",
-          "nome": "INTRODUCAO AO ESTUDO DA QUIMICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1291,8 +1934,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0148",
-          "nome": "METODOLOGIA DO ENSINO DE QUÍMICA",
+          "codigo": "IQD0139",
+          "nome": "QUÍMICA DOS ELEMENTOS DE TRANSIÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0145",
+          "nome": "TERMODINAMICA BASICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1303,8 +1952,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0201",
-          "nome": "MATERIAIS DE ENSINO DE QUÍMICA",
+          "codigo": "IQD0191",
+          "nome": "INTRODUÇÃO A QUIMICA MODERNA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0192",
+          "nome": "LABORATORIO DE FISICO-QUIMICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1351,21 +2006,39 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IQD0296",
+          "nome": "FUNDAMENTOS DE FÍSICO-QUÍMICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0077",
+          "nome": "LINGUA FRANCESA 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "LET0084",
           "nome": "LÍNGUA INGLESA 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0162",
-          "nome": "INGLÊS INSTRUMENTAL 2",
+          "codigo": "LET0085",
+          "nome": "LÍNGUA INGLESA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0326",
-          "nome": "PRATICA DO FRANCES ORAL E ESCRITO 1",
-          "carga_horaria": "90h",
+          "codigo": "LET0101",
+          "nome": "LÍNGUA ALEMÃ 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0102",
+          "nome": "LINGUA ALEMA 2",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1399,8 +2072,32 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0432",
-          "nome": "FRANCÊS 2",
+          "codigo": "LIP0037",
+          "nome": "LÍNGUA PORTUGUESA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0038",
+          "nome": "LINGUA PORTUGUESA 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0045",
+          "nome": "INTRODUÇÃO À LINGUÍSTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0096",
+          "nome": "LEITURA E PRODUÇÃO DE TEXTOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1423,21 +2120,15 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "MAT0031",
+          "nome": "INTRODUCAO A ALGEBRA LINEAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "MAT0034",
           "nome": "ALGEBRA 1",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0038",
-          "nome": "TEORIA DOS NÚMEROS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0039",
-          "nome": "ALGEBRA LINEAR",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -1465,6 +2156,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "MAT0047",
+          "nome": "TOPOLOGIA DOS ESPACOS METRICOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "MAT0048",
           "nome": "EQUACOES DIFERENCIAIS 1",
           "carga_horaria": "60h",
@@ -1483,6 +2180,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "MAT0054",
+          "nome": "INTRODUCAO A PROGRAMACAO LINEAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "MAT0057",
           "nome": "ANALISE NUMERICA 1",
           "carga_horaria": "60h",
@@ -1495,8 +2198,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MAT0060",
-          "nome": "HISTORIA DA MATEMATICA",
+          "codigo": "MAT0099",
+          "nome": "INTRODUCAO AS EQUACOES DIFERENCIAIS PARCIAIS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1513,32 +2216,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0006",
-          "nome": "FUNDAMENTOS DA ARTE NA EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "MTC0012",
           "nome": "DIDÁTICA FUNDAMENTAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0021",
-          "nome": "CURRÍCULO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0035",
-          "nome": "AVALIAÇÃO ESCOLAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0089",
-          "nome": "OFICINA BÁSICA DE MÚSICA 1",
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1549,33 +2234,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PED0024",
-          "nome": "DESENVOLVIMENTO NO CURSO DE VIDA: INFÂNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0025",
-          "nome": "DESENVOLVIMENTO NO CURSO DE VIDA: INFÂNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0032",
-          "nome": "PSICOLOGIA DA CRIATIVIDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0054",
-          "nome": "DESENVOLVIMENTO COGNITIVO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PED0058",
           "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PED0060",
+          "nome": "DESENVOLVIMENTO PSICOLÓGICO E ENSINO",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1591,50 +2258,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0009",
-          "nome": "INTRODUCAO A EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEF0011",
           "nome": "PSICOLOGIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0013",
-          "nome": "SOCIOLOGIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0015",
-          "nome": "HISTORIA DA EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0021",
-          "nome": "FILOSOFIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0025",
-          "nome": "MÉTODOS E TÉCNICAS DE PESQUISA EDUCACIONAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0042",
-          "nome": "FUNDAMENTOS SOCIAIS DA EDUCACAO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0046",
-          "nome": "HISTORIA DA EDUCACAO BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1657,105 +2282,237 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0029",
-          "nome": "FUNDAMENTOS DE HISTORIA LITERARIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0060",
-          "nome": "ELEMENTOS DE LINGUAGEM, ESTÉTICA E HISTÓRIA DA ARTE 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0061",
-          "nome": "HISTORIA DA ARTE 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0063",
-          "nome": "DESENHO 1",
+          "codigo": "MAT0039",
+          "nome": "ALGEBRA LINEAR",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0065",
-          "nome": "DESENHO 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0074",
-          "nome": "DESENHO GEOMETRICO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0085",
-          "nome": "OFICINA BASICA DE ARTES PLASTICAS 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0113",
-          "nome": "PRÁTICAS DE ENSINO: MATERIAIS EM ARTES",
+          "codigo": "IFD0028",
+          "nome": "TERMOESTATÍSTICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0122",
-          "nome": "ELEMENTOS DE LINGUAGEM, ARTE E CULTURA POPULAR",
+          "codigo": "IFD0032",
+          "nome": "LABORATÓRIO DE ÓPTICA E FOTÔNICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0129",
-          "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0187",
-          "nome": "PINTURA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0153",
-          "nome": "PORTUGUÊS INSTRUMENTAL 1",
+          "codigo": "IFD0033",
+          "nome": "LABORATÓRIO DE ESPECTROSCOPIA A",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IQD0125",
-          "nome": "QUIMICA GERAL TEORICA",
+          "codigo": "IFD0034",
+          "nome": "HISTÓRIA E FILOSOFIA DA FÍSICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0250",
-          "nome": "MECÂNICA CLÁSSICA",
+          "codigo": "IFD0035",
+          "nome": "LABORATÓRIO DE ESPECTROSCOPIA B",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0254",
-          "nome": "TEORIA ELETROMAGNETICA",
+          "codigo": "IFD0036",
+          "nome": "LABORATÓRIO DE ELETROMAGNETISMO B",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0293",
-          "nome": "FISICA TERMICA",
+          "codigo": "IFD0037",
+          "nome": "LABORATÓRIO DE INSTRUMENTAÇÃO CIENTÍFICA B",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0442",
-          "nome": "METODOLOGIA DA PESQUISA EM ENSINO DE CIÊNCIAS",
-          "carga_horaria": "30h",
+          "codigo": "IFD0038",
+          "nome": "PARTÍCULAS E CAMPOS A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0040",
+          "nome": "TEORIA CLÁSSICA DE CAMPOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0043",
+          "nome": "ASTROFÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0046",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0048",
+          "nome": "FÍSICA DO ESTADO SÓLIDO A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0049",
+          "nome": "HISTÓRIA DA FÍSICA A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0052",
+          "nome": "TEORIA CLÁSSICA DOS FLUIDOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0054",
+          "nome": "MÉTODOS COMPUTACIONAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0056",
+          "nome": "RELATIVIDADE GERAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0112",
+          "nome": "ÓPTICA CLÁSSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0122",
+          "nome": "FISICA NUCLEAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0132",
+          "nome": "TEORIA DOS GRUPOS APLICADA A FISICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0319",
+          "nome": "COMPUTACAO VETORIAL E PARALELA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0326",
+          "nome": "COMPUTAÇÃO ALGÉBRICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0342",
+          "nome": "FUNDAMENTOS DE ASTRONOMIA E ASTROFÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0445",
+          "nome": "FÍSICA DOS PLASMAS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0039",
+          "nome": "PARTÍCULAS E CAMPOS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0041",
+          "nome": "HISTÓRIA DA FÍSICA B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0042",
+          "nome": "FÍSICA DO ESTADO SÓLIDO B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0044",
+          "nome": "SISTEMAS DINÂMICOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0045",
+          "nome": "COSMOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0047",
+          "nome": "FÍSICA ATÔMICA E MOLECULAR B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0050",
+          "nome": "FÍSICA BIOLÓGICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0051",
+          "nome": "FILOSOFIA DA FÍSICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0053",
+          "nome": "FÍSICA ESTATÍSTICA FORA DO EQUILIBRIO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0059",
+          "nome": "TÓPICOS ESPECIAIS A",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0060",
+          "nome": "TÓPICOS ESPECIAIS B",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0061",
+          "nome": "TÓPICOS ESPECIAIS C",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0062",
+          "nome": "TÓPICOS ESPECIAIS D",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0135",
+          "nome": "ÓPTICA QUÂNTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IFD0328",
+          "nome": "SIMULACÃO DE PROCESSOS FISICOS",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         }
       ]

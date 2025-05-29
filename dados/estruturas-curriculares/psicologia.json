@@ -93,14 +93,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PST0051",
-          "nome": "PSICOLOGIA DAS ORGANIZAÇÕES",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "PPB0006",
           "nome": "PSICOLOGIA EVOLUCIONISTA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PST0050",
+          "nome": "PSICOLOGIA DAS ORGANIZAÇÕES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
@@ -116,6 +116,12 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "PCL0021",
+          "nome": "PSICOPATOLOGIA 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "PCL0071",
           "nome": "PSICOLOGIA DA SAUDE",
           "carga_horaria": "90h",
@@ -126,18 +132,6 @@
           "nome": "PERCEPCAO",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0001",
-          "nome": "PSICOLOGIA DO TRABALHO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0021",
-          "nome": "PSICOPATOLOGIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -145,14 +139,14 @@
       "nivel": "5º Semestre",
       "materias": [
         {
-          "codigo": "PCL0025",
-          "nome": "FUNDAMENTOS DA PSICOTERAPIA",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
+          "codigo": "PED0095",
+          "nome": "PSICOLOGIA DO ESPORTE E DO EXERCÍCIO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0048",
-          "nome": "PSICOFARMACOLOGIA",
+          "codigo": "PPB0016",
+          "nome": "PSICOLOGIA DA APRENDIZAGEM 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -174,21 +168,15 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PCL0027",
-          "nome": "TEORIAS PSICANALÍTICAS 1",
+          "codigo": "PCL0003",
+          "nome": "INTERVENÇÕES PSICOSSOCIAIS EM CONTEXTOS DE VIOLÊNCIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0016",
-          "nome": "PSICOLOGIA DA APRENDIZAGEM 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PST0063",
-          "nome": "AVALIAÇÃO DE DESEMPENHO",
-          "carga_horaria": "60h",
+          "codigo": "PPB0024",
+          "nome": "ANÁLISE DO COMPORTAMENTO HUMANO",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         }
       ]
@@ -197,21 +185,10 @@
       "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "PST0017",
-          "nome": "RECRUTAMENTO E SELEÇÃO PROFISSIONAL",
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        }
-      ]
-    },
-    {
-      "nivel": "8º Semestre",
-      "materias": [
-        {
-          "codigo": "PPB0009",
-          "nome": "PERCEPÇÃO E COGNIÇÃO: CIÊNCIA E TECNOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
+          "natureza": "Obrigatória"
         },
         {
           "codigo": "PST0034",
@@ -222,383 +199,75 @@
       ]
     },
     {
+      "nivel": "8º Semestre",
+      "materias": [
+        {
+          "codigo": "MTC0012",
+          "nome": "DIDÁTICA FUNDAMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PPB0009",
+          "nome": "PERCEPÇÃO E COGNIÇÃO: CIÊNCIA E TECNOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        }
+      ]
+    },
+    {
       "nivel": "9º Semestre",
       "materias": [
         {
-          "codigo": "DAN0053",
-          "nome": "ANTROPOLOGIA DO GÊNERO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0047",
-          "nome": "ANTROPOLOGIA DA RELIGIÃO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0041",
-          "nome": "TEORIA ANTROPOLÓGICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0036",
-          "nome": "SOCIEDADES COMPLEXAS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0024",
-          "nome": "MULHER, CULTURA E SOCIEDADE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0061",
-          "nome": "ESTUDOS AFRO-BRASILEIROS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "GEA0067",
-          "nome": "GEOGRAFIA CULTURAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0022",
-          "nome": "INTRODUÇÃO À ANTROPOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0078",
-          "nome": "ANTROPOLOGIA URBANA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DAN0049",
-          "nome": "INDIVÍDUO, CULTURA E SOCIEDADE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0021",
-          "nome": "PSICOPATOLOGIA 1",
+          "codigo": "PCL0025",
+          "nome": "FUNDAMENTOS DA PSICOTERAPIA",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
+        }
+      ]
+    },
+    {
+      "nivel": "10º Semestre",
+      "materias": [
         {
-          "codigo": "FEF0193",
-          "nome": "PSICOMOTRICIDADE",
+          "codigo": "PED0006",
+          "nome": "DESENVOLVIMENTO, APRENDIZAGEM E INTERAÇÕES VIRTUAIS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "DSC0045",
-          "nome": "VIGILANCIA SANITARIA",
+          "codigo": "PST0023",
+          "nome": "TREINAMENTO E DESENVOLVIMENTO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "DSC0055",
-          "nome": "SAÚDE MENTAL E BEM-ESTAR NO TRABALHO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DSC0037",
-          "nome": "PRATICAS DE SAUDE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FEF0331",
-          "nome": "EDUCAÇÃO FÍSICA ADAPTADA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0040",
-          "nome": "PSICOMETRIA",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "DSC0043",
-          "nome": "SAUDE MENTAL EM SAUDE COLETIVA",
-          "carga_horaria": "45h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0039",
-          "nome": "MEDIDAS EM PSICOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0054",
-          "nome": "PSICOLOGIA DA SEXUALIDADE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "GEM0024",
-          "nome": "FUNDAMENTOS DE GENETICA E EVOLUCAO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PPB0072",
-          "nome": "PESQUISA EM ANÁLISE COMPORTAMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0069",
-          "nome": "PESQUISA EM AVALIACAO E MEDIDAS EM PSICOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0070",
-          "nome": "PESQUISA EM AVALIAÇAO E MEDIDAS EM PSICOLOGIA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0074",
-          "nome": "PESQUISA EM ERGONOMIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PPB0069",
-          "nome": "PESQUISA EM PROCESSOS COGNITIVOS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0083",
-          "nome": "PESQUISA EM PSICANÁLISE E PROCESSOS DE SUBJETIVAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PPB0075",
-          "nome": "PESQUISA EM PSICOBIOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0094",
-          "nome": "PESQUISA EM PSICOLOGIA AMBIENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0068",
-          "nome": "PESQUISA EM PSICOLOGIA CLINICA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0079",
-          "nome": "PESQUISA EM PSICOLOGIA CLÍNICA E SAÚDE MENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0105",
-          "nome": "PESQUISA EM PSICOLOGIA DA SAÚDE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0088",
-          "nome": "PESQUISA EM PSICOLOGIA DAS ORGANIZACOES",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PED0066",
-          "nome": "PESQUISA EM PSICOLOGIA DO DESENVOLVIMENTO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0090",
-          "nome": "PESQUISA EM PSICOLOGIA DO TRABALHO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PED0068",
-          "nome": "PESQUISA EM PSICOLOGIA ESCOLAR",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PPB0008",
-          "nome": "PESQUISA EM PSICOLOGIA EVOLUCIONISTA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PST0005",
-          "nome": "PESQUISA EM PSICOLOGIA SOCIAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0034",
-          "nome": "PESQUISA EM PSICOLOGIA CLÍNICA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0087",
-          "nome": "PESQUISA EM PSICOLOGIA CLÍNICA 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0092",
-          "nome": "PESQUISA EM PSICOLOGIA CLÍNICA E SAÚDE MENTAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0153",
-          "nome": "PESQUISA EM PSICOLOGIA CLÍNICA E SAÚDE MENTAL 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0154",
-          "nome": "PESQUISA EM PSICANÁLISE E PROCESSOS DE SUBJETIVAÇÃO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0155",
-          "nome": "PESQUISA EM PSICANÁLISE E PROCESSOS DE SUBJETIVAÇÃO 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0156",
-          "nome": "PESQUISA EM PSICOLOGIA DA SAÚDE 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0157",
-          "nome": "PESQUISA EM PSICOLOGIA DA SAÚDE 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0158",
-          "nome": "PESQUISA EM PSICOLOGIA DO DESENVOLVIMENTO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0159",
-          "nome": "PESQUISA EM PSICOLOGIA DO DESENVOLVIMENTO 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0160",
-          "nome": "PESQUISA EM PSICOLOGIA ESCOLAR 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0161",
-          "nome": "PESQUISA EM PSICOLOGIA ESCOLAR 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0163",
-          "nome": "PESQUISA EM PSICOLOGIA EVOLUCIONISTA 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0162",
-          "nome": "PESQUISA EM PSICOLOGIA EVOLUCIONISTA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0164",
-          "nome": "PESQUISA EM PROCESSOS COGNITIVOS 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "IPD0165",
-          "nome": "PESQUISA EM PROCESSOS COGNITIVOS 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0096",
-          "nome": "ESTÁGIO SUPERVIONADO BACHAREL-ÁREA PSICOLOGIA CLÍNICA E CULTURAL",
+          "codigo": "IPD0009",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA CIÊNCIAS DO COMPORTAMENTO 2",
           "carga_horaria": "150h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PST0086",
-          "nome": "ESTÁGIO SUPERVIS BACHAREL - ÁREA SOCIAL, TRABALHO E ORGANIZAÇÕES",
+          "codigo": "PED0021",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA PSICOLOGIA ESCOLAR 1",
           "carga_horaria": "150h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PPB0087",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA CIÊNCIAS DO COMPORTAMENTO",
+          "codigo": "PED0045",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA PSICOLOGIA ESCOLAR 2",
           "carga_horaria": "150h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PPB0089",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA CIÊNCIAS DO COMPORTAMENTO 2",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0112",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA CLÍNICA E CULTURAL 2",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PCL0098",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA DA SAÚDE",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PED0009",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA DO DESENVOLVIMENTO",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PED0082",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA ESCOLAR 1",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PED0022",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA ESCOLAR 2",
+          "codigo": "PPB0011",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA CIÊNCIAS DO COMPORTAMENTO 1",
           "carga_horaria": "150h",
           "natureza": "Obrigatória"
         }
@@ -622,6 +291,12 @@
         {
           "codigo": "CEL0088",
           "nome": "BIOLOGIA GERAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEL0089",
+          "nome": "CITOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -670,54 +345,6 @@
         {
           "codigo": "DAN0022",
           "nome": "INTRODUÇÃO À ANTROPOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0024",
-          "nome": "MULHER, CULTURA E SOCIEDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0036",
-          "nome": "SOCIEDADES COMPLEXAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0041",
-          "nome": "TEORIA ANTROPOLÓGICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0047",
-          "nome": "ANTROPOLOGIA DA RELIGIÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0049",
-          "nome": "INDIVÍDUO, CULTURA E SOCIEDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0053",
-          "nome": "ANTROPOLOGIA DO GÊNERO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0061",
-          "nome": "ESTUDOS AFRO-BRASILEIROS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0078",
-          "nome": "ANTROPOLOGIA URBANA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -950,20 +577,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "DPG0990",
-          "nome": "PSICOLOGIA SOCIAL AVANÇADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "DSC0010",
           "nome": "INFORMAÇÃO E INFORMÁTICA EM SAÚDE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DSC0037",
-          "nome": "PRATICAS DE SAUDE",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -971,18 +586,6 @@
           "codigo": "DSC0043",
           "nome": "SAUDE MENTAL EM SAUDE COLETIVA",
           "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DSC0045",
-          "nome": "VIGILANCIA SANITARIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DSC0055",
-          "nome": "SAÚDE MENTAL E BEM-ESTAR NO TRABALHO",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -994,12 +597,6 @@
         {
           "codigo": "ECL0039",
           "nome": "ECOLOGIA BÁSICA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENE0066",
-          "nome": "INTRODUÇÃO AOS CIRCUITOS ELÉTRICOS",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
@@ -1016,8 +613,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FEF0070",
-          "nome": "NEUROANATOMIA FUNCIONAL",
+          "codigo": "FED0133",
+          "nome": "SEMINÁRIO INTERDISCIPLINAR EM EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1025,12 +622,6 @@
           "codigo": "FEF0105",
           "nome": "PRÁTICA DESPORTIVA",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0143",
-          "nome": "FISIOLOGIA DO EXERCICIO 1",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1046,20 +637,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FEF0331",
-          "nome": "EDUCAÇÃO FÍSICA ADAPTADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FEF0367",
           "nome": "INTRODUÇÃO À PSICOLOGIA DO ESPORTE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0409",
-          "nome": "ANATOMIA APLICADA À EDUCAÇÃO FÍSICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1106,12 +685,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "GEA0067",
-          "nome": "GEOGRAFIA CULTURAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEM0014",
           "nome": "GENETICA BASICA",
           "carga_horaria": "60h",
@@ -1121,12 +694,6 @@
           "codigo": "GEM0022",
           "nome": "FUNDAMENTOS DE HISTOLOGIA",
           "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "GEM0024",
-          "nome": "FUNDAMENTOS DE GENETICA E EVOLUCAO",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1163,6 +730,18 @@
           "codigo": "IPD0006",
           "nome": "TÓPICOS EM PSICOLOGIA SOCIAL APLICADA",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IPD0008",
+          "nome": "ANÁLISE COMPORTAMENTAL APLICADA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IPD0009",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA CIÊNCIAS DO COMPORTAMENTO 2",
+          "carga_horaria": "150h",
           "natureza": "Optativa"
         },
         {
@@ -1268,12 +847,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IPD0166",
-          "nome": "PSICOLOGIA E POLÍTICAS PÚBLICAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0044",
           "nome": "LINGUA ALEMA INSTRUMENTAL 1",
           "carga_horaria": "60h",
@@ -1334,56 +907,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0175",
           "nome": "LÍNGUAS DE SINAIS BRASILEIRA - INTERMEDIÁRIO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "MAT0025",
-          "nome": "CÁLCULO 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0026",
-          "nome": "CÁLCULO 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MAT0031",
-          "nome": "INTRODUCAO A ALGEBRA LINEAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0012",
-          "nome": "DIDÁTICA FUNDAMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0028",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PCL0001",
           "nome": "EPISTEMOLOGIA E MÉTODOS CLÍNICOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PCL0003",
-          "nome": "INTERVENÇÕES PSICOSSOCIAIS EM CONTEXTOS DE VIOLÊNCIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1462,6 +993,12 @@
         {
           "codigo": "PCL0023",
           "nome": "PSICOPATOLOGIA 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PCL0027",
+          "nome": "TEORIAS PSICANALÍTICAS 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1754,12 +1291,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PCL0112",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA CLÍNICA E CULTURAL 2",
-          "carga_horaria": "150h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PCL0113",
           "nome": "SAÚDE MENTAL, CLÍNICA E CULTURA",
           "carga_horaria": "60h",
@@ -1828,12 +1359,6 @@
         {
           "codigo": "PED0021",
           "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA PSICOLOGIA ESCOLAR 1",
-          "carga_horaria": "150h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0022",
-          "nome": "ESTÁGIO SUPERVISIONADO BACHAREL - ÁREA PSICOLOGIA ESCOLAR 2",
           "carga_horaria": "150h",
           "natureza": "Optativa"
         },
@@ -1922,12 +1447,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PED0095",
-          "nome": "PSICOLOGIA DO ESPORTE E DO EXERCÍCIO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PED0096",
           "nome": "SUPERDOTAÇÃO, TALENTO E DESENVOLVIMENTO HUMANO",
           "carga_horaria": "60h",
@@ -1958,6 +1477,18 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PPB0010",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA CIÊNCIAS DO COMPORTAMENTO 1",
+          "carga_horaria": "150h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PPB0011",
+          "nome": "ESTÁGIO SUPERVISIONADO LICENCIATURA - ÁREA CIÊNCIAS DO COMPORTAMENTO 1",
+          "carga_horaria": "150h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PPB0012",
           "nome": "ESTÁGIO BACHAREL 2",
           "carga_horaria": "150h",
@@ -1985,12 +1516,6 @@
           "codigo": "PPB0022",
           "nome": "HISTORIA E SISTEMAS DA PSICOLOGIA 2",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PPB0024",
-          "nome": "ANÁLISE DO COMPORTAMENTO HUMANO",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -2050,6 +1575,12 @@
         {
           "codigo": "PPB0043",
           "nome": "GENETICA DO COMPORTAMENTO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PPB0048",
+          "nome": "PSICOFARMACOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2204,12 +1735,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0090",
-          "nome": "TÓPICOS EM PSICOLOGIA EVOLUCIONISTA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PPB0091",
           "nome": "NEUROCIÊNCIAS DO COMPORTAMENTO",
           "carga_horaria": "60h",
@@ -2222,6 +1747,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PST0001",
+          "nome": "PSICOLOGIA DO TRABALHO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PST0002",
           "nome": "TÓPICOS EM PSICOLOGIA AMBIENTAL",
           "carga_horaria": "60h",
@@ -2229,12 +1760,6 @@
         },
         {
           "codigo": "PST0004",
-          "nome": "PESQUISA EM PSICOLOGIA SOCIAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PST0005",
           "nome": "PESQUISA EM PSICOLOGIA SOCIAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
@@ -2260,6 +1785,12 @@
         {
           "codigo": "PST0014",
           "nome": "TECNICAS DO EXAME PSICOLOGICO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PST0017",
+          "nome": "RECRUTAMENTO E SELEÇÃO PROFISSIONAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2338,6 +1869,12 @@
         {
           "codigo": "PST0060",
           "nome": "USO DO COMPUTADOR EM PSICOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PST0063",
+          "nome": "AVALIAÇÃO DE DESEMPENHO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2492,26 +2029,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PCL0021",
-          "nome": "PSICOPATOLOGIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PPB0048",
-          "nome": "PSICOFARMACOLOGIA",
+          "codigo": "PST0050",
+          "nome": "PSICOLOGIA DAS ORGANIZAÇÕES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "PST0039",
-          "nome": "MEDIDAS EM PSICOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PCL0027",
-          "nome": "TEORIAS PSICANALÍTICAS 1",
+          "codigo": "PED0095",
+          "nome": "PSICOLOGIA DO ESPORTE E DO EXERCÍCIO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2522,27 +2047,33 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PST0063",
-          "nome": "AVALIAÇÃO DE DESEMPENHO",
+          "codigo": "PST0039",
+          "nome": "MEDIDAS EM PSICOLOGIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "PST0017",
-          "nome": "RECRUTAMENTO E SELEÇÃO PROFISSIONAL",
+          "codigo": "PCL0003",
+          "nome": "INTERVENÇÕES PSICOSSOCIAIS EM CONTEXTOS DE VIOLÊNCIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0009",
-          "nome": "PERCEPÇÃO E COGNIÇÃO: CIÊNCIA E TECNOLOGIA",
-          "carga_horaria": "60h",
+          "codigo": "PPB0024",
+          "nome": "ANÁLISE DO COMPORTAMENTO HUMANO",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
           "codigo": "PST0034",
           "nome": "ERGONOMIA",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PPB0009",
+          "nome": "PERCEPÇÃO E COGNIÇÃO: CIÊNCIA E TECNOLOGIA",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         }
       ]

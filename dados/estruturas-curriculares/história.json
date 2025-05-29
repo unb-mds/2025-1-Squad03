@@ -224,12 +224,6 @@
       "nivel": "Optativas",
       "materias": [
         {
-          "codigo": "ADM0070",
-          "nome": "GOVERNO E ADMINISTRACAO NO BRASIL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEM0025",
           "nome": "IMAGEM E PESQUISA HISTÓRICA-HISTÓRIA ORAL E FOTOGRAFIA",
           "carga_horaria": "60h",
@@ -302,39 +296,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0132",
-          "nome": "ELEMENTO DE LINGUAGEM, ARTE E CULTURA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0138",
-          "nome": "TEATRO BRASILEIRO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CIC0007",
-          "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CIC0064",
           "nome": "INTRODUCAO A SISTEMAS DE INFORMACOES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "CIC0142",
-          "nome": "INFORMATICA E SOCIEDADE",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0024",
-          "nome": "MULHER, CULTURA E SOCIEDADE",
-          "carga_horaria": "60h",
+          "codigo": "CIC0088",
+          "nome": "COMPUTACAO BASICA",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -370,12 +340,6 @@
         {
           "codigo": "DAN0047",
           "nome": "ANTROPOLOGIA DA RELIGIÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0049",
-          "nome": "INDIVÍDUO, CULTURA E SOCIEDADE",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -578,6 +542,120 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "DEX0196",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "15h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0197",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0198",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "45h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0199",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0200",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0201",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "120h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0202",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "150h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0203",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "180h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0204",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "240h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0205",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "240h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0206",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "270h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0207",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "300h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0208",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "330h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0209",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "360h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0210",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "390h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0211",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "420h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0212",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "450h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0213",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "480h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DEX0214",
+          "nome": "ATIVIDADE DE EXTENSÃO",
+          "carga_horaria": "510h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "DIN0020",
           "nome": "HISTORIA DA ARTE E DA TECNOLOGIA",
           "carga_horaria": "60h",
@@ -626,18 +704,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "EST0019",
-          "nome": "ESTATÍSTICA APLICADA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "EST0046",
-          "nome": "DEMOGRAFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FAC0019",
           "nome": "POLITICAS CULTURAIS",
           "carga_horaria": "60h",
@@ -650,12 +716,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FCI0023",
-          "nome": "INTRODUCAO A BIBLIOTECONOMIA E CIENCIA DA INFORMACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FCI0024",
           "nome": "HISTORIA DO LIVRO E DAS BIBLIOTECAS",
           "carga_horaria": "60h",
@@ -664,12 +724,6 @@
         {
           "codigo": "FCI0049",
           "nome": "BIBLIOTECONOMIA E SOCIEDADE BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FCI0053",
-          "nome": "CONTROLE BIBLIOGRAFICO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -692,38 +746,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FED0133",
-          "nome": "SEMINÁRIO INTERDISCIPLINAR EM EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0003",
-          "nome": "FILOSOFIA CONTEMPORÂNEA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0007",
-          "nome": "FILOSOFIA GERAL E METAFÍSICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0029",
-          "nome": "EVOLUÇÃO DO PENSAMENTO FILOSÓFICO E CIENTÍFICO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FIL0034",
           "nome": "HISTÓRIA DA FILOSOFIA ANTIGA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0039",
-          "nome": "HISTÓRIA DA FILOSOFIA MEDIEVAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -778,12 +802,6 @@
         {
           "codigo": "FIL0065",
           "nome": "FILOSOFIA DA HISTÓRIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0068",
-          "nome": "ESTÉTICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -926,30 +944,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FUP0285",
-          "nome": "HISTÓRIA E FILOSOFIA DA CIÊNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0357",
-          "nome": "CIÊNCIAS AMBIENTAIS E SUA MULTIDISCIPLINARIDADE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0358",
-          "nome": "SOCIEDADE E NATUREZA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0359",
-          "nome": "HISTÓRIA E FILOSOFIA DA CIÊNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "GEA0004",
           "nome": "URBANIZAÇÃO NA AMÉRICA LATINA E CARIBE",
           "carga_horaria": "60h",
@@ -998,8 +992,26 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "GEA0044",
+          "nome": "GEOGRAFIA DO MEIO AMBIENTE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "GEA0051",
           "nome": "INTRODUCAO A CIENCIA GEOGRAFICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "GEM0014",
+          "nome": "GENETICA BASICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "GEM0015",
+          "nome": "GENETICA HUMANA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1184,6 +1196,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "HIS0061",
+          "nome": "TÓPICOS ESPECIAIS EM ANTIGUIDADE 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "HIS0063",
           "nome": "TÓPICOS ESPECIAIS EM ANTIGUIDADE 1",
           "carga_horaria": "60h",
@@ -1192,6 +1210,18 @@
         {
           "codigo": "HIS0070",
           "nome": "TÓPICO ESPECIAL EM HISTÓRIA MODERNA 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0072",
+          "nome": "TÓPICO ESPECIAL EM HISTÓRIA MODERNA 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0079",
+          "nome": "TÓPICO ESPECIAL EM HISTÓRIA DAS IDEIAS 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1210,6 +1240,12 @@
         {
           "codigo": "HIS0121",
           "nome": "HISTÓRIA DOS PARTIDOS POLÍTICOS NA REPÚBLICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0123",
+          "nome": "HISTÓRIA DO EXTREMO ORIENTE",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1240,6 +1276,18 @@
         {
           "codigo": "HIS0157",
           "nome": "TÓPICOS ESPECIAIS EM HISTÓRIA DA AMÉRICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0158",
+          "nome": "HISTÓRIA DA AMÉRICA NÃO IBÉRICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0159",
+          "nome": "HISTÓRIA DA ÁFRICA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1298,6 +1346,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "HIS0197",
+          "nome": "HISTÓRIA: NATUREZA E CULTURA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "HIS0199",
           "nome": "TÓPICO ESPECIAL EM ENSINO DE HISTÓRIA",
           "carga_horaria": "60h",
@@ -1334,12 +1388,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "HIS0248",
-          "nome": "LEITURA E ANÁLISE DE DOCUMENTOS MEDIEVAIS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "HIS0249",
           "nome": "TÓPICO ESPECIAL EM TEORIA DA HISTÓRIA 1",
           "carga_horaria": "60h",
@@ -1352,9 +1400,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IRI0011",
-          "nome": "HISTÓRIA DA POLÍTICA EXTERIOR DO BRASIL",
+          "codigo": "IGD0021",
+          "nome": "GEOLOGIA GERAL",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IGD0049",
+          "nome": "PALEONTOLOGIA",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1412,20 +1466,14 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "JOR0078",
+          "nome": "INTRODUÇÃO A COMUNICAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "LET0044",
           "nome": "LINGUA ALEMA INSTRUMENTAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0046",
-          "nome": "LABORATORIO DE TEXTO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0048",
-          "nome": "LABORATORIO DE TEXTO 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1466,8 +1514,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0073",
-          "nome": "JAPONES 1",
+          "codigo": "LET0077",
+          "nome": "LINGUA FRANCESA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1532,9 +1580,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0307",
-          "nome": "CIVILIZAÇÃO ESPANHOLA",
-          "carga_horaria": "60h",
+          "codigo": "LET0323",
+          "nome": "PRATICA DO FRANCES ORAL E ESCRITO 4",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0324",
+          "nome": "PRÁTICA DO FRANCÊS ORAL E ESCRITO 3",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -1546,24 +1600,6 @@
         {
           "codigo": "LET0332",
           "nome": "CULTURA JAPONESA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0337",
-          "nome": "LINGUA ITALIANA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0338",
-          "nome": "LINGUA ITALIANA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0340",
-          "nome": "CIVILIZACAO HISPANO-AMERICANA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1586,54 +1622,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0379",
-          "nome": "LINGUA ITALIANA 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0380",
-          "nome": "LINGUA ITALIANA 4",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0388",
-          "nome": "PERSA 1 - FARSI  1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0389",
-          "nome": "GREGO MODERNO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0391",
-          "nome": "PERSA 2 - FARSI 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0392",
-          "nome": "GREGO MODERNO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0393",
-          "nome": "IRANOLOGIA - CULTURA IRANIANA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0400",
-          "nome": "LÍNGUA ÁRABE 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0431",
           "nome": "FRANCÊS 1",
           "carga_horaria": "60h",
@@ -1648,18 +1636,6 @@
         {
           "codigo": "LET0433",
           "nome": "FRANCÊS 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0001",
-          "nome": "ESTUDOS DE TRADUÇÃO DE PROSA GREGA ANTIGA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0002",
-          "nome": "ESTUDOS DE TRADUÇÃO DA POESIA GREGA ANTIGA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1688,44 +1664,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0067",
-          "nome": "LATIM 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0069",
           "nome": "LATIM 5",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0071",
-          "nome": "LATIM 6",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0078",
-          "nome": "PRÁTICA DE TRADUÇÃO EM LATIM 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0083",
-          "nome": "PRÁTICA DE TRADUÇÃO EM LATIM 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0085",
           "nome": "OFICINA DE PRODUCAO DE TEXTOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0095",
-          "nome": "INTRODUCAO A ANALISE DO DISCURSO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1750,24 +1696,6 @@
         {
           "codigo": "LIP0113",
           "nome": "GREGO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0152",
-          "nome": "PORTUGUÊS INSTRUMENTAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0153",
-          "nome": "PORTUGUÊS INSTRUMENTAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0154",
-          "nome": "PRÁTICA DE TEXTOS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1820,14 +1748,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0035",
-          "nome": "AVALIAÇÃO ESCOLAR",
+          "codigo": "MTC0030",
+          "nome": "ENSINO SUPLETIVO 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0039",
-          "nome": "EDUCAÇÃO INFANTIL",
+          "codigo": "MTC0035",
+          "nome": "AVALIAÇÃO ESCOLAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1844,50 +1772,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0076",
-          "nome": "EDUCACAO A DISTANCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "MTC0077",
           "nome": "EDUCACAO COMUNITARIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0089",
-          "nome": "OFICINA DE AUDIOVISUAIS NA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "MTC0101",
           "nome": "LITERATURA E EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0136",
-          "nome": "PESQUISA EM EDUCAÇÃO À DISTÂNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0138",
-          "nome": "EDUCAÇÃO E MOVIMENTOS SOCIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0147",
-          "nome": "PRÁTICA DOCENTE E LINGUAGENS CORPORAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0156",
-          "nome": "OFICINAS DE ENSINO DE HISTÓRIA - LUGARES DE MEMÓRIA DO DF",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1916,32 +1808,14 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PAD0019",
+          "nome": "HIGIENE ESCOLAR",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PAD0022",
           "nome": "PLANEJAMENTO EDUCACIONAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0031",
-          "nome": "POLITICAS PÚBLICAS DE EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0074",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO NO DISTRITO FEDERAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0025",
-          "nome": "DESENVOLVIMENTO NO CURSO DE VIDA: INFÂNCIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PED0027",
-          "nome": "DESENVOLVIMENTO NO CURSO DE VIDA: ADOLESCÊNCIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1949,6 +1823,12 @@
           "codigo": "PED0058",
           "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PED0071",
+          "nome": "PSICOLOGIA: CURSO E PROFISSÃO",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -2108,12 +1988,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PPB0017",
-          "nome": "PSICOLOGIA DA APRENDIZAGEM 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PPB0021",
           "nome": "HISTORIA  DA PSICOLOGIA",
           "carga_horaria": "60h",
@@ -2174,6 +2048,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0044",
+          "nome": "TEORIA SOCIOLÓGICA 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0097",
           "nome": "MÉTODOS SOCIOLÓGICOS",
           "carga_horaria": "90h",
@@ -2216,24 +2096,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0015",
-          "nome": "HISTORIA DA EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0016",
-          "nome": "HISTORIA DA EDUCACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0019",
-          "nome": "POLÍTICAS DE EDUCAÇÃO COMPARADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEF0021",
           "nome": "FILOSOFIA DA EDUCAÇÃO",
           "carga_horaria": "60h",
@@ -2264,50 +2126,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0041",
-          "nome": "ANTROPOLOGIA E EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0046",
-          "nome": "HISTORIA DA EDUCACAO BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0079",
-          "nome": "O EDUCANDO COM NECESSIDADES EDUCACIONAIS ESPECIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0092",
-          "nome": "EDUCAÇÃO E TRABALHO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0093",
-          "nome": "EDUCAÇÃO DO CAMPO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEF0095",
           "nome": "PRATICA EDUCACIONAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0136",
-          "nome": "PSICOLOGIA SOCIAL NA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0145",
-          "nome": "GÊNERO E EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2378,12 +2198,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0060",
-          "nome": "TEORIA DA NARRATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEL0067",
           "nome": "LITERATURA HISPANO-AMERICANA 1",
           "carga_horaria": "60h",
@@ -2404,12 +2218,6 @@
         {
           "codigo": "TEL0070",
           "nome": "LITERATURA HISPANO - AMERICANA 4",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0109",
-          "nome": "FUNDAMENTOS DA LITERATURA BRASILEIRA CONTEMPORANEA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2450,12 +2258,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0141",
-          "nome": "HISTORIA DA ARTE ANTIGA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0189",
           "nome": "HISTORIA DA ARTE 3",
           "carga_horaria": "60h",
@@ -2464,30 +2266,6 @@
         {
           "codigo": "VIS0190",
           "nome": "HISTORIA DA ARTE 4",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0253",
-          "nome": "HISTORIA DA ARTE MEDIEVAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0254",
-          "nome": "HISTORIA DA ARTE MODERNA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0255",
-          "nome": "HISTORIA DA ARTE CONTEMPORANEA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0256",
-          "nome": "HISTÓRIA DA ARTE NO BRASIL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }

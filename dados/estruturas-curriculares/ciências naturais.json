@@ -128,12 +128,6 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "IFD0171",
           "nome": "FISICA 1",
           "carga_horaria": "60h",
@@ -167,12 +161,6 @@
           "nome": "BOTÂNICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FUP0537",
-          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 1",
-          "carga_horaria": "105h",
-          "natureza": "Obrigatória"
         }
       ]
     },
@@ -192,15 +180,15 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FUP0408",
-          "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
-          "carga_horaria": "30h",
+          "codigo": "FUP0537",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 1",
+          "carga_horaria": "105h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FUP0541",
-          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 2",
-          "carga_horaria": "105h",
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
       ]
@@ -221,8 +209,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FUP0542",
-          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 3",
+          "codigo": "FUP0408",
+          "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FUP0541",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 2",
           "carga_horaria": "105h",
           "natureza": "Obrigatória"
         }
@@ -238,6 +232,17 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "FUP0542",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ENSINO DE CIÊNCIAS NATURAIS 3",
+          "carga_horaria": "105h",
+          "natureza": "Obrigatória"
+        }
+      ]
+    },
+    {
+      "nivel": "9º Semestre",
+      "materias": [
+        {
           "codigo": "FUP0473",
           "nome": "TRABALHO DE CONCLUSÃO DE CURSO 2",
           "carga_horaria": "30h",
@@ -252,7 +257,7 @@
       ]
     },
     {
-      "nivel": "9º Semestre",
+      "nivel": "10º Semestre",
       "materias": [
         {
           "codigo": "IFD0171",
@@ -809,12 +814,6 @@
           "codigo": "FUP0436",
           "nome": "FUNDAMENTOS DA ABORDAGEM ECOSSISTEMICA A SAÚDE HUMANA",
           "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FUP0443",
-          "nome": "INTRODUÇÃO À SAÚDE PÚBLICA E AMBIENTAL",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
