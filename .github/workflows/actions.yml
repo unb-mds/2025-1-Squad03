@@ -25,8 +25,9 @@ jobs:
 
           - name: Install dependencies
             run: |
+              pip install wheel
               pip install --no-build-isolation -r venv/requirements.txt
-              
+
           - name: Execute Script
             run: |
               python scraping/scrapin_atual.py
