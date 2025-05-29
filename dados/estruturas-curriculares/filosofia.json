@@ -15,12 +15,6 @@
           "nome": "INTRODUÇÃO A PRÁTICA FILOSÓFICA",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEF0011",
-          "nome": "PSICOLOGIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -302,12 +296,6 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PED0052",
-          "nome": "PSICOLOGIA ESCOLAR",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "TEF0013",
           "nome": "SOCIOLOGIA DA EDUCAÇÃO",
           "carga_horaria": "60h",
@@ -442,6 +430,12 @@
           "codigo": "DEG1101",
           "nome": "PROGRAMA INSTITUCIONAL DE BOLSA DE INICIAÇÃO À DOCÊNCIA",
           "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIL0001",
+          "nome": "TÓPICOS ESPECIAIS EM FILOSOFIA ORIENTAL",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -663,30 +657,6 @@
         {
           "codigo": "FIL0107",
           "nome": "HISTORIA DA CIENCIA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0114",
-          "nome": "HISTORIA DA FILOSOFIA ANTIGA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0115",
-          "nome": "HISTORIA DA FILOSOFIA MEDIEVAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0116",
-          "nome": "HISTORIA DA FILOSOFIA MODERNA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0117",
-          "nome": "HISTÓRIA DA FILOSOFIA CONTEMPORÂNEA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -925,6 +895,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "TEF0011",
+          "nome": "PSICOLOGIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "TEF0013",
           "nome": "SOCIOLOGIA DA EDUCAÇÃO",
           "carga_horaria": "60h",
@@ -993,12 +969,6 @@
         {
           "codigo": "TEL0004",
           "nome": "TRAGÉDIA GREGA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0011",
-          "nome": "PSICOLOGIA DA EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }

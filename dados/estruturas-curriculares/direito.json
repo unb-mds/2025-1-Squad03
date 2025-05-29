@@ -5,12 +5,6 @@
       "nivel": "1º Semestre",
       "materias": [
         {
-          "codigo": "ECO0019",
-          "nome": "INTRODUÇÃO À ECONOMIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "FDD0006",
           "nome": "INTRODUÇÃO AO DIREITO 1",
           "carga_horaria": "60h",
@@ -46,6 +40,12 @@
       "nivel": "2º Semestre",
       "materias": [
         {
+          "codigo": "ECO0019",
+          "nome": "INTRODUÇÃO À ECONOMIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "FDD0013",
           "nome": "SOCIOLOGIA JURÍDICA",
           "carga_horaria": "60h",
@@ -58,28 +58,10 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0242",
-          "nome": "HISTÓRIA DO DIREITO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "FDD0249",
           "nome": "TEORIA GERAL DO ESTADO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0272",
-          "nome": "ÉTICA E DIREITO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FIL0064",
-          "nome": "ÉTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -105,14 +87,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0165",
-          "nome": "TEORIA GERAL DO DIREITO PENAL",
-          "carga_horaria": "90h",
+          "codigo": "FDD0248",
+          "nome": "MODELOS E PARADIGMAS DA EXPERIÊNCIA JURÍDICA",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0248",
-          "nome": "MODELOS E PARADIGMAS DA EXPERIÊNCIA JURÍDICA",
+          "codigo": "FDD0272",
+          "nome": "ÉTICA E DIREITO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -128,21 +110,15 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0025",
-          "nome": "DIREITO ADMINISTRATIVO 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0039",
-          "nome": "DIREITO PENAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "FDD0092",
           "nome": "DIREITO DAS OBRIGAÇÕES",
           "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0165",
+          "nome": "TEORIA GERAL DO DIREITO PENAL",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
@@ -152,16 +128,10 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0278",
-          "nome": "EXAME DE PROFICIÊNCIA 1",
-          "carga_horaria": "15h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PCL0015",
-          "nome": "PSICOLOGIA DA PERSONALIDADE 1",
+          "codigo": "FDD0242",
+          "nome": "HISTÓRIA DO DIREITO",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -169,20 +139,14 @@
       "nivel": "5º Semestre",
       "materias": [
         {
-          "codigo": "FDD0023",
-          "nome": "DIREITO CONSTITUCIONAL 2",
+          "codigo": "FDD0025",
+          "nome": "DIREITO ADMINISTRATIVO 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0027",
-          "nome": "DIREITO ADMINISTRATIVO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0041",
-          "nome": "DIREITO PENAL 2",
+          "codigo": "FDD0039",
+          "nome": "DIREITO PENAL 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -197,6 +161,12 @@
           "nome": "DIREITO DOS CONTRATOS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0278",
+          "nome": "EXAME DE PROFICIÊNCIA 1",
+          "carga_horaria": "15h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -204,26 +174,20 @@
       "nivel": "6º Semestre",
       "materias": [
         {
-          "codigo": "FDD0011",
-          "nome": "FILOSOFIA DO DIREITO",
+          "codigo": "FDD0023",
+          "nome": "DIREITO CONSTITUCIONAL 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0029",
-          "nome": "DIREITO ADMINISTRATIVO 3",
+          "codigo": "FDD0041",
+          "nome": "DIREITO PENAL 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
           "codigo": "FDD0047",
           "nome": "DIREITO PROCESSUAL CIVIL 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0065",
-          "nome": "DIREITO DAS COISAS",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -239,8 +203,49 @@
       "nivel": "7º Semestre",
       "materias": [
         {
+          "codigo": "FDD0027",
+          "nome": "DIREITO ADMINISTRATIVO 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "FDD0049",
           "nome": "DIREITO PROCESSUAL PENAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0065",
+          "nome": "DIREITO DAS COISAS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0145",
+          "nome": "DIREITO PROCESSUAL CIVIL 3",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        }
+      ]
+    },
+    {
+      "nivel": "8º Semestre",
+      "materias": [
+        {
+          "codigo": "FDD0011",
+          "nome": "FILOSOFIA DO DIREITO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0029",
+          "nome": "DIREITO ADMINISTRATIVO 3",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0051",
+          "nome": "DIREITO PROCESSUAL PENAL 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -251,14 +256,19 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "FDD0074",
-          "nome": "DIREITO COMERCIAL 2",
+          "codigo": "FDD0267",
+          "nome": "DIREITO DO TRABALHO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
+        }
+      ]
+    },
+    {
+      "nivel": "9º Semestre",
+      "materias": [
         {
-          "codigo": "FDD0145",
-          "nome": "DIREITO PROCESSUAL CIVIL 3",
+          "codigo": "FDD0035",
+          "nome": "DIREITO INTERNACIONAL PÚBLICO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -271,82 +281,6 @@
         {
           "codigo": "FDD0259",
           "nome": "ESTÁGIO 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "8º Semestre",
-      "materias": [
-        {
-          "codigo": "FDD0031",
-          "nome": "DIREITO FINANCEIRO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0051",
-          "nome": "DIREITO PROCESSUAL PENAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0176",
-          "nome": "DIREITO DAS SUCESSÕES",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0261",
-          "nome": "ESTÁGIO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0267",
-          "nome": "DIREITO DO TRABALHO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0279",
-          "nome": "EXAME DE PROFICIÊNCIA 2",
-          "carga_horaria": "15h",
-          "natureza": "Optativa"
-        }
-      ]
-    },
-    {
-      "nivel": "9º Semestre",
-      "materias": [
-        {
-          "codigo": "FDD0033",
-          "nome": "DIREITO TRIBUTÁRIO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0035",
-          "nome": "DIREITO INTERNACIONAL PÚBLICO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0174",
-          "nome": "DIREITO COMERCIAL 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0245",
-          "nome": "RESPONSABILIDADE CIVIL",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0262",
-          "nome": "ESTÁGIO 3",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -362,11 +296,75 @@
       "nivel": "10º Semestre",
       "materias": [
         {
+          "codigo": "FDD0031",
+          "nome": "DIREITO FINANCEIRO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "FDD0053",
           "nome": "DIREITO PROCESSUAL DO TRABALHO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
+        {
+          "codigo": "FDD0176",
+          "nome": "DIREITO DAS SUCESSÕES",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0245",
+          "nome": "RESPONSABILIDADE CIVIL",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0261",
+          "nome": "ESTÁGIO 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0279",
+          "nome": "EXAME DE PROFICIÊNCIA 2",
+          "carga_horaria": "15h",
+          "natureza": "Optativa"
+        }
+      ]
+    },
+    {
+      "nivel": "11º Semestre",
+      "materias": [
+        {
+          "codigo": "FDD0033",
+          "nome": "DIREITO TRIBUTÁRIO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0074",
+          "nome": "DIREITO COMERCIAL 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0174",
+          "nome": "DIREITO COMERCIAL 3",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0262",
+          "nome": "ESTÁGIO 3",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        }
+      ]
+    },
+    {
+      "nivel": "12º Semestre",
+      "materias": [
         {
           "codigo": "FDD0241",
           "nome": "DIREITO ECONÔMICO",
@@ -394,8 +392,44 @@
       ]
     },
     {
-      "nivel": "11º Semestre",
+      "nivel": "13º Semestre",
       "materias": [
+        {
+          "codigo": "FDD0278",
+          "nome": "EXAME DE PROFICIÊNCIA 1",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0247",
+          "nome": "PROFICIÊNCIA 1",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0188",
+          "nome": "PROFICIÊNCIA 2",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0279",
+          "nome": "EXAME DE PROFICIÊNCIA 2",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0265",
+          "nome": "PROFICIÊNCIA 3",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FDD0266",
+          "nome": "PROFICIÊNCIA 4",
+          "carga_horaria": "15h",
+          "natureza": "Obrigatória"
+        },
         {
           "codigo": "FDD0252",
           "nome": "ATUALIZAÇÃO E PRÁTICA DO DIREITO 1",
@@ -430,42 +464,6 @@
           "codigo": "FDD0043",
           "nome": "MEDICINA LEGAL",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0279",
-          "nome": "EXAME DE PROFICIÊNCIA 2",
-          "carga_horaria": "15h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0265",
-          "nome": "PROFICIÊNCIA 3",
-          "carga_horaria": "15h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0266",
-          "nome": "PROFICIÊNCIA 4",
-          "carga_horaria": "15h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0278",
-          "nome": "EXAME DE PROFICIÊNCIA 1",
-          "carga_horaria": "15h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0247",
-          "nome": "PROFICIÊNCIA 1",
-          "carga_horaria": "15h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "FDD0188",
-          "nome": "PROFICIÊNCIA 2",
-          "carga_horaria": "15h",
           "natureza": "Obrigatória"
         }
       ]
@@ -990,6 +988,18 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FDD0231",
+          "nome": "PRÁTICA E ATUALIZAÇÃO DO DIREITO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FDD0234",
+          "nome": "PRÁTICA E ATUALIZAÇÃO DO DIREITO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FDD0236",
           "nome": "MONOGRAFIA JURÍDICA",
           "carga_horaria": "60h",
@@ -1116,8 +1126,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FIL0059",
+          "nome": "TEORIA DA CIÊNCIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FIL0063",
           "nome": "ANTROPOLOGIA FILOSÓFICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIL0064",
+          "nome": "ÉTICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1292,12 +1314,6 @@
         {
           "codigo": "IRI0015",
           "nome": "TEORIA DAS RELAÇÕES INTERNACIONAIS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "IRI0053",
-          "nome": "COMÉRCIO INTERNACIONAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1512,6 +1528,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PCL0015",
+          "nome": "PSICOLOGIA DA PERSONALIDADE 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "POL0005",
           "nome": "PRÁTICA DE ENSINO EM INTRODUÇÃO À CIÊNCIA POLÍTICA",
           "carga_horaria": "60h",
@@ -1596,27 +1618,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0014",
-          "nome": "INTRODUCAO A TEORIA DA LITERATURA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FIL0064",
-          "nome": "ÉTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FDD0278",
           "nome": "EXAME DE PROFICIÊNCIA 1",
           "carga_horaria": "15h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PCL0015",
-          "nome": "PSICOLOGIA DA PERSONALIDADE 1",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {

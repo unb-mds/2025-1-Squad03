@@ -4,6 +4,8 @@ on:
   push:
     branches: [scraping]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'  # Executa às 00:00 do dia 1 de cada mês 
 
 jobs:
      build:
@@ -29,21 +31,11 @@ jobs:
               pip install --no-build-isolation -r scraping/requirements.txt
 
           - name: Execute Script
-            run: |
-              python scraping/scraping_atual.py
-              python scraping/scraping_courses.py
-              python scraping/scraping_cursos.py
+            run:
               python scraping/scraping_ementa.py
-              python scraping/scraping_id_departamentos.py
-              python scraping/scraping_sigaa.py
-              python scraping/scraping_turmas_por_depto.py
-              python scraping/scraping(obsoleto).py
-              python scraping/script_json_para_txt.py
-              python scraping/sigaa_scraper.py
-              python scraping/temp_parser.py
 
           - name: Commit Changes
             uses: stefanzweifel/git-auto-commit-action@v4
             with:
-              commit_message: "[CI] Scraping dos cursos atualizados com sucesso!"
+              commit_message: "[CI] Relatórios encontrados e baixados com sucesso!"
               file_pattern: "dados/estruturas-curriculares/*.json"
