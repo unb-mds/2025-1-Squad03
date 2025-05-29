@@ -29,7 +29,10 @@ with open("historico_completo"+matricula+".txt", "r", encoding="utf-8") as f:
 valor_do_ira = None
 valor_pend = None
 #padrão de caracteres em que se encontra os INDICES ACADEMICOS
-padrao_ira = re.compile(r"\bIRA:\s*(\d+\.\d+)")
+padrao_ira = re.compile(r"IRA[:\s]+(\d+\.\d+)", re.IGNORECASE)
+
+#padrão de caracteres em que se encontra o CURRICULO
+padrao_curriculo = r'(\d+/\d+(?:\s*-\s*\d{4}\.\d)?)'
 
 #encontra as pendencias
 padrao_pend = re.compile(r"\b(APR|CANC|DISP|MATR|REP|REPF|REPMF|TRANC|CUMP)\b")
@@ -67,16 +70,38 @@ for i, linha in enumerate(linhas):
     #print(i)
     linha = linha.strip()
 
-    match_ira = padrao_ira.findall(linha)
+    match_ira = padrao_ira.search(linha)
 
     #encontra o IRA
     if match_ira:
             print(linha)
-            ira = match_ira
+            ira = match_ira.group(1)
             print("ACHOU O IRA!!")
             print("--------------------------")
-            disciplinas.append({"IRA": ira})
+            print("IRA", ira)
+            disciplinas.append({"ira": ira})
 
+    match_curriculo = re.search(padrao_curriculo, linha)
+
+    if "Currículo" in linha or "Ano/Período de Integralização" in linha:
+        #print("Linha Currículo encontrada:", repr(linha))
+
+        # Tentar achar na mesma linha primeiro
+        match_curriculo = re.search(padrao_curriculo, linha)
+        
+        # Se não achar, tenta na próxima linha
+        if not match_curriculo and i + 1 < len(linhas):
+            proxima_linha = linhas[i + 1].replace('\xa0', ' ').strip()
+            proxima_linha = re.sub(r'\s+', ' ', proxima_linha)
+            #print("Próxima linha para análise:", repr(proxima_linha))
+            match_curriculo = re.search(padrao_curriculo, proxima_linha)
+
+        if match_curriculo:
+            curriculo = match_curriculo.group(1)
+            print("ACHOU O CURRÍCULO!!")
+            print("--------------------------")
+            print("CURRÍCULO:", curriculo)
+            disciplinas.append({"curriculo": curriculo})
 
     match_pend = padrao_pend.findall(linha)
     
@@ -86,7 +111,7 @@ for i, linha in enumerate(linhas):
             pend = match_pend
             print("ACHOU PENDENCIAS")
             print("----------------------")
-            disciplinas.append({"PENDENCIAS": pend})
+            disciplinas.append({"pendencias": pend})
 
 
     # Verifica se a linha tem prefixo de professor
