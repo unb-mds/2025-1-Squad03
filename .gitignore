@@ -1,3 +1,17 @@
+# Ambientes Virtuais
+venv/
+/venv/
+.venv/
+/.venv/
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+
+# Outros
+.env
+*.env
+
 # Node.js dependencies
 node_modules/
 npm-debug.log*
