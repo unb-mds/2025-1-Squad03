@@ -30,14 +30,14 @@ jobs:
 
           - name: Execute Script
             run: |
-              python scraping/scrapin_atual.py
+              python scraping/scraping_atual.py
               python scraping/scraping_courses.py
               python scraping/scraping_cursos.py
               python scraping/scraping_ementa.py
               python scraping/scraping_id_departamentos.py
               python scraping/scraping_sigaa.py
               python scraping/scraping_turmas_por_depto.py
-              python scraping/scraping.py
+              python scraping/scraping(obsoleto).py
               python scraping/script_json_para_txt.py
               python scraping/sigaa_scraper.py
               python scraping/temp_parser.py
