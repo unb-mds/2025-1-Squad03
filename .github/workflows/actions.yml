@@ -2,7 +2,7 @@ name: Run web scraper
 
 on:
   push:
-    branches: [scraping]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 * *'  # Executa às 00:00 do dia 1 de cada mês 
