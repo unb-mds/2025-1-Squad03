@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../constants/app_colors.dart';
+import '../screens/home_screen.dart'; // Importa a HomeScreen
 
 class AppNavbar extends StatefulWidget {
   const AppNavbar({super.key});
@@ -16,7 +17,7 @@ class _AppNavbarState extends State<AppNavbar> {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.black.withOpacity(0.5), // Cor de fundo semi-transparente para a navbar
-      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 1.0), // Diminui o padding vertical novamente
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween, // Distribui espaço entre os elementos
         children: [
@@ -26,7 +27,7 @@ class _AppNavbarState extends State<AppNavbar> {
               child: Text(
                 'NOFLX UNB',
                 style: GoogleFonts.permanentMarker(
-                  fontSize: 48,
+                  fontSize: 36, // Diminui o tamanho da fonte do título
                   color: AppColors.white,
                   shadows: [
                     Shadow(
@@ -42,7 +43,13 @@ class _AppNavbarState extends State<AppNavbar> {
           // Botão HOME no canto superior direito
           TextButton(
             onPressed: () {
-              // TODO: Navegar para a tela inicial (HOME)
+              // Navegar para a HomeScreen
+              Navigator.push( // Usando push para simplificar por enquanto
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HomeScreen(),
+                ),
+              );
             },
             onHover: (isHovering) {
               setState(() {

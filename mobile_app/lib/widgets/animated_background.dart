@@ -111,9 +111,9 @@ class _SmokeEffectState extends State<SmokeEffect> with SingleTickerProviderStat
                 color: widget.color,
                 boxShadow: [
                   BoxShadow(
-                    color: widget.color,
-                    blurRadius: widget.size * 0.5,
-                    spreadRadius: widget.size * 0.2,
+                    color: widget.color.withOpacity(0.1),
+                    blurRadius: widget.size * 0.3,
+                    spreadRadius: widget.size * 0.1,
                   ),
                 ],
               ),
