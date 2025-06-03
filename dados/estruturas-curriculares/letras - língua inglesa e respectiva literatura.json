@@ -63,8 +63,14 @@
       "nivel": "3º Semestre",
       "materias": [
         {
-          "codigo": "LET0308",
-          "nome": "MORFOSSINTAXE DO INGLES 2",
+          "codigo": "LET0468",
+          "nome": "INGLÊS: LABORATÓRIO DE ENSINO 1 (METODOLOGIA)",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0481",
+          "nome": "INGLÊS: ATIVIDADE DE EXTENSÃO 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -80,9 +86,15 @@
       "nivel": "4º Semestre",
       "materias": [
         {
-          "codigo": "LET0481",
-          "nome": "INGLÊS: ATIVIDADE DE EXTENSÃO 1",
-          "carga_horaria": "60h",
+          "codigo": "LET0477",
+          "nome": "INGLÊS: LABORATÓRIO DE ENSINO 2 (MATERIAL DIDÁTICO)",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0478",
+          "nome": "INGLÊS: LABORATÓRIO DE ENSINO 3 (AVALIAÇÃO)",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
@@ -103,8 +115,20 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "LET0539",
+          "nome": "INGLÊS: ESTÁGIO 1 (ENSINO FUNDAMENTAL)",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "LET0767",
           "nome": "LÍNGUA INGLESA 5",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -117,6 +141,12 @@
           "codigo": "LET0483",
           "nome": "INGLÊS: ATIVIDADE DE EXTENSÃO 3",
           "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0540",
+          "nome": "INGLÊS: ESTÁGIO 2 (ENSINO MÉDIO)",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         }
       ]
@@ -135,6 +165,12 @@
           "nome": "INGLÊS: ATIVIDADE DE EXTENSÃO 4",
           "carga_horaria": "30h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0541",
+          "nome": "INGLÊS: ESTÁGIO 3 (ESCOLA DE LÍNGUAS)",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
         }
       ]
     },
@@ -151,6 +187,12 @@
           "codigo": "LET0485",
           "nome": "INGLÊS: ATIVIDADE DE EXTENSÃO 5",
           "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0542",
+          "nome": "INGLÊS: ESTÁGIO 4 (PROJETOS)",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
         }
       ]
@@ -279,6 +321,78 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "PPB0067",
+          "nome": "APRENDIZAGEM NO ENSINO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PED0007",
+          "nome": "DESENVOLVIMENTO, APRENDIZAGEM E INTERAÇÕES VIRTUAIS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MTC0012",
+          "nome": "DIDÁTICA FUNDAMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MTC0076",
+          "nome": "EDUCACAO A DISTANCIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MTC0009",
+          "nome": "EDUCAÇÃO DE ADULTOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MTC0039",
+          "nome": "EDUCAÇÃO INFANTIL",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PED0058",
+          "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0032",
+          "nome": "GÊNERO, LÍNGUA E PODER",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEF0079",
+          "nome": "O EDUCANDO COM NECESSIDADES EDUCACIONAIS ESPECIAIS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEF0118",
+          "nome": "PERSPECTIVAS DO DESENVOLVIMENTO HUMANO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEF0011",
+          "nome": "PSICOLOGIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "LET0921",
           "nome": "GEOLINGUÍSTICA APLICADA À LÍNGUA INGLESA",
           "carga_horaria": "60h",
@@ -303,6 +417,12 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "LET0308",
+          "nome": "MORFOSSINTAXE DO INGLES 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "LET0537",
           "nome": "SEMÂNTICA E PRAGMÁTICA DO INGLÊS",
           "carga_horaria": "60h",
@@ -311,114 +431,6 @@
         {
           "codigo": "LET0538",
           "nome": "SOCIOLINGUÍSTICA APLICADA AO INGLÊS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0099",
-          "nome": "CERVANTES E O QUIXOTE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0016",
-          "nome": "CRITICA LITERARIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0031",
-          "nome": "ESTETICA E LITERATURA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0018",
-          "nome": "ESTILISTICA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0029",
-          "nome": "FUNDAMENTOS DE HISTORIA LITERARIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0104",
-          "nome": "GERACAO DO 27",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0001",
-          "nome": "LABORATÓRIO DE ESTUDOS DE LITERATURA ARTES E HUMANIDADES",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0056",
-          "nome": "LITERATURA AFRICANA EM LINGUA PORTUGUESA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0020",
-          "nome": "LITERATURA COMPARADA 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0058",
-          "nome": "LITERATURA COMPARADA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0077",
-          "nome": "LITERATURA ESTRANGEIRA EM LINGUA VERNACULA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0005",
-          "nome": "OFICINA LITERÁRIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0097",
-          "nome": "TEORIA DA LINGUAGEM POETICA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0060",
-          "nome": "TEORIA DA NARRATIVA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0093",
-          "nome": "TEORIA E PRÁTICA DA ANÁLISE DO TEXTO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0090",
-          "nome": "TÓPICOS ESPECIAIS EM LITERATURA BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0003",
-          "nome": "TÓPICOS ESPECIAIS EM LITERATURA INFANTIL E JUVENIL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEL0004",
-          "nome": "TRAGÉDIA GREGA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
@@ -508,18 +520,6 @@
         {
           "codigo": "DAP0100",
           "nome": "COMUNICAÇÃO E GÊNERO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX1102",
-          "nome": "PENSAMENTO NEGRO CONTEMPORÂNEO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DEX1108",
-          "nome": "CONSTRUÇÃO DE PROJETOS SOCIAIS MULTIDISCIPLINARES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -638,6 +638,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "GEA0002",
+          "nome": "GEOGRAFIA,  AMBIENTE E SAÚDE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "GEA0003",
           "nome": "GEOGRAFIA AFRICANA E AFROBRASILEIRA",
           "carga_horaria": "60h",
@@ -704,12 +710,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "IFD0385",
-          "nome": "O USO DO AMBIENTE VIRTUAL DE APRENDIZAGEM",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0019",
           "nome": "LÍNGUA NEERLANDESA (HOLANDÊS) 1",
           "carga_horaria": "60h",
@@ -755,6 +755,12 @@
           "codigo": "LET0305",
           "nome": "TEORIA E PRÁTICA DO ESPANHOL ORAL E ESCRITO 1",
           "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0308",
+          "nome": "MORFOSSINTAXE DO INGLES 2",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -821,60 +827,6 @@
           "codigo": "LET0444",
           "nome": "LINGUÍSTICA DE CORPUS",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0515",
-          "nome": "ATIVIDADES COMPLEMENTARES - 15H",
-          "carga_horaria": "15h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0516",
-          "nome": "ATIVIDADES COMPLEMENTARES - 30H",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0517",
-          "nome": "ATIVIDADES COMPLEMENTARES - 45H",
-          "carga_horaria": "45h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0518",
-          "nome": "ATIVIDADES COMPLEMENTARES - 60H",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0519",
-          "nome": "ATIVIDADES COMPLEMENTARES - 90H",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0520",
-          "nome": "ATIVIDADES COMPLEMENTARES - 120H",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0521",
-          "nome": "ATIVIDADES COMPLEMENTARES - 150H",
-          "carga_horaria": "150h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0522",
-          "nome": "ATIVIDADES COMPLEMENTARES - 180H",
-          "carga_horaria": "180h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0523",
-          "nome": "ATIVIDADES COMPLEMENTARES - 210H",
-          "carga_horaria": "210h",
           "natureza": "Optativa"
         },
         {
@@ -1022,12 +974,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0175",
           "nome": "LÍNGUAS DE SINAIS BRASILEIRA - INTERMEDIÁRIO",
           "carga_horaria": "60h",
@@ -1042,6 +988,36 @@
         {
           "codigo": "LIP0177",
           "nome": "LÍNGUAS DE SINAIS BRASILEIRA - AVANÇADO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MTC0009",
+          "nome": "EDUCAÇÃO DE ADULTOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MTC0012",
+          "nome": "DIDÁTICA FUNDAMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MTC0039",
+          "nome": "EDUCAÇÃO INFANTIL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MTC0076",
+          "nome": "EDUCACAO A DISTANCIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1064,8 +1040,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PED0058",
+          "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PED0073",
           "nome": "PSICOLOGIA DO GÊNERO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PPB0067",
+          "nome": "APRENDIZAGEM NO ENSINO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1094,6 +1082,24 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "TEF0011",
+          "nome": "PSICOLOGIA DA EDUCAÇÃO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEF0079",
+          "nome": "O EDUCANDO COM NECESSIDADES EDUCACIONAIS ESPECIAIS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEF0118",
+          "nome": "PERSPECTIVAS DO DESENVOLVIMENTO HUMANO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "TEL0001",
           "nome": "LABORATÓRIO DE ESTUDOS DE LITERATURA ARTES E HUMANIDADES",
           "carga_horaria": "60h",
@@ -1102,12 +1108,6 @@
         {
           "codigo": "TEL0003",
           "nome": "TÓPICOS ESPECIAIS EM LITERATURA INFANTIL E JUVENIL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0004",
-          "nome": "TRAGÉDIA GREGA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1162,18 +1162,6 @@
         {
           "codigo": "TEL0016",
           "nome": "CRITICA LITERARIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0018",
-          "nome": "ESTILISTICA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0020",
-          "nome": "LITERATURA COMPARADA 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1292,12 +1280,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0058",
-          "nome": "LITERATURA COMPARADA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEL0060",
           "nome": "TEORIA DA NARRATIVA",
           "carga_horaria": "60h",
@@ -1385,18 +1367,6 @@
           "codigo": "TEL0098",
           "nome": "LABORATORIO DE LITERATURA PARA O ENSINO FUNDAMENTAL E MEDIO",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0099",
-          "nome": "CERVANTES E O QUIXOTE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0104",
-          "nome": "GERACAO DO 27",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {

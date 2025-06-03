@@ -11,6 +11,12 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "PRO0023",
+          "nome": "DESENHO ARQUITETONICO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "PRO0025",
           "nome": "DESENHO E PLASTICA 1",
           "carga_horaria": "60h",
@@ -40,15 +46,15 @@
       "nivel": "2º Semestre",
       "materias": [
         {
-          "codigo": "PRO0013",
-          "nome": "PROJETO DE ARQUITETURA - LINGUAGEM E EXPRESSÃO",
-          "carga_horaria": "120h",
+          "codigo": "IGD0183",
+          "nome": "TOPOGRAFIA",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PRO0023",
-          "nome": "DESENHO ARQUITETONICO",
-          "carga_horaria": "60h",
+          "codigo": "PRO0013",
+          "nome": "PROJETO DE ARQUITETURA - LINGUAGEM E EXPRESSÃO",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
         },
         {
@@ -70,9 +76,9 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEC0038",
-          "nome": "SISTEMAS ESTRUTURAIS 1",
-          "carga_horaria": "60h",
+          "codigo": "TEC0018",
+          "nome": "SISTEMAS ESTRUTURAIS NA ARQUITETURA",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
         }
       ]
@@ -80,12 +86,6 @@
     {
       "nivel": "3º Semestre",
       "materias": [
-        {
-          "codigo": "IGD0183",
-          "nome": "TOPOGRAFIA",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
         {
           "codigo": "PRO0015",
           "nome": "PROJETO DE ARQUITETURA - HABITAÇÃO",
@@ -99,15 +99,27 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "PRO0065",
+          "nome": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO - BIM",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "TAU0006",
           "nome": "HISTORIA DA ARQUITETURA E DA ARTE 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEC0039",
-          "nome": "SISTEMAS ESTRUTURAIS 2",
+          "codigo": "TEC0017",
+          "nome": "CONFORTO TERMICO AMBIENTAL",
           "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEC0019",
+          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
         }
       ]
@@ -116,138 +128,15 @@
       "nivel": "4º Semestre",
       "materias": [
         {
-          "codigo": "ENC0271",
-          "nome": "MATERIAIS PARA CONSTRUÇÃO 1",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PRO0020",
-          "nome": "PROJETO DE URBANISMO 1",
-          "carga_horaria": "120h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PRO0060",
-          "nome": "PROJETO DE PAISAGISMO 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "PRO0065",
-          "nome": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO - BIM",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TAU0007",
-          "nome": "ARQUITERURA E URBANISMO DA SOCIEDADE INDUSTRIAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0027",
-          "nome": "INFRA-ESTRUTURA URBANA",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0042",
-          "nome": "CONFORTO TÉRMICO AMBIENTAL 1",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "5º Semestre",
-      "materias": [
-        {
-          "codigo": "ENC0276",
-          "nome": "MATERIAIS PARA CONSTRUÇÃO EXPERIMENTAL",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "ENC0277",
-          "nome": "MATERIAIS PARA CONSTRUÇÃO 2",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "PRO0016",
           "nome": "PROJETO DE ARQUITETURA DE GRANDES VAOS",
           "carga_horaria": "120h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PRO0064",
-          "nome": "CONFORTO TÉRMICO AMBIENTAL 2",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0041",
-          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO 1",
+          "codigo": "TAU0007",
+          "nome": "ARQUITERURA E URBANISMO DA SOCIEDADE INDUSTRIAL",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "6º Semestre",
-      "materias": [
-        {
-          "codigo": "PRO0002",
-          "nome": "PROJETO DE PAISAGISMO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TAU0009",
-          "nome": "ARQUITERURA E URBANISMO NO BRASIL COLONIA E IMPERIO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TAU0013",
-          "nome": "PLANEJAMENTO URBANO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0001",
-          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0029",
-          "nome": "CONFORTO AMBIENTAL LUMINOSO",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "7º Semestre",
-      "materias": [
-        {
-          "codigo": "PRO0017",
-          "nome": "PROJETO ARQUITETONICO DE EDIFICACOES EM ALTURA",
-          "carga_horaria": "120h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TAU0008",
-          "nome": "ARQUITERURA E URBANISMO NO BRASIL CONTEMPORANEO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0002",
-          "nome": "INSTALAÇÕES E EQUIPAMENTOS 1",
-          "carga_horaria": "30h",
           "natureza": "Obrigatória"
         },
         {
@@ -261,11 +150,58 @@
           "nome": "CONFORTO SONORO",
           "carga_horaria": "30h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEC0029",
+          "nome": "CONFORTO AMBIENTAL LUMINOSO",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
         }
       ]
     },
     {
-      "nivel": "8º Semestre",
+      "nivel": "5º Semestre",
+      "materias": [
+        {
+          "codigo": "ENC0229",
+          "nome": "MATERIAIS DE CONSTRUÇÃO - TEORIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ENC0230",
+          "nome": "MATERIAIS DE CONSTRUÇÃO - EXPERIMENTAL",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PRO0017",
+          "nome": "PROJETO ARQUITETONICO DE EDIFICACOES EM ALTURA",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TAU0009",
+          "nome": "ARQUITERURA E URBANISMO NO BRASIL COLONIA E IMPERIO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEC0007",
+          "nome": "INSTALAÇÕES E EQUIPAMENTOS 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEC0023",
+          "nome": "SISTEMAS ESTRUTURAIS EM MADEIRA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        }
+      ]
+    },
+    {
+      "nivel": "6º Semestre",
       "materias": [
         {
           "codigo": "PRO0018",
@@ -274,37 +210,37 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TAU0025",
-          "nome": "ESTÉTICA E HISTÓRIA DA ARTE",
+          "codigo": "PRO0022",
+          "nome": "PROJETO PAISAGÍSTICO 1",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TAU0008",
+          "nome": "ARQUITERURA E URBANISMO NO BRASIL CONTEMPORANEO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEC0003",
-          "nome": "INSTALAÇÕES E EQUIPAMENTOS 2",
-          "carga_horaria": "30h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEC0023",
-          "nome": "SISTEMAS ESTRUTURAIS EM MADEIRA",
+          "codigo": "TEC0013",
+          "nome": "TECNICAS DE CONSTRUCAO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEC0043",
-          "nome": "TÉCNICAS DE CONSTRUÇÃO 1",
+          "codigo": "TEC0027",
+          "nome": "INFRA-ESTRUTURA URBANA",
           "carga_horaria": "30h",
           "natureza": "Obrigatória"
         }
       ]
     },
     {
-      "nivel": "9º Semestre",
+      "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "PRO0021",
-          "nome": "PROJETO DE URBANISMO 2",
+          "codigo": "PRO0020",
+          "nome": "PROJETO DE URBANISMO 1",
           "carga_horaria": "120h",
           "natureza": "Obrigatória"
         },
@@ -315,32 +251,38 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEC0044",
-          "nome": "TÉCNICAS DE CONSTRUÇÃO 2",
-          "carga_horaria": "30h",
+          "codigo": "TAU0013",
+          "nome": "PLANEJAMENTO URBANO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TAU0025",
+          "nome": "ESTÉTICA E HISTÓRIA DA ARTE",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
       ]
     },
     {
-      "nivel": "10º Semestre",
+      "nivel": "8º Semestre",
       "materias": [
+        {
+          "codigo": "PRO0021",
+          "nome": "PROJETO DE URBANISMO 2",
+          "carga_horaria": "120h",
+          "natureza": "Obrigatória"
+        },
         {
           "codigo": "PRO0047",
           "nome": "PROJETO DE ARQUITETURA E URBANISMO 8 - TÉCNICAS RETROSPECTIVAS",
           "carga_horaria": "120h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TAU0012",
-          "nome": "ENSAIO DE TEORIA E HISTORIA DE ARQUITETURA E URBANISMO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
     {
-      "nivel": "11º Semestre",
+      "nivel": "9º Semestre",
       "materias": [
         {
           "codigo": "PRO0039",
@@ -353,11 +295,17 @@
           "nome": "PRATICA PROFISSIONAL",
           "carga_horaria": "30h",
           "natureza": "Optativa"
+        },
+        {
+          "codigo": "TAU0012",
+          "nome": "ENSAIO DE TEORIA E HISTORIA DE ARQUITETURA E URBANISMO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         }
       ]
     },
     {
-      "nivel": "12º Semestre",
+      "nivel": "10º Semestre",
       "materias": [
         {
           "codigo": "PRO0001",
@@ -368,7 +316,7 @@
       ]
     },
     {
-      "nivel": "13º Semestre",
+      "nivel": "11º Semestre",
       "materias": [
         {
           "codigo": "PRO0007",
@@ -385,7 +333,7 @@
       ]
     },
     {
-      "nivel": "14º Semestre",
+      "nivel": "12º Semestre",
       "materias": [
         {
           "codigo": "TAU0012",
@@ -795,18 +743,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "ENC0229",
-          "nome": "MATERIAIS DE CONSTRUÇÃO - TEORIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "ENC0230",
-          "nome": "MATERIAIS DE CONSTRUÇÃO - EXPERIMENTAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "ENC0255",
           "nome": "MATERIAIS DE CONSTRUCAO CIVIL 1 - EXPERIMENTAL",
           "carga_horaria": "30h",
@@ -816,6 +752,24 @@
           "codigo": "ENC0268",
           "nome": "CIÊNCIA DOS MATERIAIS",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENC0271",
+          "nome": "MATERIAIS PARA CONSTRUÇÃO 1",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENC0276",
+          "nome": "MATERIAIS PARA CONSTRUÇÃO EXPERIMENTAL",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "ENC0277",
+          "nome": "MATERIAIS PARA CONSTRUÇÃO 2",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -879,6 +833,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FAU0177",
+          "nome": "CONFORTO AMBIENTAL LUMINOSO E ACUSTICO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FAU0216",
           "nome": "PROJETO DE EDIFICACAO E URBANISMO 4",
           "carga_horaria": "120h",
@@ -894,6 +854,18 @@
           "codigo": "FAU0225",
           "nome": "TEORIA E HISTÓRIA DA ARQUITETURA E URBANISMO 2",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FAV0148",
+          "nome": "EDAFOLOGIA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FAV0274",
+          "nome": "FUNDAMENTOS DE CIÊNCIA DO SOLO",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -929,6 +901,12 @@
         {
           "codigo": "FEF0105",
           "nome": "PRÁTICA DESPORTIVA",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FEF0107",
+          "nome": "PRATICA DESPORTIVA 2",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
@@ -981,6 +959,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FIL0124",
+          "nome": "FILOSOFIA DA ARTE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FIL0166",
           "nome": "INTRODUÇÃO A PRÁTICA FILOSÓFICA",
           "carga_horaria": "90h",
@@ -989,6 +973,24 @@
         {
           "codigo": "GEA0004",
           "nome": "URBANIZAÇÃO NA AMÉRICA LATINA E CARIBE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "GEA0014",
+          "nome": "REGIONALIZAÇÃO DO ESPAÇO BRASILEIRO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "GEA0030",
+          "nome": "FOTOINTERPRETACAO",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "GEA0032",
+          "nome": "GEOGRAFIA URBANA 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1095,6 +1097,30 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "IQD0058",
+          "nome": "FUNDAMENTOS DE QUÍMICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0061",
+          "nome": "LABORATÓRIO DE QUÍMICA FUNDAMENTAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0063",
+          "nome": "QUIMICA ANALITICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0118",
+          "nome": "QUIMICA ANALITICA QUALITATIVA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "IQD0125",
           "nome": "QUIMICA GERAL TEORICA",
           "carga_horaria": "60h",
@@ -1103,6 +1129,36 @@
         {
           "codigo": "IQD0126",
           "nome": "QUIMICA GERAL EXPERIMENTAL",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0209",
+          "nome": "QUÍMICA GERAL E ORGÂNICA",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0252",
+          "nome": "QUÍMICA GERAL E ORGÂNICA TEÓRICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0259",
+          "nome": "PRINCÍPIOS DE EQUILÍBRIOS QUÍMICOS",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0262",
+          "nome": "ESTRUTURA ATÔMICA E LIGAÇÕES QUÍMICAS",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "IQD0263",
+          "nome": "PRINCÍPIOS DA TERMODINÂMICA E CINÉTICA QUÍMICA",
           "carga_horaria": "30h",
           "natureza": "Optativa"
         },
@@ -1287,6 +1343,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PRO0002",
+          "nome": "PROJETO DE PAISAGISMO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PRO0003",
           "nome": "ERGONOMIA APLICADA À ARQUITETURA DE INTERIORES",
           "carga_horaria": "60h",
@@ -1313,12 +1375,6 @@
         {
           "codigo": "PRO0019",
           "nome": "PROJETO DE ARQUITETURA INDUSTRIALIZADA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PRO0022",
-          "nome": "PROJETO PAISAGÍSTICO 1",
           "carga_horaria": "120h",
           "natureza": "Optativa"
         },
@@ -1467,6 +1523,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PRO0060",
+          "nome": "PROJETO DE PAISAGISMO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PRO0061",
           "nome": "DESENHO DE ARQUITETURA",
           "carga_horaria": "30h",
@@ -1476,6 +1538,12 @@
           "codigo": "PRO0062",
           "nome": "INVENÇÕES E PATENTES EM ARQUITETURA E URBANISMO",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PRO0064",
+          "nome": "CONFORTO TÉRMICO AMBIENTAL 2",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -1575,12 +1643,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TAU0017",
-          "nome": "INTRODUÇÃO A PESQUISA E A EXTENSÃO EM ARQUITETURA E URBANISMO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TAU0018",
           "nome": "MORFOLOGIA URBANA",
           "carga_horaria": "60h",
@@ -1653,6 +1715,24 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "TEC0001",
+          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0002",
+          "nome": "INSTALAÇÕES E EQUIPAMENTOS 1",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0003",
+          "nome": "INSTALAÇÕES E EQUIPAMENTOS 2",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "TEC0004",
           "nome": "PRÁTICA CONSTRUTIVA EM CANTEIRO EXPERIMENTAL 1",
           "carga_horaria": "60h",
@@ -1661,12 +1741,6 @@
         {
           "codigo": "TEC0005",
           "nome": "PRÁTICA CONSTRUTIVA EM CANTEIRO EXPERIMENTAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEC0007",
-          "nome": "INSTALAÇÕES E EQUIPAMENTOS 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1692,30 +1766,6 @@
           "codigo": "TEC0012",
           "nome": "SISTEMAS CONSTRUTIVOS 1",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEC0013",
-          "nome": "TECNICAS DE CONSTRUCAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEC0017",
-          "nome": "CONFORTO TERMICO AMBIENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEC0018",
-          "nome": "SISTEMAS ESTRUTURAIS NA ARQUITETURA",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEC0019",
-          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -1764,6 +1814,42 @@
           "codigo": "TEC0037",
           "nome": "AÇO E ARQUITETURA",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0038",
+          "nome": "SISTEMAS ESTRUTURAIS 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0039",
+          "nome": "SISTEMAS ESTRUTURAIS 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0041",
+          "nome": "SISTEMAS ESTRUTURAIS EM CONCRETO ARMADO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0042",
+          "nome": "CONFORTO TÉRMICO AMBIENTAL 1",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0043",
+          "nome": "TÉCNICAS DE CONSTRUÇÃO 1",
+          "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEC0044",
+          "nome": "TÉCNICAS DE CONSTRUÇÃO 2",
+          "carga_horaria": "30h",
           "natureza": "Optativa"
         },
         {
@@ -1881,15 +1967,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TAU0012",
-          "nome": "ENSAIO DE TEORIA E HISTORIA DE ARQUITETURA E URBANISMO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "PRO0009",
           "nome": "PRATICA PROFISSIONAL",
           "carga_horaria": "30h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TAU0012",
+          "nome": "ENSAIO DE TEORIA E HISTORIA DE ARQUITETURA E URBANISMO",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         }
       ]

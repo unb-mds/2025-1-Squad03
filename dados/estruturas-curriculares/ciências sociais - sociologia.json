@@ -1076,8 +1076,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0013",
+          "nome": "SOCIOLOGIA DO TRABALHO E RELAÇÕES SOCIAIS DE GENERO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0014",
           "nome": "SOCIOLOGIA DO AUDIO VISUAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0015",
+          "nome": "SOCIOLOGIA DAS DIFERENÇAS SEXUAIS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1106,14 +1118,38 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0022",
+          "nome": "SOCIOLOGIA DA VIOLÊNCIA NA PERSPECTIVA DAS RELAÇÕES DE GÊNERO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0023",
           "nome": "SOCIOLOGIAS DA EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0024",
+          "nome": "TÓPICOS ESPECIAIS EM ENSINO DE SOCIOLOGIA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0027",
           "nome": "PENSAMENTO POLÍTICO BRASILEIRO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0029",
+          "nome": "SOCIOLOGIA DAS POLÍTICAS PÚBLICAS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0030",
+          "nome": "SOCIOLOGIA DA JUVENTUDE",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1286,6 +1322,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0112",
+          "nome": "ARTE E SOCIEDADE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0113",
           "nome": "SOCIOLOGIA DO DESENVOLVIMENTO",
           "carga_horaria": "60h",
@@ -1298,8 +1340,20 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0115",
+          "nome": "SOCIOLOGIA DAS RELAÇÕES DE GÊNERO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0116",
           "nome": "SOCIOLOGIA DA VIOLÊNCIA E DA CONFLITUALIDADE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0117",
+          "nome": "SOCIOLOGIA DA RELIGIÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1322,6 +1376,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0121",
+          "nome": "SOCIOLOGIA DAS RELAÇÕES RACIAIS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0123",
           "nome": "PENSAMENTO SOCIAL NO BRASIL DO SÉCULO XIX",
           "carga_horaria": "60h",
@@ -1334,8 +1394,26 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "SOL0125",
+          "nome": "DIREITOS E CIDADANIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "SOL0134",
           "nome": "TEORIAS SOCIOLÓGICAS CONTEMPORÂNEAS 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0135",
+          "nome": "IDENTIDADES SOCIAIS NA INTERSECCIONALIDADE DE GÊNERO E RAÇA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "SOL0136",
+          "nome": "SOCIOLOGIA DO PODER",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },

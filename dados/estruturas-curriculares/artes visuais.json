@@ -5,28 +5,22 @@
       "nivel": "1º Semestre",
       "materias": [
         {
-          "codigo": "VIS0028",
-          "nome": "HISTÓRIA E TEORIA DO ENSINO DAS ARTES VISUAIS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "VIS0063",
           "nome": "DESENHO 1",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0113",
-          "nome": "PRÁTICAS DE ENSINO: MATERIAIS EM ARTES",
-          "carga_horaria": "60h",
+          "codigo": "VIS0129",
+          "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0256",
-          "nome": "HISTÓRIA DA ARTE NO BRASIL",
+          "codigo": "LIP0096",
+          "nome": "LEITURA E PRODUÇÃO DE TEXTOS",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
+          "natureza": "Optativa"
         }
       ]
     },
@@ -34,34 +28,16 @@
       "nivel": "2º Semestre",
       "materias": [
         {
-          "codigo": "PED0060",
-          "nome": "DESENVOLVIMENTO PSICOLÓGICO E ENSINO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0029",
-          "nome": "DIDÁTICA DAS ARTES VISUAIS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0030",
-          "nome": "PRÁTICA DE ENSINO - LINGUAGENS DA ARTE",
+          "codigo": "VIS0065",
+          "nome": "DESENHO 2",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0031",
-          "nome": "ESTUDOS DAS VISUALIDADES INDÍGENAS",
+          "codigo": "VIS0112",
+          "nome": "MATERIAIS EM ARTE 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0067",
-          "nome": "ESCULTURA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -69,32 +45,20 @@
       "nivel": "3º Semestre",
       "materias": [
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0032",
-          "nome": "METODOLOGIA DE ENSINO E PESQUISA EM ARTES VISUAIS",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0033",
-          "nome": "PRÁTICA DE ENSINO - OBJETOS DE APRENDIZAGEM",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0034",
-          "nome": "ESTUDOS DAS VISUALIDADES AFRO-BRASILEIRA",
+          "codigo": "LET0331",
+          "nome": "INGLÊS INSTRUMENTAL 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
           "codigo": "VIS0188",
           "nome": "INTRODUCAO A GRAVURA",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0212",
+          "nome": "DESENHO 3",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         }
@@ -104,27 +68,15 @@
       "nivel": "4º Semestre",
       "materias": [
         {
-          "codigo": "VIS0035",
-          "nome": "CURRÍCULO E AVALIAÇÃO EM ARTES VISUAIS",
+          "codigo": "VIS0067",
+          "nome": "ESCULTURA 1",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0036",
-          "nome": "ESTÁGIO SUPERVISIONADO EM ARTES VISUAIS - FORMAÇÃO DE PROFESSORES",
-          "carga_horaria": "150h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0037",
-          "nome": "PRÁTICA DE ENSINO - FORMAÇÃO DE PROFESSORES",
+          "codigo": "VIS0088",
+          "nome": "OFICINA DE FOTOGRAFIA 1",
           "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0038",
-          "nome": "IMAGEM, CULTURA E SOCIEDADE",
-          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         }
       ]
@@ -133,34 +85,16 @@
       "nivel": "5º Semestre",
       "materias": [
         {
-          "codigo": "PAD0028",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
-          "carga_horaria": "60h",
+          "codigo": "VIS0185",
+          "nome": "ARTE ELETRONICA 1",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0041",
-          "nome": "ESTÁGIO SUPERVISIONADO EM ARTES VISUAIS - ESPAÇOS MUSEAIS 1",
-          "carga_horaria": "150h",
+          "codigo": "VIS0187",
+          "nome": "PINTURA 1",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0042",
-          "nome": "PRÁTICA DE ENSINO - ESPAÇOS MUSEAIS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0053",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - FUNDAMENTOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0253",
-          "nome": "HISTORIA DA ARTE MEDIEVAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -168,22 +102,10 @@
       "nivel": "6º Semestre",
       "materias": [
         {
-          "codigo": "VIS0039",
-          "nome": "ESTÁGIO SUPEVISIONADO ARTES VISUAIS-AMBIENTES VIRTUAIS DE APRENDIZAGEM 1",
-          "carga_horaria": "150h",
+          "codigo": "VIS0220",
+          "nome": "PROJETO INTERDISCIPLINAR",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0297",
-          "nome": "PRÁTICA DE ENSINO – AMBIENTES VIRTUAIS DE APRENDIZAGEM",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0054",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - LINGUAGENS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
         }
       ]
     },
@@ -191,10 +113,16 @@
       "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "VIS0044",
-          "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
-          "carga_horaria": "90h",
+          "codigo": "VIS0217",
+          "nome": "ATELIE 1",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0240",
+          "nome": "PINTURA 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -202,9 +130,9 @@
       "nivel": "8º Semestre",
       "materias": [
         {
-          "codigo": "VIS0045",
-          "nome": "TRABALHO DE CONCLUSÃO DE CURSO 2",
-          "carga_horaria": "90h",
+          "codigo": "VIS0219",
+          "nome": "ATELIE 2",
+          "carga_horaria": "120h",
           "natureza": "Obrigatória"
         }
       ]
@@ -213,47 +141,16 @@
       "nivel": "9º Semestre",
       "materias": [
         {
-          "codigo": "VIS0057",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - EXPERIMENTOS",
-          "carga_horaria": "60h",
+          "codigo": "VIS0229",
+          "nome": "DIPLOMAÇÃO EM ARTES PLÁSTICAS - BACHARELADO",
+          "carga_horaria": "90h",
           "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0053",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - FUNDAMENTOS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0054",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - LINGUAGENS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0056",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - NARRATIVAS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0055",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - TÓPICOS ESPECIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0058",
-          "nome": "HISTÓRIA E TEORIA DO ENSINO DAS ARTES VISUAIS 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0104",
-          "nome": "ANALISE DO FILME 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
+        }
+      ]
+    },
+    {
+      "nivel": "10º Semestre",
+      "materias": [
         {
           "codigo": "VIS0127",
           "nome": "FUNDAMENTOS DE LINGUAGEM",
@@ -311,6 +208,12 @@
         {
           "codigo": "VIS0254",
           "nome": "HISTORIA DA ARTE MODERNA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0256",
+          "nome": "HISTÓRIA DA ARTE NO BRASIL",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -411,26 +314,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0257",
-          "nome": "TEORIA E HISTORIA DA ARTE",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0140",
-          "nome": "ANATOMIA ARTÍSTICA",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "VIS0244",
           "nome": "ANIMAÇÃO",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0185",
-          "nome": "ARTE ELETRONICA 1",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
@@ -447,26 +332,8 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0065",
-          "nome": "DESENHO 2",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0212",
-          "nome": "DESENHO 3",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "VIS0245",
           "nome": "DESENHO 4",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0067",
-          "nome": "ESCULTURA 1",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
@@ -477,21 +344,15 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "DIN0047",
-          "nome": "FOTOGRAFIA E VIDEO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "VIS0230",
           "nome": "INTERVENCAO/PERFORMANCE/INSTALACAO",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0188",
-          "nome": "INTRODUCAO A GRAVURA",
-          "carga_horaria": "90h",
+          "codigo": "TAU0002",
+          "nome": "INTRODUCAO A ARQUITETURA E URBANISMO",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
@@ -501,26 +362,32 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0163",
-          "nome": "MATERIAIS EM ARTE 2",
+          "codigo": "CEN0031",
+          "nome": "OFICINA BASICA DE ARTES CENICAS 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0085",
+          "nome": "OFICINA BASICA DE ARTES PLASTICAS 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MUS0089",
+          "nome": "OFICINA BÁSICA DE MÚSICA 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0088",
-          "nome": "OFICINA DE FOTOGRAFIA 1",
+          "codigo": "VIS0090",
+          "nome": "OFICINA DE FOTOGRAFIA 2",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
           "codigo": "VIS0094",
           "nome": "OFICINA DE FOTOGRAFIA 3",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0187",
-          "nome": "PINTURA 1",
           "carga_horaria": "90h",
           "natureza": "Obrigatória"
         },
@@ -537,24 +404,6 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "VIS0124",
-          "nome": "TECNICAS DE GRAVURA 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0125",
-          "nome": "TECNICAS DE GRAVURA 2",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "VIS0126",
-          "nome": "TECNICAS DE GRAVURA 3",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "VIS0242",
           "nome": "VIDEO-ARTE",
           "carga_horaria": "120h",
@@ -564,6 +413,198 @@
           "codigo": "VIS0247",
           "nome": "XILOGRAVURA",
           "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "DAN0043",
+          "nome": "ANTROPOLOGIA DA ARTE",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "HIS0140",
+          "nome": "CULTURA BRASILEIRA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ECL0002",
+          "nome": "ECOLOGIA GERAL",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FAC0016",
+          "nome": "ESTÉTICA E CULTURA DE MASSA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IFD0210",
+          "nome": "FISICA GERAL 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FCI0024",
+          "nome": "HISTORIA DO LIVRO E DAS BIBLIOTECAS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "DAN0022",
+          "nome": "INTRODUÇÃO À ANTROPOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "POL0011",
+          "nome": "INTRODUÇÃO À CIÊNCIA POLÍTICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ECO0019",
+          "nome": "INTRODUÇÃO À ECONOMIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0045",
+          "nome": "INTRODUÇÃO À LINGUÍSTICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "HIS0084",
+          "nome": "INTRODUÇÃO AO ESTUDO DA HISTÓRIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PPB0014",
+          "nome": "INTRODUÇÃO À PSICOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "SOL0042",
+          "nome": "INTRODUÇÃO À SOCIOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PED0032",
+          "nome": "PSICOLOGIA DA CRIATIVIDADE",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "IQD0051",
+          "nome": "QUÍMICA GERAL",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "FIL0059",
+          "nome": "TEORIA DA CIÊNCIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0257",
+          "nome": "TEORIA E HISTORIA DA ARTE",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0140",
+          "nome": "ANATOMIA ARTÍSTICA",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "CEN0045",
+          "nome": "CENOGRAFIA 1",
+          "carga_horaria": "90h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PRO0025",
+          "nome": "DESENHO E PLASTICA 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "PRO0026",
+          "nome": "DESENHO E PLASTICA 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "ENC0053",
+          "nome": "DESENHO TECNICO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "DAP0076",
+          "nome": "FOTOGRAFIA E ILUMINAÇÃO 1",
+          "carga_horaria": "30h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LET0252",
+          "nome": "INGLÊS: COMPREENSÃO DE TEXTOS ESCRITOS 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "DIN0049",
+          "nome": "INTRODUCAO AO DESIGN",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "VIS0163",
+          "nome": "MATERIAIS EM ARTE 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "DIN0046",
+          "nome": "OFICINA DE MODELOS E MAQUETE",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "JOR0058",
+          "nome": "OFICINA DE TEXTO 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0106",
+          "nome": "PROCESSOS DE LEITURA E ESCRITA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "MUS0153",
+          "nome": "TEORIA E PRÁTICA DE GRAVAÇÃO 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0096",
+          "nome": "LEITURA E PRODUÇÃO DE TEXTOS",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0153",
+          "nome": "PORTUGUÊS INSTRUMENTAL 1",
+          "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
       ]
@@ -599,6 +640,24 @@
           "codigo": "CEN0038",
           "nome": "CORPO E MOVIMENTO 1",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0039",
+          "nome": "ENCENACAO 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0042",
+          "nome": "DIRECAO 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0045",
+          "nome": "CENOGRAFIA 1",
+          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -640,6 +699,30 @@
         {
           "codigo": "CEN0067",
           "nome": "CORPO E MOVIMENTO 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0068",
+          "nome": "EXPRESSAO CORPORAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0069",
+          "nome": "EXPRESSAO CORPORAL 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0070",
+          "nome": "EXPRESSAO CORPORAL 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0071",
+          "nome": "EXPRESSAO CORPORAL 4",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -800,9 +883,129 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "CEN0133",
+          "nome": "DINAMICA DA VOZ 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0134",
+          "nome": "DINAMICA DA VOZ 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "CEN0135",
           "nome": "FUNDAMENTOS DA EDUCAÇÃO ARTÍSTICA",
           "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0137",
+          "nome": "TECNICAS DE INTERPRETACAO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0139",
+          "nome": "TECNICAS DE SUPORTE CENICO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0140",
+          "nome": "TECNICAS DE SUPORTE CENICO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0141",
+          "nome": "TECNICAS DE INTERPRETACAO 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0154",
+          "nome": "HISTORIA DO ENSINO DAS ARTES",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0164",
+          "nome": "POÉTICAS TEATRAIS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0165",
+          "nome": "TEORIAS E PROCESSOS CRIATIVOS PARA A CENA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0166",
+          "nome": "TEATRALIDADES BRASILEIRAS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0167",
+          "nome": "A VOZ EM PERFORMANCE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0168",
+          "nome": "A PALAVRA EM PERFORMANCE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0169",
+          "nome": "VOZ E PALAVRA NA PERFORMANCE TEATRAL CONTEMPORANEA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0171",
+          "nome": "INTERPRETAÇÃO TEATRAL 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0172",
+          "nome": "INTERPRETAÇÃO TEATRAL 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0173",
+          "nome": "INTERPRETAÇÃO TEATRAL 3",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0177",
+          "nome": "MOVIMENTO E LINGUAGEM 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0178",
+          "nome": "MOVIMENTO E LINGUAGEM 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0179",
+          "nome": "MOVIMENTO E LINGUAGEM 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "CEN0200",
+          "nome": "LABORATÓRIO INTERARTÍSTICO",
+          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -1142,8 +1345,26 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "DIN0047",
-          "nome": "FOTOGRAFIA E VIDEO",
+          "codigo": "DIN0037",
+          "nome": "DESENHO APLICADO 1",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DIN0045",
+          "nome": "DESENHO APLICADO 2",
+          "carga_horaria": "90h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DIN0046",
+          "nome": "OFICINA DE MODELOS E MAQUETE",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "DIN0049",
+          "nome": "INTRODUCAO AO DESIGN",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1262,6 +1483,18 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FIL0063",
+          "nome": "ANTROPOLOGIA FILOSÓFICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIL0068",
+          "nome": "ESTÉTICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FIL0069",
           "nome": "INTRODUÇÃO À FILOSOFIA",
           "carga_horaria": "60h",
@@ -1270,6 +1503,12 @@
         {
           "codigo": "FIL0105",
           "nome": "INICIAÇÃO À PRÁTICA FILOSÓFICA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "FIL0124",
+          "nome": "FILOSOFIA DA ARTE",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1298,6 +1537,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "FIL0158",
+          "nome": "IDEIAS FILOSOFICAS EM FORMA LITERARIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "FIL0166",
           "nome": "INTRODUÇÃO A PRÁTICA FILOSÓFICA",
           "carga_horaria": "90h",
@@ -1316,8 +1561,26 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "HIS0091",
+          "nome": "HISTÓRIA MEDIEVAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0093",
+          "nome": "HISTÓRIA MODERNA 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "HIS0102",
           "nome": "HISTÓRIA DO BRASIL 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "HIS0106",
+          "nome": "HISTÓRIA CONTEMPORÂNEA 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1364,6 +1627,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "JOR0058",
+          "nome": "OFICINA DE TEXTO 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "JOR0078",
           "nome": "INTRODUÇÃO A COMUNICAÇÃO",
           "carga_horaria": "60h",
@@ -1388,8 +1657,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0331",
-          "nome": "INGLÊS INSTRUMENTAL 1",
+          "codigo": "LET0252",
+          "nome": "INGLÊS: COMPREENSÃO DE TEXTOS ESCRITOS 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0431",
+          "nome": "FRANCÊS 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1400,14 +1675,20 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0096",
-          "nome": "LEITURA E PRODUÇÃO DE TEXTOS",
+          "codigo": "LIP0106",
+          "nome": "PROCESSOS DE LEITURA E ESCRITA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
           "codigo": "LIP0153",
           "nome": "PORTUGUÊS INSTRUMENTAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1508,6 +1789,24 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "MUS0097",
+          "nome": "LINGUAGEM E ESTRUTURAÇÃO MUSICAL 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MUS0098",
+          "nome": "LINGUAGEM E ESTRUTURAÇÃO MUSICAL 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MUS0099",
+          "nome": "LINGUAGEM E ESTRUTURAÇÃO MUSICAL 3",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "MUS0102",
           "nome": "HARMONIA SUPERIOR 1",
           "carga_horaria": "60h",
@@ -1534,6 +1833,12 @@
         {
           "codigo": "MUS0142",
           "nome": "CANTO CORAL 2",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "MUS0153",
+          "nome": "TEORIA E PRÁTICA DE GRAVAÇÃO 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1586,12 +1891,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MUS0262",
-          "nome": "ESTÁGIO SUPERVISIONADO EM MÚSICA 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "MUS0263",
           "nome": "MUSICA POPULAR BRASILEIRA",
           "carga_horaria": "60h",
@@ -1610,32 +1909,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MUS0738",
-          "nome": "ESTÁGIO SUPERVISIONADO EM MÚSICA 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0751",
-          "nome": "PRÁTICA DE ENSINO E APRENDIZAGEM MUSICAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0753",
-          "nome": "PRÁTICA DE ENSINO E APRENDIZAGEM MUSICAL 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0758",
-          "nome": "PRÁTICA DE ENSINO E APRENDIZAGEM MUSICAL 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0788",
-          "nome": "PROJETO DE ESTÁGIO E PRÁTICA DOCENTE",
+          "codigo": "MUS0735",
+          "nome": "ELEMENTOS DE LINGUAGEM,ESTETICA E HISTORIA DA ARTE 3",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1670,6 +1945,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "PAD0031",
           "nome": "POLITICAS PÚBLICAS DE EDUCAÇÃO",
           "carga_horaria": "60h",
@@ -1682,7 +1963,7 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "PED0025",
+          "codigo": "PED0024",
           "nome": "DESENVOLVIMENTO NO CURSO DE VIDA: INFÂNCIA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
@@ -1706,6 +1987,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "PED0060",
+          "nome": "DESENVOLVIMENTO PSICOLÓGICO E ENSINO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "POL0011",
           "nome": "INTRODUÇÃO À CIÊNCIA POLÍTICA",
           "carga_horaria": "60h",
@@ -1714,6 +2001,12 @@
         {
           "codigo": "PPB0014",
           "nome": "INTRODUÇÃO À PSICOLOGIA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "PPB0016",
+          "nome": "PSICOLOGIA DA APRENDIZAGEM 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1862,12 +2155,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0046",
-          "nome": "HISTORIA DA EDUCACAO BRASILEIRA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEF0065",
           "nome": "DINÂMICA PSICOSSOCIAL DA EDUCAÇÃO",
           "carga_horaria": "60h",
@@ -1882,6 +2169,18 @@
         {
           "codigo": "TEF0118",
           "nome": "PERSPECTIVAS DO DESENVOLVIMENTO HUMANO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEL0004",
+          "nome": "TRAGÉDIA GREGA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "TEL0011",
+          "nome": "LITERATURA PORTUGUESA - ROMANTISMO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1910,26 +2209,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0055",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - TÓPICOS ESPECIAIS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0056",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - NARRATIVAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0057",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - EXPERIMENTOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0058",
-          "nome": "HISTÓRIA E TEORIA DO ENSINO DAS ARTES VISUAIS 2",
+          "codigo": "VIS0059",
+          "nome": "INFOESTETICA 1 - ESTETICA DAS IMAGENS INFORMATICAS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1943,12 +2224,6 @@
           "codigo": "VIS0061",
           "nome": "HISTORIA DA ARTE 1",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0065",
-          "nome": "DESENHO 2",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -1982,8 +2257,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0088",
-          "nome": "OFICINA DE FOTOGRAFIA 1",
+          "codigo": "VIS0090",
+          "nome": "OFICINA DE FOTOGRAFIA 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2014,6 +2289,12 @@
         {
           "codigo": "VIS0119",
           "nome": "TECNICAS EXPERIMENTAIS DE ARTE 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "VIS0122",
+          "nome": "ELEMENTOS DE LINGUAGEM, ARTE E CULTURA POPULAR",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2078,6 +2359,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "VIS0154",
+          "nome": "SEMINARIO INTERDISCIPLINAR EM TEORIA E HISTORIA DA ARTE 1",
+          "carga_horaria": "225h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "VIS0163",
           "nome": "MATERIAIS EM ARTE 2",
           "carga_horaria": "60h",
@@ -2092,6 +2379,18 @@
         {
           "codigo": "VIS0167",
           "nome": "ATELIE DE PINTURA 2",
+          "carga_horaria": "225h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "VIS0169",
+          "nome": "ATELIE DE PINTURA 3",
+          "carga_horaria": "225h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "VIS0171",
+          "nome": "ATELIE DE PINTURA 4",
           "carga_horaria": "225h",
           "natureza": "Optativa"
         },
@@ -2120,18 +2419,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0185",
-          "nome": "ARTE ELETRONICA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0187",
-          "nome": "PINTURA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0189",
           "nome": "HISTORIA DA ARTE 3",
           "carga_horaria": "60h",
@@ -2156,27 +2443,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0212",
-          "nome": "DESENHO 3",
-          "carga_horaria": "90h",
+          "codigo": "VIS0222",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ARTES PLÁSTICAS 1",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0217",
-          "nome": "ATELIE 1",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0219",
-          "nome": "ATELIE 2",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0220",
-          "nome": "PROJETO INTERDISCIPLINAR",
-          "carga_horaria": "90h",
+          "codigo": "VIS0224",
+          "nome": "ESTÁGIO SUPERVISIONADO EM ARTES PLÁSTICAS 2",
+          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -2212,12 +2487,6 @@
         {
           "codigo": "VIS0239",
           "nome": "SERIGRAFIA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0240",
-          "nome": "PINTURA 2",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
@@ -2276,6 +2545,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "VIS0253",
+          "nome": "HISTORIA DA ARTE MEDIEVAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "VIS0254",
           "nome": "HISTORIA DA ARTE MODERNA",
           "carga_horaria": "60h",
@@ -2284,6 +2559,12 @@
         {
           "codigo": "VIS0255",
           "nome": "HISTORIA DA ARTE CONTEMPORANEA",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "VIS0256",
+          "nome": "HISTÓRIA DA ARTE NO BRASIL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2330,12 +2611,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0269",
-          "nome": "TECNOLOGIAS CONTEMPORÂNEAS NA ARTE-EDUCAÇÃO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0271",
           "nome": "SEMINÁRIO EM TEORIA, CRÍTICA E HISTÓRIA DA ARTE 11",
           "carga_horaria": "60h",
@@ -2378,33 +2653,21 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0067",
-          "nome": "ESCULTURA 1",
+          "codigo": "LIP0096",
+          "nome": "LEITURA E PRODUÇÃO DE TEXTOS",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "VIS0212",
+          "nome": "DESENHO 3",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0188",
-          "nome": "INTRODUCAO A GRAVURA",
+          "codigo": "VIS0240",
+          "nome": "PINTURA 2",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0053",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - FUNDAMENTOS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0253",
-          "nome": "HISTORIA DA ARTE MEDIEVAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0054",
-          "nome": "ESTUDOS VISUAIS E EDUCAÇÃO - LINGUAGENS",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         }
       ]

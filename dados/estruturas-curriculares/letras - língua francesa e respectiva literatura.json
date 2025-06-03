@@ -63,18 +63,6 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PED0058",
-          "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
-          "carga_horaria": "90h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "LIP0099",
-          "nome": "FONETICA E FONOLOGIA DO PORTUGUES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0100",
           "nome": "MORFOLOGIA DO PORTUGUES",
           "carga_horaria": "60h",
@@ -92,20 +80,20 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "PAD0028",
-          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
+          "codigo": "LIP0050",
+          "nome": "FILOLOGIA ROMANICA 1",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "LIP0050",
-          "nome": "FILOLOGIA ROMANICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEL0080",
           "nome": "CONTEXTOS CULTURAIS DA LITERATURA FRANCESA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0085",
+          "nome": "OFICINA DE PRODUCAO DE TEXTOS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
@@ -127,6 +115,12 @@
           "natureza": "Obrigatória"
         },
         {
+          "codigo": "TEL0029",
+          "nome": "FUNDAMENTOS DE HISTORIA LITERARIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
           "codigo": "TEL0032",
           "nome": "LITERATURA FRANCESA - PANORAMA",
           "carga_horaria": "60h",
@@ -135,12 +129,6 @@
         {
           "codigo": "LET0412",
           "nome": "FRANCÊS: DA LEXICOLOGIA À LEXICOGRAFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LIP0085",
-          "nome": "OFICINA DE PRODUCAO DE TEXTOS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
@@ -162,18 +150,6 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "MTC0012",
-          "nome": "DIDÁTICA FUNDAMENTAL",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
-          "codigo": "TEF0011",
-          "nome": "PSICOLOGIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "TEL0033",
           "nome": "LITERATURA FRANCESA - ROMANCE",
           "carga_horaria": "60h",
@@ -185,12 +161,6 @@
       "nivel": "7º Semestre",
       "materias": [
         {
-          "codigo": "LET0093",
-          "nome": "ESTAGIO SUPERVISIONADO DE FRANCES 1",
-          "carga_horaria": "60h",
-          "natureza": "Obrigatória"
-        },
-        {
           "codigo": "LET0317",
           "nome": "FONETICA E FONOLOGIA DO FRANCES",
           "carga_horaria": "60h",
@@ -201,6 +171,12 @@
           "nome": "LITERATURA FRANCESA - TEATRO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "LIP0086",
+          "nome": "REDACAO OFICIAL",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
         }
       ]
     },
@@ -208,8 +184,8 @@
       "nivel": "8º Semestre",
       "materias": [
         {
-          "codigo": "LET0096",
-          "nome": "ESTAGIO SUPERVISIONADO DE FRANCES 2",
+          "codigo": "LET0043",
+          "nome": "ESTAGIO DE BACHAREL EM FRANCES",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -224,22 +200,17 @@
           "nome": "LITERATURA FRANCESA - POESIA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
-        }
-      ]
-    },
-    {
-      "nivel": "9º Semestre",
-      "materias": [
+        },
         {
-          "codigo": "LIP0174",
-          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
+          "codigo": "TEL0036",
+          "nome": "LITERATURA FRANCESA - CRITICA",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         }
       ]
     },
     {
-      "nivel": "10º Semestre",
+      "nivel": "9º Semestre",
       "materias": [
         {
           "codigo": "TEL0024",
@@ -290,14 +261,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEL0010",
-          "nome": "LITERATURA PORTUGUESA - BARROCO E ARCADISMO",
+          "codigo": "TEL0007",
+          "nome": "LITERATURA PORTUGUESA - REALISMO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEL0009",
-          "nome": "LITERATURA PORTUGUESA - MEDIEVALISMO",
+          "codigo": "TEL0011",
+          "nome": "LITERATURA PORTUGUESA - ROMANTISMO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -308,14 +279,14 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEL0012",
-          "nome": "LITERATURA PORTUGUESA - PARNASIANISMO E SIMBOLISMO",
+          "codigo": "TEL0010",
+          "nome": "LITERATURA PORTUGUESA - BARROCO E ARCADISMO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEL0007",
-          "nome": "LITERATURA PORTUGUESA - REALISMO",
+          "codigo": "TEL0012",
+          "nome": "LITERATURA PORTUGUESA - PARNASIANISMO E SIMBOLISMO",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -326,8 +297,80 @@
           "natureza": "Obrigatória"
         },
         {
-          "codigo": "TEL0011",
-          "nome": "LITERATURA PORTUGUESA - ROMANTISMO",
+          "codigo": "TEL0009",
+          "nome": "LITERATURA PORTUGUESA - MEDIEVALISMO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0016",
+          "nome": "CRITICA LITERARIA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0031",
+          "nome": "ESTETICA E LITERATURA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0018",
+          "nome": "ESTILISTICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0020",
+          "nome": "LITERATURA COMPARADA 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0058",
+          "nome": "LITERATURA COMPARADA 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0097",
+          "nome": "TEORIA DA LINGUAGEM POETICA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0060",
+          "nome": "TEORIA DA NARRATIVA",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0095",
+          "nome": "TEORIA DO TEATRO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0093",
+          "nome": "TEORIA E PRÁTICA DA ANÁLISE DO TEXTO",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0037",
+          "nome": "LITERATURA DE LINGUA FRANCESA 1",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0038",
+          "nome": "LITERATURA DE LINGUA FRANCESA 2",
+          "carga_horaria": "60h",
+          "natureza": "Obrigatória"
+        },
+        {
+          "codigo": "TEL0039",
+          "nome": "LITERATURA DE LINGUA FRANCESA 3",
           "carga_horaria": "60h",
           "natureza": "Obrigatória"
         },
@@ -661,12 +704,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FED0133",
-          "nome": "SEMINÁRIO INTERDISCIPLINAR EM EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FEF0105",
           "nome": "PRÁTICA DESPORTIVA",
           "carga_horaria": "30h",
@@ -901,12 +938,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0043",
-          "nome": "ESTAGIO DE BACHAREL EM FRANCES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LET0044",
           "nome": "LINGUA ALEMA INSTRUMENTAL 1",
           "carga_horaria": "60h",
@@ -1035,6 +1066,18 @@
         {
           "codigo": "LET0088",
           "nome": "LINGUA INGLESA 5",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0093",
+          "nome": "ESTAGIO SUPERVISIONADO DE FRANCES 1",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LET0096",
+          "nome": "ESTAGIO SUPERVISIONADO DE FRANCES 2",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1927,12 +1970,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0086",
-          "nome": "REDACAO OFICIAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0087",
           "nome": "GREGO 5",
           "carga_horaria": "60h",
@@ -1983,6 +2020,12 @@
         {
           "codigo": "LIP0098",
           "nome": "ESTUDO DAS GRAMÁTICAS DO PORTUGUÊS CONTEMPORÂNEO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
+          "codigo": "LIP0099",
+          "nome": "FONETICA E FONOLOGIA DO PORTUGUES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2215,6 +2258,12 @@
           "natureza": "Optativa"
         },
         {
+          "codigo": "LIP0174",
+          "nome": "LÍNGUA DE SINAIS BRASILEIRA - BÁSICO",
+          "carga_horaria": "60h",
+          "natureza": "Optativa"
+        },
+        {
           "codigo": "LIP0175",
           "nome": "LÍNGUAS DE SINAIS BRASILEIRA - INTERMEDIÁRIO",
           "carga_horaria": "60h",
@@ -2245,62 +2294,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0013",
-          "nome": "DIDÁTICA 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0017",
-          "nome": "METODOLOGIA DO ENSINO DE 1 GRAU 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0018",
-          "nome": "METODOLOGIA DO ENSINO DE 1 GRAU 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0021",
-          "nome": "CURRÍCULO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0022",
-          "nome": "CURRICULOS E PROGRAMAS 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0027",
-          "nome": "TECNICAS AUDIOVISUAIS DE EDUCACAO",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0028",
-          "nome": "RADIO E TELEVISAO EM EDUCACAO 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0029",
-          "nome": "ENSINO SUPLETIVO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0030",
-          "nome": "ENSINO SUPLETIVO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MTC0035",
-          "nome": "AVALIAÇÃO ESCOLAR",
+          "codigo": "MTC0012",
+          "nome": "DIDÁTICA FUNDAMENTAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2311,45 +2306,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MTC0143",
-          "nome": "DIDÁTICA FUNDAMENTAL",
+          "codigo": "PAD0028",
+          "nome": "ORGANIZAÇÃO DA EDUCAÇÃO BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "PAD0011",
-          "nome": "PRINCIPIOS E METODOS DE ADMINISTRACAO ESCOLAR",
+          "codigo": "PED0058",
+          "nome": "FUNDAMENTOS DE DESENVOLVIMENTO E APRENDIZAGEM",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0017",
-          "nome": "LEGISLACAO DO ENSINO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0018",
-          "nome": "LEGISLACAO DO ENSINO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0019",
-          "nome": "HIGIENE ESCOLAR",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0022",
-          "nome": "PLANEJAMENTO EDUCACIONAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "PAD0031",
-          "nome": "POLITICAS PÚBLICAS DE EDUCAÇÃO",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -2401,80 +2366,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEF0012",
-          "nome": "PSICOLOGIA DA EDUCACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0013",
-          "nome": "SOCIOLOGIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0014",
-          "nome": "SOCIOLOGIA DA EDUCACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0015",
-          "nome": "HISTORIA DA EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0016",
-          "nome": "HISTORIA DA EDUCACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0019",
-          "nome": "POLÍTICAS DE EDUCAÇÃO COMPARADA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0020",
-          "nome": "FILOSOFIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0022",
-          "nome": "FILOSOFIA DA EDUCACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0024",
-          "nome": "ECONOMIA DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0027",
-          "nome": "ORIENTAÇÃO EDUCACIONAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0038",
-          "nome": "INTRODUCAO A EDUCACAO ESPECIAL",
+          "codigo": "TEF0011",
+          "nome": "PSICOLOGIA DA EDUCAÇÃO",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
           "codigo": "TEF0065",
           "nome": "DINÂMICA PSICOSSOCIAL DA EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEF0069",
-          "nome": "ORIENTACAO VOCACIONAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -2623,20 +2522,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0029",
-          "nome": "FUNDAMENTOS DE HISTORIA LITERARIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEL0031",
           "nome": "ESTETICA E LITERATURA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0036",
-          "nome": "LITERATURA FRANCESA - CRITICA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3025,26 +2912,14 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0099",
-          "nome": "FONETICA E FONOLOGIA DO PORTUGUES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0100",
           "nome": "MORFOLOGIA DO PORTUGUES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0050",
-          "nome": "FILOLOGIA ROMANICA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "TEL0080",
-          "nome": "CONTEXTOS CULTURAIS DA LITERATURA FRANCESA",
+          "codigo": "LIP0085",
+          "nome": "OFICINA DE PRODUCAO DE TEXTOS",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -3055,8 +2930,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LIP0085",
-          "nome": "OFICINA DE PRODUCAO DE TEXTOS",
+          "codigo": "LIP0086",
+          "nome": "REDACAO OFICIAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }

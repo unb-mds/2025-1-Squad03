@@ -326,12 +326,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0013",
-          "nome": "LABORATÓRIO DE TEATRO EDUCAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEN0015",
           "nome": "PRÁTICA DOCENTE EM CONTAÇÃO DE HISTÓRIAS",
           "carga_horaria": "90h",
@@ -392,48 +386,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0030",
-          "nome": "ELEMENTOS DE LINGUAGEM, ESTÉTICA E HISTÓRIA DA ARTE 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0039",
-          "nome": "ENCENACAO 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0040",
-          "nome": "ENCENACAO 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0041",
-          "nome": "ENCENACAO 3",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0045",
-          "nome": "CENOGRAFIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0046",
-          "nome": "CENOGRAFIA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0047",
-          "nome": "CENOGRAFIA 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEN0051",
           "nome": "SEMINARIO AVANCADO DE TEATRO",
           "carga_horaria": "60h",
@@ -452,86 +404,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0058",
-          "nome": "LINGUAGEM DRAMATICA NA EDUCACAO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0071",
-          "nome": "EXPRESSAO CORPORAL 4",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0076",
-          "nome": "VOZ E DICCAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0081",
-          "nome": "METODOLOGIA DA ENCENACAO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0083",
-          "nome": "METODOLOGIA DA ENCENACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0106",
-          "nome": "TEORIA DO TEATRO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEN0109",
           "nome": "CRITICA TEATRAL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0112",
-          "nome": "INDUMENTARIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0113",
-          "nome": "INDUMENTARIA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0115",
-          "nome": "SONOPLASTIA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0117",
-          "nome": "SONOPLASTIA 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0121",
-          "nome": "ILUMINACAO 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0122",
-          "nome": "ILUMINACAO 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0126",
-          "nome": "PRODUCAO TEATRAL",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -542,92 +416,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CEN0133",
-          "nome": "DINAMICA DA VOZ 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0134",
-          "nome": "DINAMICA DA VOZ 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "CEN0154",
           "nome": "HISTORIA DO ENSINO DAS ARTES",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0155",
-          "nome": "VOZ NO TEATRO NOS SECULOS XVI A XVIII",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0156",
-          "nome": "VOZ NO TEATRO CLASSICO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0157",
-          "nome": "VOZ NO TEATRO CONTEMPORANEO",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0158",
-          "nome": "ESTUDOS MITOLÓGICOS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0159",
-          "nome": "ESTUDOS MITOLOGICOS 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0161",
-          "nome": "SEMINÁRIO EM ARTE EDUCAÇÃO PARA A INCLUSÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0163",
-          "nome": "CARACTERIZAÇÃO",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0173",
-          "nome": "INTERPRETAÇÃO TEATRAL 3",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0174",
-          "nome": "INTERPRETAÇÃO TEATRAL 4",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0175",
-          "nome": "PRÁTICA DE MONTAGEM",
-          "carga_horaria": "120h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0179",
-          "nome": "MOVIMENTO E LINGUAGEM 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0181",
-          "nome": "MOVIMENTO E LINGUAGEM 4",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -635,12 +425,6 @@
           "codigo": "CEN0184",
           "nome": "ENCENAÇÃO TEATRAL 3",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0189",
-          "nome": "METODOLOGIA DO ENSINO DO TEATRO 1",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -653,12 +437,6 @@
           "codigo": "CEN0199",
           "nome": "LABORATÓRIO DE TEATRO",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "CEN0200",
-          "nome": "LABORATÓRIO INTERARTÍSTICO",
-          "carga_horaria": "120h",
           "natureza": "Optativa"
         },
         {
@@ -704,50 +482,8 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "CIC0007",
-          "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "DAN0022",
           "nome": "INTRODUÇÃO À ANTROPOLOGIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0043",
-          "nome": "ANTROPOLOGIA DA ARTE",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAN0060",
-          "nome": "TRADIÇÕES CULTURAIS BRASILEIRAS",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAP0067",
-          "nome": "HISTORIA DO CINEMA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAP0078",
-          "nome": "DIREÇÃO DO FILME 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAP0096",
-          "nome": "OFICINA BÁSICA DE AUDIOVISUAL",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "DAP0149",
-          "nome": "DIREÇÃO DE ATORES",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -902,24 +638,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "FAC0016",
-          "nome": "ESTÉTICA E CULTURA DE MASSA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0105",
-          "nome": "PRÁTICA DESPORTIVA",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "FEF0505",
-          "nome": "PRÁTICA DESPORTIVA 1",
-          "carga_horaria": "30h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "FIL0064",
           "nome": "ÉTICA",
           "carga_horaria": "60h",
@@ -946,12 +664,6 @@
         {
           "codigo": "FIL0134",
           "nome": "MITO E FILOSOFIA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "HIS0140",
-          "nome": "CULTURA BRASILEIRA",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1022,30 +734,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "LET0376",
-          "nome": "LINGUA CHINESA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0377",
-          "nome": "LÍNGUA CHINESA 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0378",
-          "nome": "LINGUA CHINESA 3",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "LET0431",
-          "nome": "FRANCÊS 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "LIP0085",
           "nome": "OFICINA DE PRODUCAO DE TEXTOS",
           "carga_horaria": "60h",
@@ -1064,12 +752,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "MUS0120",
-          "nome": "FISIOLOGIA DA VOZ",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "MUS0139",
           "nome": "CANTO CORAL 1",
           "carga_horaria": "60h",
@@ -1078,12 +760,6 @@
         {
           "codigo": "MUS0142",
           "nome": "CANTO CORAL 2",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "MUS0236",
-          "nome": "MÚSICA E SOCIEDADE 1",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         },
@@ -1268,12 +944,6 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "TEL0004",
-          "nome": "TRAGÉDIA GREGA",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "TEL0014",
           "nome": "INTRODUCAO A TEORIA DA LITERATURA",
           "carga_horaria": "60h",
@@ -1298,57 +968,15 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0061",
-          "nome": "HISTORIA DA ARTE 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0063",
           "nome": "DESENHO 1",
           "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0065",
-          "nome": "DESENHO 2",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0067",
-          "nome": "ESCULTURA 1",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0075",
-          "nome": "DESENHO PERSPECTIVO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0085",
           "nome": "OFICINA BASICA DE ARTES PLASTICAS 1",
           "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0088",
-          "nome": "OFICINA DE FOTOGRAFIA 1",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0097",
-          "nome": "CINEMA BRASILEIRO CONTEMPORANEO",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0104",
-          "nome": "ANALISE DO FILME 1",
-          "carga_horaria": "60h",
           "natureza": "Optativa"
         },
         {
@@ -1376,21 +1004,9 @@
           "natureza": "Optativa"
         },
         {
-          "codigo": "VIS0140",
-          "nome": "ANATOMIA ARTÍSTICA",
-          "carga_horaria": "90h",
-          "natureza": "Optativa"
-        },
-        {
           "codigo": "VIS0141",
           "nome": "HISTORIA DA ARTE ANTIGA",
           "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0185",
-          "nome": "ARTE ELETRONICA 1",
-          "carga_horaria": "90h",
           "natureza": "Optativa"
         },
         {
@@ -1444,36 +1060,6 @@
         {
           "codigo": "VIS0256",
           "nome": "HISTÓRIA DA ARTE NO BRASIL",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0259",
-          "nome": "SEMINARIO EM TEORIA,CRITICA E HISTORIA DA ARTE 6",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0261",
-          "nome": "SEMINARIO EM TEORIA,CRITICA E HISTORIA DA ARTE 7",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0263",
-          "nome": "SEMINARIO EM TEORIA,CRITICA E HISTORIA DA ARTE 8",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0265",
-          "nome": "SEMINARIO EM TEORIA,CRITICA E HISTORIA DA ARTE 9",
-          "carga_horaria": "60h",
-          "natureza": "Optativa"
-        },
-        {
-          "codigo": "VIS0267",
-          "nome": "SEMINARIO EM TEORIA,CRITICA E HISTORIA DA ARTE 10",
           "carga_horaria": "60h",
           "natureza": "Optativa"
         }
