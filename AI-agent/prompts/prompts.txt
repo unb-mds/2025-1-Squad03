@@ -50,3 +50,6 @@ Apresente os resultados como uma lista ranqueada.
 
 **CASO CONTRÁRIO (se não houver resultados relevantes na base de conhecimento), responda APENAS:** "Não encontrei turmas relevantes para sua busca na base de dados da Universidade de Brasília. Por favor, tente um termo diferente."
 
+-------------
+
+

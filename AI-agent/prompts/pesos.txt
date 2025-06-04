@@ -1,0 +1,3 @@
+similarity trhesh hold = 0.4
+keyword similarity = 0.7    
+resultado: retorna otimos resultados com similaridade alta
