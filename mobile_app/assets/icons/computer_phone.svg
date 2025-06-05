@@ -11,30 +11,42 @@
                     <g transform="translate(190, 140)">
                         <!-- Semestre 1 -->
                         <rect x="10" y="10" width="80" height="40" rx="5" fill="#4ade80"></rect>
+                        <text x="50" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 1</text>
                         
                         <rect x="110" y="10" width="80" height="40" rx="5" fill="#a78bfa"></rect>
+                        <text x="150" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Algoritmos</text>
                         
                         <rect x="210" y="10" width="80" height="40" rx="5" fill="#fcd34d"></rect>
+                        <text x="250" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Física 1</text>
                         
                         <rect x="310" y="10" width="80" height="40" rx="5" fill="#fb7185"></rect>
+                        <text x="350" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Introdução</text>
                         
                         <!-- Semestre 2 -->
                         <rect x="10" y="70" width="80" height="40" rx="5" fill="#4ade80"></rect>
+                        <text x="50" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 2</text>
                         
                         <rect x="110" y="70" width="80" height="40" rx="5" fill="#a78bfa"></rect>
+                        <text x="150" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Estruturas</text>
                         
                         <rect x="210" y="70" width="80" height="40" rx="5" fill="#fcd34d"></rect>
+                        <text x="250" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Física 2</text>
                         
                         <rect x="310" y="70" width="80" height="40" rx="5" fill="#fb7185"></rect>
+                        <text x="350" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Programação</text>
                         
                         <!-- Semestre 3 -->
                         <rect x="10" y="130" width="80" height="40" rx="5" fill="#4ade80"></rect>
+                        <text x="50" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 3</text>
                         
                         <rect x="110" y="130" width="80" height="40" rx="5" fill="#a78bfa"></rect>
+                        <text x="150" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Banco Dados</text>
                         
                         <rect x="210" y="130" width="80" height="40" rx="5" fill="#fcd34d"></rect>
+                        <text x="250" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Redes</text>
                         
                         <rect x="310" y="130" width="80" height="40" rx="5" fill="#fb7185"></rect>
+                        <text x="350" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Web</text>
                         
                         <!-- Linhas de Conexão -->
                         <line x1="50" y1="50" x2="50" y2="70" stroke="#333" stroke-width="2"></line>
@@ -56,24 +68,24 @@
                     <g transform="translate(565, 230) scale(0.4)">
                         <!-- Semestre 1 -->
                         <rect x="20" y="10" width="80" height="40" rx="5" fill="#4ade80"></rect>
-                        <text x="30" y="35" font-family="sans-serif" font-size="20" fill="black">Cálculo 1</text>
+                        <text x="60" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 1</text>
                         
                         <rect x="120" y="10" width="80" height="40" rx="5" fill="#a78bfa"></rect>
-                         <text x="130" y="35" font-family="sans-serif" font-size="20" fill="black">Algoritmos</text>
+                        <text x="160" y="35" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Algoritmos</text>
                         
                         <!-- Semestre 2 -->
                         <rect x="20" y="70" width="80" height="40" rx="5" fill="#4ade80"></rect>
-                         <text x="30" y="95" font-family="sans-serif" font-size="20" fill="black">Cálculo 2</text>
+                        <text x="60" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 2</text>
                         
                         <rect x="120" y="70" width="80" height="40" rx="5" fill="#a78bfa"></rect>
-                          <text x="130" y="95" font-family="sans-serif" font-size="20" fill="black">Estruturas</text>
+                        <text x="160" y="95" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Estruturas</text>
                         
                         <!-- Semestre 3 -->
                         <rect x="20" y="130" width="80" height="40" rx="5" fill="#4ade80"></rect>
-                          <text x="30" y="155" font-family="sans-serif" font-size="20" fill="black">Cálculo 3</text>
+                        <text x="60" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Cálculo 3</text>
                         
                         <rect x="120" y="130" width="80" height="40" rx="5" fill="#a78bfa"></rect>
-                          <text x="130" y="155" font-family="sans-serif" font-size="20" fill="black">Banco Dados</text>
+                        <text x="160" y="155" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Banco Dados</text>
                         
                         <!-- Linhas de Conexão -->
                         <line x1="60" y1="50" x2="60" y2="70" stroke="#333" stroke-width="2"></line>
