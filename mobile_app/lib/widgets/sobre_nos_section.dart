@@ -59,14 +59,8 @@ class SobreNosSection extends StatelessWidget {
                           color: Colors.white,
                           fontSize: 18,
                         ),
-                        children: [
-                          const TextSpan(text: 'O '),
-                          TextSpan(text: 'NoFluxoUnB', style: const TextStyle(fontWeight: FontWeight.bold)),
-                          const TextSpan(text: ' é criado na disciplina de '),
-                          TextSpan(text: 'Métodos de Desenvolvimento de Software', style: const TextStyle(fontWeight: FontWeight.bold)),
-                          const TextSpan(text: ', ministrada pela professora '),
-                          TextSpan(text: 'Carla Rocha', style: const TextStyle(fontWeight: FontWeight.bold)),
-                          const TextSpan(text: ', com a proposta de desenvolver um software inovador para a comunidade. Nossa proposta foi desenvolver um software que facilita o planejamento acadêmico dos estudantes da UnB, oferecendo um fluxograma interativo, intuitivo e de fácil uso. Visualize matérias equivalentes, selecione disciplinas futuras e receba recomendações personalizadas com inteligência artificial.'),
+                        children: const [
+                          TextSpan(text: 'O NoFluxoUnB é criado na disciplina de Métodos de Desenvolvimento de Software ministrada pela professora Carla Rocha, com a proposta de desenvolver um software inovador para a comunidade. Nossa proposta foi desenvolver um software que facilita o planejamento acadêmico dos estudantes da UnB, oferecendo um fluxograma interativo, intuitivo e de fácil uso. Visualize matérias equivalentes, selecione disciplinas futuras e receba recomendações personalizadas com inteligência artificial.'),
                         ],
                       ),
                     ),

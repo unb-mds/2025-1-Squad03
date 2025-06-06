@@ -32,9 +32,9 @@ class _AppNavbarState extends State<AppNavbar> {
                 fontSize: 36, // Tamanho da fonte do título
                 color: AppColors.white,
                 shadows: [
-                  Shadow(
+                  const Shadow(
                     color: Color.fromARGB(77, 0, 0, 0), // Mantido Color.fromARGB para consistência
-                    offset: const Offset(2, 2),
+                    offset: Offset(2, 2),
                     blurRadius: 4,
                   ),
                 ],
