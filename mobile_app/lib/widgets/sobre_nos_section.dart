@@ -170,13 +170,14 @@ class SobreNosSection extends StatelessWidget {
 
   Widget _membrosGrid(bool isWide) {
     final membros = [
-      _membroCard('Guilherme Gusmão', 'https://github.com/gusmoles.png'),
-      _membroCard('Vitor Marconi', 'https://github.com/Vitor-Trancoso.png'),
-      _membroCard('Gustavo Choueiri', 'https://github.com/staann.png'),
-      _membroCard('Felipe Lopes', 'https://github.com/darkymeubem.png'),
-      _membroCard('Vinícius Pereira', 'https://github.com/Vinicius-Ribeiro04.png'),
-      _membroCard('Arthur Fernandes', 'https://github.com/hisarxt.png'),
-      _membroCard('Erick Alves', 'https://github.com/erickaalves.png'),
+      _membroCard('Guilherme Gusmão', 'https://avatars.githubusercontent.com/gusmoles'),
+      _membroCard('Vitor Marconi', 'https://avatars.githubusercontent.com/Vitor-Trancoso'),
+      _membroCard('Gustavo Choueiri', 'https://avatars.githubusercontent.com/staann'),
+      _membroCard('Felipe Lopes', 'https://avatars.githubusercontent.com/darkymeubem'),
+      _membroCard('Vinícius Pereira', 'https://avatars.githubusercontent.com/Vinicius-Ribeiro04'),
+      _membroCard('Arthur Fernandes', 'https://avatars.githubusercontent.com/hisarxt'),
+      _membroCard('Erick Alves', 'https://avatars.githubusercontent.com/erickaalves'),
+      _membroCard('Arthur Ramalho', 'https://avatars.githubusercontent.com/ArthurNRamalho'),
     ];
     // Primeira linha: 4 cards, segunda linha: 3 cards centralizados
     return Column(
@@ -198,43 +199,81 @@ class SobreNosSection extends StatelessWidget {
     );
   }
 
-  Widget _membroCard(String nome, String imgUrl) {
+  Widget _membroCard(String nome, String githubUrl) {
     return Container(
-      width: 220,
-      padding: const EdgeInsets.all(20),
+      width: 280,
+      height: 280,
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.10),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Colors.white.withOpacity(0.10)),
+        color: Colors.white.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.1),
+        ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            width: 90,
-            height: 90,
-            margin: const EdgeInsets.only(bottom: 12),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: Colors.white, width: 4),
-            ),
-            child: ClipOval(
-              child: Image.network(imgUrl, fit: BoxFit.cover),
+          SizedBox(
+            width: 100,
+            height: 100,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Image.network(
+                githubUrl,
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.grey[800],
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        value: loadingProgress.expectedTotalBytes != null
+                            ? loadingProgress.cumulativeBytesLoaded /
+                                loadingProgress.expectedTotalBytes!
+                            : null,
+                        color: Colors.white,
+                      ),
+                    ),
+                  );
+                },
+                errorBuilder: (context, error, stackTrace) {
+                  print('Erro ao carregar imagem: $error');
+                  return Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.grey[800],
+                    child: const Icon(Icons.person, size: 50, color: Colors.white),
+                  );
+                },
+              ),
             ),
           ),
+          const SizedBox(height: 24),
           Text(
             nome,
-            style: GoogleFonts.permanentMarker(
+            style: const TextStyle(
               color: Colors.white,
-              fontSize: 20,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'PermanentMarker',
             ),
             textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 8),
           Text(
             'Desenvolvedor',
             style: GoogleFonts.poppins(
-              color: Colors.grey[300],
-              fontSize: 14,
+              color: const Color.fromARGB(255, 174, 173, 173),
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
+              letterSpacing: 0.5,
             ),
             textAlign: TextAlign.center,
           ),
