@@ -9,6 +9,7 @@ class ProntoParaOrganizarSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 64),
+      color: Colors.black.withOpacity(0.3),
       alignment: Alignment.center,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -8,7 +8,7 @@ class ComoFuncionaSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 64),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.3),
+        color: Colors.black.withOpacity(0.5),
       ),
       child: Column(
         children: [

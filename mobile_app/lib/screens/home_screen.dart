@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../constants/app_colors.dart';
-import '../widgets/animated_background.dart';
+import '../widgets/graffiti_background.dart';
 import '../widgets/app_navbar.dart';
 import '../widgets/como_funciona_section.dart';
 import '../widgets/pronto_para_organizar_section.dart';
+import '../widgets/sobre_nos_section.dart';
 import 'auth/auth_page.dart'; // Importa a página de autenticação
 import 'package:flutter_svg/flutter_svg.dart'; // Importa o flutter_svg
 
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          const AnimatedBackground(), // Fundo animado
+          const GraffitiBackground(), // Fundo artístico
           SafeArea(
             child: Column(
               children: [
@@ -162,6 +163,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         const ComoFuncionaSection(),
                         const ProntoParaOrganizarSection(),
+                        const SobreNosSection(),
                       ],
                     ),
                   ),
