@@ -39,6 +39,24 @@ def get_or_create_materia_nivel(materia_id, nivel_id):
     }).execute()
     return result.data[0]['id']
 
+def safe_get_or_create(*args, **kwargs):
+    for tentativa in range(3):
+        try:
+            return get_or_create(*args, **kwargs)
+        except Exception as e:
+            print(f'[ERRO] Falha ao inserir {args}, tentativa {tentativa+1}/3. Erro: {e}')
+            time.sleep(2)  # espera 2 segundos antes de tentar de novo
+    raise Exception('Falha após 3 tentativas!')
+
+def safe_get_or_create_materia_nivel(*args, **kwargs):
+    for tentativa in range(3):
+        try:
+            return get_or_create_materia_nivel(*args, **kwargs)
+        except Exception as e:
+            print(f'[ERRO] Falha ao inserir relação materia-nivel, tentativa {tentativa+1}/3. Erro: {e}')
+            time.sleep(2)
+    raise Exception('Falha após 3 tentativas!')
+
 for arquivo in os.listdir(pasta):
     if arquivo.endswith('.json'):
         with open(os.path.join(pasta, arquivo), 'r', encoding='utf-8') as f:
@@ -46,12 +64,12 @@ for arquivo in os.listdir(pasta):
             curso_nome = dados['curso']
             niveis = dados['niveis']
 
-            curso_id = get_or_create('cursos', 'nome', curso_nome)
+            curso_id = safe_get_or_create('cursos', 'nome', curso_nome)
             print(f"[DEBUG] Inserindo/obtendo curso: {curso_nome} (id: {curso_id})")
 
             for ordem, nivel in enumerate(niveis, start=1):
                 nivel_nome = nivel['nivel']
-                nivel_id = get_or_create('niveis', 'nome', nivel_nome, {'curso_id': curso_id, 'ordem': ordem})
+                nivel_id = safe_get_or_create('niveis', 'nome', nivel_nome, {'curso_id': curso_id, 'ordem': ordem})
                 print(f"[DEBUG] Inserindo/obtendo nível: {nivel_nome} (id: {nivel_id}) para curso_id: {curso_id}, ordem: {ordem}")
 
                 for materia in nivel['materias']:
@@ -61,14 +79,9 @@ for arquivo in os.listdir(pasta):
                         'natureza': materia['natureza'],
                         'ementa': materia.get('ementa', None),
                     }
-                    materia_id = get_or_create(
-                        'materias',
-                        'codigo',
-                        materia['codigo'],
-                        materia_dict
-                    )
+                    materia_id = safe_get_or_create('materias', 'codigo', materia['codigo'], materia_dict)
                     print(f"[DEBUG] Inserindo/obtendo matéria: {materia['codigo']} - {materia['nome']} (id: {materia_id})")
                     # Cria relação materia-nivel
-                    rel_id = get_or_create_materia_nivel(materia_id, nivel_id)
+                    rel_id = safe_get_or_create_materia_nivel(materia_id, nivel_id)
                     print(f"[DEBUG] Relacionando materia_id: {materia_id} com nivel_id: {nivel_id} (materias_niveis.id: {rel_id})")
-                    time.sleep(0.1)
+                    time.sleep(1)
