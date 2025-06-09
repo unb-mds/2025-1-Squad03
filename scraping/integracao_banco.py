@@ -88,4 +88,4 @@ for arquivo in os.listdir(pasta):
                         rel_id = supabase.table('materias_niveis').insert({'materia_id': materia_id, 'nivel_id': nivel_id}).execute().data[0]['id']
                         materias_niveis_existentes.add((materia_id, nivel_id))
                         print(f"[DEBUG] Relacionando materia_id: {materia_id} com nivel_id: {nivel_id} (materias_niveis.id: {rel_id})")
-                    time.sleep(1)
+                 
