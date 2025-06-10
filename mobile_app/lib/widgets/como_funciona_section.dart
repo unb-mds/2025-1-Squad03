@@ -26,19 +26,19 @@ class ComoFuncionaSection extends StatelessWidget {
             builder: (context, constraints) {
               bool isWide = constraints.maxWidth > 900;
               final cards = [
-                _buildFeatureCard(
+                FeatureCard(
                   icon: Icons.assignment,
                   title: 'VISUALIZE SEU FLUXO',
                   description: 'Veja todas as disciplinas do seu curso organizadas por semestre e pré-requisitos.',
                   gradientColors: const [Color(0xFF9333EA), Color(0xFFEC4899)],
                 ),
-                _buildFeatureCard(
+                FeatureCard(
                   icon: Icons.add_circle_outline,
                   title: 'ADICIONE OPTATIVAS',
                   description: 'Personalize seu fluxograma adicionando matérias optativas de acordo com seus interesses.',
                   gradientColors: const [Color(0xFFEC4899), Color(0xFFF97316)],
                 ),
-                _buildFeatureCard(
+                FeatureCard(
                   icon: Icons.check_circle_outline,
                   title: 'ACOMPANHE SEU PROGRESSO',
                   description: 'Marque as disciplinas já cursadas e visualize seu progresso no curso de forma clara.',
@@ -73,62 +73,88 @@ class ComoFuncionaSection extends StatelessWidget {
       ),
     );
   }
+}
 
-  Widget _buildFeatureCard({
-    required IconData icon,
-    required String title,
-    required String description,
-    required List<Color> gradientColors,
-  }) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: Colors.white.withOpacity(0.1),
-        ),
-      ),
-      child: Column(
-        children: [
-          Container(
-            width: 64,
-            height: 64,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: gradientColors,
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+class FeatureCard extends StatefulWidget {
+  final IconData icon;
+  final String title;
+  final String description;
+  final List<Color> gradientColors;
+  const FeatureCard({
+    required this.icon,
+    required this.title,
+    required this.description,
+    required this.gradientColors,
+    super.key,
+  });
+
+  @override
+  State<FeatureCard> createState() => _FeatureCardState();
+}
+
+class _FeatureCardState extends State<FeatureCard> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedScale(
+        scale: _isHovered ? 1.05 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+        child: Container(
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.1),
+            ),
+          ),
+          child: Column(
+            children: [
+              Container(
+                width: 64,
+                height: 64,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: widget.gradientColors,
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Icon(
+                  widget.icon,
+                  color: Colors.white,
+                  size: 32,
+                ),
               ),
-              borderRadius: BorderRadius.circular(32),
-            ),
-            child: Icon(
-              icon,
-              color: Colors.white,
-              size: 32,
-            ),
+              const SizedBox(height: 16),
+              Text(
+                widget.title,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'PermanentMarker',
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                widget.description,
+                style: TextStyle(
+                  color: Colors.grey[300],
+                  fontSize: 16,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
           ),
-          const SizedBox(height: 16),
-          Text(
-            title,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'PermanentMarker',
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            description,
-            style: TextStyle(
-              color: Colors.grey[300],
-              fontSize: 16,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ],
+        ),
       ),
     );
   }

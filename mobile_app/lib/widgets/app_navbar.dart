@@ -14,6 +14,7 @@ class AppNavbar extends StatefulWidget {
 class _AppNavbarState extends State<AppNavbar> {
   bool _isHoveringHome = false;
   bool _isHoveringAbout = false;
+  bool _isHoveringAcesso = false;
 
   @override
   Widget build(BuildContext context) {
@@ -45,93 +46,101 @@ class _AppNavbarState extends State<AppNavbar> {
           Row(
             mainAxisSize: MainAxisSize.min, // Ocupa o mínimo de espaço horizontal
             children: [
-              TextButton(
-                onPressed: () {
-                  // Navegar para a HomeScreen (se já não estiver nela)
-                   Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeScreen()),
-                    (Route<dynamic> route) => false, // Remove todas as rotas anteriores
-                  );
-                },
-                onHover: (isHovering) {
-                  setState(() {
-                    _isHoveringHome = isHovering;
-                  });
-                },
-                child: Text(
-                  'HOME',
-                  style: GoogleFonts.permanentMarker(
-                    fontSize: 19, // Tamanho de fonte menor para a navbar
-                    color: _isHoveringHome ? AppColors.primary : AppColors.white, // Muda a cor ao passar o mouse
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 16), // Espaço entre os links
-              TextButton(
-                onPressed: () {
-                  // TODO: Implementar navegação para a tela Sobre Nós
-                },
-                 onHover: (isHovering) {
-                  setState(() {
-                    _isHoveringAbout = isHovering;
-                  });
-                },
-                child: Text(
-                  'SOBRE NÓS',
-                  style: GoogleFonts.permanentMarker(
-                    fontSize: 19,
-                    color: _isHoveringAbout ? AppColors.primary : AppColors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 24), // Espaço entre os links e o botão
-              // Botão de Acesso à direita
-              ElevatedButton(
-                onPressed: () {
-                  // Navegar para a página de autenticação
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AuthPage(),
-                    ),
-                  );
-                },
-                 style: ElevatedButton.styleFrom(
-                   backgroundColor: Colors.transparent, // Fundo transparente para o gradiente
-                   elevation: 0, // Remove qualquer elevação padrão
-                   shadowColor: Colors.transparent, // Garante que não há sombra
-                   padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 12), // Reduz ainda mais o padding horizontal
-                   shape: RoundedRectangleBorder(
-                     borderRadius: BorderRadius.circular(30.0),
+              MouseRegion(
+                 onEnter: (_) => setState(() => _isHoveringHome = true),
+                 onExit: (_) => setState(() => _isHoveringHome = false),
+                 child: AnimatedScale(
+                   scale: _isHoveringHome ? 1.05 : 1.0,
+                   duration: const Duration(milliseconds: 200),
+                   curve: Curves.easeInOut,
+                   child: TextButton(
+                     onPressed: () {
+                       Navigator.pushAndRemoveUntil(
+                         context,
+                         MaterialPageRoute(builder: (context) => const HomeScreen()),
+                         (Route<dynamic> route) => false,
+                       );
+                     },
+                     child: Text(
+                       'HOME',
+                       style: GoogleFonts.permanentMarker(
+                         fontSize: 19,
+                         color: _isHoveringHome ? AppColors.primary : AppColors.white,
+                         fontWeight: FontWeight.bold,
+                       ),
+                     ),
                    ),
                  ),
-                child: Ink(
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [AppColors.purple, AppColors.pink], // Alterado para gradiente roxo para rosa
-                      begin: Alignment.centerLeft,
-                      end: Alignment.centerRight,
-                    ),
-                    borderRadius: BorderRadius.circular(30.0),
-                  ),
-                  child: Container(
-                    constraints: const BoxConstraints(minWidth: 260.0, minHeight: 40.0), // Aumenta o minWidth para 280.0
-                    alignment: Alignment.center,
-                    child: Text(
-                      'ACESSE NOSSO SISTEMA',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.permanentMarker(
-                        fontSize: 19,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.white,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+               ),
+               const SizedBox(width: 16),
+               MouseRegion(
+                 onEnter: (_) => setState(() => _isHoveringAbout = true),
+                 onExit: (_) => setState(() => _isHoveringAbout = false),
+                 child: AnimatedScale(
+                   scale: _isHoveringAbout ? 1.05 : 1.0,
+                   duration: const Duration(milliseconds: 200),
+                   curve: Curves.easeInOut,
+                   child: TextButton(
+                     onPressed: () {
+                       // TODO: Implementar navegação para a tela Sobre Nós
+                     },
+                     child: Text(
+                       'SOBRE NÓS',
+                       style: GoogleFonts.permanentMarker(
+                         fontSize: 19,
+                         color: _isHoveringAbout ? AppColors.primary : AppColors.white,
+                         fontWeight: FontWeight.bold,
+                       ),
+                     ),
+                   ),
+                 ),
+               ),
+               const SizedBox(width: 24),
+               MouseRegion(
+                 onEnter: (_) => setState(() => _isHoveringAcesso = true),
+                 onExit: (_) => setState(() => _isHoveringAcesso = false),
+                 child: AnimatedScale(
+                   scale: _isHoveringAcesso ? 1.05 : 1.0,
+                   duration: const Duration(milliseconds: 200),
+                   curve: Curves.easeInOut,
+                   child: ElevatedButton(
+                     onPressed: () {
+                       Navigator.push(
+                         context,
+                         MaterialPageRoute(builder: (context) => const AuthPage()),
+                       );
+                     },
+                     style: ElevatedButton.styleFrom(
+                       backgroundColor: Colors.transparent,
+                       elevation: 0,
+                       shadowColor: Colors.transparent,
+                       padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 12),
+                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                     ),
+                     child: Container(
+                       decoration: BoxDecoration(
+                         gradient: const LinearGradient(
+                           colors: [AppColors.purple, AppColors.pink],
+                           begin: Alignment.centerLeft,
+                           end: Alignment.centerRight,
+                         ),
+                         borderRadius: BorderRadius.circular(30.0),
+                       ),
+                       constraints: const BoxConstraints(minWidth: 260.0, minHeight: 40.0),
+                       alignment: Alignment.center,
+                       child: Text(
+                         'ACESSE NOSSO SISTEMA',
+                         textAlign: TextAlign.center,
+                         style: GoogleFonts.permanentMarker(
+                           fontSize: 19,
+                           fontWeight: FontWeight.bold,
+                           color: AppColors.white,
+                         ),
+                       ),
+                     ),
+                   ),
+                 ),
+               ),
             ],
           ),
         ],

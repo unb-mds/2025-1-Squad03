@@ -97,52 +97,7 @@ class HomeScreen extends StatelessWidget {
                                     SizedBox(
                                       width: 260,
                                       height: 48,
-                                      child: ElevatedButton(
-                                        onPressed: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => const AuthPage(),
-                                            ),
-                                          );
-                                        },
-                                        style: ElevatedButton.styleFrom(
-                                          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 4),
-                                          elevation: 10,
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(32.0),
-                                          ),
-                                          backgroundColor: Colors.transparent,
-                                          shadowColor: const Color(0xFF1D4ED8).withOpacity(0.3),
-                                        ),
-                                        child: Ink(
-                                          decoration: BoxDecoration(
-                                            gradient: const LinearGradient(
-                                              colors: [Color.fromARGB(255, 34, 150, 238), Color(0xFF1D4ED8)],
-                                              begin: Alignment.centerLeft,
-                                              end: Alignment.centerRight,
-                                            ),
-                                            borderRadius: BorderRadius.circular(32.0),
-                                          ),
-                                          child: Container(
-                                            alignment: Alignment.center,
-                                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                            child: FittedBox(
-                                              fit: BoxFit.scaleDown,
-                                              child: Text(
-                                                'ACESSE NOSSO SISTEMA',
-                                                style: GoogleFonts.permanentMarker(
-                                                  fontSize: 20,
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.bold,
-                                                  letterSpacing: 2,
-                                                ),
-                                                textAlign: TextAlign.left,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
+                                      child: _AnimatedAcesseButton(),
                                     ),
                                   ],
                                 ),
@@ -172,6 +127,74 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _AnimatedAcesseButton extends StatefulWidget {
+  @override
+  State<_AnimatedAcesseButton> createState() => _AnimatedAcesseButtonState();
+}
+
+class _AnimatedAcesseButtonState extends State<_AnimatedAcesseButton> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedScale(
+        scale: _isHovered ? 1.05 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const AuthPage(),
+              ),
+            );
+          },
+          style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 4),
+            elevation: 10,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(32.0),
+            ),
+            backgroundColor: Colors.transparent,
+            shadowColor: const Color(0xFF1D4ED8).withOpacity(0.3),
+          ),
+          child: Ink(
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Color.fromARGB(255, 34, 150, 238), Color(0xFF1D4ED8)],
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+              ),
+              borderRadius: BorderRadius.circular(32.0),
+            ),
+            child: Container(
+              alignment: Alignment.center,
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'ACESSE NOSSO SISTEMA',
+                  style: GoogleFonts.permanentMarker(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                  ),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
