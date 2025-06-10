@@ -1,0 +1,86 @@
+site_name: NoFluxoUnB
+
+repo_name: "2025-1-NoFluxoUNB"
+repo_url: "https://github.com/unb-mds/2025-1-NoFluxoUNB"
+site_url: https://unb-mds.github.io/2025-1-NoFluxoUNB/
+
+docs_dir: Documentação 
+site_dir: site
+
+theme:
+  name: material
+  font: 
+    text: Merriweather Sans
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: black
+      accent: deep purple
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: red
+      accent: red
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - header.autohide
+
+plugins:
+  - search
+
+nav:
+  - Início: index.md
+  - Levantamento de Requisitos: requisitos.md
+  - Planejamento:
+    - Story Map: planejamento/storymap.md
+    - Identidade visual: planejamento/idv.md
+  
+  - Ata de Reuniões: 
+    - Reunião 1 - 27-29/03/2025: Atas/27-29-03-25.md
+    - Reunião 2 - 04/04/2025: Atas/04-04-25.md
+    - Reunião 3 - 08/04/2025: Atas/08-04-25.md
+    - Reunião 4 - 15/04/2025: Atas/15-04-25.md
+    - Reunião 5 - 17/04/2025: Atas/17-04-25.md
+    - Reunião 6 - 22/04/2025: Atas/22-04-25.md
+    - Reunião 7 - 24/04/2025: Atas/24-04-25.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/unb-mds/2025-1-NoFluxoUNB
