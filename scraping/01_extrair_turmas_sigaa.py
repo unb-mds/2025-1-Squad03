@@ -10,6 +10,10 @@ from tqdm import tqdm
 import random
 import unicodedata # Importação necessária para remover acentos
 from pathlib import Path
+import sys
+import datetime
+
+
 
 """
 ESTE ARQUIVO CONTÉM O CODIGO DE SCRAPPING PARA TODAS OS DEPTOS
@@ -39,8 +43,14 @@ def limpar_texto(texto):
 MAX_WORKERS = 3
 REQUEST_DELAY = (2, 5)
 MAX_RETRIES = 5
-OUTPUT_DIR = "dados_finais" # Mantido do seu script original modificado
+#OUTPUT_DIR = "dados_finais" # Mantido do seu script original modificado
 DEBUG = True
+
+if len(sys.argv) < 2:
+    print("Erro: Forneça o nome da pasta de saída como argumento.")
+    print("Uso: python ateracao.py <pasta_de_saida>")
+    sys.exit(1)
+OUTPUT_DIR = sys.argv[1]
 
 # Função extrair_equivalencias MODIFICADA para remover acentos
 def extrair_equivalencias(cells):
@@ -151,12 +161,21 @@ def processar_departamento(id_atual):
             viewstate_form = soup.find("input", {"name": "javax.faces.ViewState"})["value"] # Renomeado para clareza
             buscar_id = soup.find("input", {"value": "Buscar"}).get("id", "formTurma:j_id_jsp_1370969402_11")
 
+            today = datetime.date.today()
+            anoToday = today.year
+            # Define o semestre: 1 para meses de 1 a 6, 2 para meses de 7 a 12
+            semestreToday = 1 if today.month <= 6 else 2
+            anoToday = str(anoToday)
+            semestreToday = str(semestreToday)
+            
+            #sufixo_semestre = f"{ano}_{semestre}"
+
             form_data = {
                 "formTurma": "formTurma",
                 "formTurma:inputNivel": "G",
                 "formTurma:inputDepto": id_atual,
-                "formTurma:inputAno": "2025",
-                "formTurma:inputPeriodo": "1",
+                "formTurma:inputAno": anoToday,
+                "formTurma:inputPeriodo": semestreToday,
                 buscar_id: "Buscar",
                 "javax.faces.ViewState": viewstate_form,
             }
@@ -341,8 +360,8 @@ def main():
         return
 
     todos_dados_por_depto = [] # Para acumular todos os resultados para o CSV final
-    total_departamentos = len(ids)
-    #total_departamentos = 1
+    #total_departamentos = len(ids)
+    total_departamentos = 1
     lote_size = 20 
     
     for i in range(0, total_departamentos, lote_size):
