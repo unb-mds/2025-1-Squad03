@@ -5,7 +5,8 @@ import '../screens/home_screen.dart'; // Importa a HomeScreen
 import '../screens/auth/auth_page.dart'; // Importa a página de autenticação
 
 class AppNavbar extends StatefulWidget {
-  const AppNavbar({super.key});
+  final bool hideAcesseButton;
+  const AppNavbar({super.key, this.hideAcesseButton = false});
 
   @override
   State<AppNavbar> createState() => _AppNavbarState();
@@ -18,6 +19,9 @@ class _AppNavbarState extends State<AppNavbar> {
 
   @override
   Widget build(BuildContext context) {
+    // Verifica se está na AuthPage
+    final isAuthPage = ModalRoute.of(context)?.settings.name == '/auth' ||
+      context.widget.runtimeType == AuthPage;
     return Container(
       color: AppColors.black.withOpacity(0.5), // Cor de fundo semi-transparente para a navbar
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 8.0), // Aumenta o padding vertical
@@ -96,51 +100,52 @@ class _AppNavbarState extends State<AppNavbar> {
                  ),
                ),
                const SizedBox(width: 24),
-               MouseRegion(
-                 onEnter: (_) => setState(() => _isHoveringAcesso = true),
-                 onExit: (_) => setState(() => _isHoveringAcesso = false),
-                 child: AnimatedScale(
-                   scale: _isHoveringAcesso ? 1.05 : 1.0,
-                   duration: const Duration(milliseconds: 200),
-                   curve: Curves.easeInOut,
-                   child: ElevatedButton(
-                     onPressed: () {
-                       Navigator.push(
-                         context,
-                         MaterialPageRoute(builder: (context) => const AuthPage()),
-                       );
-                     },
-                     style: ElevatedButton.styleFrom(
-                       backgroundColor: Colors.transparent,
-                       elevation: 0,
-                       shadowColor: Colors.transparent,
-                       padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 12),
-                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                     ),
-                     child: Container(
-                       decoration: BoxDecoration(
-                         gradient: const LinearGradient(
-                           colors: [AppColors.purple, AppColors.pink],
-                           begin: Alignment.centerLeft,
-                           end: Alignment.centerRight,
-                         ),
-                         borderRadius: BorderRadius.circular(30.0),
+               if (!widget.hideAcesseButton)
+                 MouseRegion(
+                   onEnter: (_) => setState(() => _isHoveringAcesso = true),
+                   onExit: (_) => setState(() => _isHoveringAcesso = false),
+                   child: AnimatedScale(
+                     scale: _isHoveringAcesso ? 1.05 : 1.0,
+                     duration: const Duration(milliseconds: 200),
+                     curve: Curves.easeInOut,
+                     child: ElevatedButton(
+                       onPressed: () {
+                         Navigator.push(
+                           context,
+                           MaterialPageRoute(builder: (context) => const AuthPage()),
+                         );
+                       },
+                       style: ElevatedButton.styleFrom(
+                         backgroundColor: Colors.transparent,
+                         elevation: 0,
+                         shadowColor: Colors.transparent,
+                         padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 12),
+                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                        ),
-                       constraints: const BoxConstraints(minWidth: 260.0, minHeight: 40.0),
-                       alignment: Alignment.center,
-                       child: Text(
-                         'ACESSE NOSSO SISTEMA',
-                         textAlign: TextAlign.center,
-                         style: GoogleFonts.permanentMarker(
-                           fontSize: 19,
-                           fontWeight: FontWeight.bold,
-                           color: AppColors.white,
+                       child: Container(
+                         decoration: BoxDecoration(
+                           gradient: const LinearGradient(
+                             colors: [AppColors.purple, AppColors.pink],
+                             begin: Alignment.centerLeft,
+                             end: Alignment.centerRight,
+                           ),
+                           borderRadius: BorderRadius.circular(30.0),
+                         ),
+                         constraints: const BoxConstraints(minWidth: 260.0, minHeight: 40.0),
+                         alignment: Alignment.center,
+                         child: Text(
+                           'ACESSE NOSSO SISTEMA',
+                           textAlign: TextAlign.center,
+                           style: GoogleFonts.permanentMarker(
+                             fontSize: 19,
+                             fontWeight: FontWeight.bold,
+                             color: AppColors.white,
+                           ),
                          ),
                        ),
                      ),
                    ),
                  ),
-               ),
             ],
           ),
         ],

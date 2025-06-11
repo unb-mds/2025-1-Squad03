@@ -31,12 +31,12 @@ class _AuthPageState extends State<AuthPage> {
           SafeArea(
             child: Column(
               children: [
-                const AppNavbar(),
+                const AppNavbar(hideAcesseButton: true),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Center(
                       child: Container(
-                        constraints: const BoxConstraints(maxWidth: 400),
+                        constraints: const BoxConstraints(maxWidth: 480),
                         padding: const EdgeInsets.all(24.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
