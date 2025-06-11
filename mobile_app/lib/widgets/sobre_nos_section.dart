@@ -34,79 +34,7 @@ class SobreNosSection extends StatelessWidget {
           Center(
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 1200),
-              child: Container(
-                margin: const EdgeInsets.only(bottom: 32),
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.10),
-                  borderRadius: BorderRadius.circular(24),
-                  border: Border.all(color: Colors.white.withOpacity(0.2)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.15),
-                      blurRadius: 16,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    RichText(
-                      textAlign: TextAlign.justify,
-                      text: TextSpan(
-                        style: GoogleFonts.poppins(
-                          color: Colors.white,
-                          fontSize: 18,
-                        ),
-                        children: const [
-                          TextSpan(text: 'O NoFluxoUnB é criado na disciplina de Métodos de Desenvolvimento de Software ministrada pela professora Carla Rocha, com a proposta de desenvolver um software inovador para a comunidade. Nossa proposta foi desenvolver um software que facilita o planejamento acadêmico dos estudantes da UnB, oferecendo um fluxograma interativo, intuitivo e de fácil uso. Visualize matérias equivalentes, selecione disciplinas futuras e receba recomendações personalizadas com inteligência artificial.'),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(Icons.chat_bubble_outline, color: Colors.white70, size: 18),
-                        const SizedBox(width: 6),
-                        Text(
-                          'Observação: ',
-                          style: GoogleFonts.poppins(
-                            color: Colors.white.withOpacity(0.8),
-                            fontSize: 14,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Flexible(
-                          child: Text(
-                            'Inicialmente disponível para cursos da FGA/UnB, com perspectiva de expansão!',
-                            style: GoogleFonts.poppins(
-                              color: Colors.white.withOpacity(0.8),
-                              fontSize: 14,
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 18),
-                    // Lista de features centralizada de verdade
-                    Center(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          _featureItem('UX moderna:', 'Interface visual clara, responsiva e fácil de navegar.'),
-                          _featureItem('Inteligência Artificial:', 'Sugestão de disciplinas alinhadas aos interesses do estudante.'),
-                          _featureItem('Personalização:', 'Planejamento acadêmico inteligente e eficiente, adaptado ao perfil do aluno.'),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: _AnimatedSobreNosCard(),
             ),
           ),
           // Cards dos membros
@@ -194,82 +122,252 @@ class SobreNosSection extends StatelessWidget {
   }
 
   Widget _membroCard(String nome, String githubUrl) {
-    return Container(
-      width: 280,
-      height: 280,
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: Colors.white.withOpacity(0.1),
-        ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(
-            width: 100,
-            height: 100,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Image.network(
-                githubUrl,
+    return MembroCard(nome: nome, githubUrl: githubUrl);
+  }
+}
+
+class MembroCard extends StatefulWidget {
+  final String nome;
+  final String githubUrl;
+
+  const MembroCard({
+    super.key,
+    required this.nome,
+    required this.githubUrl,
+  });
+
+  @override
+  State<MembroCard> createState() => _MembroCardState();
+}
+
+class _MembroCardState extends State<MembroCard> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedScale(
+        scale: _isHovered ? 1.05 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+        child: Container(
+          width: 280,
+          height: 280,
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.1),
+            ),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
                 width: 100,
                 height: 100,
-                fit: BoxFit.cover,
-                loadingBuilder: (context, child, loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.network(
+                    widget.githubUrl,
                     width: 100,
                     height: 100,
-                    color: Colors.grey[800],
-                    child: Center(
-                      child: CircularProgressIndicator(
-                        value: loadingProgress.expectedTotalBytes != null
-                            ? loadingProgress.cumulativeBytesLoaded /
-                                loadingProgress.expectedTotalBytes!
-                            : null,
-                        color: Colors.white,
+                    fit: BoxFit.cover,
+                    loadingBuilder: (context, child, loadingProgress) {
+                      if (loadingProgress == null) return child;
+                      return Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.grey[800],
+                        child: Center(
+                          child: CircularProgressIndicator(
+                            value: loadingProgress.expectedTotalBytes != null
+                                ? loadingProgress.cumulativeBytesLoaded /
+                                    loadingProgress.expectedTotalBytes!
+                                : null,
+                            color: Colors.white,
+                          ),
+                        ),
+                      );
+                    },
+                    errorBuilder: (context, error, stackTrace) {
+                      print('Erro ao carregar imagem: $error');
+                      return Container(
+                        width: 100,
+                        height: 100,
+                        color: Colors.grey[800],
+                        child: const Icon(Icons.person, size: 50, color: Colors.white),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              Text(
+                widget.nome,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'PermanentMarker',
+                ),
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Desenvolvedor',
+                style: GoogleFonts.poppins(
+                  color: const Color.fromARGB(255, 174, 173, 173),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0.5,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _AnimatedSobreNosCard extends StatefulWidget {
+  @override
+  State<_AnimatedSobreNosCard> createState() => _AnimatedSobreNosCardState();
+}
+
+class _AnimatedSobreNosCardState extends State<_AnimatedSobreNosCard> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedScale(
+        scale: _isHovered ? 1.03 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+        child: Container(
+          margin: const EdgeInsets.only(bottom: 32),
+          padding: const EdgeInsets.all(32),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.10),
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: Colors.white.withOpacity(0.2)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.15),
+                blurRadius: 16,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              RichText(
+                textAlign: TextAlign.justify,
+                text: TextSpan(
+                  style: GoogleFonts.poppins(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                  children: const [
+                    TextSpan(text: 'O NoFluxoUnB é criado na disciplina de Métodos de Desenvolvimento de Software ministrada pela professora Carla Rocha, com a proposta de desenvolver um software inovador para a comunidade. Nossa proposta foi desenvolver um software que facilita o planejamento acadêmico dos estudantes da UnB, oferecendo um fluxograma interativo, intuitivo e de fácil uso. Visualize matérias equivalentes, selecione disciplinas futuras e receba recomendações personalizadas com inteligência artificial.'),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.chat_bubble_outline, color: Colors.white70, size: 18),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Observação: ',
+                    style: GoogleFonts.poppins(
+                      color: Colors.white.withOpacity(0.8),
+                      fontSize: 14,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Flexible(
+                    child: Text(
+                      'Inicialmente disponível para cursos da FGA/UnB, com perspectiva de expansão!',
+                      style: GoogleFonts.poppins(
+                        color: Colors.white.withOpacity(0.8),
+                        fontSize: 14,
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
-                  );
-                },
-                errorBuilder: (context, error, stackTrace) {
-                  print('Erro ao carregar imagem: $error');
-                  return Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.grey[800],
-                    child: const Icon(Icons.person, size: 50, color: Colors.white),
-                  );
-                },
+                  ),
+                ],
+              ),
+              const SizedBox(height: 18),
+              Center(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _featureItem('UX moderna:', 'Interface visual clara, responsiva e fácil de navegar.'),
+                    _featureItem('Inteligência Artificial:', 'Sugestão de disciplinas alinhadas aos interesses do estudante.'),
+                    _featureItem('Personalização:', 'Planejamento acadêmico inteligente e eficiente, adaptado ao perfil do aluno.'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _featureItem(String title, String desc) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            width: 28,
+            height: 28,
+            margin: const EdgeInsets.only(right: 10),
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFEC4899), Color(0xFF8B5CF6)],
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+              ),
+              shape: BoxShape.circle,
+            ),
+            child: Center(
+              child: Icon(Icons.check, color: Colors.white, size: 18),
+            ),
+          ),
+          ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 800),
+            child: RichText(
+              textAlign: TextAlign.left,
+              text: TextSpan(
+                style: GoogleFonts.poppins(
+                  color: Colors.white,
+                  fontSize: 15,
+                ),
+                children: [
+                  TextSpan(text: title, style: const TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(text: ' $desc'),
+                ],
               ),
             ),
-          ),
-          const SizedBox(height: 24),
-          Text(
-            nome,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'PermanentMarker',
-            ),
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Desenvolvedor',
-            style: GoogleFonts.poppins(
-              color: const Color.fromARGB(255, 174, 173, 173),
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 0.5,
-            ),
-            textAlign: TextAlign.center,
           ),
         ],
       ),
