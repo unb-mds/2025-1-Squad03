@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../constants/app_colors.dart';
-import '../../widgets/animated_background.dart';
+import '../../widgets/login_background.dart';
 import '../../widgets/app_navbar.dart';
 import 'login_form.dart';
 import 'signup_form.dart';
@@ -27,7 +27,7 @@ class _AuthPageState extends State<AuthPage> {
     return Scaffold(
       body: Stack(
         children: [
-          const AnimatedBackground(),
+          const LoginBackground(),
           SafeArea(
             child: Column(
               children: [
